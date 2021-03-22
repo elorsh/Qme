@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+
+}
+
+body{
+    position: relative;
+    font-family: 'Varela Round', sans-serif;
+     background-image:url('../css/img/background.jpeg');
+     background-repeat: no-repeat;
+     background-size: cover;
+    background-position: center center ;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+header{
+    align-items: center;
+    justify-content: center;
+    margin:0px;
+    margin-bottom: 15px;
+
+}
+#logo{
+    position: relative;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    height: 200px;
+}
+
+h4{
+    display: block;
+    margin: auto;
+    margin-top: 15px !important;
+    font-size: 40px;
+    text-align: right;
+    margin-right: 30px !important;
+}
+
+.form-group{
+    position: relative;
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 35%;
+    font-size: 20px;
+    margin-right: 30px !important;
+    margin-top: 10px !important;
+}
+
+.btn.btn{
+    background-color:rgb(164, 201, 117);
+    color:white;
+    font-size: 20px;
+    padding: 3px 40px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    border: 1px solid white;
+    margin-top: 10px !important;
+    margin-right: 30px !important;
+    position: relative;
+    display: block;
+    text-align: right;
+}
+
+.btn.btn:focus{
+    outline: none;
+}
+.btn.btn:hover{
+    background-color: rgb(113, 165, 36);
+}
+
+.forgetPass{
+    position: relative;
+    display: block;
+    text-align: right;
+    margin-top: 13px !important;
+    margin-right: 35px !important;
+    float: right;
+}
+
+.forgetBtn{
+    background-color:rgb(164, 201, 117);
+    color:white;
+    font-size: 13px;
+    padding: 2px 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    border: 1px solid white;
+    margin-top: 10px !important;
+    margin-right: 35px !important;
+    float: right;
+
+}
+.forgetBtn:hover{
+    background-color: rgb(113, 165, 36);
+}
+#clear{clear:both;}
+
+h3{
+    position: relative;
+    display: block;
+    text-align: right;
+    margin: auto;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-right: 30px !important;
+}
+
+.createBtn{
+    position: relative;
+    display: block;
+    text-align: right;
+    float: right;
+    background-color:rgb(164, 201, 117);
+    color:white;
+    font-size: 20px;
+    padding: 3px 40px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    border: 1px solid white;
+    margin-top: 10px !important;
+    margin-right: 30px !important;
+    margin-bottom: 20px !important;
+ 
+}
+.createBtn:hover{
+    background-color: rgb(113, 165, 36);
+}
+
+.changeBtn{
+    position: relative;
+    display: block;
+    text-align: right;
+    float: right;
+    background-color:rgb(116, 133, 94);
+    color:white;
+    font-size: 15px;
+    padding: 2px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid white;
+    margin-top: 10px !important;
+    margin-right: 30px !important;
+    margin-bottom: 20px !important;
+ 
+}
+
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {float:left;}
+
+
+@media screen and (max-width: 650px){
+    #logo{
+        width: 280px;
+        height: 180px;
+    }
+    h4{
+        font-size: 35px;
+    }
+    .form-group{
+        font-size: 17px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    .btn.btn{
+        font-size: 17px;
+    }
+
+    .createBtn{
+        font-size: 17px;
+    }
+    .changeBtn{
+        font-size: 12px;
+    }
+    @media screen and (max-width: 550px){
+    .form-group{
+        width: 40%;
+    }
+
+}

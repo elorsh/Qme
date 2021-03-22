@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+
+}
+
+body{
+    position: relative;
+    font-family: 'Varela Round', sans-serif;
+     background-image:url('../css/img/background.jpeg');
+     background-repeat: no-repeat;
+     background-size: cover;
+    background-position: center center ;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-bottom: 220px !important;
+
+}
+
+
+header{
+    align-items: center;
+    justify-content: center;
+    margin:0px;
+    margin-bottom: 15px;
+
+}
+#logo{
+    position: relative;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    height: 200px;
+}
+
+
+h4{
+    display: block;
+    margin: auto;
+    margin-top: 20px !important;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+.search-container {
+    width: 30%;
+    margin: 50px auto;
+}
+ .form-control {
+    padding-left: 2.375rem;
+}
+
+ .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.btn.btn{
+    background-color: rgb(164, 201, 117);
+}
+.btn.btn:focus{
+    outline: none;
+
+}
+
+.btnSearch{
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(164, 201, 117);
+    padding: 2px 20px;
+    font-size: 22px;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-top: 8px !important;
+    margin-bottom: 20px !important;
+}
+
+.btnSearch:focus{
+    outline: none;
+}
+.btnSearch:hover{
+    color: white;
+}
+
+
+
+
+
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {float:left;}
+
+
+
+@media screen and (max-width: 750px){
+        h4{
+            font-size: 30px;
+        }
+       
+        .btn{
+            font-size: 18px;
+        }
+       .btnSearch{
+            font-size: 18px;
+
+       }
+       .search-container {
+        width: 40%;
+        margin: 40px auto;
+    }
+}
+
+
+@media screen and (max-width: 650px){
+    #logo{
+        width: 260px;
+        height: 170px;
+    }
+    h4{
+        font-size: 27px;
+        margin-top: 3px !important;
+
+    }
+    .btn{
+        font-size: 16px;
+    }
+    .btnSearch{
+        font-size: 16px;
+
+   }
+}
+
+
+

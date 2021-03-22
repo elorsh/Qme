@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+
+}
+
+body{
+    position: relative;
+    font-family: 'Varela Round', sans-serif;
+     background-image:url('../css/img/background.jpeg');
+     background-repeat: no-repeat;
+     background-size: cover;
+    background-position: center center ;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+header{
+    align-items: center;
+    justify-content: center;
+    margin:0px;
+    margin-bottom: 15px;
+
+}
+#logo{
+    position: relative;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    height: 200px;
+}
+
+h4{
+    display: block;
+    margin: auto;
+    margin-top: 15px !important;
+    font-size: 38px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+h5{
+    display: block;
+    margin: auto;
+    margin-top: 20px !important;
+    margin-bottom: 7px!important;
+    font-size: 27px;
+    text-align: center;
+}
+
+
+
+.createAccount{
+    position: relative;
+    margin: 20px;
+}
+
+.form-label{
+    float: right;
+    margin-right: 5px;
+}
+.form-check{
+    float: right;
+
+}
+.form-check-label{
+    margin-right: 25px;
+}
+.btn.btn{
+    float:initial;
+    position: relative ;  
+    display: block ;
+    margin-left: auto ;
+    margin-right: auto ;
+    margin-top: 15px !important;
+
+    margin-bottom: 15px !important;
+    background-color: rgb(164, 201, 117);
+    padding: 9px 25px;
+}
+.btn.btn:hover{
+    color: white;
+}
+.btn.btn:focus{
+    outline: none;
+}
+.update{
+    font-weight: bold;
+    margin-bottom: 30px !important;
+}
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {float:left;}
+
+
+@media screen and (max-width: 750px){
+        h4{
+            font-size: 30px;
+        }
+        h5{
+            font-size: 23px;
+        }
+}
+
+@media screen and (max-width: 650px){
+    #logo{
+        width: 280px;
+        height: 180px;
+    }
+    h5{
+        font-size: 20px;
+    }
+  
+}
+
+
+
