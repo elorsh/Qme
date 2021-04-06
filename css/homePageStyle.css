@@ -10,13 +10,13 @@
 body{
     position: relative;
     font-family: 'Varela Round', sans-serif;
-     background-image:url('../css/img/background.jpeg');
-     background-repeat: no-repeat;
-     background-size: cover;
-    background-position: center center ;
+    background: url('../css/img/background.jpeg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     overflow-x: hidden;
     overflow-y: scroll;
-    margin-bottom: 220px !important;
 
 }
 
@@ -37,7 +37,34 @@ header{
     height: 200px;
 }
 
-
+.fas.fa-user-circle{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 35px;
+    cursor: pointer;
+}
+.profile{
+    position: absolute;
+    right: 57px;
+    top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.fas.fa-ban{
+    position: absolute;
+    left: 77px;
+    top: 10px;
+    font-size: 35px;
+    cursor: pointer;
+}
+.log-out{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
 h4{
     display: block;
     margin: auto;

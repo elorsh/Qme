@@ -10,13 +10,13 @@
 body{
     position: relative;
     font-family: 'Varela Round', sans-serif;
-     background-image:url('../css/img/background.jpeg');
-     background-repeat: no-repeat;
-     background-size: cover;
-    background-position: center center ;
+    background: url('../css/img/background.jpeg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     overflow-x: hidden;
     overflow-y: scroll;
-    margin-bottom: 70px !important;
 }
 
 
@@ -36,7 +36,20 @@ header{
     height: 200px;
 }
 
-
+.fas.fa-share{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 35px;
+    cursor: pointer;
+}
+.back{
+    position: absolute;
+    right: 15px;
+    top: 45px;
+    font-size: 15px;
+    font-weight: bold;
+}
 .navbar-nav{
     margin: 0 auto;
 }
@@ -100,7 +113,7 @@ h4{
     border-radius: 3px;
     border: 1px solid white;
     margin-top: 20px !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 30px !important;
     margin-right: 30px !important;
     position: relative;
     display: block;
@@ -128,6 +141,16 @@ h4{
 
 }
 
+#done{
+    display: block;
+    margin: auto;
+    margin-top: 15px !important;
+    margin-right: 35px !important;
+    margin-bottom: 20px !important;
+    text-align: right;
+    color: green;
+    font-size: 20px;
+}
 
 
 .col-1 {width: 8.33%;}

@@ -17,6 +17,10 @@
     <header> 
         <img id="logo" src= "../css/img/logo.png"/>
      </header>
+     
+     <i class="fas fa-share" onclick="document.location='editAppointment.html'"></i>
+     <p class="back">חזור</p>
+
    <!----- The navigation menu ----->
 
    <nav class="navbar navbar-expand-sm">
@@ -47,7 +51,7 @@
 
      <h4>בחירת תור חדש</h4>
 
-    <form  dir="rtl" onsubmit="validationForm" >
+    <form  dir="rtl" onsubmit="return validationForm()" >
 
         <div class="form-group ">
             <label for="email">תאריך : </label>
@@ -75,8 +79,11 @@
 
 
           <button type="submit" id="submit" class="btn btn" value="run">עדכן לי את התור </button>
+          <div id="done"></div>
+
 </form>
 
+<script src="../javascript/editTimeAndDate.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

@@ -10,10 +10,11 @@
 body{
     position: relative;
     font-family: 'Varela Round', sans-serif;
-    background-image:url('../css/img/background.jpeg');
-    background-repeat: no-repeat;
+    background: url('../css/img/background.jpeg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-   background-position: center center ;
     overflow-x: hidden;
     overflow-y: scroll;
 }

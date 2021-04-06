@@ -5,4 +5,6 @@ var cancelMessage= " ";
 btn.addEventListener( 'click', () => {
     cancelMessage += "התור בוטל בהצלחה";
     message.innerHTML = (cancelMessage);
-})
+    return true;
+
+})    
