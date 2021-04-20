@@ -17,7 +17,7 @@ class P_Users extends CI_Controller{
         foreach ($result as $object){
             echo $object->u_full_name;
         }
-        //test 2.0
+        //test 2.0 22:47
 
     }
     
