@@ -1,6 +1,6 @@
 <?php
 
-class Users extends CI_Controller{
+class P_Users extends CI_Controller{
     public function __construct(){
         parent::__construct();
         $this->load->model('P_users_model');
@@ -10,6 +10,12 @@ class Users extends CI_Controller{
         $this->load->library('session');
         
     }
+    public function show(){
+        $this->load->model('P_Users_model');
+        $result= $this->P_Users_model->get_users();
+
+    }
+    
     public function get_users(){
         $data['user']=$this->session->all_userdata();
         $this->load->view('templates/headG');

@@ -1,13 +1,13 @@
 <?php
 
-class P_Users_model extends CI_Model {
+class Apointment_model extends CI_Model {
     //put your code here
     public function __construct(){
         parent::__construct();
         $this->load->database();
     }
     public function get_users(){
-        $query=$this->db->get('DB_users');
+        $query=$this->db->get('users');
         return $query->result();
     }
 
@@ -16,14 +16,14 @@ class P_Users_model extends CI_Model {
         //set flag in order to avoid showing php errors
         $this->db->db_debug = FALSE; 
         $error=null;
-        if (!$this->db->insert('DB_users', $data)){
+        if (!$this->db->insert('users', $data)){
             $error=$this->db->error();
         }
         return $error;
      }
 
      public function auth($data){
-        $query = $this->db->get_where('DB_users', $data);
+        $query = $this->db->get_where('users', $data);
         return $query->result();
      }
 

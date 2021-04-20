@@ -1,5 +1,5 @@
 <?php
-class Games extends CI_Controller{
+class B_Users extends CI_Controller{
     //put your code here
     public function __construct(){
         parent::__construct();
