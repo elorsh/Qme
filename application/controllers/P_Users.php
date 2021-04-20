@@ -3,7 +3,7 @@
 class P_Users extends CI_Controller{
     public function __construct(){
         parent::__construct();
-        $this->load->model('P_users_model');
+        $this->load->model('P_Users_model');
         $this->load->helper('url');
         $this->load->helper('form');
         $this->load->library('form_validation');
@@ -13,6 +13,10 @@ class P_Users extends CI_Controller{
     public function show(){
         $this->load->model('P_Users_model');
         $result= $this->P_Users_model->get_users();
+
+        foreach ($result as $object){
+            echo $object->u_full_name;
+        }
 
     }
     
