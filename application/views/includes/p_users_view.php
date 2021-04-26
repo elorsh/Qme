@@ -12,7 +12,7 @@
     hello
 
 <?php
-        foreach ($results as $object){
+        foreach ($result as $object){
 
             echo $object->u_full_name. "<br>";
         }
