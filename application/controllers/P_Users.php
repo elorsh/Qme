@@ -14,7 +14,7 @@ class P_Users extends CI_Controller{
        // $this->load->model('P_Users_model');
         // $result= $this->P_Users_model->get_users();
         $data['result']=$this->P_Users_model->get_users();
-        $this->load->view('p_users_view',$data);
+        $this->load->view('includes\p_users_view',$data);
 
 
 
