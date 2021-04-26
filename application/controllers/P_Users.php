@@ -12,12 +12,16 @@ class P_Users extends CI_Controller{
     }
     public function show(){
         $this->load->model('P_Users_model');
-        $result= $this->P_Users_model->get_users();
+        // $result= $this->P_Users_model->get_users();
+        $data['result']=$this->P_Users_model->get_users();
+        $this->load->view('p_users_view',$data);
 
-        foreach ($result as $object){
-            echo $object->u_full_name;
-        }
-        //test 2.0 22:47
+
+
+
+        // foreach ($result as $object){
+        //     echo $object->u_full_name;
+        // }
 
     }
     
