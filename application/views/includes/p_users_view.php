@@ -12,7 +12,6 @@
 
     
      <link rel="stylesheet" href="<?php echo base_url('assets/css/myAppointmentsBusiness.css');?>"/>
-     <link rel="stylesheet" href="assets/css/indexStyle.css"/>
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -33,9 +32,7 @@
 
 
     <header> 
-        <!-- <?php echo base_url('...');?>" ניסיתי לשים את זה בתוך לא עבד  -->
-        <!-- <img id="logo" src= "../css/img/logo.png"/> -->
-        <img id="logo" src= "assets/css/img/logo.png"/>
+        <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
 
 
      </header>
