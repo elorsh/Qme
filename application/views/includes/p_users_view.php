@@ -30,7 +30,7 @@
 
 
     <header> 
-        <img id="logo" src= "../css/img/logo.png"/>
+        <img id="logo" src= "../assets/css/img/logo.png"/>
      </header>
 
      <i class="fas fa-share" onclick="document.location='#'"></i>
@@ -73,13 +73,13 @@
         <?php
           foreach ($result as $object){
 
-            echo "<tr>"."hello"."</tr>";
-                //     ."<th scope="col">".$object->u_full_name."</th>"
-                //     ."<th scope="col">".$object->u_email."</th>"
-                //     ."<th scope="col">".$object->u_password."</th>"
-                //     ."<th scope="col">".$object->u_phone."</th>"
-                //     ."<th scope="col">".$object->u_address."</th>"
-                //  ."</tr>";
+            echo "<tr>";
+            echo "<th scope="col">".$object->u_full_name."</th>";
+            echo "<th scope="col">".$object->u_email."</th>";
+            echo "<th scope="col">".$object->u_password."</th>";
+            echo "<th scope="col">".$object->u_phone."</th>";
+            echo "<th scope="col">".$object->u_address."</th>";
+            echo "</tr>";
             }
         ?>
         </tbody>
@@ -88,7 +88,7 @@
     
     </div>
 
-    <button class="btn"  id="submit" type="submit" > <i class="far fa-calendar-alt"></i>הזנה למערכת תור חדש </button>
+    <button class="btn"  id="submit" type="submit" > <i class="far fa-calendar-alt"></i>כפתור סבמיט </button>
 
 
 
