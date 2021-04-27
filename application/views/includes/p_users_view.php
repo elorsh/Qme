@@ -73,13 +73,13 @@
         <?php
           foreach ($result as $object){
 
-            echo "<tr>"
-                    ."<th scope="col">".$object->u_full_name."</th>"
-                    ."<th scope="col">".$object->u_email."</th>"
-                    ."<th scope="col">".$object->u_password."</th>"
-                    ."<th scope="col">".$object->u_phone."</th>"
-                    ."<th scope="col">".$object->u_address."</th>"
-                 ."</tr>";
+            echo "<tr>"."hello"."</tr>";
+                //     ."<th scope="col">".$object->u_full_name."</th>"
+                //     ."<th scope="col">".$object->u_email."</th>"
+                //     ."<th scope="col">".$object->u_password."</th>"
+                //     ."<th scope="col">".$object->u_phone."</th>"
+                //     ."<th scope="col">".$object->u_address."</th>"
+                //  ."</tr>";
             }
         ?>
         </tbody>
