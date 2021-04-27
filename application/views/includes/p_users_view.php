@@ -74,11 +74,11 @@
           foreach ($result as $object){
 
             echo "<tr>";
-            echo "<th scope="col">".$object->u_full_name."</th>";
-            echo "<th scope="col">".$object->u_email."</th>";
-            echo "<th scope="col">".$object->u_password."</th>";
-            echo "<th scope="col">".$object->u_phone."</th>";
-            echo "<th scope="col">".$object->u_address."</th>";
+            echo '<th scope="col">'.$object->u_full_name.'</th>';
+            echo '<th scope="col">'.$object->u_email.'</th>';
+            echo '<th scope="col">'.$object->u_password.'</th>';
+            echo '<th scope="col">'.$object->u_phone.'</th>';
+            echo '<th scope="col">'.$object->u_address.'</th>';
             echo "</tr>";
             }
         ?>
