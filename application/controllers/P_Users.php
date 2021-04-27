@@ -17,9 +17,7 @@ class P_Users extends CI_Controller{
         $this->load->view('includes/p_users_view',$data);
 
 
-
-
-        
+    }
     
     public function get_users(){
         $data['user']=$this->session->all_userdata();
