@@ -18,19 +18,6 @@
      <title>Private users view</title>
  </head>
  <body>
-
-
- <h1>
-
-<?php
-    foreach ($result as $object){
-
-        echo $object->u_full_name. "<br>";
-    }
-?>
-</h1>
-
-
     <header> 
         <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
 
