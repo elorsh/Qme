@@ -30,7 +30,7 @@
 
 
     <header> 
-        <img id="logo" src="<?php echo base_url('../css/img/logo.png');?>"/>
+        <img id="logo" src="<?php echo base_url('logo.png');?>"/>
      </header>
 
      <i class="fas fa-share" onclick="document.location='#'"></i>
