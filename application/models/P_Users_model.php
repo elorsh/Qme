@@ -7,9 +7,12 @@ class P_Users_model extends CI_Model {
         $this->load->database();
     }
     public function get_users(){
-        $query=$this->db->get('DB_users');
+        // $query=$this->db->get('DB_users');
+        $query = $this->db->query("SELECT * FROM DB_users");
         return $query->result();
     }
+
+
 
 
     public function save($data){

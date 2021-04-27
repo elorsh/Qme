@@ -19,11 +19,7 @@ class P_Users extends CI_Controller{
 
 
 
-        // foreach ($result as $object){
-        //     echo $object->u_full_name;
-        // }
-
-    }
+        
     
     public function get_users(){
         $data['user']=$this->session->all_userdata();
