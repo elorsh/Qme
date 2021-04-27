@@ -30,7 +30,9 @@
 
 
     <header> 
-        <img id="logo" src= "../css/img/logo.png"/>
+        <!-- <img id="logo" src= "../css/img/logo.png"/> -->
+        <img id="logo" src= "logo.png"/>
+
      </header>
 
      <i class="fas fa-share" onclick="document.location='#'"></i>
