@@ -20,11 +20,11 @@ class P_Users extends CI_Controller{
 
     public function insert(){
 
-        $u_full_name=>"בלה גלבוע";
-        $u_email=>"bella@qme.com";
-        $u_password=>"123456";
-        $u_phone=>"0505111183";
-        $u_address=>"הפלמח 8 רמהש";
+        $u_full_name="בלה גלבוע";
+        $u_email="bella@qme.com";
+        $u_password="123456";
+        $u_phone="0505111183";
+        $u_address="הפלמח 8 רמהש";
 
 
         $this->P_Users_model->create_p_users([
