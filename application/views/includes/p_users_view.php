@@ -79,7 +79,7 @@
     
     </div>
 
-    <button class="btn" href="<?php echo base_url('application/views/includes/createPrivateAccount.php');?>" id="submit" type="submit" > <i class="far"></i>יצירת משתמש חדש </button>
+    <button class="btn"  id="submit" type="submit" > <i class="far"></i>יצירת משתמש חדש </button>
 
 
 

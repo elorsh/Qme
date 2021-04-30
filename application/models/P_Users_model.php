@@ -12,6 +12,13 @@ class P_Users_model extends CI_Model {
         return $query->result();
     }
 
+    public function create_p_users($data){
+
+        $this->db->insert('DB_users', $data);
+
+        
+    }
+
 
 
 

@@ -16,9 +16,31 @@ class P_Users extends CI_Controller{
         $data['result']=$this->P_Users_model->get_users();
         $this->load->view('includes/p_users_view',$data);
 
+    }
+
+    public function insert(){
+
+        $u_full_name=>"בלה גלבוע";
+        $u_email=>"bella@qme.com";
+        $u_password=>"123456";
+        $u_phone=>"0505111183";
+        $u_address=>"הפלמח 8 רמהש";
+
+
+        $this->P_Users_model->create_p_users([
+
+            'u_full_name'=>$u_full_name,
+            'u_email'=>$u_email,
+            'u_password'=> $u_password,
+            'u_phone'=>$u_phone,
+            'u_address'=> $u_address
+
+        ]);
 
     }
-    
+
+
+
     public function get_users(){
         $data['user']=$this->session->all_userdata();
         $this->load->view('templates/headG');
@@ -28,6 +50,7 @@ class P_Users extends CI_Controller{
         $this->load->view('users/users',$data);
         $this->load->view('templates/footer');
     }
+    
     public function add_user($error=null){
         $this->load->view('templates/headG');
         $data['error']=$error;
