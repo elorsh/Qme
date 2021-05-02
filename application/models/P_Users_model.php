@@ -24,9 +24,9 @@ class P_Users_model extends CI_Model {
 
     }
 
-    public function delete_p_users(){
+    public function delete_p_users($u_email){
         
-        $this->db->where(['id'=>$id]);
+        $this->db->where(['u_email'=>$u_email]);
         $this->db->delete('DB_users');
 
     }
