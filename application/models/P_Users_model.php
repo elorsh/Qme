@@ -24,9 +24,16 @@ class P_Users_model extends CI_Model {
 
     }
 
+    public function delete_p_users(){
+        
+        $this->db->where(['id'=>$id]);
+        $this->db->delete('DB_users');
+
+    }
 
 
 
+// -------------------------------------------------
 
     public function save($data){
         //set flag in order to avoid showing php errors

@@ -60,9 +60,17 @@ class P_Users extends CI_Controller{
 
     }
 
+    public function delete(){
+
+        $u_email="moshe@qme.com";
+        
+        $this->P_Users_model->delete_p_users($u_email);
+    }
 
 
 
+
+// -------------------------------------------------
 
     public function get_users(){
         $data['user']=$this->session->all_userdata();
