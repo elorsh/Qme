@@ -56,7 +56,7 @@ class P_Users extends CI_Controller{
             'u_phone'=>$u_phone,
             'u_address'=> $u_address
 
-        ], $u_email);
+        ],$u_email);
 
     }
 
