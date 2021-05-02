@@ -41,22 +41,22 @@ class P_Users extends CI_Controller{
 
     public function update(){
 
-        $u_full_name="אבי רון";
         $u_email="avi@qme.com";
+
+        $u_full_name="אבי רון";
         $u_password="123456";
         $u_phone="0505111183";
-        $u_address="הפלמח 8 רמהש";
+        $u_address="הפלמח 8 רמת השרון";
 
 
         $this->P_Users_model->update_p_users([
 
             'u_full_name'=>$u_full_name,
-            'u_email'=>$u_email,
             'u_password'=> $u_password,
             'u_phone'=>$u_phone,
             'u_address'=> $u_address
 
-        ]);
+        ], $u_email);
 
     }
 
