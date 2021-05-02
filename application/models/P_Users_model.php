@@ -16,8 +16,14 @@ class P_Users_model extends CI_Model {
 
         $this->db->insert('DB_users', $data);
 
-        
     }
+
+    public function update_p_users($data){
+        $this->db->where('u_email'=>$u_email);
+        $this->db->update('DB_users', $data);
+
+    }
+
 
 
 
