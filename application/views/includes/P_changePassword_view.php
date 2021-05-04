@@ -19,7 +19,7 @@
  </head>
  <body>
     <header> 
-        <img id="logo" src= "../css/img/logo.png"/>
+    <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
      </header>
 
      <i class="fas fa-share" onclick="document.location='#'"></i>

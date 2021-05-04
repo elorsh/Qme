@@ -15,13 +15,13 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-     <link rel="stylesheet" href="../css/forgotPasswordStyle.css"/>
+     <link rel="stylesheet" href="<?php echo base_url('assets/css/forgotPasswordStyle.css');?>"/>
 
      <title>Forgot Password</title>
  </head>
  <body>
     <header> 
-        <img id="logo" src= "../css/img/logo.png"/>
+    <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
      </header>
 
       
