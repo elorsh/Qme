@@ -12,7 +12,7 @@
 
      <link rel="stylesheet" href="../../../assets/css/createPrivateAccountStyle.css"/>
 
-     <title>Create Private Account </title>
+     <title>Private Register </title>
  </head>
  <body>
     <header> 

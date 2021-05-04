@@ -12,7 +12,7 @@
 
      <link rel="stylesheet" href="../css/createBussinessAccountStyle.css"/>
 
-     <title>Create Bussiness Account </title>
+     <title>Business Register </title>
  </head>
  <body>
     <header> 

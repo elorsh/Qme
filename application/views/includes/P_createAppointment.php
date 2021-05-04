@@ -11,7 +11,7 @@
      <link rel="stylesheet" href="../css/editTimeAndDateStyle.css"/>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-     <title>Edit Time And Date</title>
+     <title>Create Appointment</title>
  </head>
  <body>
     <header> 

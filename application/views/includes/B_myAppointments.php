@@ -10,10 +10,10 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-     <link rel="stylesheet" href="../css/treatmentsHistory-Business.css"/>
+     <link rel="stylesheet" href="../css/myAppointmentsBusiness.css"/>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-     <title>Treatment History- Business side</title>
+     <title>My Appointments- Business side</title>
  </head>
  <body>
     <header> 
@@ -22,7 +22,7 @@
 
      <i class="fas fa-share" onclick="document.location='#'"></i>
      <p class="back">חזור</p>
-     
+
             <!----- The navigation menu ----->
 
             <nav class="navbar navbar-expand-sm">
@@ -51,57 +51,43 @@
                 </div>
             </nav>
 
-     <h4 class="headline">Yoga with Shaigul</h4>
-     <h5>חן כהן</h5>
+     <h4 class="headline">התורים שלי</h4>
 
 <div class="table-container">
 
      <table dir="rtl" class="table table-striped">
         <thead>
           <tr>
+            <th scope="col" > שם המטופל</th>
             <th scope="col" > תאריך</th>
             <th scope="col">שעה</th>
             <th scope="col">סוג תור</th>
-            <th scope="col">זמן טיפול</th>
+            <th scope="col">עדכון תור</th>
 
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td >10/10/2020</td>
-            <td>15:00</td>
-            <td>אימון אישי</td>
-            <td>45</td>
-
-          </tr>
-          <tr>
-            <td >20/10/2020</td>
-            <td>15:00</td>
-            <td>אימון אישי</td>
-            <td>45</td>
-          </tr>
-          <tr>
-            <td >13/12/2020</td>
-            <td>19:00</td>
-            <td>אימון קבוצתי</td>
-            <td>45</td>
-          </tr>
-          <tr>
-            <td >04/01/2021</td>
-            <td>09:30</td>
-            <td>אימון אישי</td>
-            <td>90</td>
-          </tr>
-          <tr>
-            <td >01/03/2021</td>
-            <td>18:30</td>
-            <td>אימון קבוצתי</td>
-            <td>60</td>
-          </tr>
+          <?php
+          foreach($result as $object){
+            //להשלים
+           
+            echo "<tr>";
+            echo '<th scope="col">'.$object->u_full_name.'</th>';
+            echo '<th scope="col">'.$object->u_email.'</th>';
+            echo '<th scope="col">'.$object->u_password.'</th>';
+            echo '<th scope="col">'.$object->u_phone.'</th>';
+            echo '<th scope="col">'.$object->u_address.'</th>';
+            echo "</tr>";
+          }
+          ?>
         </tbody>
       </table>
+
     
     </div>
+
+    <button class="btn"  id="submit" type="submit" > <i class="far fa-calendar-alt"></i>הזנה למערכת תור חדש </button>
+
 
 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
