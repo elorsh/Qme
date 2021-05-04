@@ -10,14 +10,15 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-     <link rel="stylesheet" href="../css/treatmentsHistory-Business.css"/>
+     <link rel="stylesheet" href="<?php echo base_url('assets/css/B_appointmentsHistoryStyle.css');?>"/>
+
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
      <title>Appointments History- Business side</title>
  </head>
  <body>
     <header> 
-        <img id="logo" src= "../css/img/logo.png"/>
+        <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
      </header>
 
      <i class="fas fa-share" onclick="document.location='#'"></i>
@@ -61,43 +62,20 @@
           <tr>
             <th scope="col" > תאריך</th>
             <th scope="col">שעה</th>
-            <th scope="col">סוג תור</th>
-            <th scope="col">זמן טיפול</th>
 
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td >10/10/2020</td>
-            <td>15:00</td>
-            <td>אימון אישי</td>
-            <td>45</td>
+        <?php
+          foreach ($result as $object){
 
-          </tr>
-          <tr>
-            <td >20/10/2020</td>
-            <td>15:00</td>
-            <td>אימון אישי</td>
-            <td>45</td>
-          </tr>
-          <tr>
-            <td >13/12/2020</td>
-            <td>19:00</td>
-            <td>אימון קבוצתי</td>
-            <td>45</td>
-          </tr>
-          <tr>
-            <td >04/01/2021</td>
-            <td>09:30</td>
-            <td>אימון אישי</td>
-            <td>90</td>
-          </tr>
-          <tr>
-            <td >01/03/2021</td>
-            <td>18:30</td>
-            <td>אימון קבוצתי</td>
-            <td>60</td>
-          </tr>
+            echo "<tr>";
+            echo '<th scope="col">'.$object->a_date.'</th>';
+            echo '<th scope="col">'.$object->hour.'</th>';
+            
+            echo "</tr>";
+            }
+        ?>
         </tbody>
       </table>
     

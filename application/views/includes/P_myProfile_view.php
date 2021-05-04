@@ -53,7 +53,7 @@
 <div class="container">
 
      <h5 >הפרופיל שלי</h5>
-     <h4> היי חן, טוב לראות אותך</h4>
+     <h4> היי, טוב לראות אותך</h4>
 
     <p1>צפייה ועריכה של הפרטיים האישיים שלך</p1>
     <button class="btn"  id="submit" type="submit"  onclick="document.location='editPrivateAccount.html'" > <i class="fas fa-cog"></i> פרטי העסק </button>
