@@ -71,7 +71,8 @@
             echo "<tr>";
             echo '<th scope="col">'.$object->u_full_name.'</th>';
             echo '<th scope="col">'.$object->u_phone.'</th>';
-         
+            echo '<i class="fas fa-coins"></i>';
+
             echo "</tr>";
             }
         ?>
