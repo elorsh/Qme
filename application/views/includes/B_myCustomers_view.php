@@ -67,7 +67,6 @@
         <tbody>
         <?php
           foreach ($result as $object){
-            echo ' <h4 class="headline">'.$object->b_business_name.'</h4>';
 
             echo "<tr>";
             echo '<th scope="col">'.$object->u_full_name.'</th>';
