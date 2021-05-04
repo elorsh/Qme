@@ -10,17 +10,17 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-     <link rel="stylesheet" href="<?php echo base_url('assets/css/myAppointmentsBusiness.css');?>"/>
+     <link rel="stylesheet" href="<?php echo base_url('assets/css/myCustomersStyle.css');?>"/>
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-     <title>My Appointments- Business side</title>
+     <title>My Customers - Business</title>
  </head>
  <body>
     <header> 
         <img id="logo" src= "../css/img/logo.png"/>
      </header>
-
+     
      <i class="fas fa-share" onclick="document.location='#'"></i>
      <p class="back">חזור</p>
 
@@ -52,41 +52,33 @@
                 </div>
             </nav>
 
-     <h4 class="headline">התורים שלי</h4>
-
+     <h4 class="headline"></h4>
 <div class="table-container">
 
      <table dir="rtl" class="table table-striped">
         <thead>
           <tr>
-            <th scope="col" > שם המטופל</th>
-            <th scope="col" > תאריך</th>
-            <th scope="col">שעה</th>
-            <th scope="col">עדכון תור</th>
-
+            <th scope="col" >שם מלא</th>
+            <th scope="col">טלפון</th>
+            <th scope="col">היסטוריית טיפולים</th>
           </tr>
         </thead>
         <tbody>
-          <?php
-          foreach($result as $object){
-           
+        <?php
+          foreach ($result as $object){
+            echo ' <h4 class="headline">'.$object->b_business_name.'</h4>';
+
             echo "<tr>";
             echo '<th scope="col">'.$object->u_full_name.'</th>';
-            echo '<th scope="col">'.$object->a_date.'</th>';
-            echo '<th scope="col">'.$object->b_email.'</th>';
-            echo '<th scope="col">'.$object->u_email.'</th>';
-\            echo "</tr>";
-          }
-
-          ?>
+            echo '<th scope="col">'.$object->u_phone.'</th>';
+         
+            echo "</tr>";
+            }
+        ?>
         </tbody>
       </table>
-
     
     </div>
-
-    <button class="btn"  id="submit" type="submit" > <i class="far fa-calendar-alt"></i>הזנה למערכת תור חדש </button>
-
 
 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
