@@ -29,7 +29,7 @@
 
         <div class="form-group ">
           <?php 
-          if ($error != null) {
+          if (isset($error)) {
             echo $error;
           }
           ?>
