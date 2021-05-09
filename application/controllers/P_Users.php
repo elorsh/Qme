@@ -81,7 +81,7 @@ class P_Users extends CI_Controller{
             $this->login($data['error']);
          }
          else{
-           $data['u_email']=$check[0]->username;
+           $data['u_email']=$check[0]->u_email;
            $data['loggedin']='1';
            $this->session->set_userdata($data); 
            $this->load->view('includes/homePage');
