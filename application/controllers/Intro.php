@@ -15,24 +15,9 @@ class Intro extends CI_Controller{
         $this->load->view('includes/landing');
     
 
-        // $user=$this->session->all_userdata();
-        
-        // if ($user['loggedin']==null){
-             
-        //     redirect('P_Users/login');
-        // }
-        // else{
-        //     $this->load->view('templates/headG');
-        //     $this->load->view('HomePage/Homescreen');
-        //     $this->load->view('templates/footer');
-        // }
-        
-
         }
-    public function moveToGallery(){
-        $this->load->view('templates/headG');
-        $this->load->view('GameGallery/GameGallery');
-        $this->load->view('templates/footer');
+    public function go_to_login(){
+        $this->load->view('includes/P_LogIn_view');
         }
     }
 
