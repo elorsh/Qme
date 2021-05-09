@@ -16,7 +16,7 @@ class Intro extends CI_Controller{
         
         if ($user['loggedin']==null){
              
-            redirect('Users/login');
+            redirect('P_Users/login');
         }
         else{
             $this->load->view('templates/headG');
