@@ -68,6 +68,49 @@ class P_Users extends CI_Controller{
     }
 
 
+    public function auth(){
+        $data = array(
+            'u_email' => $this->input->post('u_email'),
+            'u_password' => $this->input->post('u_password')
+          );
+        
+         $check=$this->P_Users_model->auth($data);
+       
+         if ($check==null){
+            $data['error']='Wrong username or Password. Please try again.';
+            $this->login($data['error']);
+         }
+         else{
+           $data['u_email']=$check[0]->username;
+           $data['loggedin']='1';
+           $this->session->set_userdata($data); 
+            $this->load->view('includes/homePage')
+        }
+
+ }
+
+ public function login($error=null){
+    $data['error']=$error;
+    $this->load->view('includes/P_LogIn_view',$data);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // -------------------------------------------------
@@ -122,12 +165,7 @@ class P_Users extends CI_Controller{
             $this->get_users();
         }
     }
-    public function login($error=null){
-        $data['error']=$error;
-        $this->load->view('includes/P_LogIn_view',$data);
 
-
-    }
 
 
       public function logout()
@@ -141,27 +179,8 @@ class P_Users extends CI_Controller{
             $this->login();   
                          
        }
+// -----------------------------------------------------------------------
 
-     public function auth(){
-           $data = array(
-               'u_email' => $this->input->post('u_email'),
-               'u_password' => $this->input->post('u_password')
-             );
-           
-            $check=$this->P_Users_model->auth($data);
-          
-            if ($check==null){
-               $data['error']='Wrong username or Password. Please try again.';
-               $this->login($data['error']);
-            }
-            else{
-              $data['u_email']=$check[0]->username;
-              $data['loggedin']='1';
-              $this->session->set_userdata($data); 
-              redirect("Intro");
-            }
-   
-    }
     public function register($info=null){
         $data['info']=$info;
         $this->load->view('templates/HeadL');
