@@ -152,7 +152,7 @@ class P_Users extends CI_Controller{
           
             if ($check==null){
                $data['error']='Wrong username or Password. Please try again.';
-               $this->login($data);
+               $this->login($data['error']);
             }
             else{
               $data['u_email']=$check[0]->username;
