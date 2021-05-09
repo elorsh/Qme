@@ -21,7 +21,7 @@
      <h4> (: ברוך הבא</h4>
     <h5>בוא נתחבר לחשבון שלך</h5>
 
-     <p  href="<?php echo base_url('Intro/go_to_login');?>"><span>התחברות</span><i class="fas fa-user-circle"></i></p>
+     <p><span href="<?php echo base_url('Intro/go_to_login');?>">התחברות</span><i class="fas fa-user-circle"></i></p>
      
  </body>
  </html>
