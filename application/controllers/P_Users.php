@@ -123,12 +123,13 @@ class P_Users extends CI_Controller{
         }
     }
     public function login($error=null){
-        $this->load->view('templates/HeadL');
         $data['error']=$error;
-        $this->load->view('users/login',$data);
-        $this->load->view('templates/footer');
+        $this->load->view('includes/P_LogIn_view',$data);
+
 
     }
+
+
       public function logout()
        {
             $data = array(
@@ -140,20 +141,21 @@ class P_Users extends CI_Controller{
             $this->login();   
                          
        }
+
      public function auth(){
            $data = array(
-               'username' => $this->input->post('username'),
-               'password' => md5($this->input->post('password'))
+               'u_email' => $this->input->post('u_email'),
+               'u_password' => $this->input->post('u_password')
              );
            
-            $check=$this->users_model->auth($data);
+            $check=$this->P_Users_model->auth($data);
           
             if ($check==null){
                $data['error']='Wrong username or Password. Please try again.';
                $this->login($data);
             }
             else{
-              $data['username']=$check[0]->username;
+              $data['u_email']=$check[0]->username;
               $data['loggedin']='1';
               $this->session->set_userdata($data); 
               redirect("Intro");

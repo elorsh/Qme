@@ -25,23 +25,27 @@
      <h4>,התגעגענו <br>
     בוא נתחבר</h4>
 
-    <form  dir="rtl" onsubmit="#" >
+    <form method="post" action="<?php echo site_url('P_users/auth')?>>"dir="rtl">
 
         <div class="form-group ">
+          <?php 
+          if ($error != null) {
+            echo $error;
+          }
+          ?>
+
             <label for="email">אימייל : </label>
-            <input type="text" class="form-control" name="fName" id="fName" autocomplete="on" placeholder="example@gmail.com">
+            <input type="text" class="form-control" name="u_email" id="fName" autocomplete="on" placeholder="example@gmail.com">
           </div>
 
           <div class="form-group">
             <label for="password">סיסמא:</label>
-            <input type="text" class="form-control" name="lName" id="lName" autocomplete="on" placeholder="******** ">
+            <input type="text" class="form-control" name="u_password" id="lName" autocomplete="on" placeholder="******** ">
           </div>
 
           <button type="submit" id="submit" class="btn btn" value="run">התחבר! </button>
 </form>
 
-<p  class="forgetPass" dir="rtl" >שכחת את הסיסמא?</p>
-<button type="submit" id="forgetBtn" class="forgetBtn" value="run">איפוס סיסמא </button>
 
 <div id="clear"></div>
 
