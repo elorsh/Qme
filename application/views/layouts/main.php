@@ -19,10 +19,16 @@
  </head>
  <body>
 
+<div class="container">
+        <div class="col-xs-5">
 
-    <div class='col-xs-5'>
-    <?php $this->load->view($main_view); ?>
-    </div>
+        </div>
+
+
+        <div class="col-xs-5">
+              <?php $this->load->view($main_view); ?>
+        </div>
+</div>
 
 
 
