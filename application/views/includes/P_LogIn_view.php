@@ -25,7 +25,7 @@
      <h4>,התגעגענו <br>
     בוא נתחבר</h4>
 
-    <form method="post" action="<?php echo site_url('P_users/auth')?>>"dir="rtl">
+    <form method="post" action="<?php echo site_url('P_users/auth')?>"dir="rtl">
 
         <div class="form-group ">
           <?php 
