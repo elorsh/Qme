@@ -12,17 +12,20 @@ class Intro extends CI_Controller{
 
      public function index(){
 
-        $user=$this->session->all_userdata();
+        $this->load->view('includes/landing');
+    
+
+        // $user=$this->session->all_userdata();
         
-        if ($user['loggedin']==null){
+        // if ($user['loggedin']==null){
              
-            redirect('P_Users/login');
-        }
-        else{
-            $this->load->view('templates/headG');
-            $this->load->view('HomePage/Homescreen');
-            $this->load->view('templates/footer');
-        }
+        //     redirect('P_Users/login');
+        // }
+        // else{
+        //     $this->load->view('templates/headG');
+        //     $this->load->view('HomePage/Homescreen');
+        //     $this->load->view('templates/footer');
+        // }
         
 
         }
