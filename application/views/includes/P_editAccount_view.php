@@ -12,7 +12,7 @@
      <link rel="stylesheet" href="<?php echo base_url('assets/css/P_editAccountStyle.css');?>"/>
 
 
-     <title>Edit Business Account </title>
+     <title>Edit Private Account </title>
  </head>
  <body>
     <header> 
