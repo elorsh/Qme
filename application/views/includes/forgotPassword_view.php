@@ -39,7 +39,7 @@
             <input type="text" class="form-control" name="email" id="email" autocomplete="on" placeholder="example@gmail.com">
           </div>
 
-          <button type="submit" id="submit" class="btn btn" value="run"  >אפס לי את הסמסא </button>
+          <button type="submit" id="submit" class="btn btn" value="run"  >אפס לי את הסיסמא </button>
 
           <div id="error"></div>
           <div id="done"></div>
