@@ -77,7 +77,7 @@ class P_Users extends CI_Controller{
          $check=$this->P_Users_model->auth($data);
        
          if ($check==null){
-            $data['error']='כתובת האימייל או הסיסמה לא נכונים :( , בידקו זאת ונסו שוב.';
+            $data['error']='כתובת האימייל או הסיסמה לא נכונים :(  בידקו זאת ונסו שוב.';
             $this->login($data['error']);
          }
          else{

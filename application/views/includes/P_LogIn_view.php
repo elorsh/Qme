@@ -38,8 +38,8 @@
           </div>
 
           <div class="form-group">
-            <label for="password">סיסמא:</label>
-            <input type="text" class="form-control" name="u_password" id="lName" autocomplete="on" placeholder="******** ">
+            <label for="password">סיסמה:</label>
+            <input type="password" class="form-control" name="u_password" id="lName" autocomplete="on" placeholder="******** ">
           </div>
 
           <button type="submit" id="submit" class="btn btn" value="run">התחבר! </button>
