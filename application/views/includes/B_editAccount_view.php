@@ -36,37 +36,37 @@
 
         <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם בעל העסק:</label>
-          <input type="text" class="form-control" id="validationCustom01" placeholder="שם פרטי ומשפחה" >
+          <input type="text" class="form-control" name="b_full_name" id="validationCustom01" placeholder="שם פרטי ומשפחה" >
         </div>
 
         <div class="col-md-4">
           <label for="validationCustom02" class="form-label">טלפון בעל העסק:</label>
-          <input type="tel" class="form-control" id="validationCustom02" placeholder="000-0000000" >
+          <input type="tel" class="form-control" name="b_phone1" id="validationCustom02" placeholder="000-0000000" >
         </div>
 
         <div class="col-md-4" >
             <label for="validationCustom01" class="form-label" >שם בית העסק:</label>
-            <input type="text" class="form-control" id="validationCustom03" placeholder="שם בית העסק" >
+            <input type="text" class="form-control" name="b_business_name" id="validationCustom03" placeholder="שם בית העסק" >
           </div>
 
           <div class="col-md-4" >
             <label for="validationCustom01" class="form-label" >ח.פ / ת.ז  :</label>
-            <input type="text" class="form-control" id="validationCustom04" placeholder="ח.פ/ת.ז" >             
+            <input type="text" class="form-control" name="b_id" id="validationCustom04" placeholder="ח.פ/ת.ז" >             
           </div>
 
         <div class="col-md-4">
             <label for="validationCustom02" class="form-label">כתובת :</label>
-            <input type="text" class="form-control" id="validationCustom05" placeholder="עיר ,רחוב ,מספר בית" >
+            <input type="text" class="form-control" name="b_address" id="validationCustom05" placeholder="עיר ,רחוב ,מספר בית" >
           </div>
 
           <div class="col-md-4">
             <label for="validationCustom02" class="form-label">טלפון נוסף :</label>
-            <input type="tel" class="form-control" id="validationCustom06" placeholder="000-0000000" >
+            <input type="tel" class="form-control" name="b_phone2" id="validationCustom06" placeholder="000-0000000" >
           
           </div>
           <div class="col-md-4">
             <label for="validationCustom04" class="form-label">תחום עיסוק:</label>
-            <select class="form-select" id="validationCustom07" >
+            <select class="form-select"  name="b_profession" id="validationCustom07" >
               <option selected disabled value="">תחום עיסוק</option>
               <option>עיצוב שיער</option>
               <option>לק ג'ל</option>
@@ -78,14 +78,14 @@
 
         <div class="col-md-4">
           <label for="validationCustom03" class="form-label" >אימייל:</label>
-          <input type="email" class="form-control"  id="validationCustom08" placeholder="example@gmail.com" >
+          <input type="email" class="form-control"  name="b_email" id="validationCustom08" placeholder="example@gmail.com" >
     
         </div>
         
 
         <div class="col-md-4">
           <label for="validationCustom05" class="form-label"> שינוי תמונה:</label>
-          <input type="file" class="form-control"  id="validationCustom11" accept="image/png, image/jpeg" >
+          <input type="file" class="form-control" name="b_photo" id="validationCustom11" accept="image/png, image/jpeg" >
           
         </div>
 

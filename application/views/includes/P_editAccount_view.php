@@ -36,24 +36,24 @@
 
         <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם מלא :</label>
-          <input type="text" class="form-control" id="validationCustom01" placeholder="שם פרטי ומשפחה" >
+          <input type="text" class="form-control" name="u_full_name" id="validationCustom01" placeholder="שם פרטי ומשפחה" >
         </div>
 
         <div class="col-md-2">
           <label for="validationCustom02" class="form-label">טלפון  :</label>
-          <input type="tel" class="form-control" id="validationCustom02" placeholder="000-0000000" >
+          <input type="tel" class="form-control" name="u_phone1" id="validationCustom02" placeholder="000-0000000" >
         </div>
 
         
 
         <div class="col-md-3">
             <label for="validationCustom02" class="form-label">כתובת :</label>
-            <input type="text" class="form-control" id="validationCustom05" placeholder="עיר ,רחוב ,מספר בית" >
+            <input type="text" class="form-control" name="u_address" id="validationCustom05" placeholder="עיר ,רחוב ,מספר בית" >
           </div>
 
         <div class="col-md-3">
           <label for="validationCustom03" class="form-label" >אימייל:</label>
-          <input type="email" class="form-control"  id="validationCustom08" placeholder="example@gmail.com" >
+          <input type="email" class="form-control" name="u_email" id="validationCustom08" placeholder="example@gmail.com" >
     
         </div>
         
