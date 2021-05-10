@@ -36,49 +36,49 @@
 
         <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם בעל העסק:</label>
-          <input type="text" class="form-control" id="validationCustom01" placeholder="שם פרטי ומשפחה" required>
+          <input type="text" class="form-control"  name="b_full_name" id="validationCustom01" placeholder="שם פרטי ומשפחה" required>
           <div class="valid-feedback">
             שם תקין
           </div>
         </div>
         <div class="col-md-4">
           <label for="validationCustom02" class="form-label">טלפון בעל העסק:</label>
-          <input type="tel" class="form-control" id="validationCustom02" placeholder="000-0000000" required>
+          <input type="tel" class="form-control" name="b_phone1" id="validationCustom02" placeholder="000-0000000" required>
           <div class="valid-feedback">
            מספר טלפון תקין 
           </div>
         </div>
         <div class="col-md-4" >
             <label for="validationCustom03" class="form-label" >שם בית העסק:</label>
-            <input type="text" class="form-control" id="validationCustom03" placeholder="שם בית העסק" required>
+            <input type="text" class="form-control"  name="b_business_name" id="validationCustom03" placeholder="שם בית העסק" required>
             <div class="valid-feedback">
               שם בית העסק תקין
             </div>
           </div>
           <div class="col-md-4" >
             <label for="validationCustom04" class="form-label" >ח.פ / ת.ז  :</label>
-            <input type="text" class="form-control" id="validationCustom04" placeholder="ח.פ/ת.ז" required>
+            <input type="text" class="form-control"  name="b_id" id="validationCustom04" placeholder="ח.פ/ת.ז" required>
             <div class="valid-feedback">
               מספר תקין
             </div>
           </div>
         <div class="col-md-4">
             <label for="validationCustom05" class="form-label">כתובת :</label>
-            <input type="text" class="form-control" id="validationCustom05" placeholder="עיר ,רחוב , מספר בית" required>
+            <input type="text" class="form-control"  name="b_address" id="validationCustom05" placeholder="עיר ,רחוב , מספר בית" required>
             <div class="valid-feedback">
               כתובת תקינה
             </div>
           </div>
           <div class="col-md-4">
             <label for="validationCustom06" class="form-label">טלפון נוסף :</label>
-            <input type="tel" class="form-control" id="validationCustom06" placeholder="000-0000000" required>
+            <input type="tel" class="form-control" name="b_phone2" id="validationCustom06" placeholder="000-0000000" required>
             <div class="valid-feedback">
              מספר טלפון תקין 
             </div>
           </div>
           <div class="col-md-3">
             <label for="validationCustom07" class="form-label">תחום עיסוק:</label>
-            <select class="form-select" id="validationCustom07" required>
+            <select class="form-select" name="b_profession" id="validationCustom07" required>
               <option selected disabled value="">תחום עיסוק</option>
               <option>עיצוב שיער</option>
               <option>לק ג'ל</option>
@@ -92,7 +92,7 @@
 
         <div class="col-md-3">
           <label for="validationCustom08" class="form-label" >אימייל:</label>
-          <input type="email" class="form-control"  id="validationCustom08" placeholder="example@gmail.com" required>
+          <input type="email" class="form-control"  name="b_email" id="validationCustom08" placeholder="example@gmail.com" required>
           <div class="invalid-feedback">
             אנא הזן כתובת איימיל תקינה
           </div>
@@ -116,7 +116,7 @@
 
         <div class="col-md-3">
           <label for="validationCustom11" class="form-label"> העלת תמונה:</label>
-          <input type="file" class="form-control"  id="validationCustom11" accept="image/png, image/jpeg" required>
+          <input type="file" class="form-control"  name="b_photo" id="validationCustom11" accept="image/png, image/jpeg" required>
           <div class="invalid-feedback">
            יש לעלות תמונה של בית העסק 
           </div>

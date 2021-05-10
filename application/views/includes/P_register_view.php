@@ -30,21 +30,21 @@
     <form  dir="rtl"  class="row g-3 needs-validation"   onsubmit="matchPassword()"  novalidate>
         <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם מלא:</label>
-          <input type="text" class="form-control" id="validationCustom01" placeholder="שם פרטי ומשפחה" required>
+          <input type="text" class="form-control" name="u_full_name"  id="validationCustom01" placeholder="שם פרטי ומשפחה" required>
           <div class="valid-feedback">
             שם מלא תקין
           </div>
         </div>
         <div class="col-md-4">
           <label for="validationCustom02" class="form-label">טלפון:</label>
-          <input type="tel" class="form-control" id="validationCustom02" placeholder="000-0000000" required>
+          <input type="tel" class="form-control"  name="u_phone" id="validationCustom02" placeholder="000-0000000" required>
           <div class="valid-feedback">
            מספר טלפון תקין 
           </div>
         </div>
         <div class="col-md-4">
             <label for="validationCustom03" class="form-label">עיר מגורים:</label>
-            <input type="text" class="form-control" id="validationCustom03" placeholder="עיר מגורים" required>
+            <input type="text" class="form-control"  name="u_address" id="validationCustom03" placeholder="עיר מגורים" required>
             <div class="valid-feedback">
               עיר מגורים תקינה
             </div>
@@ -52,7 +52,7 @@
         
         <div class="col-md-6">
           <label for="validationCustom04" class="form-label" >אימייל:</label>
-          <input type="email" class="form-control"  id="validationCustom04" placeholder="example@gmail.com" required>
+          <input type="email" class="form-control"  name="u_email"  id="validationCustom04" placeholder="example@gmail.com" required>
           <div class="invalid-feedback">
             אנא הזן כתובת איימיל תקינה
           </div>
