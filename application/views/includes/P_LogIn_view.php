@@ -29,12 +29,12 @@
 
         <div class="form-group ">
             <label for="email">אימייל : </label>
-            <input type="text" class="form-control" name="u_email" id="fName" autocomplete="on" placeholder="example@gmail.com">
             <?php 
           if (isset($error)) {
-            echo '<br>'.$error;
+            echo '<br> <p style="color=red">'.$error.'</p>';
           }
           ?>
+            <input type="text" class="form-control" name="u_email" id="fName" autocomplete="on" placeholder="example@gmail.com">
           </div>
 
           <div class="form-group">
