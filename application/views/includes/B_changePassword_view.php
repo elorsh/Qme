@@ -32,16 +32,16 @@
 
         <div class="form-group">
             <label for="pass1">סיסמא נוכחית : </label>
-            <input type="text" class="form-control" name="password1" id="pass1" minlength="8" autocomplete="on" placeholder="סיסמא נוכחית">
+            <input type="password" class="form-control" name="password1" id="pass1" minlength="8" autocomplete="on" placeholder="סיסמא נוכחית">
           </div>
 
           <div class="form-group">
             <label for="pass2">סיסמה חדשה:</label>
-            <input type="text" class="form-control" name="password2" id="pass2"  minlength="8" autocomplete="on" placeholder="סיסמא חדשה">
+            <input type="password" class="form-control" name="password2" id="pass2"  minlength="8" autocomplete="on" placeholder="סיסמא חדשה">
           </div>
           <div class="form-group">
             <label for="pass3">אימות סיסמה :</label>
-            <input type="text" class="form-control" name="password3" id="pass3" minlength="8" autocomplete="on" placeholder="אימות סיסמא חדשה">
+            <input type="password" class="form-control" name="password3" id="pass3" minlength="8" autocomplete="on" placeholder="אימות סיסמא חדשה">
           </div>
 
           <button type="submit" id="submit" class="btn btn" value="run" >שינוי סיסמה </button>
