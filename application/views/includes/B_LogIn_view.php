@@ -26,12 +26,12 @@
 
         <div class="form-group ">
             <label for="email">אימייל : </label>
-            <input type="text" class="form-control" name="fName" id="fName" autocomplete="on" placeholder="example@gmail.com">
+            <input type="text" class="form-control" name="b_full_name" id="fName" autocomplete="on" placeholder="example@gmail.com">
           </div>
 
           <div class="form-group">
             <label for="password">סיסמא:</label>
-            <input type="text" class="form-control" name="pass" id="pass" autocomplete="on" placeholder="******** ">
+            <input type="text" class="form-control" name="b_password" id="pass" autocomplete="on" placeholder="******** ">
           </div>
 
           <button type="submit" id="submit" class="btn btn" value="run">התחבר! </button>
