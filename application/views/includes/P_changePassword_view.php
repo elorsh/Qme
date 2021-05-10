@@ -26,7 +26,7 @@
      <p class="back">חזור</p>
 
      <h4>שינוי סיסמה</h4>
-     <p  dir="rtl">שמור על סיסמה שלך בעזרת סיסמה חזקה :)</p>
+     <p  dir="rtl">שמור על הסיסמה שלך בעזרת סיסמה חזקה :)</p>
 
     <form  dir="rtl"  onsubmit="return validationForm()">
 

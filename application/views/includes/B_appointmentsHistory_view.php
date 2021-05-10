@@ -51,9 +51,11 @@
                     </ul>
                 </div>
             </nav>
+     
+     <?php
+     echo '  <h4 class="headline2">'.$object->b_business_name.'</h4>';
 
-     <h4 class="headline">Yoga with Shaigul</h4>
-     <h5>חן כהן</h5>
+    ?>
 
 <div class="table-container">
 
