@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+
+}
+
+body{
+    position: relative;
+    font-family: 'Varela Round', sans-serif;
+    background: url('../css/img/background.jpeg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+header{
+    align-items: center;
+    justify-content: center;
+    margin:0px;
+    margin-bottom: 15px;
+
+}
+#logo{
+    position: relative;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    height: 200px;
+}
+.fas.fa-share{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 35px;
+    cursor: pointer;
+}
+.back{
+    position: absolute;
+    right: 15px;
+    top: 45px;
+    font-size: 15px;
+    font-weight: bold;
+}
+h4{
+    display: block;
+    margin: auto;
+    margin-top: 15px !important;
+    font-size: 38px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+h5{
+    display: block;
+    margin: auto;
+    margin-top: 20px !important;
+    margin-bottom: 7px!important;
+    font-size: 27px;
+    text-align: center;
+}
+
+.business-container{
+    background-color: rgb(212, 184, 131);
+    display: block;
+    margin: auto;
+    margin-top: 15px !important;
+    margin-bottom: 20px !important;
+    padding-bottom: 15px !important;
+}
+
+.business-name{
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: right;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+}
+.business-details{
+    display: block;
+    margin-top: 10px;
+    margin-right: 25px;
+    text-align: right;
+    font-size: 17px;
+}
+.business-address{
+    display: block;
+    margin-top: 10px;
+    margin-right: 25px;
+    text-align: right;
+    font-size: 15px;
+}
+
+.link-to.calender{
+    display: block;
+    margin: auto;
+    margin-top: 15px !important;
+    margin-right: 20px !important;
+    text-align: right;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+}
+
+.link-to.Waze{
+    display: block;
+    margin: auto;
+    margin-top: 15px !important;
+    margin-right: 20px !important;
+    text-align: right;    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+}
+.link-to.calender:hover{
+    color: white;
+}
+.link-to.Waze:hover{
+    color: white;
+}
+.link-to.phone:hover{
+    color: white;
+}
+
+.link-to.phone{
+    display: block;
+    margin: auto;
+    margin-top: 15px !important;
+    margin-right: 20px !important;
+    text-align: right;    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
