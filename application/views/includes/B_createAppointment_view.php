@@ -61,10 +61,7 @@
             <label for="time1">שעת התחלה :</label>
             <input type="time" class="form-control" name="time" id="time" required>
           </div>
-          <div class="form-group">
-            <label for="time2">שעת סיום :</label>
-            <input type="time" class="form-control" name="time" id="time" required>
-          </div>
+    
 
           <button type="submit" id="submit" class="btn btn" value="run">עדכן במערכת את התור </button>
           <div id="done"></div>

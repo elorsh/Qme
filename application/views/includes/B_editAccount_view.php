@@ -91,7 +91,7 @@
 
 
         <div class="col-12">
-          <button class="btn btn" id="submit" type="submit" onclick="document.location='#'" >שינוי סיסמא</button>
+          <button class="btn btn" id="submit" type="submit" onclick="document.location='#'" >שינוי סיסמה</button>
         </div>
       </form>
      </div>
