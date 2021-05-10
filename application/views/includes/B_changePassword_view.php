@@ -25,8 +25,8 @@
      <i class="fas fa-share" onclick="document.location='#'"></i>
      <p class="back">חזור</p>
 
-     <h4>שינוי סיסמא</h4>
-     <p  dir="rtl">שמור על הסיסמא שלך בעזרת סיסמא חזקה :)</p>
+     <h4>שינוי סיסמה</h4>
+     <p  dir="rtl">שמור על הסיסמא שלך בעזרת סיסמה חזקה :)</p>
 
     <form  dir="rtl"  onsubmit="return validationForm()">
 
@@ -36,15 +36,15 @@
           </div>
 
           <div class="form-group">
-            <label for="pass2">סיסמא חדשה:</label>
+            <label for="pass2">סיסמה חדשה:</label>
             <input type="text" class="form-control" name="password2" id="pass2"  minlength="8" autocomplete="on" placeholder="סיסמא חדשה">
           </div>
           <div class="form-group">
-            <label for="pass3">אימות סיסמא :</label>
+            <label for="pass3">אימות סיסמה :</label>
             <input type="text" class="form-control" name="password3" id="pass3" minlength="8" autocomplete="on" placeholder="אימות סיסמא חדשה">
           </div>
 
-          <button type="submit" id="submit" class="btn btn" value="run" >שינוי סיסמא </button>
+          <button type="submit" id="submit" class="btn btn" value="run" >שינוי סיסמה </button>
           
           <div id="done"></div>
           
