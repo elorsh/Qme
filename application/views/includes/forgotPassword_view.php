@@ -28,7 +28,7 @@
      <i class="fas fa-share" onclick="document.location='#'"></i>
      <p class="back">חזור</p>
 
-     <h4   dir="rtl" >שכחת את הסמסא?</h4>
+     <h4   dir="rtl" >שכחת את סיסמה?</h4>
      <h5  dir="rtl" >לא נורא! נאפס אותך בקליק</h5>
 
 
@@ -39,7 +39,7 @@
             <input type="text" class="form-control" name="email" id="email" autocomplete="on" placeholder="example@gmail.com">
           </div>
 
-          <button type="submit" id="submit" class="btn btn" value="run"  >אפס לי את הסיסמא </button>
+          <button type="submit" id="submit" class="btn btn" value="run"  >אפס לי את סיסמה </button>
 
           <div id="error"></div>
           <div id="done"></div>
