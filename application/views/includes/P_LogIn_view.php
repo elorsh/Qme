@@ -28,14 +28,13 @@
     <form method="post" action="<?php echo site_url('P_Users/auth')?>"dir="rtl">
 
         <div class="form-group ">
-          <?php 
-          if (isset($error)) {
-            echo $error;
-          }
-          ?>
-
             <label for="email">אימייל : </label>
             <input type="text" class="form-control" name="u_email" id="fName" autocomplete="on" placeholder="example@gmail.com">
+            <?php 
+          if (isset($error)) {
+            echo '<br>'.$error;
+          }
+          ?>
           </div>
 
           <div class="form-group">
