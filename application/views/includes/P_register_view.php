@@ -68,7 +68,7 @@
 
         <div class="col-md-3">
           <label for="validationCustom06" class="form-label">אימות סיסמה:</label>
-          <input type="text" class="form-control" name="u_password"  id="validationCustom06" minlength="8" placeholder="********" required>
+          <input type="text" class="form-control" name="confirm_u_password"  id="validationCustom06" minlength="8" placeholder="********" required>
           <div class="invalid-feedback">
             יש להזין סיסמה בת 8 ספרות לפחות
           </div>
