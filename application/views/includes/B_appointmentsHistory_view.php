@@ -14,7 +14,7 @@
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-     <title>Appointments History- Business side</title>
+     <title>Appointments History- Business </title>
  </head>
  <body>
     <header> 
