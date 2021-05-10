@@ -103,29 +103,6 @@ h4{
 
 }
 
-.btnSearch{
-    display: block;
-    margin: auto;
-    text-align: center;
-    background-color: rgb(164, 201, 117);
-    padding: 2px 20px;
-    font-size: 22px;
-    border: 1px solid white;
-    cursor: pointer;
-    margin-top: 8px !important;
-    margin-bottom: 20px !important;
-}
-
-.btnSearch:focus{
-    outline: none;
-}
-.btnSearch:hover{
-    color: white;
-}
-
-
-
-
 
 
 

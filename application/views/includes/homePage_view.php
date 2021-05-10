@@ -41,7 +41,6 @@
       </div>
      
       
-     <button class="btnSearch" type="submit" onclick="document.location='#'"> <i class="fas fa-location-arrow"></i> או צפה במקומות באיזור שלי </button>
 
 
    
