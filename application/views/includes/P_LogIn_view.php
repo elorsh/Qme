@@ -31,7 +31,7 @@
             <label for="email">אימייל : </label>
             <?php 
           if (isset($error)) {
-            echo '<br> <p style="color=red">'.$error.'</p>';
+            echo '<br> <p style="color:red">'.$error.'</p>';
           }
           ?>
             <input type="text" class="form-control" name="u_email" id="fName" autocomplete="on" placeholder="example@gmail.com">
