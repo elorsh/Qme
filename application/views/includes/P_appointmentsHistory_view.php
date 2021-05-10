@@ -59,44 +59,24 @@
         <thead>
           <tr>
             <th scope="col" > תאריך</th>
-            <th scope="col">ש.התחלה</th>
-            <th scope="col">ש.סיום </th>
+            <th scope="col">שעת התחלה</th>
             <th scope="col">בית העסק</th>
 
           </tr>
         </thead>
         <tbody>
-            <tr>
-                <td >22/02/2021</td>
-                <td>12:00</td>
-                <td>13:00</td>
-                <td>אורית - לק ג'ל</td>
-              </tr>
-          <tr>
-            <td >13/03/2021</td>
-            <td>15:00</td>
-            <td>15:30</td>
-            <td>ג'וני עיצוב שיער</td>
-          </tr>
-          <tr>
-            <td >15/03/2021</td>
-            <td>10:00</td>
-            <td>11:30</td>
-            <td>Yoga with Shaigul</td>
-          </tr>
-          <tr>
-            <td >20/03/2021</td>
-            <td>19:00</td>
-            <td>19:30</td>
-            <td>אורטל -קוסמטיקאית</td>
-          </tr>
-  
-          <tr>
-            <td >22/03/2021</td>
-            <td>20:00</td>
-            <td>21:00</td>
-            <td>Yoga with Shaigul</td>
-          </tr>
+        <?php
+          foreach($result as $object){
+           
+            echo "<tr>";
+            echo '<th scope="col">'.$object->a_date.'</th>';
+            echo '<th scope="col">'.$object->a_time.'</th>';
+            echo '<th scope="col">'.$object->b_full_name.'</th>';
+\\            echo "</tr>";
+          }
+
+          ?>
+
         </tbody>
       </table>
     
