@@ -37,8 +37,7 @@
           <button type="submit" id="submit" class="btn btn" value="run">התחבר! </button>
 </form>
 
-<p  class="forgetPass" dir="rtl" >שכחת את הסיסמא?</p>
-<button type="submit" id="forgetBtn" class="forgetBtn" value="run" onclick="document.location='forgotPassword.html'">איפוס סיסמא </button>
+
 
 <div id="clear"></div>
 
