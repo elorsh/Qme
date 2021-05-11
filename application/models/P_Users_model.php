@@ -32,9 +32,6 @@ class P_Users_model extends CI_Model {
     }
 
 
-
-// -------------------------------------------------
-
     public function save($data){
         //set flag in order to avoid showing php errors
         $this->db->db_debug = FALSE; 
@@ -44,6 +41,11 @@ class P_Users_model extends CI_Model {
         }
         return $error;
      }
+
+
+// -------------------------------------------------
+
+
 
      public function auth($data){
         $query = $this->db->get_where('DB_users', $data);
