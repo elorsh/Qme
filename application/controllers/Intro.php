@@ -15,8 +15,17 @@ class Intro extends CI_Controller{
     
 
         }
-    public function go_to_login(){
+    public function go_to_p_login(){
         $this->load->view('includes/P_LogIn_view');
+        }
+    public function go_to_p_register(){
+        $this->load->view('includes/P_register_view');
+        }
+    public function go_to_b_login(){
+        $this->load->view('includes/B_LogIn_view');
+        }
+    public function go_to_b_register(){
+        $this->load->view('includes/B_register_view');
         }
     }
 

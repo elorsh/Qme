@@ -26,7 +26,7 @@
  </body>
  <script>
      document.getElementById("login").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_login');?>"
+         window.location.href="<?php echo site_url('Intro/go_to_p_login');?>"
      }
  </script>
  </html>
