@@ -27,6 +27,16 @@
 
     <div class="createAccount">
    
+    <div style="color:red" id="info"><?php 
+        if ($info!=null)
+        {
+            echo '*'.$info['message'];         
+         }
+         ?>
+    </div>
+
+    <?php echo form_open('P_Users/insert_new_p_user'); ?>
+
     <form  dir="rtl"  class="row g-3 needs-validation"   onsubmit="matchPassword()"  novalidate>
         <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם מלא:</label>
@@ -88,6 +98,8 @@
           <button class="btn btn" id="submit" type="submit" onclick="matchPassword()"> צור חשבון</button>
         </div>
       </form>
+      <?php echo form_close(); ?>
+
           
     </div>
 
