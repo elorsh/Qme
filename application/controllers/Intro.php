@@ -27,6 +27,7 @@ class Intro extends CI_Controller{
     public function go_to_b_register(){
         $this->load->view('includes/B_register_view');
         }
+
     }
 
     
