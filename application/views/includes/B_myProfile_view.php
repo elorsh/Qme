@@ -33,17 +33,17 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">דף הבית <i class="fas fa-home"></i></a>
+                            <a id="homePage" class="nav-link active">דף הבית <i class="fas fa-home"></i></a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">מועדפים <i class="fas fa-heart"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
+                            <a id="B_myAppointments"  class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link">הפרופיל שלי <i class="fas fa-user-circle"></i></a>
+                            <a id="B_my_profile"  class="nav-link">הפרופיל שלי <i class="fas fa-user-circle"></i></a>
                         </li>
                 
                     </ul>
@@ -58,13 +58,13 @@
     ?>
 
     <p1>צפייה ועריכה של פרטי העסק שלי</p1>
-    <button class="btn"  id="submit" type="submit"  onclick="document.location='#'" > <i class="fas fa-cog"></i> פרטי העסק </button>
+    <button class="btn"  id="submit" id="account" type="submit" > <i class="fas fa-cog"></i> פרטי העסק </button>
 
     <p2> עדכון וצפייה בלוח התורים</p2>
-    <button class="btn appointment"  id="submit" type="submit"  onclick="document.location='#'"> <i class="far fa-calendar-alt"></i> הצג הכל </button>
+    <button class="btn appointment" id="appointments" id="submit" type="submit"  > <i class="far fa-calendar-alt"></i> הצג הכל </button>
 
     <p3>הלקוחות שלי</p3>
-    <button class="btn customers"  id="submit" type="submit"  onclick="document.location='#'"><i class="fas fa-child"></i> הצג הכל </button>
+    <button class="btn customers"  id="customers" id="submit" type="submit"><i class="fas fa-child"></i> הצג הכל </button>
     
 </div>
 
@@ -73,4 +73,25 @@
  
  
   </body>
+  <script>
+      document.getElementById("homePage").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_home_page');?>"
+     }
+     document.getElementById("B_myAppointments").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_b_appointments');?>"
+     }
+     document.getElementById("B_my_profile").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_b_myProfile');?>"
+     }
+     document.getElementById("account").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_b_myDetails');?>"
+     }
+     document.getElementById("appointments").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_b_appointments');?>"
+     }
+     document.getElementById("customers").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_b_myCustomers');?>"
+     }
+     
+  </script>
  </html>

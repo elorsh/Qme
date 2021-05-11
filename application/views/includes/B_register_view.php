@@ -134,15 +134,20 @@
         </div>
 
         <div class="col-12">
-          <button class="btn btn" id="submit" type="submit"> צור חשבון</button>
+          <button class="btn btn" id="submit" type="submit" > צור חשבון</button>
         </div>
       </form>
      </div>
 
-     <button class="btn btn change"  id="submit" type="submit" onclick="document.location='createPrivateAccount.html'" >  מעבר לחשבון פרטי</button>
+     <button class="btn btn change"  id="submit" id="toPrivate" type="submit" >  מעבר לחשבון פרטי</button>
 
 
       <script src="../javascript/createBussinessAccount.js"></script>
 
   </body>
- </html>
+  <script>
+     document.getElementById("toPrivate").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_private_account');?>"
+     }
+  </script>
+   </html>
