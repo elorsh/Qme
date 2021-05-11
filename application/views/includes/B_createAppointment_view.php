@@ -82,5 +82,6 @@
      document.getElementById("B_my_profile").onclick=function(){
          window.location.href="<?php echo site_url('Intro/go_to_b_myProfile');?>"
      }
+     
   </script>
  </html>
