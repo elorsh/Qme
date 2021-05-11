@@ -39,8 +39,11 @@ class Intro extends CI_Controller{
     public function go_to_b_create_appointment(){
             $this->load->view('includes/B_createAppointment_view');
         }
-        public function go_to_b_cancel_appointment(){
+    public function go_to_b_cancel_appointment(){
             $this->load->view('includes/B_cancelAppointment_view');
+        }
+    public function go_to_b_change_password(){
+            $this->load->view('includes/B_changePassword_view');
         }
         
     }

@@ -88,7 +88,7 @@
 
 
         <div class="col-12">
-          <button class="btn btn" id="submit" type="submit" onclick="document.location='#'" >שינוי סיסמה</button>
+          <button class="btn btn" id="submit" id="changePass" type="submit" >שינוי סיסמה</button>
         </div>
       </form>
      </div>
@@ -98,4 +98,11 @@
 
 
   </body>
+
+  <script>
+      document.getElementById("changePass").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/ go_to_b_change_password');?>"
+     }
+   
+  </script>
  </html>
