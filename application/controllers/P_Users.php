@@ -100,49 +100,49 @@ class P_Users extends CI_Controller{
 // ---------------------------------------------------------------- registrer
 public function register($info=null){
     $data['info']=$info;
-    $this->load->view('users/register',$data);
+    $this->load->view('includes/P_register_view',$data);
 }
-public function save_register(){
+public function insert_new_p_user(){
     //Validations
     //verify first name
-    $this->form_validation->set_rules('fname', 'First Name', 'required');
+    $this->form_validation->set_rules('u_full_name', 'First Name', 'required');
     if ($this->form_validation->run() == FALSE)
     {
-        $error= ['message'=>'First Name is a required field'];
-         $this->register($error);
-         return;
-    }
-
-    //verify last name
-    $this->form_validation->set_rules('lname', 'Last Name', 'required');
-    if ($this->form_validation->run() == FALSE)
-    {
-        $error= ['message'=>'Last Name is a required field'];
-         $this->register($error);
-         return;
-    }
-
-    //verify username + minimum 3 characters + maximum 15
-    $this->form_validation->set_rules('username', 'Username', array('required', 'min_length[3]','max_length[15]'));
-    if ($this->form_validation->run() == FALSE)
-    {
-        $error= ['message'=>'Username is a required field, must be 3-15 characters long!'];
+        $error= ['message'=>'יש להזין שם מלא'];
          $this->register($error);
          return;
     }
 
     //verify email is required + valid
-    $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
+    $this->form_validation->set_rules('u_email', 'Email', 'required|valid_email');
     if ($this->form_validation->run() == FALSE)
     {
-        $error= ['message'=>'Must enter a unique, valid Email address'];
+        $error= ['message'=>'יש להזין כתובת אימייל תקינה'];
+            $this->register($error);
+            return;
+    }
+
+    //verify phone number
+    $this->form_validation->set_rules('u_phone', 'phone', 'required');
+    if ($this->form_validation->run() == FALSE)
+    {
+        $error= ['message'=>'יש להזין מספר פלאפון'];
+         $this->register($error);
+         return;
+    }
+
+    //verify address maximum 30
+    $this->form_validation->set_rules('u_address', 'address', array('required','max_length[30]'));
+    if ($this->form_validation->run() == FALSE)
+    {
+        $error= ['message'=>'יש להזין עיר מגורים'];
          $this->register($error);
          return;
     }
 
     //verify that passwords match
-    $this->form_validation->set_rules('password', 'Password', 'required');
-    $this->form_validation->set_rules('confirmPassword', 'Password', 'required|matches[password]');
+    $this->form_validation->set_rules('u_password', 'Password', 'required');
+    $this->form_validation->set_rules('confirm_u_password', 'Password', 'required|matches[password]');
     if ($this->form_validation->run() == FALSE)
     {
         $error= ['message'=>'Password must match in both fields!'];
@@ -151,11 +151,11 @@ public function save_register(){
     }
 
     $data = array(
-        'fname' => $this->input->post('fname'),
-        'lname' => $this->input->post('lname'),
-        'email' => $this->input->post('email'), 
-        'username' => $this->input->post('username'),
-        'password' => md5($this->input->post('password'))
+        'u_full_name' => $this->input->post('u_full_name'),
+        'u_phone' => $this->input->post('u_phone'),
+        'u_address' => $this->input->post('u_address'), 
+        'u_email' => $this->input->post('u_email'),
+        'u_password' => $this->input->post('u_password')
      );
     
     $error=$this->users_model->save($data);
