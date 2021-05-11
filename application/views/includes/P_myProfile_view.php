@@ -23,8 +23,6 @@
     <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
      </header>
 
-    <i class="fas fa-share" onclick="document.location='privateLogIn.html'"></i>
-     <p class="back">חזור</p>
             <!----- The navigation menu ----->
 
             <nav class="navbar navbar-expand-sm">

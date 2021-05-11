@@ -24,9 +24,6 @@
     <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
      </header>
 
-      
-     <i class="fas fa-share" onclick="document.location='#'"></i>
-     <p class="back">חזור</p>
 
      <h4   dir="rtl" >שכחת את סיסמה?</h4>
      <h5  dir="rtl" >לא נורא! נאפס אותך בקליק</h5>

@@ -20,8 +20,6 @@
         <img id="logo" src= "../css/img/logo.png"/>
      </header>
 
-     <i class="fas fa-share" onclick="document.location='#'"></i>
-     <p class="back">חזור</p>
 
             <!----- The navigation menu ----->
 
