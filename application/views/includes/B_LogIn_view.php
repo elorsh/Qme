@@ -17,8 +17,8 @@
     <header> 
         <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>  
      </header>
-     <i class="fas fa-share" onclick="document.location='../index.html'"></i>
-     <p class="back">חזור</p>
+
+
      <h4>,אהלן שותף עסקי שלנו <br>
     בוא נתחבר</h4>
 
@@ -43,13 +43,19 @@
 
 <h3  dir="rtl" >עדיין לא עובדים ביחד?</h3>
 
-<button type="submit" id="createBtn" class="createBtn" value="run"  onclick="document.location='createBussinessAccount.html'">צור חשבון עסקי</button>
+<button type="submit" id="b_register" id="createBtn" class="createBtn" value="run"  onclick="document.location='createBussinessAccount.html'">צור חשבון עסקי</button>
 
 <div id="clear"></div>
 
-<button class="changeBtn"  id="submit" type="submit" onclick="document.location='privateLogIn.html'" >  מעבר לחשבון פרטי</button>
-
-     
+<button class="changeBtn"  id="p_login" id="submit" type="submit" onclick="document.location='privateLogIn.html'" >  מעבר לחשבון פרטי</button> 
  
  </body>
+ <script>
+     document.getElementById("b_register").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_b_register');?>"
+     }
+     document.getElementById("p_login").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_p_login');?>"
+     }
+ </script>
  </html>

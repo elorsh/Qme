@@ -21,8 +21,6 @@
           <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
      </header>
      
-     <i class="fas fa-share" onclick="document.location='#'"></i>
-     <p class="back">חזור</p>
             <!----- The navigation menu ----->
 
             <nav class="navbar navbar-expand-sm">
@@ -34,17 +32,17 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">דף הבית <i class="fas fa-home"></i></a>
+                            <a id="homePage" class="nav-link active">דף הבית <i class="fas fa-home"></i></a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">מועדפים <i class="fas fa-heart"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
+                            <a id="B_myAppointments" class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link">הפרופיל שלי <i class="fas fa-user-circle"></i></a>
+                            <a id="B_my_profile" class="nav-link">הפרופיל שלי <i class="fas fa-user-circle"></i></a>
                         </li>
                 
                     </ul>
@@ -53,10 +51,9 @@
 
      <h4 class="headline">עריכת תור קיים בעסק</h4>
 
-  
 
-     <p1><span><i1 class="far fa-calendar-check"  onclick="document.location='editTimeAndDate-Business.html'"></i1></span><i2 class="far fa-calendar-times"  onclick="document.location='cancelAppointmentBusiness.html'"></i2></p1>
-     <p2><span class="span2">ביטול תור</span><span class="span1">שינוי תאריך ושעה</span></p2>
+     <p1><span><i1 class="far fa-calendar-check" id="B_newAppointment"></i1></span><i2 class="far fa-calendar-times" id="B_cancelAppointment"></i2></p1>
+     <p2><span class="span2">ביטול תור</span><span class="span1">ביטול וקביעת תור חדש</span></p2>
 
     
    
@@ -67,4 +64,24 @@
  
  
   </body>
+  
+ <script>
+     document.getElementById("homePage").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_home_page');?>"
+     }
+     document.getElementById("B_myAppointments").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_b_appointments');?>"
+     }
+     document.getElementById("B_my_profile").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_b_myProfile');?>"
+     }
+     document.getElementById("B_newAppointment").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_b_create_appointment');?>"
+     }
+     document.getElementById("B_cancelAppointment").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_b_cancel_appointment');?>"
+     }
+     
+     
+ </script>
  </html>

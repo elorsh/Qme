@@ -19,8 +19,6 @@
         <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
      </header>
 
-     <i class="fas fa-share" onclick="document.location='myProfilePrivate.html'"></i>
-     <p class="back">חזור</p>
 
      <h4>הפרטים שלי</h4>
 

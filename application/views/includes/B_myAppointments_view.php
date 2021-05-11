@@ -23,8 +23,6 @@
 
      </header>
 
-     <i class="fas fa-share" onclick="document.location='#'"></i>
-     <p class="back">חזור</p>
 
             <!----- The navigation menu ----->
 

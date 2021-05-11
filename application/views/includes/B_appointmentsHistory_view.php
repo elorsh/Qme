@@ -20,9 +20,6 @@
     <header> 
         <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
      </header>
-
-     <i class="fas fa-share" onclick="document.location='#'"></i>
-     <p class="back">חזור</p>
      
             <!----- The navigation menu ----->
 
