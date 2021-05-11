@@ -19,7 +19,7 @@
      </header>
      <i class="fas fa-share" onclick="document.location='../index.html'"></i>
      <p class="back">חזור</p>
-     <h4>,התגעגענו <br>
+     <h4>,אהלן שותף עסקי שלנו <br>
     בוא נתחבר</h4>
 
     <form  dir="rtl" onsubmit="#" >
