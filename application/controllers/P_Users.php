@@ -96,7 +96,7 @@ class P_Users extends CI_Controller{
 }
 
 
-public function new_user(){
+public function insert_new_p_user(){
     $data = array(
         'u_full_name' => $this->input->post('u_full_name'),
         'u_phone' => $this->input->post('u_phone'),
@@ -104,7 +104,7 @@ public function new_user(){
         'u_email' => $this->input->post('u_email'),
         'u_password' => $this->input->post('u_password')
      );
-     $this->intro_model->save_user($data);
+     $this->P_Users_model->insert_user($data);
 
     //  $reg = 'Registered Successfully! Please Log In to complete the process.';
     //  $this->login($reg);

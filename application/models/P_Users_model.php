@@ -42,8 +42,8 @@ class P_Users_model extends CI_Model {
     //     return $error;
     //  }
 
-    public function save_user($data){
-        $this->db->insert('users', $data);
+    public function insert_user($data){
+        $this->db->insert('DB_users', $data);
     }
 
 // -------------------------------------------------
