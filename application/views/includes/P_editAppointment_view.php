@@ -32,17 +32,17 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">דף הבית <i class="fas fa-home"></i></a>
+                            <a id="homePage"  class="nav-link active">דף הבית <i class="fas fa-home"></i></a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">מועדפים <i class="fas fa-heart"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
+                            <a id="P_myAppointments"   class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link">הפרופיל שלי <i class="fas fa-user-circle"></i></a>
+                            <a id="P_my_profile" class="nav-link">הפרופיל שלי <i class="fas fa-user-circle"></i></a>
                         </li>
                 
                     </ul>
@@ -53,8 +53,8 @@
 
   
 
-     <p1><span><i1 class="far fa-calendar-check"  onclick="document.location='editTimeAndDate.html'"></i1></span><i2 class="far fa-calendar-times"  onclick="document.location='cancelAppointment.html'"></i2></p1>
-     <p2><span class="span2">ביטול תור</span><span class="span1">שינוי תאריך ושעה</span></p2>
+     <p1><span><i1 class="far fa-calendar-check" id="P_newAppointment"></i1></span><i2 class="far fa-calendar-times"  id="P_cancelAppointment"></i2></p1>
+     <p2><span class="span2">ביטול תור</span><span class="span1">ביטול וקביעת תור חדש </span></p2>
 
     
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -62,4 +62,22 @@
  
  
   </body>
+  <script>
+      document.getElementById("homePage").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_home_page');?>"
+     }
+     document.getElementById("P_myAppointments").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_P_appointments');?>"
+     }
+     document.getElementById("P_my_profile").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_P_myProfile');?>"
+     }
+     document.getElementById("P_newAppointment").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_P_create_appointment');?>"
+     }
+     document.getElementById("P_cancelAppointment").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_P_cancel_appointment');?>"
+     }
+     
+  </script>
  </html>
