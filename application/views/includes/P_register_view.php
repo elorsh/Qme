@@ -23,7 +23,7 @@
      <h5   dir="rtl" >אז אנחנו Qme :) <br>
     ואתם?</h5> 
 
-    <div class="createAccount">
+    <div dir="rtl" class="createAccount">
    
     <!-- <div style="color:red" id="info">
       <?php 
