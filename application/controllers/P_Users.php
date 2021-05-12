@@ -106,8 +106,8 @@ public function insert_new_p_user(){
      );
      $this->P_Users_model->insert_user($data);
 
-    //  $reg = 'Registered Successfully! Please Log In to complete the process.';
-    //  $this->login($reg);
+     $reg = 'Registered Successfully! Please Log In to complete the process.';
+     $this->login($reg);
     }
     
 
