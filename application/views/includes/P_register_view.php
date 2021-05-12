@@ -34,9 +34,10 @@
       ?>
     </div> -->
 
-    <?php echo form_open('P_Users/insert_new_p_user'); ?>
+    <!-- <?php echo form_open('P_Users/insert_new_p_user'); ?> -->
 
-    <form  dir="rtl"  class="row g-3 needs-validation"   onsubmit="matchPassword()"  novalidate>
+    <form  dir="rtl"  class="row g-3 needs-validation" method="post" action="<?php echo site_url('P_Users/insert_new_p_user');?>" onsubmit="matchPassword()"  novalidate>
+    
         <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם מלא:</label>
           <input type="text" class="form-control" name="u_full_name"  id="validationCustom01" placeholder="שם פרטי ומשפחה" required>
@@ -69,7 +70,7 @@
         
         <div class="col-md-3">
             <label for="validationCustom05" class="form-label">סיסמה:</label>
-            <input type="text" class="form-control" name="u_password" id="validationCustom05"  placeholder="********" minlength="8" required>
+            <input type="text" class="form-control" name="u_password" id="validationCustom05"  placeholder="********" minlength="6" required>
             <div class="invalid-feedback">
               יש להזין סיסמה בת 8 ספרות לפחות
             </div>
@@ -77,9 +78,9 @@
 
         <div class="col-md-3">
           <label for="validationCustom06" class="form-label">אימות סיסמה:</label>
-          <input type="text" class="form-control" name="confirm_u_password"  id="validationCustom06" minlength="8" placeholder="********" required>
+          <input type="text" class="form-control" name="confirm_u_password"  id="validationCustom06" minlength="6" placeholder="********" required>
           <div class="invalid-feedback">
-            יש להזין סיסמה בת 8 ספרות לפחות
+            יש להזין סיסמה בת 6 ספרות לפחות
           </div>
         </div>
         <div class="col-12">
@@ -97,7 +98,10 @@
           <button class="btn btn" id="submit" type="submit" onclick="matchPassword()"> צור חשבון</button>
         </div>
       </form>
-      <?php echo form_close(); ?>
+
+
+
+      <!-- <?php echo form_close(); ?> -->
 
           
     </div>
