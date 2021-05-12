@@ -70,7 +70,7 @@
         
         <div class="col-md-3">
             <label for="validationCustom05" class="form-label">סיסמה:</label>
-            <input type="text" class="form-control" name="u_password" id="validationCustom05"  placeholder="********" minlength="6" required>
+            <input type="password" class="form-control" name="u_password" id="validationCustom05"  placeholder="********" minlength="6" required>
             <div class="invalid-feedback">
               יש להזין סיסמה בת 8 ספרות לפחות
             </div>
@@ -78,7 +78,7 @@
 
         <div class="col-md-3">
           <label for="validationCustom06" class="form-label">אימות סיסמה:</label>
-          <input type="text" class="form-control" name="confirm_u_password"  id="validationCustom06" minlength="6" placeholder="********" required>
+          <input type="password" class="form-control" name="confirm_u_password"  id="validationCustom06" minlength="6" placeholder="********" required>
           <div class="invalid-feedback">
             יש להזין סיסמה בת 6 ספרות לפחות
           </div>
