@@ -32,17 +32,17 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">דף הבית <i class="fas fa-home"></i></a>
+                            <a  id="homePage" class="nav-link active">דף הבית <i class="fas fa-home"></i></a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">מועדפים <i class="fas fa-heart"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
+                            <a  id="P_myAppointments" class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link">הפרופיל שלי <i class="fas fa-user-circle"></i></a>
+                            <a id="P_my_profile" class="nav-link">הפרופיל שלי <i class="fas fa-user-circle"></i></a>
                         </li>
                 
                     </ul>
@@ -86,4 +86,16 @@
  
  
   </body>
+  <script>
+      document.getElementById("homePage").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_home_page');?>"
+     }
+     document.getElementById("P_myAppointments").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_P_appointments');?>"
+     }
+     document.getElementById("P_my_profile").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_P_myProfile');?>"
+     }
+     
+  </script>
  </html>

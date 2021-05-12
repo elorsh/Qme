@@ -54,7 +54,13 @@ class Intro extends CI_Controller{
     public function go_to_private_account(){
             $this->load->view('includes/P_LogIn_view');
         }
-
+// private
+    public function go_to_P_appointments(){
+    $this->load->view('includes/P_myAppointments_view');
+    }
+    public function go_to_P_myProfile(){
+        $this->load->view('includes/P_myProfile_view');
+        }
 
         
         
