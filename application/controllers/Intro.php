@@ -67,6 +67,11 @@ class Intro extends CI_Controller{
     public function go_to_P_cancel_appointment(){
         $this->load->view('includes/P_cancelAppointment_view');
     }
+    public function go_to_P_myDetails(){
+        $this->load->view('includes/P_editAccount_view');
+    }
+  
+   
 
         
         

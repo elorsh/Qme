@@ -34,17 +34,17 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">דף הבית <i class="fas fa-home"></i></a>
+                            <a id="homePage" class="nav-link active">דף הבית <i class="fas fa-home"></i></a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">מועדפים <i class="fas fa-heart"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
+                            <a id="P_myAppointments" class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link">הפרופיל שלי <i class="fas fa-user-circle"></i></a>
+                            <a  id="P_my_profile"  class="nav-link">הפרופיל שלי <i class="fas fa-user-circle"></i></a>
                         </li>
                 
                     </ul>
@@ -56,11 +56,12 @@
      <h4> היי, טוב לראות אותך</h4>
 
     <p1>צפייה ועריכה של הפרטיים האישיים שלך</p1>
-    <button class="btn"  id="submit" type="submit"  onclick="document.location='editPrivateAccount.html'" > <i class="fas fa-cog"></i> פרטי העסק </button>
+    <button class="btn"  id="submit" id="myAccount" type="submit"  onclick="document.location='editPrivateAccount.html'" > <i class="fas fa-cog"></i> פרטי העסק </button>
 
     <p2> התורים הבאים שלי</p2>
-    <button class="btn appointment"  id="submit" type="submit"  onclick="document.location='#'"> <i class="far fa-calendar-alt"></i> הצג הכל </button>
+    <button class="btn appointment"  id="submit"  id="myAppointments" type="submit"  onclick="document.location='#'"> <i class="far fa-calendar-alt"></i> הצג הכל </button>
 
+    <!--למחוק-->
     <p3>בתי עסק מועדפים </p3>
     <button class="btn business"  id="submit" type="submit"  onclick="document.location='#'"><i class="fas fa-heart"></i>בתי העסק המועדפים שלי </button>
     
@@ -71,4 +72,21 @@
  
  
   </body>
+  <script>
+      document.getElementById("homePage").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_home_page');?>"
+     }
+     document.getElementById("P_myAppointments").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_P_appointments');?>"
+     }
+     document.getElementById("P_my_profile").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_P_myProfile');?>"
+     }
+     document.getElementById("myAccount").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_P_myDetails');?>"
+     }
+     document.getElementById("myAppointments").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/ go_to_P_appointments');?>"
+     }
+  </script>
  </html>
