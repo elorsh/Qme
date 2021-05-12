@@ -112,7 +112,7 @@ public function insert_new_p_user(){
      );
      $this->P_Users_model->insert_user($data);
 
-     $msg = '"יצרת משתמש בהצלחה! :) "<br>"עכשיו רק נשאר להתחבר לצורך השלמת התהליך"';
+     $msg = ':) !יצרת משתמש בהצלחה<br>עכשיו רק נשאר להתחבר לצורך השלמת התהליך';
      $this->login_new_user($msg);
     }
     
