@@ -95,6 +95,12 @@ class P_Users extends CI_Controller{
 
 }
 
+public function login_new_user($msg=null){
+    $data['msg']=$msg;
+    $this->load->view('includes/P_LogIn_view',$data);
+
+}
+
 
 public function insert_new_p_user(){
     $data = array(
@@ -106,8 +112,8 @@ public function insert_new_p_user(){
      );
      $this->P_Users_model->insert_user($data);
 
-     $reg = 'Registered Successfully! Please Log In to complete the process.';
-     $this->login($reg);
+     $msg = 'יצרת משתמש בהצלחה! :) רק נשאר להתחבר לצורך השלמת התהליך';
+     $this->login_new_user($msg);
     }
     
 

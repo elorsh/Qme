@@ -25,14 +25,6 @@
 
     <div dir="rtl" class="createAccount">
    
-    <!-- <div style="color:red" id="info">
-      <?php 
-          if ($info!=null)
-          {
-              echo '*'.$info['message'];         
-          }
-      ?>
-    </div> -->
 
     <!-- <?php echo form_open('P_Users/insert_new_p_user'); ?> -->
 

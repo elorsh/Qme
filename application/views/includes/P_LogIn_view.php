@@ -19,7 +19,11 @@
         <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
 
      </header>
- 
+     <?php 
+          if (isset($msg)) {
+            echo '<br> <h4 style="color:green">'.$msg.'</h4><br>';
+          }
+          ?>
      
      <h4>,התגעגענו <br>
     בוא נתחבר</h4>
