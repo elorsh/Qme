@@ -18,22 +18,21 @@
     <header> 
         <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
      </header>
-     <i class="fas fa-share" onclick="document.location='#'"></i>
-     <p class="back">חזור</p>
      <h4>יצירת חשבון פרטי</h4>
 
      <h5   dir="rtl" >אז אנחנו Qme :) <br>
     ואתם?</h5> 
 
-    <div class="createAccount">
+    <div dir="rtl" class="createAccount">
    
-    <div style="color:red" id="info"><?php 
-        if ($info!=null)
-        {
-            echo '*'.$info['message'];         
-         }
-         ?>
-    </div>
+    <!-- <div style="color:red" id="info">
+      <?php 
+          if ($info!=null)
+          {
+              echo '*'.$info['message'];         
+          }
+      ?>
+    </div> -->
 
     <?php echo form_open('P_Users/insert_new_p_user'); ?>
 
