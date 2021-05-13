@@ -28,11 +28,13 @@
 
     <!-- <?php echo form_open('P_Users/insert_new_p_user'); ?> -->
    
+    <div dir="rtl">
     <?php 
           if (isset($error)) {
             echo '<br> <p style="color:red">'.$error.'</p>';
           }
           ?>
+    </div>
    
     <form  dir="rtl"  class="row g-3 needs-validation"  onsubmit="matchPassword()"  novalidate method="post" action="<?php echo site_url('P_Users/p_auth_new_user');?>">
     
