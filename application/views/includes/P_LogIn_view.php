@@ -28,15 +28,17 @@
      <h4>,התגעגענו <br>
     בוא נתחבר</h4>
 
-    <form method="post" action="<?php echo site_url('P_Users/auth')?>"dir="rtl">
+    <form method="post" action="<?php echo site_url('P_Users/p_auth')?>"dir="rtl">
 
         <div class="form-group ">
             <label for="email">אימייל : </label>
-            <?php 
+            
+          <?php 
           if (isset($error)) {
             echo '<br> <p style="color:red">'.$error.'</p>';
           }
           ?>
+
             <input type="text" class="form-control" name="u_email" id="fName" autocomplete="on" placeholder="example@gmail.com">
           </div>
 

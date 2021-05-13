@@ -10,6 +10,9 @@ class P_Users extends CI_Controller{
         $this->load->library('session');
         
     }
+
+    // -------P_users---------------------------
+
     public function show(){
        // $this->load->model('P_Users_model');
         // $result= $this->P_Users_model->get_users();
@@ -67,37 +70,36 @@ class P_Users extends CI_Controller{
     }
 
 
-    public function auth(){
+    public function p_auth(){
         $data = array(
             'u_email' => $this->input->post('u_email'),
             'u_password' => $this->input->post('u_password')
           );
         
-         $check=$this->P_Users_model->auth($data);
+         $check=$this->P_Users_model->p_auth($data);
        
          if ($check==null){
             $data['error']='כתובת האימייל או הסיסמה לא נכונים :(  בידקו זאת ונסו שוב.';
-            $this->login($data['error']);
+            $this->p_login($data['error']);
          }
          else{
            $data['u_email']=$check[0]->u_email;
            $data['loggedin']='1';
            $this->session->set_userdata($data); 
         //    $this->load->view('includes/homePage_view');
-           $this->load->library('../controllers/Intro');
-           $this->Intro->go_to_home_page;
+           $this->go_to_home_page();
            
                 }
 
     }
 
- public function login($error=null){
+ public function p_login($error=null){
     $data['error']=$error;
     $this->load->view('includes/P_LogIn_view',$data);
 
 }
 
-public function login_new_user($msg=null){
+public function p_login_new_user($msg=null){
     $data['msg']=$msg;
     $this->load->view('includes/P_LogIn_view',$data);
 
@@ -112,12 +114,34 @@ public function insert_new_p_user(){
         'u_email' => $this->input->post('u_email'),
         'u_password' => $this->input->post('u_password')
      );
-     $this->P_Users_model->insert_user($data);
+     $this->P_Users_model->insert_p_user($data);
 
      $msg = ':) !יצרת משתמש בהצלחה<br>עכשיו רק נשאר להתחבר לצורך השלמת התהליך';
-     $this->login_new_user($msg);
+     $this->p_login_new_user($msg);
     }
     
+
+
+
+
+
+
+
+
+
+    //  --------------- *** b_users *** -----------------------
+
+    public function go_to_home_page(){
+        $data['result']=$this->P_Users_model->get_B_users();
+        $this->load->view('includes/homePage_view',$data);
+        }
+
+
+
+
+
+
+
 
 
 

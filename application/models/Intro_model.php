@@ -7,10 +7,10 @@ class intro_model extends CI_Model {
     }
 
     // businesses functions------------
-    
-    public function get_B_users(){
-        $query = $this->db->query("SELECT * FROM DB_businesses");
-        return $query->result();
-    }
+
+    // public function get_B_users(){
+    //     $query = $this->db->query("SELECT * FROM DB_businesses");
+    //     return $query->result();
+    // }
     
 }

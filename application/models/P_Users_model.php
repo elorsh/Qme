@@ -42,7 +42,7 @@ class P_Users_model extends CI_Model {
     //     return $error;
     //  }
 
-    public function insert_user($data){
+    public function insert_p_user($data){
         $this->db->insert('DB_users', $data);
     }
 
@@ -50,19 +50,19 @@ class P_Users_model extends CI_Model {
 
 
 
-     public function auth($data){
+     public function p_auth($data){
         $query = $this->db->get_where('DB_users', $data);
         return $query->result();
      }
 
-     public function get_stats(){
-        $query=$this->db->get('pref');
-        return $query->result();
-     }
 
-     public function get_consoles(){
-        $user=$this->session->all_userdata();
-        $query=$this->db->query('SELECT * FROM pref WHERE p_username = "'.$user['username'].'" ');
+
+    //  --------------- *** b_users *** -----------------------
+
+
+    public function get_B_users(){
+        $query = $this->db->query("SELECT * FROM DB_businesses");
         return $query->result();
-     }
+    }
+
 }
