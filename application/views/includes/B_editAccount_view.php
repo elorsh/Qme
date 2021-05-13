@@ -25,8 +25,6 @@
     הכל אודות העסק שלך</h5> 
 
 
-
-
     <div class="createAccount">
    
       <form  dir="rtl"  class="row g-3 needs-validation"  novalidate>
@@ -45,6 +43,11 @@
             <label for="validationCustom01" class="form-label" >שם בית העסק:</label>
             <input type="text" class="form-control" name="b_business_name" id="validationCustom03" placeholder="שם בית העסק" >
           </div>
+          
+        <div class="col-md-4" >
+            <label for="validationCustom01" class="form-label" >תיאור בית העסק:</label>
+            <input type="text" class="form-control" name="b_description" id="validationCustom12" placeholder="תיאור" >
+          </div>
 
           <div class="col-md-4" >
             <label for="validationCustom01" class="form-label" >ח.פ / ת.ז  :</label>
@@ -59,8 +62,8 @@
           <div class="col-md-4">
             <label for="validationCustom02" class="form-label">טלפון נוסף :</label>
             <input type="tel" class="form-control" name="b_phone2" id="validationCustom06" placeholder="000-0000000" >
-          
           </div>
+
           <div class="col-md-4">
             <label for="validationCustom04" class="form-label">תחום עיסוק:</label>
             <select class="form-select"  name="b_profession" id="validationCustom07" >
