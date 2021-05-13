@@ -14,60 +14,38 @@ class P_Users extends CI_Controller{
     // -------P_users---------------------------
 
     public function show(){
-       // $this->load->model('P_Users_model');
-        // $result= $this->P_Users_model->get_users();
+
         $data['result']=$this->P_Users_model->get_users();
         $this->load->view('includes/p_users_view',$data);
     }
 
-    public function insert(){
+    // public function update(){
 
-        $u_full_name="רעות רצון";
-        $u_email="reut@qme.com";
-        $u_password="123456";
-        $u_phone="0505111113";
-        $u_address="הפלמח 8 רמהש";
+    //     $u_email="avi@qme.com";
 
-
-        $this->P_Users_model->create_p_users([
-
-            'u_full_name'=>$u_full_name,
-            'u_email'=>$u_email,
-            'u_password'=> $u_password,
-            'u_phone'=>$u_phone,
-            'u_address'=> $u_address
-
-        ]);
-
-    }
-
-    public function update(){
-
-        $u_email="avi@qme.com";
-
-        $u_full_name="אבי רון";
-        $u_password="123456";
-        $u_phone="0505111183";
-        $u_address="הפלמח 8 רמת השרון";
+    //     $u_full_name="אבי רון";
+    //     $u_password="123456";
+    //     $u_phone="0505111183";
+    //     $u_address="הפלמח 8 רמת השרון";
 
 
-        $this->P_Users_model->update_p_users([
+    //     $this->P_Users_model->update_p_users([
 
-            'u_full_name'=>$u_full_name,
-            'u_password'=> $u_password,
-            'u_phone'=>$u_phone,
-            'u_address'=> $u_address
+    //         'u_full_name'=>$u_full_name,
+    //         'u_password'=> $u_password,
+    //         'u_phone'=>$u_phone,
+    //         'u_address'=> $u_address
 
-        ],$u_email);
+    //     ],$u_email);
 
-    }
+    // }
 
-    public function delete(){
+    // public function delete(){
 
-        $u_email="moshe@qme.com";
+    //     $u_email="moshe@qme.com";
         
-        $this->P_Users_model->delete_p_users($u_email);
-    }
+    //     $this->P_Users_model->delete_p_users($u_email);
+    // }
 
 
     public function p_auth(){
