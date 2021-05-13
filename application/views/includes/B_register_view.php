@@ -42,7 +42,7 @@
         </div>
         <div class="col-md-4">
           <label for="validationCustom02" class="form-label">טלפון בעל העסק:</label>
-          <input type="tel" class="form-control" name="b_phone1" id="validationCustom02" placeholder="000-0000000" required>
+          <input type="tel" class="form-control" name="b_phone1" id="validationCustom02" placeholder="0000000000" required>
           <div class="valid-feedback">
            מספר טלפון תקין 
           </div>
@@ -106,7 +106,7 @@
         
         <div class="col-md-3">
             <label for="validationCustom09" class="form-label">סיסמה:</label>
-            <input type="text" class="form-control" name="b_password" id="validationCustom09"  placeholder="********" minlength="8" required>
+            <input type="text" class="form-control" name="b_password" id="validationCustom09"  placeholder="********" required>
             <div class="invalid-feedback">
               יש להזין סיסמה בת 8 ספרות לפחות
             </div>
@@ -114,7 +114,7 @@
 
         <div class="col-md-3">
           <label for="validationCustom10" class="form-label">אימות סיסמה:</label>
-          <input type="text" class="form-control" name="confirm_b_password" id="validationCustom10" minlength="8" placeholder="********"  required>
+          <input type="text" class="form-control" name="confirm_b_password" id="validationCustom10"  placeholder="********"  required>
           <div class="invalid-feedback">
             יש להזין סיסמה בת 8 ספרות לפחות
           </div>
