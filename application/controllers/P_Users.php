@@ -83,7 +83,8 @@ class P_Users extends CI_Controller{
            $data['u_email']=$check[0]->u_email;
            $data['loggedin']='1';
            $this->session->set_userdata($data); 
-           $this->load->view('includes/homePage_view');
+        //    $this->load->view('includes/homePage_view');
+           $this->Intro->go_to_home_page;
         }
 
     }
