@@ -30,7 +30,7 @@
    
     <?php 
           if (isset($error)) {
-            echo '<br>  <div dir="rtl"><p style="color:red">'.$error.'</p></div>';
+            echo ' <h6   dir="rtl" style="color:red">'.$error.'<br> ואתם?</h6>';
           }
           ?>
    
