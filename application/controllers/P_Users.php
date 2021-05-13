@@ -95,61 +95,14 @@ class P_Users extends CI_Controller{
 
 }
 
+public function login_new_user($msg=null){
+    $data['msg']=$msg;
+    $this->load->view('includes/P_LogIn_view',$data);
 
-
-// ---------------------------------------------------------------- registrer
-public function register($info=null){
-    $data['info']=$info;
-    $this->load->view('includes/P_register_view',$data);
 }
+
+
 public function insert_new_p_user(){
-    //Validations
-    //verify first name
-    $this->form_validation->set_rules('u_full_name', 'First Name', 'required');
-    if ($this->form_validation->run() == FALSE)
-    {
-        $error= ['message'=>'יש להזין שם מלא'];
-         $this->register($error);
-         return;
-    }
-
-    //verify email is required + valid
-    $this->form_validation->set_rules('u_email', 'Email', 'required|valid_email');
-    if ($this->form_validation->run() == FALSE)
-    {
-        $error= ['message'=>'יש להזין כתובת אימייל תקינה'];
-            $this->register($error);
-            return;
-    }
-
-    //verify phone number
-    $this->form_validation->set_rules('u_phone', 'phone', 'required');
-    if ($this->form_validation->run() == FALSE)
-    {
-        $error= ['message'=>'יש להזין מספר פלאפון'];
-         $this->register($error);
-         return;
-    }
-
-    //verify address maximum 30
-    $this->form_validation->set_rules('u_address', 'address', array('required','max_length[30]'));
-    if ($this->form_validation->run() == FALSE)
-    {
-        $error= ['message'=>'יש להזין עיר מגורים'];
-         $this->register($error);
-         return;
-    }
-
-    //verify that passwords match
-    $this->form_validation->set_rules('u_password', 'Password', 'required');
-    $this->form_validation->set_rules('confirm_u_password', 'Password', 'required|matches[password]');
-    if ($this->form_validation->run() == FALSE)
-    {
-        $error= ['message'=>'Password must match in both fields!'];
-         $this->register($error);
-         return;
-    }
-
     $data = array(
         'u_full_name' => $this->input->post('u_full_name'),
         'u_phone' => $this->input->post('u_phone'),
@@ -157,19 +110,88 @@ public function insert_new_p_user(){
         'u_email' => $this->input->post('u_email'),
         'u_password' => $this->input->post('u_password')
      );
+     $this->P_Users_model->insert_user($data);
+
+     $msg = ':) !יצרת משתמש בהצלחה<br>עכשיו רק נשאר להתחבר לצורך השלמת התהליך';
+     $this->login_new_user($msg);
+    }
     
-    $error=$this->users_model->save($data);
-    if ($error){
-        $this->register($error);
-    }
-    else{
-        $data['loggedin']='1';
-        $data['message']='User Registered successfuly';
-        $data['code']=1;
-        $this->session->set_userdata($data); 
-        $this->pref();
-    }
-}
+
+
+
+// ---------------------------------------------------------------- registrer
+// public function register($info=null){
+//     $data['info']=$info;
+//     $this->load->view('includes/P_register_view',$data);
+// }
+// public function insert_new_p_user(){
+//     //Validations
+//     //verify first name
+//     $this->form_validation->set_rules('u_full_name', 'First Name', 'required');
+//     if ($this->form_validation->run() == FALSE)
+//     {
+//         $error= ['message'=>'יש להזין שם מלא'];
+//          $this->register($error);
+//          return;
+//     }
+
+//     //verify email is required + valid
+//     $this->form_validation->set_rules('u_email', 'Email', 'required|valid_email');
+//     if ($this->form_validation->run() == FALSE)
+//     {
+//         $error= ['message'=>'יש להזין כתובת אימייל תקינה'];
+//             $this->register($error);
+//             return;
+//     }
+
+//     //verify phone number
+//     $this->form_validation->set_rules('u_phone', 'phone', 'required');
+//     if ($this->form_validation->run() == FALSE)
+//     {
+//         $error= ['message'=>'יש להזין מספר פלאפון'];
+//          $this->register($error);
+//          return;
+//     }
+
+//     //verify address maximum 30
+//     $this->form_validation->set_rules('u_address', 'address', array('required','max_length[30]'));
+//     if ($this->form_validation->run() == FALSE)
+//     {
+//         $error= ['message'=>'יש להזין עיר מגורים'];
+//          $this->register($error);
+//          return;
+//     }
+
+//     //verify that passwords match
+//     $this->form_validation->set_rules('u_password', 'Password', 'required');
+//     $this->form_validation->set_rules('confirm_u_password', 'Password', 'required|matches[password]');
+//     if ($this->form_validation->run() == FALSE)
+//     {
+//         $error= ['message'=>'Password must match in both fields!'];
+//          $this->register($error);
+//          return;
+//     }
+
+//     $data = array(
+//         'u_full_name' => $this->input->post('u_full_name'),
+//         'u_phone' => $this->input->post('u_phone'),
+//         'u_address' => $this->input->post('u_address'), 
+//         'u_email' => $this->input->post('u_email'),
+//         'u_password' => $this->input->post('u_password')
+//      );
+    
+//     $error=$this->users_model->save($data);
+//     if ($error){
+//         $this->register($error);
+//     }
+//     else{
+//         $data['loggedin']='1';
+//         $data['message']='User Registered successfuly';
+//         $data['code']=1;
+//         $this->session->set_userdata($data); 
+//         $this->pref();
+//     }
+// }
 // ----------------------------------------------------------------
 
 

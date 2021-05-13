@@ -32,16 +32,19 @@ class P_Users_model extends CI_Model {
     }
 
 
-    public function save($data){
-        //set flag in order to avoid showing php errors
-        $this->db->db_debug = FALSE; 
-        $error=null;
-        if (!$this->db->insert('DB_users', $data)){
-            $error=$this->db->error();
-        }
-        return $error;
-     }
+    // public function save($data){
+    //     //set flag in order to avoid showing php errors
+    //     $this->db->db_debug = FALSE; 
+    //     $error=null;
+    //     if (!$this->db->insert('DB_users', $data)){
+    //         $error=$this->db->error();
+    //     }
+    //     return $error;
+    //  }
 
+    public function insert_user($data){
+        $this->db->insert('DB_users', $data);
+    }
 
 // -------------------------------------------------
 
