@@ -84,8 +84,8 @@ class P_Users extends CI_Controller{
            $data['loggedin']='1';
            $this->session->set_userdata($data); 
         //    $this->load->view('includes/homePage_view');
-           $this->Intro->go_to_home_page;
-        }
+           $this->load->controller('Intro/go_to_home_page');
+                }
 
     }
 
