@@ -10,10 +10,10 @@ class B_Users extends CI_Controller{
         $this->load->library('session');
         
     }
-    public function show(){
+    // public function show(){
 
-        $data['result']=$this->B_Users_model->get_B_users();
-        $this->load->view('includes/homePage_view',$data);
-    }
+    //     $data['result']=$this->B_Users_model->get_B_users();
+    //     $this->load->view('includes/homePage_view',$data);
+    // }
 
 ?>
