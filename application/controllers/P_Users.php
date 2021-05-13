@@ -94,7 +94,7 @@ public function p_auth_new_user(){
         'u_password' => $this->input->post('u_password')
       );
     
-     $check=$this->P_Users_model->p_auth($data['u_email']);
+     $check=$this->P_Users_model->p_auth_new_user($data['u_email']);
    
      if ($check!=null){
         $data['error']='כתובת האימייל כבר קיימת במערכת :(  בידקו זאת ונסו שוב.';
