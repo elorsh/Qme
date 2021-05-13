@@ -9,11 +9,9 @@ class Intro extends CI_Controller{
         $this->load->library('session');
     }
 
-     public function index(){
 
+    public function index(){
         $this->load->view('includes/landing');
-    
-
         }
     public function go_to_p_login(){
         $this->load->view('includes/P_LogIn_view');
@@ -27,11 +25,12 @@ class Intro extends CI_Controller{
     public function go_to_b_register(){
         $this->load->view('includes/B_register_view');
         }
-    public function go_to_home_page(){
-        $data['result']=$this->B_Users_model->get_B_users();
-        $this->load->view('includes/homePage_view',$data);
-        // $this->load->view('includes/homePage_view');
-        }
+        
+    // public function go_to_home_page(){
+    //     $data['result']=$this->Intro_model->get_B_users();
+    //     $this->load->view('includes/homePage_view',$data);
+    //     // $this->load->view('includes/homePage_view');
+    //     }
     public function go_to_b_appointments(){
             $this->load->view('includes/B_myAppointments_view');
         }
