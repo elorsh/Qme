@@ -28,7 +28,7 @@
    
     <form  dir="rtl"  class="row g-3 needs-validation"  onsubmit="matchPassword()"  novalidate method="post" action="<?php echo site_url('P_Users/p_auth_new_user');?>">
     
-    <?php 
+      <?php 
           if (isset($error)) {
             echo '<br> <p style="color:red">'.$error.'</p>';
           }
