@@ -74,13 +74,11 @@ class P_Users extends CI_Controller{
  public function p_login($error=null){
     $data['error']=$error;
     $this->load->view('includes/P_LogIn_view',$data);
-
 }
 
 public function p_login_new_user($msg=null){
     $data['msg']=$msg;
     $this->load->view('includes/P_LogIn_view',$data);
-
 }
 
 
@@ -98,12 +96,17 @@ public function p_auth_new_user(){
    
      if ($check!=null){
         $data['error']='כתובת האימייל כבר קיימת במערכת :(  בידקו זאת ונסו שוב.';
-        $this->p_login($data['error']);
+        $this->P_register_error($data['error']);
      }
      else{
          $this-> insert_new_p_user($data);
             }
 
+}
+
+public function P_register_error($error=null){
+    $data['error']=$error;
+    $this->load->view('includes/P_register_view',$data);
 }
 
 
