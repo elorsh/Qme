@@ -55,6 +55,13 @@
             </div>
           </div>
           <div class="col-md-4" >
+            <label for="validationCustom03" class="form-label" >תיאור בית העסק:</label>
+            <input type="text" class="form-control"  name="b_description" id="validationCustom12" placeholder="תיאור בית העסק" required>
+            <div class="valid-feedback">
+              שם בית העסק תקין
+            </div>
+          </div>
+          <div class="col-md-4" >
             <label for="validationCustom04" class="form-label" >ח.פ / ת.ז  :</label>
             <input type="text" class="form-control"  name="b_id" id="validationCustom04" placeholder="ח.פ/ת.ז" required>
             <div class="valid-feedback">
