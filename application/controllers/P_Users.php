@@ -84,14 +84,39 @@ public function p_login_new_user($msg=null){
 }
 
 
-public function insert_new_p_user(){
+
+public function p_auth_new_user(){
     $data = array(
         'u_full_name' => $this->input->post('u_full_name'),
         'u_phone' => $this->input->post('u_phone'),
         'u_address' => $this->input->post('u_address'), 
         'u_email' => $this->input->post('u_email'),
         'u_password' => $this->input->post('u_password')
-     );
+      );
+    
+     $check=$this->P_Users_model->p_auth($data['u_email']);
+   
+     if ($check!=null){
+        $data['error']='כתובת האימייל כבר קיימת במערכת :(  בידקו זאת ונסו שוב.';
+        $this->p_login($data['error']);
+     }
+     else{
+         $this-> insert_new_p_user($data);
+            }
+
+}
+
+
+
+
+public function insert_new_p_user($data){
+    // $data = array(
+    //     'u_full_name' => $this->input->post('u_full_name'),
+    //     'u_phone' => $this->input->post('u_phone'),
+    //     'u_address' => $this->input->post('u_address'), 
+    //     'u_email' => $this->input->post('u_email'),
+    //     'u_password' => $this->input->post('u_password')
+    //  );
      $this->P_Users_model->insert_p_user($data);
 
      $msg = ':) !יצרת משתמש בהצלחה<br>עכשיו רק נשאר להתחבר לצורך השלמת התהליך';

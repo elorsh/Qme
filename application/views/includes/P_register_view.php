@@ -27,8 +27,14 @@
    
 
     <!-- <?php echo form_open('P_Users/insert_new_p_user'); ?> -->
-
-    <form  dir="rtl"  class="row g-3 needs-validation"  onsubmit="matchPassword()"  novalidate method="post" action="<?php echo site_url('P_Users/insert_new_p_user');?>">
+   
+    <?php 
+          if (isset($error)) {
+            echo '<br> <p style="color:red">'.$error.'</p>';
+          }
+          ?>
+   
+    <form  dir="rtl"  class="row g-3 needs-validation"  onsubmit="matchPassword()"  novalidate method="post" action="<?php echo site_url('P_Users/p_auth_new_user');?>">
     
         <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם מלא:</label>
