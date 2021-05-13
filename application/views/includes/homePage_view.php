@@ -53,7 +53,24 @@
              </tr>
            </thead>
            <tbody>
-             <tr>
+              <?php
+              foreach ($result as $object){
+
+                echo "<tr>";
+                echo '<th scope="col">'.$object->b_business_name.'</th>';
+                echo '<th scope="col">'.$object->b_description.'</th>';
+                echo '<th scope="col">'.$object->b_address.'</th>';
+                echo '<th scope="col">'.$object->u_phone.'</th>';
+                echo '<td><i class="far fa-calendar-alt"></i></td>';
+                echo '<td><i class="fab fa-waze"></i></td>';
+                echo '<td><i class="fas fa-phone"></i></td>';
+                echo "</tr>";
+                }
+            ?>
+
+
+
+             <!-- <tr>
                <td >יוגה עם שיגול</td>
                <td>סטודיו לאימוני יוגה אישיים ובקבוצות קטנות</td>
                <td>הפלמ"ח 8 רמת השרון</td>
@@ -89,7 +106,7 @@
                 <td><i class="fab fa-waze"></i></td>
                 <td><i class="fas fa-phone"></i></td>
  
-             </tr>
+             </tr> -->
            
            </tbody>
          </table>
