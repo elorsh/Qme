@@ -109,18 +109,30 @@ h4{
     background-color: rgb(252, 227, 195);
 }
 .table-container{
-    width: 60%;
+    width: 65%;
     display: block;
     margin: auto;
 }
-td,tr{
-    text-align: right;
+th{
+    font-weight: bold;
+    font-size: 18px;
+
 }
-td i{
-    cursor: pointer;
-    font-size: 125%;
+.nameB{
+    font-weight: bold;
+    color: maroon;
+}
+.nameB:hover{
+    color: white;
+}
+td,tr{
+    text-align: center;
 }
 
+td i{
+    cursor: pointer;
+    font-size: 200%;
+}
 
 
 
