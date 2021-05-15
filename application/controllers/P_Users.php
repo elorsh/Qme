@@ -94,12 +94,13 @@ public function p_auth_new_user(){
     
      $check=$this->P_Users_model->p_auth_new_user($data['u_email']);
    
-     if ($check!=null){
+     if ($check){
         $data['error']='כתובת האימייל כבר קיימת במערכת :(  בידקו זאת ונסו שוב.';
 
         $this->P_register_error($data['error']);
      }
      else{
+         $data['error']=NULL;
          $this-> insert_new_p_user($data);
             }
 
