@@ -122,7 +122,8 @@ public function insert_new_p_user($data){
     //     'u_password' => $this->input->post('u_password')
     //  );
      $this->P_Users_model->insert_p_user($data);
-     $data['error']=NULL;
+    //  $data['error']=NULL;
+
 
      $msg = ':) !יצרת משתמש בהצלחה<br>עכשיו רק נשאר להתחבר לצורך השלמת התהליך';
      $this->p_login_new_user($msg);
