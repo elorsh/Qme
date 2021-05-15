@@ -14,60 +14,38 @@ class P_Users extends CI_Controller{
     // -------P_users---------------------------
 
     public function show(){
-       // $this->load->model('P_Users_model');
-        // $result= $this->P_Users_model->get_users();
+
         $data['result']=$this->P_Users_model->get_users();
         $this->load->view('includes/p_users_view',$data);
     }
 
-    public function insert(){
+    // public function update(){
 
-        $u_full_name="רעות רצון";
-        $u_email="reut@qme.com";
-        $u_password="123456";
-        $u_phone="0505111113";
-        $u_address="הפלמח 8 רמהש";
+    //     $u_email="avi@qme.com";
 
-
-        $this->P_Users_model->create_p_users([
-
-            'u_full_name'=>$u_full_name,
-            'u_email'=>$u_email,
-            'u_password'=> $u_password,
-            'u_phone'=>$u_phone,
-            'u_address'=> $u_address
-
-        ]);
-
-    }
-
-    public function update(){
-
-        $u_email="avi@qme.com";
-
-        $u_full_name="אבי רון";
-        $u_password="123456";
-        $u_phone="0505111183";
-        $u_address="הפלמח 8 רמת השרון";
+    //     $u_full_name="אבי רון";
+    //     $u_password="123456";
+    //     $u_phone="0505111183";
+    //     $u_address="הפלמח 8 רמת השרון";
 
 
-        $this->P_Users_model->update_p_users([
+    //     $this->P_Users_model->update_p_users([
 
-            'u_full_name'=>$u_full_name,
-            'u_password'=> $u_password,
-            'u_phone'=>$u_phone,
-            'u_address'=> $u_address
+    //         'u_full_name'=>$u_full_name,
+    //         'u_password'=> $u_password,
+    //         'u_phone'=>$u_phone,
+    //         'u_address'=> $u_address
 
-        ],$u_email);
+    //     ],$u_email);
 
-    }
+    // }
 
-    public function delete(){
+    // public function delete(){
 
-        $u_email="moshe@qme.com";
+    //     $u_email="moshe@qme.com";
         
-        $this->P_Users_model->delete_p_users($u_email);
-    }
+    //     $this->P_Users_model->delete_p_users($u_email);
+    // }
 
 
     public function p_auth(){
@@ -96,25 +74,55 @@ class P_Users extends CI_Controller{
  public function p_login($error=null){
     $data['error']=$error;
     $this->load->view('includes/P_LogIn_view',$data);
-
 }
 
 public function p_login_new_user($msg=null){
     $data['msg']=$msg;
     $this->load->view('includes/P_LogIn_view',$data);
-
 }
 
 
-public function insert_new_p_user(){
+
+public function p_auth_new_user(){
     $data = array(
         'u_full_name' => $this->input->post('u_full_name'),
         'u_phone' => $this->input->post('u_phone'),
         'u_address' => $this->input->post('u_address'), 
         'u_email' => $this->input->post('u_email'),
         'u_password' => $this->input->post('u_password')
-     );
+      );
+    
+     $check=$this->P_Users_model->p_auth_new_user($data['u_email']);
+   
+     if ($check!=null){
+        $data['error']='כתובת האימייל כבר קיימת במערכת :(  בידקו זאת ונסו שוב.';
+
+        $this->P_register_error($data['error']);
+     }
+     else{
+         $this-> insert_new_p_user($data);
+            }
+
+}
+
+public function P_register_error($error=null){
+    $data['error']=$error;
+    $this->load->view('includes/P_register_view',$data);
+}
+
+
+
+
+public function insert_new_p_user($data){
+    // $data = array(
+    //     'u_full_name' => $this->input->post('u_full_name'),
+    //     'u_phone' => $this->input->post('u_phone'),
+    //     'u_address' => $this->input->post('u_address'), 
+    //     'u_email' => $this->input->post('u_email'),
+    //     'u_password' => $this->input->post('u_password')
+    //  );
      $this->P_Users_model->insert_p_user($data);
+     $data['error']=NULL;
 
      $msg = ':) !יצרת משתמש בהצלחה<br>עכשיו רק נשאר להתחבר לצורך השלמת התהליך';
      $this->p_login_new_user($msg);
