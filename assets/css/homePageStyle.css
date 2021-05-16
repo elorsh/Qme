@@ -129,8 +129,13 @@ td,tr{
     text-align: center;
 }
 h5{
+    font-size: 25px !important;
+    font-weight: bold;
+}
+h6{
     font-size: 20px !important;
 }
+
 
 td i{
     cursor: pointer;
