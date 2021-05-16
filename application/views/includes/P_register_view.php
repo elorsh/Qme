@@ -90,10 +90,10 @@
             </div>
           </div>
         </div>
-        <div class="col-12">
-          <button class="btn btn" id="submit" type="submit" onclick="matchPassword()"> צור חשבון</button>
-        </div>
       </form>
+      <div class="col-12">
+          <button class="btn btn" id="submit" type="submit" onclick="matchPassword()"> צור חשבון</button>
+      </div>
 
 
 
