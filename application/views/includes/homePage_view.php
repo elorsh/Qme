@@ -30,7 +30,7 @@
  <!---------Search------->
      <div class="search-container">
        <div class="input-group">
-           <input type="text" class="form-control" id="myInput" placeholder="Search..." onkeyup="myFunction()">
+           <input dir="rtl" type="text" class="form-control" id="myInput" placeholder="חיפוש..." onkeyup="myFunction()">
            <div class="input-group-append">
              <button class="btn btn" type="button"><i class="fa fa-search"></i></button>
            </div>
@@ -42,6 +42,7 @@
         <table dir="rtl" id="myTable" class="table table-striped">
            <thead>
              <tr>
+               <th scope="col" > בית העסק</th>
                <th scope="col" > בית העסק</th>
                <th scope="col">תיאור</th>
                <th scope="col">כתובת</th>
@@ -57,9 +58,10 @@
               foreach ($result as $object){
 
                 echo "<tr>";
-                echo '<th scope="col">'.$object->b_business_name.'</th>';
-                echo '<th scope="col">'.$object->b_description.'</th>';
-                echo '<th scope="col">'.$object->b_address.'</th>';
+                // echo '<td scope="col">'.$object->b_business_name.'</td>';
+                echo '<td scope="col">'.$object->b_business_name.'<br>'.'-'.$object->b_profession.'<br>'.'בכתובת- '.$object->b_address.'</td>';
+                echo '<td scope="col">'.$object->b_description.'</td>';
+                echo '<td scope="col">'.$object->b_address.'</td>';
                 echo '<td><i class="far fa-calendar-alt"></i></td>';
                 echo '<td><i class="fab fa-waze"></i></td>';
                 echo '<td><i class="fas fa-phone"></i></td>';
@@ -133,20 +135,9 @@
                 tr[i].style.display = "";
               } else {
                 tr[i].style.display = "none";
-              }   
+              }
+            }       
           }
-         }
-         for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[1];
-            if (td) {
-              txtValue = td.textContent || td.innerText;
-              if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-              } else {
-                tr[i].style.display = "none";
-              }   
-          }
-         }
         }
         </script>
  </body>
