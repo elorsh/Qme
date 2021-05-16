@@ -30,7 +30,7 @@
  <!---------Search------->
      <div class="search-container">
        <div class="input-group">
-           <input dir="rtl" type="text" class="form-control" id="myInput" placeholder="...חיפוש" onkeyup="myFunction()">
+           <input dir="rtl" type="text" class="form-control" id="myInput" placeholder="חיפוש..." onkeyup="myFunction()">
            <div class="input-group-append">
              <button class="btn btn" type="button"><i class="fa fa-search"></i></button>
            </div>
