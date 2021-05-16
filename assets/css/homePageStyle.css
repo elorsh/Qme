@@ -118,13 +118,7 @@ th{
     font-size: 18px;
 
 }
-.nameB{
-    font-weight: bold;
-    color: maroon;
-}
-.nameB:hover{
-    color: white;
-}
+
 td,tr{
     text-align: center;
 }
@@ -134,7 +128,6 @@ h5{
 }
 h6{
     font-size: 20px !important;
-    color: brown;
 }
 
 td i{
