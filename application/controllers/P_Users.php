@@ -85,22 +85,24 @@ public function p_login_new_user($msg=null){
 
 public function p_auth_new_user(){
     $data = array(
-        'u_full_name' => $this->input->post('u_full_name'),
-        'u_phone' => $this->input->post('u_phone'),
-        'u_address' => $this->input->post('u_address'), 
         'u_email' => $this->input->post('u_email'),
-        'u_password' => $this->input->post('u_password')
       );
     
-     $check=$this->P_Users_model->p_auth_new_user($data['u_email']);
+     $check=$this->P_Users_model->p_auth_new_user($data);
    
      if ($check){
         $data['error']='כתובת האימייל כבר קיימת במערכת :(  בידקו זאת ונסו שוב.';
-
         $this->P_register_error($data['error']);
      }
      else{
-         $data['error']=NULL;
+        //  $data['error']=NULL;
+        $data = array(
+            'u_full_name' => $this->input->post('u_full_name'),
+            'u_phone' => $this->input->post('u_phone'),
+            'u_address' => $this->input->post('u_address'), 
+            'u_email' => $this->input->post('u_email'),
+            'u_password' => $this->input->post('u_password')
+          );
          $this-> insert_new_p_user($data);
             }
 

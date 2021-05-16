@@ -88,7 +88,7 @@
               <option selected disabled value="">תחום עיסוק</option>
               <option>עיצוב שיער</option>
               <option>לק ג'ל</option>
-              <option> קוסמטיקה</option>
+              <option>קוסמטיקה</option>
               <option>סטודיו </option>
             </select>
             <div class="invalid-feedback">
