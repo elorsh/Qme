@@ -34,9 +34,7 @@
                         <li class="nav-item">
                             <a id="homePage" class="nav-link active">דף הבית <i class="fas fa-home"></i></a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">מועדפים <i class="fas fa-heart"></i></a>
-                        </li>
+                
                         <li class="nav-item">
                             <a  id="P_myAppointments" class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
                         </li>
