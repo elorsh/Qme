@@ -102,7 +102,7 @@
           
     </div>
 
-    <button class="btn btn change"  id="submit" type="submit" onclick="document.location='createBussinessAccount.html'">  מעבר לחשבון עסקי</button>
+    <button class="btn btn change"  id="submit"  onclick="document.location='createBussinessAccount.html'">  מעבר לחשבון עסקי</button>
 
 
     <script src="../assets/javascript/createPrivateAccount.js"></script>
