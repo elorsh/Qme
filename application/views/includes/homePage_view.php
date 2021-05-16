@@ -58,10 +58,10 @@
               foreach ($result as $object){
 
                 echo "<tr>";
-                echo '<th scope="col">'.$object->b_business_name.'</th>';
-                echo '<th scope="col">'.$object->b_business_name.'<br>'.'-'.$object->b_profession.'<br>'.'בכתובת- '.$object->b_address.'</th>';
-                echo '<th scope="col">'.$object->b_description.'</th>';
-                echo '<th scope="col">'.$object->b_address.'</th>';
+                echo '<td scope="col">'.$object->b_business_name.'</td>';
+                echo '<td scope="col">'.$object->b_business_name.'<br>'.'-'.$object->b_profession.'<br>'.'בכתובת- '.$object->b_address.'</td>';
+                echo '<td scope="col">'.$object->b_description.'</td>';
+                echo '<td scope="col">'.$object->b_address.'</td>';
                 echo '<td><i class="far fa-calendar-alt"></i></td>';
                 echo '<td><i class="fab fa-waze"></i></td>';
                 echo '<td><i class="fas fa-phone"></i></td>';
