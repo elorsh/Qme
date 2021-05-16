@@ -54,7 +54,6 @@
            <tbody>
               <?php
               foreach ($result as $object){
-
                 echo "<tr>";
                 // echo '<td scope="col">'.$object->b_business_name.'</td>';
                 echo '<td scope="col"><h4>'.$object->b_business_name.'</h4><br>'.$object->b_profession.'<br>'.$object->b_address.'</td>';
