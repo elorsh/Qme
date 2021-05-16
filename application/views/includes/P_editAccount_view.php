@@ -39,7 +39,7 @@
 
         <div class="col-md-2">
           <label for="validationCustom02" class="form-label">טלפון  :</label>
-          <input type="tel" class="form-control" name="u_phone1" id="validationCustom02" placeholder="000-0000000" >
+          <input type="tel" class="form-control" name="u_phone1" id="validationCustom02" placeholder="0000000000" >
         </div>
 
         

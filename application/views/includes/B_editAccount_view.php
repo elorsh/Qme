@@ -36,7 +36,7 @@
 
         <div class="col-md-4">
           <label for="validationCustom02" class="form-label">טלפון בעל העסק:</label>
-          <input type="tel" class="form-control" name="b_phone1" id="validationCustom02" placeholder="000-0000000" >
+          <input type="tel" class="form-control" name="b_phone1" id="validationCustom02" placeholder="0000000000" >
         </div>
 
         <div class="col-md-4" >

@@ -43,7 +43,7 @@
         </div>
         <div class="col-md-4">
           <label for="validationCustom02" class="form-label">טלפון:</label>
-          <input type="tel" class="form-control"  name="u_phone" id="validationCustom02" placeholder="000-0000000" required>
+          <input type="tel" class="form-control"  name="u_phone" id="validationCustom02" placeholder="0000000000" required>
           <div class="valid-feedback">
            מספר טלפון תקין 
           </div>
