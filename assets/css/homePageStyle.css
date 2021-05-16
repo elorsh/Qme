@@ -128,10 +128,13 @@ th{
 td,tr{
     text-align: center;
 }
+h5{
+    font-size: 20px !important;
+}
 
 td i{
     cursor: pointer;
-    font-size: 200%;
+    font-size: 200%; 
 }
 
 
