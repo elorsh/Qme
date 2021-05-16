@@ -57,9 +57,9 @@
               foreach ($result as $object){
 
                 echo "<tr>";
-                echo '<td scope="col">'.$object->b_business_name.'</td>';
-                echo '<td scope="col">'.$object->b_description.'</td>';
-                echo '<td scope="col">'.$object->b_address.'</td>';
+                echo '<th scope="col">'.$object->b_business_name.'</th>';
+                echo '<th scope="col">'.$object->b_description.'</th>';
+                echo '<th scope="col">'.$object->b_address.'</th>';
                 echo '<td><i class="far fa-calendar-alt"></i></td>';
                 echo '<td><i class="fab fa-waze"></i></td>';
                 echo '<td><i class="fas fa-phone"></i></td>';
@@ -133,9 +133,10 @@
                 tr[i].style.display = "";
               } else {
                 tr[i].style.display = "none";
-              }
-            }      
-            for (i = 0; i < tr.length; i++) {
+              }   
+          }
+         }
+         for (i = 0; i < tr.length; i++) {
             td = tr[i].getElementsByTagName("td")[1];
             if (td) {
               txtValue = td.textContent || td.innerText;
@@ -143,9 +144,9 @@
                 tr[i].style.display = "";
               } else {
                 tr[i].style.display = "none";
-              }
-            }   
+              }   
           }
+         }
         }
         </script>
  </body>
