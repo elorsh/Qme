@@ -59,7 +59,7 @@
 
                 echo "<tr>";
                 echo '<th scope="col">'.$object->b_business_name.'</th>';
-                echo '<th scope="col">'.$object->b_business_name.' - '.$object->b_profession.'<br>'.'בכתובת- '.$object->b_address.'</th>';
+                echo '<th scope="col">'.$object->b_business_name.'<br>'.'-'.$object->b_profession.'<br>'.'בכתובת- '.$object->b_address.'</th>';
                 echo '<th scope="col">'.$object->b_description.'</th>';
                 echo '<th scope="col">'.$object->b_address.'</th>';
                 echo '<td><i class="far fa-calendar-alt"></i></td>';
