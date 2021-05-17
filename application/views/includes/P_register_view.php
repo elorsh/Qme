@@ -41,7 +41,7 @@
             שם מלא תקין
           </div>
         </div>
-        
+
         <div class="col-md-4">
           <label for="validationCustom02" class="form-label">טלפון:</label>
           <input type="tel" class="form-control"  name="u_phone" id="validationCustom02" placeholder="0000000000" required>
@@ -106,13 +106,11 @@
 
     <button class="btn btn change"  id="toBusiness" >  מעבר לחשבון עסקי</button>
 
-
-   <!-- <script src="<?php echo base_url('assets/javascript/createPrivateAccount.js');?>"></script>-->
-
  </body>
 
  <script>
-    //validation function    
+
+  //validation bootstrap function    
 (function () {
   'use strict'
 
