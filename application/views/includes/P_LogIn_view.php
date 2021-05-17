@@ -39,12 +39,12 @@
           }
           ?>
 
-            <input type="text" class="form-control" name="u_email" id="fName" autocomplete="on" placeholder="example@gmail.com">
+            <input type="text" class="form-control" name="u_email" id="fName" autocomplete="on" placeholder="example@gmail.com" require>
           </div>
 
           <div class="form-group">
             <label for="password">סיסמה:</label>
-            <input type="password" class="form-control" name="u_password" id="lName" autocomplete="on" placeholder="******** ">
+            <input type="password" class="form-control" name="u_password" id="lName" autocomplete="on" placeholder="******** " require>
           </div>
 
           <button type="submit" id="submit" class="btn btn" value="run">התחבר! </button>
