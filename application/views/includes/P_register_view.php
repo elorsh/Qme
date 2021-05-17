@@ -31,7 +31,7 @@
           }
       ?>  
    
-    <form  dir="rtl"  class="row g-3 needs-validation" method="post" action="<?php echo site_url('P_Users/p_auth_new_user');?>"  novalidate >
+    <form  dir="rtl"  class="row g-3 needs-validation" method="post"  action="<?php echo site_url('P_Users/p_auth_new_user');?>"  novalidate >
     
 
         <div class="col-md-4" >
@@ -41,6 +41,7 @@
             שם מלא תקין
           </div>
         </div>
+        
         <div class="col-md-4">
           <label for="validationCustom02" class="form-label">טלפון:</label>
           <input type="tel" class="form-control"  name="u_phone" id="validationCustom02" placeholder="0000000000" required>
@@ -48,6 +49,7 @@
            מספר טלפון תקין 
           </div>
         </div>
+
         <div class="col-md-4">
             <label for="validationCustom03" class="form-label">עיר מגורים:</label>
             <input type="text" class="form-control"  name="u_address" id="validationCustom03" placeholder="עיר מגורים" required>
@@ -79,6 +81,7 @@
             יש להזין סיסמה בת 6 ספרות לפחות
           </div>
         </div>-->
+
         <div class="col-12">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -96,22 +99,45 @@
       </form>
 
 
-
-
       <!-- <?php echo form_close(); ?> -->
 
           
     </div>
 
-    <button class="btn btn change"  id="toBusiness">  מעבר לחשבון עסקי</button>
+    <button class="btn btn change"  id="toBusiness" >  מעבר לחשבון עסקי</button>
 
 
-    <script src="../assets/javascript/createPrivateAccount.js"></script>
+   <!-- <script src="<?php echo base_url('assets/javascript/createPrivateAccount.js');?>"></script>-->
 
  </body>
+
  <script>
-     document.getElementById("toBusiness").onclick=function(){
+    //validation function    
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+
+
+  document.getElementById("toBusiness").onclick=function(){
          window.location.href="<?php echo site_url('Intro/go_to_b_register');?>"
-     }
+  }
+
+  
   </script>
  </html>
