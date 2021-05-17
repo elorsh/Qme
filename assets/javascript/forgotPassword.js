@@ -1,3 +1,5 @@
+//לבדוק אם למחוק
+
 //-----Form validation-----//
 var error = document.getElementById("error");
 var message = document.getElementById("done");

@@ -112,13 +112,13 @@
             </div>
           </div>
 
-        <div class="col-md-3">
+       <!-- <div class="col-md-3">
           <label for="validationCustom10" class="form-label">אימות סיסמה:</label>
           <input type="text" class="form-control" name="confirm_b_password" id="validationCustom10"  placeholder="********"  required>
           <div class="invalid-feedback">
             יש להזין סיסמה בת 8 ספרות לפחות
           </div>
-        </div>
+        </div>-->
 
         <div class="col-md-3">
           <label for="validationCustom11" class="form-label"> העלת תמונה:</label>

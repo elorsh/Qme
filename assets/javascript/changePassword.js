@@ -1,4 +1,4 @@
-
+//למחוק
  
   function validationForm(){
     var password = $("#pass2").val();

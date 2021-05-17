@@ -72,13 +72,13 @@
             </div>
           </div>
 
-        <div class="col-md-3">
+        <!--<div class="col-md-3">
           <label for="validationCustom06" class="form-label">אימות סיסמה:</label>
           <input type="password" class="form-control" name="confirm_u_password"  id="validationCustom06" minlength="6" placeholder="********" required>
           <div class="invalid-feedback">
             יש להזין סיסמה בת 6 ספרות לפחות
           </div>
-        </div>
+        </div>-->
         <div class="col-12">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>

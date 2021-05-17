@@ -1,5 +1,5 @@
 /*----- Password check -----*/
-
+/*
 function matchPassword(){
   var pass1 = document.getElementById("validationCustom09");
   var pass2 = document.getElementById("validationCustom10");
@@ -8,7 +8,7 @@ function matchPassword(){
     alert("סיסמאות אינן זהות")
   }
 
-}
+}*/
 
 
 (function () {

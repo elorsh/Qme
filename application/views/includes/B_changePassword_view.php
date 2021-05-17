@@ -37,10 +37,11 @@
             <label for="pass2">סיסמה חדשה:</label>
             <input type="password" class="form-control" name="password2" id="pass2"  minlength="8" autocomplete="on" placeholder="סיסמא חדשה">
           </div>
-          <div class="form-group">
+
+         <!-- <div class="form-group">
             <label for="pass3">אימות סיסמה :</label>
             <input type="password" class="form-control" name="password3" id="pass3" minlength="8" autocomplete="on" placeholder="אימות סיסמא חדשה">
-          </div>
+          </div>-->
 
           <button type="submit" id="submit" class="btn btn" value="run" >שינוי סיסמה </button>
           
