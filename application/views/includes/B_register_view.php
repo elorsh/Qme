@@ -42,7 +42,7 @@
         </div>
         <div class="col-md-4">
           <label for="validationCustom02" class="form-label">טלפון בעל העסק:</label>
-          <input type="tel" class="form-control" name="b_phone1" id="validationCustom02" placeholder="0000000000" required>
+          <input type="tel" class="form-control" name="b_phone1" id="validationCustom02"  minlength="10" placeholder="0000000000" required>
           <div class="valid-feedback">
            מספר טלפון תקין 
           </div>
@@ -70,7 +70,7 @@
           </div>
         <div class="col-md-4">
             <label for="validationCustom05" class="form-label">כתובת :</label>
-            <input type="text" class="form-control"  name="b_address" id="validationCustom05" placeholder="עיר ,רחוב , מספר בית" required>
+            <input type="text" class="form-control"  name="b_address" id="validationCustom05" minlength="10" placeholder="עיר ,רחוב , מספר בית" required>
             <div class="valid-feedback">
               כתובת תקינה
             </div>
