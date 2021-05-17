@@ -21,7 +21,7 @@
        <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
     </header>
     
-    <i class="fas fa-user-circle" onclick="document.location='myProfilePrivate.html'"></i>
+    <i class="fas fa-user-circle" id="myProfile"></i>
     <p class="profile">הפרופיל שלי</p>
      
 
@@ -137,4 +137,10 @@
         }
         </script>
  </body>
+ <script>
+   //לבדוק את זה
+     document.getElementById("myProfile").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_P_myProfile');?>"
+     }
+ </script>
 </html>

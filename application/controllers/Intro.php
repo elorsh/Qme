@@ -71,6 +71,7 @@ class Intro extends CI_Controller{
     public function go_to_P_myDetails(){
         $this->load->view('includes/P_editAccount_view');
     }
+    
   
    
 
