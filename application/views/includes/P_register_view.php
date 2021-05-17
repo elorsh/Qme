@@ -56,7 +56,7 @@
             </div>
           </div>
         
-        <div class="col-md-6">
+        <div class="col-md-4">
           <label for="validationCustom04" class="form-label" >אימייל:</label>
           <input type="email" class="form-control"  name="u_email"  id="validationCustom04" placeholder="example@gmail.com" required>
           <div class="invalid-feedback">
@@ -91,7 +91,7 @@
           </div>
         </div>
         <div class="col-12">
-          <button class="btn btn" id="submit" type="submit" onclick="matchPassword()"> צור חשבון</button>
+          <button class="btn btn" id="submit" type="submit"> צור חשבון</button>
       </div>
       </form>
 
