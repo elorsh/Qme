@@ -42,7 +42,10 @@ header{
     font-size: 35px;
     cursor: pointer;
 }
-
+h5 .message{
+    font-size: 20px;
+    text-align: right;
+}
 
 h4{
     display: block;
