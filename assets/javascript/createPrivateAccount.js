@@ -1,3 +1,5 @@
+//למחוק את כל הקובץ
+
 /*----- Password check -----*/
 /*
 function matchPassword(){

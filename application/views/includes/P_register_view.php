@@ -31,7 +31,7 @@
           }
       ?>  
    
-    <form  dir="rtl"  class="row g-3 needs-validation" method="post"  action="<?php echo site_url('P_Users/p_auth_new_user');?>"  novalidate >
+    <form  dir="rtl"  class="row g-3 needs-validation" method="post" onsubmit="return validationForm() action="<?php echo site_url('P_Users/p_auth_new_user');?>"  novalidate >
     
 
         <div class="col-md-4" >
@@ -132,6 +132,16 @@
 })()
 
 
+function validationForm(){
+
+ //-----Email validation-----//
+ if(isEmail($("#email").val()) == false) {
+
+  alert("כתובת אימייל לא תקינה");
+
+}
+
+}
   document.getElementById("toBusiness").onclick=function(){
          window.location.href="<?php echo site_url('Intro/go_to_b_register');?>"
   }
