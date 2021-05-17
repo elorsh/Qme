@@ -34,7 +34,7 @@ header{
     margin-right: auto;
     width: 320px;
     height: 200px;
-    /*hello*/
+    
 }
 .fas.fa-share{
     position: absolute;
@@ -184,9 +184,10 @@ h3{
     .changeBtn{
         font-size: 12px;
     }
+    }
     @media screen and (max-width: 550px){
     .form-group{
         width: 60%;
     }
 
-}
+    }
