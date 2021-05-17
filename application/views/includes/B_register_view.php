@@ -75,7 +75,7 @@
               כתובת תקינה
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <label for="validationCustom06" class="form-label">טלפון נוסף :</label>
             <input type="tel" class="form-control" name="b_phone2" id="validationCustom06" placeholder="000-0000000" required>
             <div class="valid-feedback">
@@ -146,7 +146,7 @@
       </form>
      </div>
 
-     <button class="btn btn change"  id="submit" id="toPrivate" type="submit" >  מעבר לחשבון פרטי</button>
+     <button class="btn btn change"  id="toPrivate" type="submit" >  מעבר לחשבון פרטי</button>
 
 
       <script src="../javascript/createBussinessAccount.js"></script>

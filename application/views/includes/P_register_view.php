@@ -103,7 +103,7 @@
           
     </div>
 
-    <button class="btn btn change"  id="submit"  id="toBusiness">  מעבר לחשבון עסקי</button>
+    <button class="btn btn change"  id="toBusiness">  מעבר לחשבון עסקי</button>
 
 
     <script src="../assets/javascript/createPrivateAccount.js"></script>
