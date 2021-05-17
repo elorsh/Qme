@@ -91,7 +91,7 @@
           </div>
         </div>
         <div class="col-12">
-          <button class="btn btn" id="submit" type="submit"> צור חשבון</button>
+          <button class="btn btn" id="submit" type="submit" > צור חשבון</button>
       </div>
       </form>
 
