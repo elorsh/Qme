@@ -96,7 +96,7 @@
       </form>
      </div>
 
-     <button class="btn btn update "  id="submit" type="submit" onclick="document.location='#'" >  עדכן את פרטי העסק</button>
+     <button class="btn btn update "  id="submit" type="submit">  עדכן את פרטי העסק</button>
 
 
 
