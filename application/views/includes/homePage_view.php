@@ -43,7 +43,7 @@
            <thead>
              <tr>
                <th scope="col" > בית העסק</th>
-               <th scope="col">תיאור</th>
+               <!-- <th scope="col">תיאור</th> -->
                <th scope="col">זימון תור</th>
                <th scope="col">ניווט לבית העסק</th>
                <th scope="col">התקשר לבית העסק</th>
