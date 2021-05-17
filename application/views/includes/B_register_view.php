@@ -154,7 +154,7 @@
   </body>
   <script>
      document.getElementById("toPrivate").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_private_account');?>"
+         window.location.href="<?php echo site_url('Intro/go_to_p_register');?>"
      }
   </script>
    </html>

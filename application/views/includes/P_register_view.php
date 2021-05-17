@@ -103,10 +103,15 @@
           
     </div>
 
-    <button class="btn btn change"  id="submit"  onclick="document.location='createBussinessAccount.html'">  מעבר לחשבון עסקי</button>
+    <button class="btn btn change"  id="submit"  id="toBusiness">  מעבר לחשבון עסקי</button>
 
 
     <script src="../assets/javascript/createPrivateAccount.js"></script>
 
  </body>
+ <script>
+     document.getElementById("toBusiness").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_b_register');?>"
+     }
+  </script>
  </html>

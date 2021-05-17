@@ -21,7 +21,7 @@
      </header>
      <?php 
           if (isset($msg)) {
-            echo '<br> <h4 style="color:green">'.$msg.'</h4><br>';
+            echo '<br> <h4 class="message" style="color:green">'.$msg.'</h4><br>';
           }
           ?>
      
@@ -35,7 +35,7 @@
             
           <?php 
           if (isset($error)) {
-            echo '<br> <p style="color:red">'.$error.'</p>';
+            echo '<br> <p class="message" style="color:red">'.$error.'</p>';
           }
           ?>
 
