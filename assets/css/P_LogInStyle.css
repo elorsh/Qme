@@ -42,22 +42,18 @@ header{
     font-size: 35px;
     cursor: pointer;
 }
-h5 .message{
-    font-size: 20px;
-    text-align: right;
-    margin: auto;
-    margin-top: 15px !important;
-    margin-right: 30px !important;
 
-}
-
-h4{
+h4,h5{
     display: block;
     margin: auto;
     margin-top: 15px !important;
     font-size: 40px;
     text-align: right;
     margin-right: 30px !important;
+}
+h5{
+    font-size: 20px !important;
+
 }
 
 .form-group{
