@@ -31,7 +31,7 @@
 
     <div class="createAccount">
    
-      <form  dir="rtl"  class="row g-3 needs-validation"  onsubmit="matchPassword()" novalidate>
+      <form  dir="rtl"  class="row g-3 needs-validation"  novalidate>
 
         <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם בעל העסק:</label>
@@ -63,7 +63,7 @@
           </div>
           <div class="col-md-4" >
             <label for="validationCustom04" class="form-label" >ח.פ / ת.ז  :</label>
-            <input type="text" class="form-control"  name="b_id" id="validationCustom04" placeholder="ח.פ/ת.ז" required>
+            <input type="text" class="form-control"  name="b_id" id="validationCustom04" placeholder="000000000" required>
             <div class="valid-feedback">
               מספר תקין
             </div>

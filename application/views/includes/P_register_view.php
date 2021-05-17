@@ -31,7 +31,7 @@
           }
       ?>  
    
-    <form  dir="rtl"  class="row g-3 needs-validation" method="post" action="<?php echo site_url('P_Users/p_auth_new_user');?>" onsubmit="matchPassword()"  novalidate >
+    <form  dir="rtl"  class="row g-3 needs-validation" method="post" action="<?php echo site_url('P_Users/p_auth_new_user');?>"  novalidate >
     
 
         <div class="col-md-4" >
