@@ -21,7 +21,7 @@
      </header>
      <?php 
           if (isset($msg)) {
-            echo '<br> <h4 class="message" style="color:green">'.$msg.'</h4><br>';
+            echo '<br> <h5 class="message" style="color:green">'.$msg.'</h5><br>';
           }
           ?>
      
