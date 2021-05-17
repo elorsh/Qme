@@ -52,7 +52,7 @@
             <label for="validationCustom03" class="form-label">עיר מגורים:</label>
             <input type="text" class="form-control"  name="u_address" id="validationCustom03" placeholder="עיר מגורים" required>
             <div class="valid-feedback">
-              עיר מגורים תקינה
+              עיר מגורים תקין
             </div>
           </div>
         
