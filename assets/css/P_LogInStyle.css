@@ -45,6 +45,10 @@ header{
 h5 .message{
     font-size: 20px;
     text-align: right;
+    margin: auto;
+    margin-top: 15px !important;
+    margin-right: 30px !important;
+
 }
 
 h4{
