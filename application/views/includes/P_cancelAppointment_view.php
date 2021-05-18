@@ -52,7 +52,7 @@
      <p1   dir="rtl" >האם אתה בטוח כי ברצונך</p1> 
      <p2 dir="rtl">לבטל את התור?</p2>
 
-     <button class="btn"  id="submit" type="submit" onclick="document.location='#'">בטל לי את התור</button>
+     <button class="btn"  id="submit" type="submit" >בטל לי את התור</button>
      <div id="cancel"></div>
 
      <p3><i class="far fa-calendar-times"></i></p3>
