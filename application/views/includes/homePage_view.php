@@ -100,5 +100,6 @@
      document.getElementById("myProfile").onclick=function(){
          window.location.href="<?php echo site_url('Intro/go_to_P_myProfile');?>"
      }
+     //לעשות קישורים לאייקונס
  </script>
 </html>
