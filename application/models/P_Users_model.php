@@ -73,4 +73,19 @@ class P_Users_model extends CI_Model {
         return $query->result();
     }
 
+    
+
+    public function b_auth($data){
+        $query = $this->db->get_where('DB_businesses', $data);
+        return $query->result();
+     }
+
+
+     public function b_auth_new_user($data){
+        // $query = $this->db->get_where('DB_users',array($data));
+        $query = $this->db->get_where('DB_businesses',$data);
+
+        return $query->result();
+     }
+
 }

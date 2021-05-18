@@ -19,35 +19,7 @@ class P_Users extends CI_Controller{
         $this->load->view('includes/p_users_view',$data);
     }
 
-    // public function update(){
-
-    //     $u_email="avi@qme.com";
-
-    //     $u_full_name="אבי רון";
-    //     $u_password="123456";
-    //     $u_phone="0505111183";
-    //     $u_address="הפלמח 8 רמת השרון";
-
-
-    //     $this->P_Users_model->update_p_users([
-
-    //         'u_full_name'=>$u_full_name,
-    //         'u_password'=> $u_password,
-    //         'u_phone'=>$u_phone,
-    //         'u_address'=> $u_address
-
-    //     ],$u_email);
-
-    // }
-
-    // public function delete(){
-
-    //     $u_email="moshe@qme.com";
-        
-    //     $this->P_Users_model->delete_p_users($u_email);
-    // }
-
-
+   
     public function p_auth(){
         $data = array(
             'u_email' => $this->input->post('u_email'),
@@ -136,6 +108,94 @@ public function insert_new_p_user($data){
         $data['result']=$this->P_Users_model->get_B_users();
         $this->load->view('includes/homePage_view',$data);
         }
+
+
+
+
+
+        public function b_auth(){
+            $data = array(
+                'u_email' => $this->input->post('b_email'),
+                'u_password' => $this->input->post('b_password	')
+              );
+            
+             $check=$this->P_Users_model->b_auth($data);
+           
+             if ($check==null){
+                $data['error']='כתובת האימייל או הסיסמה לא נכונים :(  בידקו זאת ונסו שוב.';
+                $this->p_login($data['error']);
+             }
+             else{
+               $data['b_email']=$check[0]->b_email;
+               $data['loggedin']='1';
+               $this->session->set_userdata($data); 
+            //    $this->load->view('includes/homePage_view');
+               $this->go_to_home_page(); // צריך לשנות את הלינק ולשלוח אותו לעמוד הפרופיל העסקי. 
+               
+                    }
+    
+        }
+    
+     public function p_login($error=null){
+        $data['error']=$error;
+        $this->load->view('includes/P_LogIn_view',$data);
+    }
+    
+    public function p_login_new_user($msg=null){
+        $data['msg']=$msg;
+        $this->load->view('includes/P_LogIn_view',$data);
+    }
+    
+    
+    
+    public function p_auth_new_user(){
+        $data = array(
+            'u_email' => $this->input->post('u_email'),
+          );
+        
+         $check=$this->P_Users_model->p_auth_new_user($data);
+       
+         if ($check){
+            $data['error']='כתובת האימייל כבר קיימת במערכת :( <br>  בידקו זאת ונסו שוב.';
+            $this->P_register_error($data['error']);
+         }
+         else{
+            //  $data['error']=NULL;
+            $data = array(
+                'u_full_name' => $this->input->post('u_full_name'),
+                'u_phone' => $this->input->post('u_phone'),
+                'u_address' => $this->input->post('u_address'), 
+                'u_email' => $this->input->post('u_email'),
+                'u_password' => $this->input->post('u_password')
+              );
+             $this-> insert_new_p_user($data);
+                }
+    
+    }
+    
+    public function P_register_error($error=null){
+        $data['error']=$error;
+        $this->load->view('includes/P_register_view',$data);
+    }
+    
+    
+    public function insert_new_p_user($data){
+         $this->P_Users_model->insert_p_user($data);
+    
+         $msg = ':) !יצרת משתמש בהצלחה<br>עכשיו רק נשאר להתחבר לצורך השלמת התהליך';
+         $this->p_login_new_user($msg);
+        }
+        
+    
+    
+    
+    
+    
+    
+
+
+
+
 
 
 

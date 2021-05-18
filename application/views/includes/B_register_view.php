@@ -30,8 +30,14 @@
 
 
     <div class="createAccount">
+
+    <?php 
+          if (isset($error)) {
+            echo '<center><br> <p style="color:red">'.$error.'</p></center>';
+          }
+      ?>  
    
-      <form  dir="rtl"  class="row g-3 needs-validation"  novalidate>
+      <form  dir="rtl"  class="row g-3 needs-validation" method="post"  action="<?php echo site_url('P_Users/b_auth_new_user');?>" novalidate>
 
         <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם בעל העסק:</label>
