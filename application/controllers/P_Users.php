@@ -55,6 +55,8 @@ public function p_login_new_user($msg=null){
 
 
 
+
+
 public function p_auth_new_user(){
     $data = array(
         'u_email' => $this->input->post('u_email'),
@@ -97,17 +99,17 @@ public function insert_new_p_user($data){
 
 
 
-
-
+    // מציג את כל בתי העסק בצד הלקוח
+    public function go_to_home_page(){
+        $data['result']=$this->P_Users_model->get_B_users();
+        $this->load->view('includes/homePage_view',$data);
+        }
 
 
 
     //  --------------- *** b_users *** -----------------------
 
-    public function go_to_home_page(){
-        $data['result']=$this->P_Users_model->get_B_users();
-        $this->load->view('includes/homePage_view',$data);
-        }
+
 
 
 
