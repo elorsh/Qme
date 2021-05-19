@@ -21,6 +21,10 @@
     <header> 
     <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
      </header>
+     
+     <i class="fas fa-sign-out-alt" id="logOut"></i>
+      <p class="log-out">התנתקות</p>
+
 
      <h4>שינוי סיסמה</h4>
      <p  dir="rtl">שמור על הסיסמה שלך בעזרת סיסמה חזקה :)</p>
@@ -50,4 +54,10 @@
 <script src="../javascript/changePassword.js"></script>
 
  </body>
+ <script>
+     document.getElementById("logOut").onclick=function(){
+        window.location.href="<?php echo site_url('Intro/go_to_p_login);?>"
+     }
+  
+ </script>
  </html>

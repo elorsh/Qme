@@ -20,6 +20,9 @@
     <header> 
         <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
      </header>
+ 
+         <i class="fas fa-sign-out-alt" id="logOut"></i>
+          <p class="log-out">התנתקות</p>
 
             <!----- The navigation menu ----->
 
@@ -75,6 +78,9 @@
      }
      document.getElementById("P_cancelAppointment").onclick=function(){
          window.location.href="<?php echo site_url('Intro/go_to_P_cancel_appointment');?>"
+     }
+     document.getElementById("logOut").onclick=function(){
+        window.location.href="<?php echo site_url('Intro/go_to_p_login);?>"
      }
      
   </script>
