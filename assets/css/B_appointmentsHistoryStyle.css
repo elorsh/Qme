@@ -42,6 +42,20 @@ header{
     font-size: 35px;
     cursor: pointer;
 }
+.fas.fa-sign-out-alt{
+    position: absolute;
+    top: 10px;
+    margin-left: 10px;
+    font-size: 35px;
+    cursor: pointer;
+}
+.log-out{
+    position: absolute;
+    top: 45px;
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
 
 .navbar-nav{
     margin: 0 auto;
@@ -144,7 +158,9 @@ td i{
         .nav-link{
             font-size: 17px;
         }
-
+        .log-out{
+            font-size: 12px;
+        }
 }
 
 @media screen and (max-width: 650px){

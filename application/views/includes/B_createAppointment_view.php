@@ -18,6 +18,9 @@
         <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
      </header>
 
+     <i class="fas fa-sign-out-alt" id="logOut"></i>
+      <p class="log-out">התנתקות</p>
+
       <!----- The navigation menu ----->
 
       <nav class="navbar navbar-expand-sm">
@@ -80,6 +83,8 @@
      document.getElementById("B_my_profile").onclick=function(){
          window.location.href="<?php echo site_url('Intro/go_to_b_myProfile');?>"
      }
-     
+    document.getElementById("logOut").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_B_logIn);?>"
+     }
   </script>
  </html>

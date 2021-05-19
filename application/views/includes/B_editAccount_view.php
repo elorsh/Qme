@@ -15,9 +15,13 @@
      <title>Edit Business Account </title>
  </head>
  <body>
+   
     <header> 
          <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
      </header>
+
+     <i class="fas fa-sign-out-alt" id="logOut"></i>
+      <p class="log-out">התנתקות</p>
 
      <h4>פרטי העסק שלי</h4>
 
@@ -105,6 +109,9 @@
   <script>
       document.getElementById("changePass").onclick=function(){
          window.location.href="<?php echo site_url('Intro/ go_to_b_change_password');?>"
+     }
+     document.getElementById("logOut").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_B_logIn);?>"
      }
    
   </script>

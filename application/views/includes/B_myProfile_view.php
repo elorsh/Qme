@@ -22,6 +22,9 @@
     <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
      </header>
 
+     <i class="fas fa-sign-out-alt" id="logOut"></i>
+      <p class="log-out">התנתקות</p>
+      
             <!----- The navigation menu ----->
 
             <nav class="navbar navbar-expand-sm">
@@ -89,6 +92,9 @@
      }
      document.getElementById("customers").onclick=function(){
          window.location.href="<?php echo site_url('Intro/go_to_b_myCustomers');?>"
+     }
+     document.getElementById("logOut").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_B_logIn);?>"
      }
      
   </script>
