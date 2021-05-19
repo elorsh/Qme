@@ -20,6 +20,11 @@
    <header> 
        <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
     </header>
+
+    
+    <i class="fas fa-sign-out-alt" id="logOut"></i>
+      <p class="log-out">התנתקות</p>
+
     
     <i class="fas fa-user-circle" id="myProfile"></i>
     <p class="profile">הפרופיל שלי</p>
@@ -100,6 +105,8 @@
      document.getElementById("myProfile").onclick=function(){
          window.location.href="<?php echo site_url('Intro/go_to_P_myProfile');?>"
      }
-     //לעשות קישורים לאייקונס
+     document.getElementById("logOut").onclick=function(){
+        window.location.href="<?php echo site_url('Intro/go_to_p_login);?>"
+     }
  </script>
 </html>

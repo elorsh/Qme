@@ -171,6 +171,9 @@ td i{
         width: 40%;
         margin: 40px auto;
     }
+    .log-out{
+        font-size: 12px;
+    }
 }
 
 
@@ -196,6 +199,7 @@ td i{
     width: 90%;
     }
 }
+
 /*@media screen and (max-width: 500px){
     .table-container{
         width: 100%;
