@@ -54,14 +54,32 @@
     <form  dir="rtl" onsubmit="return validationForm()" >
 
         <div class="form-group ">
-            <label for="email">תאריך : </label>
-            <input type="date" class="form-control" name="date" id="date" min="2021-04-01" required>
+            <label for="date">תאריך : </label>
+            <select type="date" class="form-select" name="date" id="date" required>
+                 <option selected disabled value="">תאריך</option>
+                  <option>01/06/21</option>
+                  <option>02/06/21</option>
+                  <option>03/06/21</option>
+                  <option>04/06/21</option>
+                </select>
           </div>
 
           <div class="form-group">
-            <label for="password">שעה :</label>
-            <input type="time" class="form-control" name="time" id="time" required>
+            <label for="time">שעה :</label>
+            <select type="time" class="form-control" name="time" id="time" required>
+            <option>08:00</option>
+            <option>09:00</option>
+            <option>10:00</option>
+            <option>11:00</option>
+            <option>12:00</option>
+            <option>13:00</option>
+            <option>14:00</option>
+            <option>15:00</option>
+            <option>16:00</option>
+            <option>17:00</option>
+            </select>
           </div>
+        
 
           <div class="form-group message">
             <div class="sms">
