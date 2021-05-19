@@ -150,12 +150,12 @@ public function insert_new_p_user($data){
     
      public function b_login($error=null){
         $data['error']=$error;
-        $this->load->view('includes/b_LogIn_view',$data);
+        $this->load->view('includes/B_LogIn_view',$data);
     }
     
     public function b_login_new_user($msg=null){
         $data['msg']=$msg;
-        $this->load->view('includes/b_LogIn_view',$data);
+        $this->load->view('includes/B_LogIn_view',$data);
     }
     
     
@@ -185,7 +185,7 @@ public function insert_new_p_user($data){
                 'b_address' => $this->input->post('b_address'),
                 'b_photo' => $this->input->post('b_photo')
               );
-             $this-> insert_new_b_user($data);
+             $this-> insert_new_B_user($data);
                 }
     
     }
@@ -196,11 +196,11 @@ public function insert_new_p_user($data){
     }
     
     
-    public function insert_new_B_user($data){
+    public function insert_new_B_user($data){ 
          $this->P_Users_model->insert_B_user($data);
     
          $msg = ':) !יצרת משתמש בית עסק בהצלחה<br>עכשיו רק נשאר להתחבר לצורך השלמת התהליך';
-         $this->B_login_new_user($msg);
+         $this->b_login_new_user($msg);
         }
         
     
