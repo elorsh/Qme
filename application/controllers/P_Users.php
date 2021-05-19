@@ -177,12 +177,12 @@ public function insert_new_p_user($data){
                 'b_password' => $this->input->post('b_password'),
                 'b_full_name' => $this->input->post('b_full_name'), 
                 'b_id' => $this->input->post('b_id'),
-                'b_business_name' => $this->input->post('b_business_name')
+                'b_business_name' => $this->input->post('b_business_name'),
                 'b_profession' => $this->input->post('b_profession'),
                 'b_description' => $this->input->post('b_description'),
                 'b_phone1' => $this->input->post('b_phone1'), 
                 'b_phone2' => $this->input->post('b_phone2'),
-                'b_address' => $this->input->post('b_address')
+                'b_address' => $this->input->post('b_address'),
                 'b_photo' => $this->input->post('b_photo')
               );
              $this-> insert_new_b_user($data);
