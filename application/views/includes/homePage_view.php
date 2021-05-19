@@ -62,7 +62,7 @@
                 echo "<tr>";
                 echo '<td scope="col"><h5>'.$object->b_business_name.'</h5><h6>'.$object->b_profession.'</h6><h7>'.$object->b_description.'</h7><br><h7>כתובת: '.$object->b_address.'</h7></td>';
                 // echo '<td scope="col">'.$object->b_description.'</td>';
-                echo '<td><i class="far fa-calendar-alt"></i></td>';
+                echo '<td><i class="newAppointment" class="far fa-calendar-alt"></i></td>';
                 echo '<td><i class="fab fa-waze"></i></td>';
                 echo '<td><i class="fas fa-phone"></i></td>';
                 echo "</tr>";
@@ -106,7 +106,10 @@
          window.location.href="<?php echo site_url('Intro/go_to_P_myProfile');?>"
      }
      document.getElementById("logOut").onclick=function(){
-        window.location.href="<?php echo site_url('Intro/go_to_p_login);?>"
+        window.location.href="<?php echo site_url('Intro/go_to_p_login');?>"
+     }
+     document.getElementById("newAppointment").onclick=function(){
+        window.location.href="<?php echo site_url('Intro/go_to_P_create_appointment');?>"
      }
  </script>
 </html>
