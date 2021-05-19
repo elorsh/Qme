@@ -20,7 +20,7 @@
     <header> 
         <img id="logo" src= "../css/img/logo.png"/>
      </header>
-     
+
             <!----- The navigation menu ----->
 
             <nav class="navbar navbar-expand-sm">
@@ -94,6 +94,6 @@
      document.getElementById("P_my_profile").onclick=function(){
          window.location.href="<?php echo site_url('Intro/go_to_P_myProfile');?>"
      }
-     
+  
   </script>
  </html>

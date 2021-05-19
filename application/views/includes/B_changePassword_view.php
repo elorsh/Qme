@@ -56,7 +56,7 @@
  </body>
  <script>
    document.getElementById("logOut").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_B_logIn);?>"
+      window.location.href="<?php echo site_url('Intro/go_to_b_login);?>"
      }
  </script>
  </html>

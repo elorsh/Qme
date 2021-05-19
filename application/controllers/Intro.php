@@ -25,9 +25,7 @@ class Intro extends CI_Controller{
     public function go_to_b_register(){
         $this->load->view('includes/B_register_view');
         }
-    public function go_to_B_logIn(){
-            $this->load->view('includes/B_LogIn_view');
-        }  
+  
         // ---עבר ל-פ יוזר
     // public function go_to_home_page(){
     //     $data['result']=$this->Intro_model->get_B_users();
