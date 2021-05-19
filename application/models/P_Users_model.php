@@ -42,13 +42,13 @@ class P_Users_model extends CI_Model {
     //     return $error;
     //  }
 
-    public function insert_p_user($data){
-        $this->db->insert('DB_users', $data);
-    }
+
 
 // -------------------------------------------------
 
-
+public function insert_p_user($data){
+    $this->db->insert('DB_users', $data);
+}
 
      public function p_auth($data){
         $query = $this->db->get_where('DB_users', $data);
@@ -72,7 +72,10 @@ class P_Users_model extends CI_Model {
 
 
     //  --------------- *** b_users *** -----------------------
-
+    
+    public function insert_b_user($data){
+        $this->db->insert('DB_businesses', $data);
+    }
 
     public function get_B_users(){
         $query = $this->db->query("SELECT * FROM DB_businesses");
