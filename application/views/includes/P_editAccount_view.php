@@ -19,6 +19,8 @@
         <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
      </header>
 
+     <i class="fas fa-sign-out-alt" id="logOut"></i>
+      <p class="log-out">התנתקות</p>
 
      <h4>הפרטים שלי</h4>
 
@@ -34,28 +36,20 @@
 
         <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם מלא :</label>
-          <input type="text" class="form-control" name="u_full_name" id="validationCustom01" placeholder="שם פרטי ומשפחה" >
+          <input type="text" class="form-control" name="u_full_name" id="validationCustom01" value="#" placeholder="שם פרטי ומשפחה" >
         </div>
 
         <div class="col-md-2">
           <label for="validationCustom02" class="form-label">טלפון  :</label>
-          <input type="tel" class="form-control" name="u_phone1" id="validationCustom02" placeholder="0000000000" >
+          <input type="tel" class="form-control" name="u_phone1" id="validationCustom02" value="#" placeholder="0000000000" >
         </div>
 
         
 
         <div class="col-md-3">
             <label for="validationCustom02" class="form-label">כתובת :</label>
-            <input type="text" class="form-control" name="u_address" id="validationCustom05" placeholder="עיר ,רחוב ,מספר בית" >
+            <input type="text" class="form-control" name="u_address" id="validationCustom05" value="#" placeholder="עיר ,רחוב ,מספר בית" >
           </div>
-
-        <div class="col-md-3">
-          <label for="validationCustom03" class="form-label" >אימייל:</label>
-          <input type="email" class="form-control" name="u_email" id="validationCustom08" placeholder="example@gmail.com" >
-    
-        </div>
-        
-
 
         <div class="col-12">
           <button class="btn btn" id="submit" type="submit" onclick="document.location='changePassword.html'" >שינוי סיסמה</button>
@@ -68,4 +62,9 @@
 
 
   </body>
+  <script>
+      document.getElementById("logOut").onclick=function(){
+        window.location.href="<?php echo site_url('Intro/go_to_p_login);?>"
+     }
+  </script>
  </html>

@@ -42,7 +42,20 @@ header{
     font-size: 35px;
     cursor: pointer;
 }
-
+.fas.fa-sign-out-alt{
+    position: absolute;
+    top: 10px;
+    margin-left: 10px;
+    font-size: 35px;
+    cursor: pointer;
+}
+.log-out{
+    position: absolute;
+    top: 45px;
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
 h4{
     display: block;
     margin: auto;
@@ -125,6 +138,9 @@ h5{
         }
         h5{
             font-size: 23px;
+        }
+        .log-out{
+            font-size: 12px;
         }
 }
 
