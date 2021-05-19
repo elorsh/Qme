@@ -126,9 +126,10 @@
           </div>
         </div>-->
 
+<!-- מחקתי את ה required לבנתיים -->
         <div class="col-md-3">
           <label for="validationCustom11" class="form-label"> העלת תמונה:</label>
-          <input type="file" class="form-control"  name="b_photo" id="validationCustom11" accept="image/png, image/jpeg" required>
+          <input type="file" class="form-control"  name="b_photo" id="validationCustom11" accept="image/png, image/jpeg" > 
           <div class="invalid-feedback">
            יש לעלות תמונה של בית העסק 
           </div>
