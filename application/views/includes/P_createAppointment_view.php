@@ -61,6 +61,10 @@
                   <option>02/06/21</option>
                   <option>03/06/21</option>
                   <option>04/06/21</option>
+                  <option>05/06/21</option>
+                  <option>06/06/21</option>
+                  <option>07/06/21</option>
+
                 </select>
           </div>
 
@@ -77,6 +81,9 @@
             <option>15:00</option>
             <option>16:00</option>
             <option>17:00</option>
+            <option>18:00</option>
+            <option>19:00</option>
+            <option>20:00</option>
             </select>
           </div>
         
