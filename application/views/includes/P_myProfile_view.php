@@ -81,7 +81,7 @@
          window.location.href="<?php echo site_url('Intro/go_to_P_appointments');?>"
      }
      document.getElementById("P_my_profile").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_P_myProfile');?>"
+         window.location.href="<?php echo site_url('P_users/go_to_P_editMyProfile');?>"
      }
      document.getElementById("myAccount").onclick=function(){
          window.location.href="<?php echo site_url('Intro/go_to_P_myDetails');?>"

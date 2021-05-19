@@ -59,9 +59,15 @@ class P_Users_model extends CI_Model {
      public function p_auth_new_user($data){
         // $query = $this->db->get_where('DB_users',array($data));
         $query = $this->db->get_where('DB_users',$data);
-
         return $query->result();
      }
+
+        //פונציה שמביאה לי את נתוני המשתמש  - - במידה ואפשר לשמור את הנתונים מהסשן אז מיותר
+     public function get_P_user_data($data){
+        $query = $this->db->get_where('DB_users',$data);
+        return $query->result();
+     }
+
 
 
 
@@ -82,9 +88,7 @@ class P_Users_model extends CI_Model {
 
 
      public function b_auth_new_user($data){
-        // $query = $this->db->get_where('DB_users',array($data));
         $query = $this->db->get_where('DB_businesses',$data);
-
         return $query->result();
      }
 

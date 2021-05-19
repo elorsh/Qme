@@ -18,6 +18,12 @@
         <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>  
      </header>
 
+     <?php 
+          if (isset($msg)) {
+            echo '<br> <h5 class="message">'.$msg.'</h5><br>';
+          }
+          ?>
+
 
      <h4>,אהלן שותף עסקי שלנו <br>
     בוא נתחבר</h4>
@@ -26,6 +32,13 @@
 
         <div class="form-group ">
             <label for="email">אימייל : </label>
+            
+            <?php 
+          if (isset($error)) {
+            echo '<br> <p class="message" style="color:red">'.$error.'</p>';
+          }
+          ?>
+          
             <input type="text" class="form-control" name="b_full_name" id="fName" autocomplete="on" placeholder="example@gmail.com">
           </div>
 
