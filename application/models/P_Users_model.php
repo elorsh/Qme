@@ -82,7 +82,6 @@ public function insert_p_user($data){
         return $query->result();
     }
 
-    
 
     public function b_auth($data){
         $query = $this->db->get_where('DB_businesses', $data);

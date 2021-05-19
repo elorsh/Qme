@@ -28,7 +28,6 @@
      <h4>,אהלן שותף עסקי שלנו <br>
     בוא נתחבר</h4>
 
-    <!-- <form  dir="rtl" onsubmit="#" > -->
     <form method="post" action="<?php echo site_url('P_Users/b_auth')?>"dir="rtl">
 
         <div class="form-group ">
@@ -44,8 +43,8 @@
           </div>
 
           <div class="form-group">
-            <label for="password">סיסמא:</label>
-            <input type="text" class="form-control" name="b_password" id="pass" autocomplete="on" placeholder="******** ">
+            <label for="password">סיסמה:</label>
+            <input type="password" class="form-control" name="b_password" id="pass" autocomplete="on" placeholder="******** ">
           </div>
 
           <button type="submit" id="submit" class="btn btn" value="run">התחבר! </button>

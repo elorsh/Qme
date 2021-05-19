@@ -118,8 +118,7 @@ public function insert_new_p_user($data){
     
 
     public function go_to_B_myProfile_view(){
-    
-        $this->load->view('includes/homePage_view',$data);
+        $this->load->view('includes/B_myProfile_view',$data);
         }
 
 
@@ -142,7 +141,7 @@ public function insert_new_p_user($data){
                $data['loggedin']='1';
                $this->session->set_userdata($data); 
             //    $this->load->view('includes/homePage_view');
-               $this->go_to_B_myProfile_view(); // צריך לשנות את הלינק ולשלוח אותו לעמוד הפרופיל העסקי. 
+               $this->go_to_B_myProfile_view(); . 
                
                     }
     
