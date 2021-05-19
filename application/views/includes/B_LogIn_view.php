@@ -28,7 +28,8 @@
      <h4>,אהלן שותף עסקי שלנו <br>
     בוא נתחבר</h4>
 
-    <form  dir="rtl" onsubmit="#" >
+    <!-- <form  dir="rtl" onsubmit="#" > -->
+    <form method="post" action="<?php echo site_url('P_Users/b_auth')?>"dir="rtl">
 
         <div class="form-group ">
             <label for="email">אימייל : </label>
@@ -39,7 +40,7 @@
           }
           ?>
           
-            <input type="text" class="form-control" name="b_full_name" id="fName" autocomplete="on" placeholder="example@gmail.com">
+            <input type="text" class="form-control" name="b_email" id="email" autocomplete="on" placeholder="example@gmail.com">
           </div>
 
           <div class="form-group">
