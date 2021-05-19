@@ -25,7 +25,9 @@ class Intro extends CI_Controller{
     public function go_to_b_register(){
         $this->load->view('includes/B_register_view');
         }
-        
+    public function go_to_B_logIn(){
+            $this->load->view('includes/B_LogIn_view');
+        }  
         // ---עבר ל-פ יוזר
     // public function go_to_home_page(){
     //     $data['result']=$this->Intro_model->get_B_users();
@@ -55,6 +57,7 @@ class Intro extends CI_Controller{
     public function go_to_private_account(){
             $this->load->view('includes/P_LogIn_view');
         }
+        
 // private
     public function go_to_P_appointments(){
     $this->load->view('includes/P_myAppointments_view');
@@ -71,9 +74,7 @@ class Intro extends CI_Controller{
     public function go_to_P_myDetails(){
         $this->load->view('includes/P_editAccount_view');
     }
-    public function go_to_B_logIn(){
-        $this->load->view('includes/B_LogIn_view');
-    }
+
     
   
    
