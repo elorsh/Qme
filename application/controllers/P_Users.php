@@ -141,7 +141,7 @@ public function insert_new_p_user($data){
                $data['loggedin']='1';
                $this->session->set_userdata($data); 
             //    $this->load->view('includes/homePage_view');
-               $this->go_to_B_myProfile_view(); . 
+               $this->go_to_B_myProfile_view(); 
                
                     }
     
