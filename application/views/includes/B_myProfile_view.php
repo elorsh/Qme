@@ -94,7 +94,7 @@
          window.location.href="<?php echo site_url('Intro/go_to_b_myCustomers');?>"
      }
      document.getElementById("logOut").onclick=function(){
-        window.location.href="<?php echo site_url('Intro/go_to_b_login);?>"
+        window.location.href="<?php echo site_url('Intro/go_to_b_login');?>"
      }
      
   </script>

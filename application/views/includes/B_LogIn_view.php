@@ -56,11 +56,11 @@
 
 <h3  dir="rtl" >עדיין לא עובדים ביחד?</h3>
 
-<button type="submit" id="b_register" id="createBtn" class="createBtn" value="run"  onclick="document.location='createBussinessAccount.html'">צור חשבון עסקי</button>
+<button type="submit" id="b_register" id="createBtn" class="createBtn" value="run">צור חשבון עסקי</button>
 
 <div id="clear"></div>
 
-<button class="changeBtn"  id="p_login" id="submit" type="submit" onclick="document.location='privateLogIn.html'" >  מעבר לחשבון פרטי</button> 
+<button class="changeBtn"  id="p_login" id="submit" type="submit" >  מעבר לחשבון פרטי</button> 
  
  </body>
  <script>

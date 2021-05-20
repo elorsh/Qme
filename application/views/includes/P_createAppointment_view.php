@@ -125,7 +125,7 @@
          window.location.href="<?php echo site_url('Intro/go_to_P_myProfile');?>"
      }
      document.getElementById("logOut").onclick=function(){
-        window.location.href="<?php echo site_url('Intro/go_to_p_login);?>"
+        window.location.href="<?php echo site_url('Intro/go_to_p_login');?>"
      }
   
      
