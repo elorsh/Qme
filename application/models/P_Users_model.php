@@ -69,7 +69,7 @@ public function insert_p_user($data){
      }
 
      public function get_P_appointments($data){
-         $query = $this->db->query('SELECT * FROM `DB_B_Appointments` WHERE `u_email` = "'.$data['u_email'].'" ')
+        $query = $this->db->query('SELECT * FROM `DB_B_Appointments` WHERE `u_email` = "'.$data['u_email'].'" ')
         return $query->result();
      }
 
