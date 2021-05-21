@@ -114,6 +114,10 @@ td i{
     cursor: pointer;
     font-size: 125%;
 }
+#calendar{
+    cursor: pointer;
+    font-size: 200%; 
+}
 
 .btn{
     display: block;

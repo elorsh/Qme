@@ -73,7 +73,7 @@
             echo '<th scope="col">'.$object->b_business_name.'</th>';
             echo '<th scope="col">'.$object->a_date.'</th>';
             echo '<th scope="col">'.$object->a_time.'</th>';
-            echo '<i class="far fa-calendar-alt"></i>';
+            echo '<i class="far fa-calendar-alt" Id="calendar"></i>';
             echo "</tr>";
           }
 
