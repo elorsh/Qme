@@ -20,7 +20,6 @@ body{
 
 }
 
-
 header{
     align-items: center;
     justify-content: center;
@@ -52,14 +51,8 @@ header{
     cursor: pointer;
     font-weight: bold;
 }
-.fas.fa-ban{
-    position: absolute;
-    left: 77px;
-    top: 10px;
-    font-size: 35px;
-    cursor: pointer;
-}
-#logOut{
+
+.fas.fa-sign-out-alt{
     position: absolute;
     top: 10px;
     margin-left: 10px;
@@ -73,6 +66,7 @@ header{
     font-size: 15px;
     font-weight: bold;
 }
+
 h4{
     display: block;
     margin: auto;
