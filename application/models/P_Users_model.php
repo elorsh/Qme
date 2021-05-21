@@ -68,6 +68,11 @@ public function insert_p_user($data){
         return $query->result();
      }
 
+     public function get_P_appointments($data){
+         $query = $this->db->get_where('DB_B_Appointments', $data['u_email']);
+        return $query->result();
+     }
+
 
 
 
