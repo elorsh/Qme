@@ -170,6 +170,14 @@ td i{
             font-size: 18px;
 
        }
+       h5{
+        font-size: 22px !important;
+        font-weight: bold;
+    }
+        h6{
+        font-size: 19px !important;
+        color: brown;
+      }
        .search-container {
         width: 40%;
         margin: 40px auto;
@@ -195,11 +203,18 @@ td i{
     }
     .btnSearch{
         font-size: 16px;
-
    }
    
    .table-container{
     width: 90%;
+    }
+    h5{
+        font-size: 20px !important;
+        font-weight: bold;
+    }
+    h6{
+        font-size: 17px !important;
+        color: brown;
     }
 }
 
