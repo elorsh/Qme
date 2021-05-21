@@ -57,6 +57,7 @@
      <table dir="rtl" class="table table-striped">
         <thead>
           <tr>
+            <th scope="col" > בית עסק</th>
             <th scope="col" > תאריך</th>
             <th scope="col">שעה</th>
             <th scope="col">עדכון תור</th>
@@ -68,6 +69,7 @@
           foreach($result as $object){
            
             echo "<tr>";
+            echo '<th scope="col">'.$object->b_email.'</th>';
             echo '<th scope="col">'.$object->a_date.'</th>';
             echo '<th scope="col">'.$object->a_time.'</th>';
             echo '<i class="far fa-calendar-alt"></i>';
