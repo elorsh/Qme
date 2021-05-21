@@ -29,13 +29,14 @@
     <i class="fas fa-user-circle" id="myProfile"></i>
 
     <p class="profile" id="myProfile2">
+    הפרופיל שלי <br>
     <?php 
       if (isset($p_user['loggedin']))
       {
         echo $p_user['u_email'];
       };
     ?>
-    <br>הפרופיל שלי</p>
+    </p>
 
 
     <h4  dir="rtl" >מה בא לנו? </h4>
