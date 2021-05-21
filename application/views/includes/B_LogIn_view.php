@@ -67,8 +67,8 @@
      document.getElementById("b_register").onclick=function(){
          window.location.href="<?php echo site_url('Intro/go_to_b_register');?>"
      }
-    //  document.getElementById("p_login").onclick=function(){
-    //      window.location.href="<?php echo site_url('Intro/go_to_p_login');?>"
-    //  }
+     document.getElementById("p_login").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_p_login');?>"
+     }
  </script>
  </html>
