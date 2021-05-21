@@ -114,6 +114,7 @@ public function insert_new_p_user($data){
             $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
             $data['p_user']=$p_user;// כנל
             $p_appointments=$this->P_Users_model->get_P_appointments($p_user);
+            
             $data['result']=$p_appointments;
             $this->load->view('includes/P_myAppointments_view', $data);
         }
@@ -122,10 +123,6 @@ public function insert_new_p_user($data){
 
 
     //  --------------- *** b_users *** -----------------------
-
-
-    
-
 
         public function b_auth(){
             $data = array(

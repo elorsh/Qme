@@ -67,9 +67,14 @@ public function insert_p_user($data){
         $query = $this->db->get_where('DB_users',$data);
         return $query->result();
      }
+    //פונקציה מקורית שמשתמש בסלקט יחסית פשוט
+    //  public function get_P_appointments($data){
+    //     $query = $this->db->query('SELECT * FROM `DB_B_Appointments` WHERE `u_email` = "'.$data['u_email'].'" ');
+    //     return $query->result();
+    //  }
 
      public function get_P_appointments($data){
-        $query = $this->db->query('SELECT * FROM `DB_B_Appointments` WHERE `u_email` = "'.$data['u_email'].'" ');
+        $query = $this->db->query('SELECT * FROM `DB_B_Appointments` INNER JOIN DB_businesses  ON DB_B_Appointments.b_email = DB_businesses.b_email WHERE `u_email` = "'.$data['u_email'].'" ');
         return $query->result();
      }
 
