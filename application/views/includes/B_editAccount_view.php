@@ -76,24 +76,24 @@
               <option>לק ג'ל</option>
               <option> קוסמטיקה</option>
               <option>סטודיו </option>
-            </select>
-          
+            </select>       
           </div>
 
         <div class="col-md-4">
           <label for="validationCustom05" class="form-label"> שינוי תמונה:</label>
           <input type="file" class="form-control" name="b_photo" value="#" id="validationCustom11" accept="image/png, image/jpeg" >
-          
         </div>
 
 
         <div class="col-12">
-          <button class="btn btn" id="submit" id="changePass" type="submit" >שינוי סיסמה</button>
+          <button class="btn btn" id="changePass" type="button" >שינוי סיסמה</button>
         </div>
+
+        <button class="btn btn update "  id="submit" type="submit">  עדכן את פרטי העסק</button>
+
       </form>
      </div>
 
-     <button class="btn btn update "  id="submit" type="submit">  עדכן את פרטי העסק</button>
 
 
 

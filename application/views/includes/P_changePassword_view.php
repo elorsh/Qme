@@ -40,18 +40,19 @@
             <label for="pass2">סיסמה חדשה:</label>
             <input type="password" class="form-control" name="password2" id="pass2"  minlength="8" autocomplete="on" placeholder="סיסמא חדשה">
           </div>
-          <div class="form-group">
+
+          <!--<div class="form-group">
             <label for="pass3">אימות סיסמה :</label>
             <input type="password" class="form-control" name="password3" id="pass3" minlength="8" autocomplete="on" placeholder="אימות סיסמא חדשה">
-          </div>
+          </div>-->
 
-          <button type="submit" id="submit" class="btn btn" value="run" >שינוי סיסמה </button>
+          <button type="submit" class="btn btn" value="run" >שינוי סיסמה </button>
           
           <div id="done"></div>
           
-
 </form>
-<script src="../javascript/changePassword.js"></script>
+
+<!--<script src="../javascript/changePassword.js"></script>-->
 
  </body>
  <script>

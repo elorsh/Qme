@@ -14,6 +14,7 @@
      <title>Business Log-In</title>
  </head>
  <body>
+   
     <header> 
         <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>  
      </header>
@@ -44,7 +45,7 @@
 
           <div class="form-group">
             <label for="password">סיסמה:</label>
-            <input type="password" class="form-control" name="b_password" id="pass" autocomplete="on" placeholder="******** ">
+            <input type="password" class="form-control" name="b_password" id="pass"  placeholder="******** ">
           </div>
 
           <button type="submit" id="b_login" class="btn btn" value="run">התחבר! </button>
@@ -56,15 +57,15 @@
 
 <h3  dir="rtl" >עדיין לא עובדים ביחד?</h3>
 
-<button type="submit" id="b_register" id="createBtn" class="createBtn" value="run">צור חשבון עסקי</button>
+<button type="submit" id="createBtn" class="createBtn" value="run">צור חשבון עסקי</button>
 
 <div id="clear"></div>
 
-<button class="changeBtn"  id="p_login" type="submit" >  מעבר לחשבון פרטי</button> 
+<button class="changeBtn"  id="p_login" type="button" >  מעבר לחשבון פרטי</button> 
  
  </body>
  <script>
-     document.getElementById("b_register").onclick=function(){
+     document.getElementById("createBtn").onclick=function(){
          window.location.href="<?php echo site_url('Intro/go_to_b_register');?>"
      }
      document.getElementById("p_login").onclick=function(){

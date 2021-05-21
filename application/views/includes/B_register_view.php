@@ -46,6 +46,7 @@
             שם תקין
           </div>
         </div>
+        
         <div class="col-md-4">
           <label for="validationCustom02" class="form-label">טלפון בעל העסק:</label>
           <input type="tel" class="form-control" name="b_phone1" id="validationCustom02"  minlength="10" placeholder="0000000000" required>
@@ -53,6 +54,7 @@
            מספר טלפון תקין 
           </div>
         </div>
+
         <div class="col-md-4" >
             <label for="validationCustom03" class="form-label" >שם בית העסק:</label>
             <input type="text" class="form-control"  name="b_business_name" id="validationCustom03" placeholder="שם בית העסק" required>
@@ -60,6 +62,7 @@
               שם בית העסק תקין
             </div>
           </div>
+
           <div class="col-md-4" >
             <label for="validationCustom03" class="form-label" >תיאור בית העסק:</label>
             <input type="text" class="form-control"  name="b_description" id="validationCustom12" placeholder="תיאור בית העסק" required>
@@ -74,6 +77,7 @@
               מספר תקין
             </div>
           </div>
+
         <div class="col-md-4">
             <label for="validationCustom05" class="form-label">כתובת :</label>
             <input type="text" class="form-control"  name="b_address" id="validationCustom05" minlength="10" placeholder="עיר ,רחוב , מספר בית" required>
@@ -81,6 +85,7 @@
               כתובת תקינה
             </div>
           </div>
+
           <div class="col-md-3">
             <label for="validationCustom06" class="form-label">טלפון נוסף :</label>
             <input type="tel" class="form-control" name="b_phone2" id="validationCustom06" placeholder="0000000000" required>
@@ -88,6 +93,7 @@
              מספר טלפון תקין 
             </div>
           </div>
+
           <div class="col-md-3">
             <label for="validationCustom07" class="form-label">תחום עיסוק:</label>
             <select class="form-select" name="b_profession" id="validationCustom07" required>
@@ -150,10 +156,11 @@
         <div class="col-12">
           <button class="btn btn" id="submit" type="submit" > צור חשבון</button>
         </div>
+
       </form>
      </div>
 
-     <button class="btn btn change"  id="toPrivate" type="submit" >  מעבר לחשבון פרטי</button>
+     <button class="btn btn change"  id="toPrivate" type="button" >  מעבר לחשבון פרטי</button>
 
 
 

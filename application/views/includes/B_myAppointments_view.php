@@ -84,7 +84,7 @@
     
     </div>
 
-    <button class="btn"  id="submit" id="createAppointment" type="submit" > <i class="far fa-calendar-alt"></i>הזנה למערכת תור חדש </button>
+    <button class="btn"  id="createAppointment" type="button" > <i class="far fa-calendar-alt"></i>הזנה למערכת תור חדש </button>
 
 
 

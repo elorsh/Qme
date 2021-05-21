@@ -59,13 +59,13 @@
     ?>
 
     <p1>צפייה ועריכה של פרטי העסק שלי</p1>
-    <button class="btn"  id="submit" id="account" type="submit" > <i class="fas fa-cog"></i> פרטי העסק </button>
+    <button class="btn"  id="account" type="submit" > <i class="fas fa-cog"></i> פרטי העסק </button>
 
     <p2> עדכון וצפייה בלוח התורים</p2>
-    <button class="btn appointment" id="appointments" id="submit" type="submit"  > <i class="far fa-calendar-alt"></i> הצג הכל </button>
+    <button class="btn appointment" id="appointments" type="submit"  > <i class="far fa-calendar-alt"></i> הצג הכל </button>
 
     <p3>הלקוחות שלי</p3>
-    <button class="btn customers"  id="customers" id="submit" type="submit"><i class="fas fa-child"></i> הצג הכל </button>
+    <button class="btn customers"  id="customers" type="submit"><i class="fas fa-child"></i> הצג הכל </button>
     
 </div>
 
