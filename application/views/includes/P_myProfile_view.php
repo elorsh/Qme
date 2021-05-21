@@ -57,14 +57,14 @@
      <h4> היי, טוב לראות אותך</h4>
 
     <p1>צפייה ועריכה של הפרטיים האישיים שלך</p1>
-    <button class="btn"  id="submit" id="myAccount" type="submit"> <i class="fas fa-cog"></i> הפרטים שלי </button>
+    <button class="btn" id="myAccount" type="submit"> <i class="fas fa-cog"></i> הפרטים שלי </button>
 
     <p2> התורים הבאים שלי</p2>
-    <button class="btn appointment"  id="submit"  id="myAppointments" type="button"> <i class="far fa-calendar-alt"></i> הצג הכל </button>
+    <button class="btn appointment" id="myAppointments" type="button"> <i class="far fa-calendar-alt"></i> הצג הכל </button>
 
     <!--למחוק-->
     <p3>בתי עסק מועדפים </p3>
-    <button class="btn business"  id="submit" type="submit"><i class="fas fa-heart"></i>בתי העסק המועדפים שלי </button>
+    <button class="btn business" type="submit"><i class="fas fa-heart"></i>בתי העסק המועדפים שלי </button>
     
 </div>
 
