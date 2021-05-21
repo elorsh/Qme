@@ -212,7 +212,15 @@ public function insert_new_p_user($data){
     
     
     
-    
+    public function logout(){
+        $data = array(
+            'u_email',
+            'u_password',
+            'loggedin'
+          );
+        $this->session->unset_userdata($data);
+        $this->load->view('includes/P_LogIn_view');
+        }
 
 
 
