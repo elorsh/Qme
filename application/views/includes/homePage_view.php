@@ -34,7 +34,7 @@
         echo $p_user['u_email'];
       };
     ?>
-    </p>
+    </p><br>
     <p class="profile">הפרופיל שלי</p>
      
 
