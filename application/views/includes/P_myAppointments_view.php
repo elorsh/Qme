@@ -71,7 +71,7 @@
             echo '<th scope="col">'.$object->a_date.'</th>';
             echo '<th scope="col">'.$object->a_time.'</th>';
             echo '<i class="far fa-calendar-alt"></i>';
-\\            echo "</tr>";
+            echo "</tr>";
           }
 
           ?>
