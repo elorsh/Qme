@@ -27,9 +27,7 @@
 
     
     <i class="fas fa-user-circle" id="myProfile"></i>
-    <!-- <p class="profile">
 
-    </p><br> -->
     <p class="profile">
     <?php 
       if (isset($p_user['loggedin']))
