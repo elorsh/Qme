@@ -27,6 +27,14 @@
 
     
     <i class="fas fa-user-circle" id="myProfile"></i>
+    <p class="profile">
+    <?php 
+      if (isset($p_user['loggedin']))
+      {
+        echo $p_user['u_email'];
+      };
+    ?>
+    </p>
     <p class="profile">הפרופיל שלי</p>
      
 

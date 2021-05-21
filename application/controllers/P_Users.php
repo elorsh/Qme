@@ -36,7 +36,6 @@ class P_Users extends CI_Controller{
            $data['u_email']=$check[0]->u_email;
            $data['loggedin']='1';
            $this->session->set_userdata($data); 
-        //    $this->load->view('includes/homePage_view');
            $this->go_to_home_page();
            
                 }
@@ -99,6 +98,8 @@ public function insert_new_p_user($data){
 
     // מציג את כל בתי העסק בצד הלקוח
     public function go_to_home_page(){
+        $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+        $data['p_user']=$p_user;// כנל
         $data['result']=$this->P_Users_model->get_B_users();
         $this->load->view('includes/homePage_view',$data);
         }
@@ -116,12 +117,6 @@ public function insert_new_p_user($data){
 
 
     
-
-    public function go_to_B_myProfile_view(){
-        $this->load->view('includes/B_myProfile_view',$data);
-        }
-
-
 
 
         public function b_auth(){
@@ -201,6 +196,11 @@ public function insert_new_p_user($data){
          $msg = ':) !יצרת משתמש בית עסק בהצלחה<br>עכשיו רק נשאר להתחבר לצורך השלמת התהליך';
          $this->b_login_new_user($msg);
         }
+
+        
+    public function go_to_B_myProfile_view(){
+        $this->load->view('includes/B_myProfile_view',$data);
+    }
         
     
     
