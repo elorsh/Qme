@@ -49,6 +49,7 @@ header{
     right: 57px;
     top: 20px;
     font-size: 15px;
+    cursor: pointer;
     font-weight: bold;
 }
 .fas.fa-ban{
@@ -58,7 +59,7 @@ header{
     font-size: 35px;
     cursor: pointer;
 }
-.fas.fa-sign-out-alt{
+#logOut{
     position: absolute;
     top: 10px;
     margin-left: 10px;
@@ -67,8 +68,8 @@ header{
 }
 .log-out{
     position: absolute;
-    left: 10px;
-    top: 20px;
+    top: 45px;
+    margin-left: 5px;
     font-size: 15px;
     font-weight: bold;
 }
