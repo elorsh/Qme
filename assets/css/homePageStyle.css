@@ -134,7 +134,6 @@ h6{
     color: brown;
 }
 
-
 td i{
     cursor: pointer;
     font-size: 250%; 
@@ -218,12 +217,12 @@ td i{
     }
 }
 
-/*@media screen and (max-width: 500px){
+@media screen and (max-width: 500px){
     .table-container{
         width: 100%;
     }
     
-}*/
+}
 
 
 
