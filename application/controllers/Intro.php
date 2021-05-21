@@ -16,6 +16,16 @@ class Intro extends CI_Controller{
     public function go_to_p_login(){
         $this->load->view('includes/P_LogIn_view');
         }
+        
+    public function logout(){
+        $data = array(
+            'b_email',
+            'b_password',
+            'loggedin'
+          );
+        $this->session->unset_userdata($data);
+        $this->load->view('includes/P_LogIn_view');
+        }
     public function go_to_p_register(){
         $this->load->view('includes/P_register_view');
         }
