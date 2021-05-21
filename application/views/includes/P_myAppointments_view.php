@@ -107,7 +107,7 @@
          window.location.href="<?php echo site_url('Intro/go_to_P_createAppointment');?>"
      }
      document.getElementById("logOut").onclick=function(){
-        window.location.href="<?php echo site_url('P_Users/logout');?>"
+        window.location.href="<?php echo site_url('P_Users/p_logout');?>"
      }
      
   </script>
