@@ -167,20 +167,20 @@ td i{
         }
        .btnSearch{
             font-size: 18px;
-
        }
+
        h5{
         font-size: 22px !important;
         font-weight: bold;
-    }
+      }
         h6{
         font-size: 19px !important;
         color: brown;
-      }
+          }
        .search-container {
-        width: 40%;
+        width: 50%;
         margin: 40px auto;
-    }
+     }
     .log-out{
         font-size: 12px;
     }
