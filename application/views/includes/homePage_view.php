@@ -27,16 +27,18 @@
 
     
     <i class="fas fa-user-circle" id="myProfile"></i>
-    <p class="profile">
-    <?php 
+    <!-- <p class="profile">
+
+    </p><br> -->
+    <p class="profile">הפרופיל שלי</p>
+     <h1>
+     <?php 
       if (isset($p_user['loggedin']))
       {
-        echo $p_user['u_email'].'<br>';
+        echo 'שלום , '.$p_user['u_email'];
       };
     ?>
-    </p><br>
-    <p class="profile">הפרופיל שלי</p>
-     
+     </h1>
 
     <h4  dir="rtl" >מה בא לנו? </h4>
 
