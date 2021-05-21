@@ -28,7 +28,7 @@
      <h4>,אהלן שותף עסקי שלנו <br>
     בוא נתחבר</h4>
 
-    <form method="post" action="<?php echo site_url('P_Users/b_auth')?>"dir="rtl">
+    <form method="post" action="<?php echo site_url('P_Users/b_auth')?>" dir="rtl">
 
         <div class="form-group ">
             <label for="email">אימייל : </label>
@@ -47,7 +47,7 @@
             <input type="password" class="form-control" name="b_password" id="pass" autocomplete="on" placeholder="******** ">
           </div>
 
-          <button type="submit" id="submit" class="btn btn" value="run">התחבר! </button>
+          <button type="submit" id="b_login" class="btn btn" value="run">התחבר! </button>
 </form>
 
 
@@ -60,15 +60,15 @@
 
 <div id="clear"></div>
 
-<button class="changeBtn"  id="p_login" id="submit" type="submit" >  מעבר לחשבון פרטי</button> 
+<button class="changeBtn"  id="p_login" type="submit" >  מעבר לחשבון פרטי</button> 
  
  </body>
  <script>
      document.getElementById("b_register").onclick=function(){
          window.location.href="<?php echo site_url('Intro/go_to_b_register');?>"
      }
-     document.getElementById("p_login").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_p_login');?>"
-     }
+    //  document.getElementById("p_login").onclick=function(){
+    //      window.location.href="<?php echo site_url('Intro/go_to_p_login');?>"
+    //  }
  </script>
  </html>
