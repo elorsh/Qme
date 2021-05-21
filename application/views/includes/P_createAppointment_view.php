@@ -116,7 +116,7 @@
  </body>
  <script>
       document.getElementById("homePage").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_home_page');?>"
+         window.location.href="<?php echo site_url('P_Users/go_to_home_page');?>"
      }
      document.getElementById("P_myAppointments").onclick=function(){
          window.location.href="<?php echo site_url('Intro/go_to_P_appointments');?>"
@@ -125,7 +125,7 @@
          window.location.href="<?php echo site_url('Intro/go_to_P_myProfile');?>"
      }
      document.getElementById("logOut").onclick=function(){
-        window.location.href="<?php echo site_url('Intro/go_to_p_login');?>"
+        window.location.href="<?php echo site_url('P_Users/p_logout');?>"
      }
   
      
