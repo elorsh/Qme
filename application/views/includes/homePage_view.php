@@ -22,8 +22,8 @@
     </header>
 
     
-    <i class="fas fa-sign-out-alt" id="logOut"></i>
-      <p class="log-out">התנתקות</p>
+    <i class="fas fa-sign-out-alt" ></i>
+      <p class="log-out" id="logOut">התנתקות</p>
 
     
     <i class="fas fa-user-circle" id="myProfile"></i>
@@ -122,7 +122,9 @@
     //  document.getElementById("logOut").onclick=function(){
     //     window.location.href="<?php echo site_url('Intro/go_to_p_login');?>"
     //  }
-  
+     document.getElementById("logOut").onclick=function(){
+        window.location.href="<?php echo site_url('P_Users/p_logout');?>"
+     }
      document.getElementById("newAppointment").onclick=function(){
         window.location.href="<?php echo site_url('Intro/go_to_P_create_appointment');?>"
      }
