@@ -30,15 +30,15 @@
     <!-- <p class="profile">
 
     </p><br> -->
-    <p class="profile">הפרופיל שלי</p>
-     <h1>
-     <?php 
+    <p class="profile">
+    <?php 
       if (isset($p_user['loggedin']))
       {
-        echo 'שלום , '.$p_user['u_email'];
+        echo $p_user['u_email'];
       };
     ?>
-     </h1>
+    <br>הפרופיל שלי</p>
+
 
     <h4  dir="rtl" >מה בא לנו? </h4>
 
