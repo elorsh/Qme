@@ -31,7 +31,7 @@
     <?php 
       if (isset($p_user['loggedin']))
       {
-        echo $p_user['u_email'];
+        echo $p_user['u_email'].'<br>';
       };
     ?>
     </p><br>
