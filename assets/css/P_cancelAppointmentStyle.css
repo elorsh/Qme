@@ -46,13 +46,6 @@ header{
     margin-bottom: 15px !important;
 }
 
-.fas.fa-share{
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-size: 35px;
-    cursor: pointer;
-}
 .fas.fa-sign-out-alt{
     position: absolute;
     top: 10px;

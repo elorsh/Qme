@@ -55,8 +55,8 @@
 
  </body>
  <script>
-     document.getElementById("logOut").onclick=function(){
-        window.location.href="<?php echo site_url('Intro/go_to_p_login');?>"
+    document.getElementById("logOut").onclick=function(){
+        window.location.href="<?php echo site_url('P_Users/p_logout');?>"
      }
   
  </script>

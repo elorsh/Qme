@@ -55,7 +55,7 @@
      <p1   dir="rtl" >האם אתה בטוח כי ברצונך</p1> 
      <p2 dir="rtl">לבטל את התור?</p2>
 
-     <button class="btn"  id="submit" type="submit" >בטל לי את התור</button>
+     <button class="btn"  id="submit" type="button" >בטל לי את התור</button>
      <div id="cancel"></div>
 
      <p3><i class="far fa-calendar-times"></i></p3>
@@ -72,7 +72,7 @@
   </body>
   <script>
       document.getElementById("homePage").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_home_page');?>"
+         window.location.href="<?php echo site_url('P_Users/go_to_home_page');?>"
      }
      document.getElementById("P_myAppointments").onclick=function(){
          window.location.href="<?php echo site_url('Intro/go_to_P_appointments');?>"
@@ -80,8 +80,8 @@
      document.getElementById("P_my_profile").onclick=function(){
          window.location.href="<?php echo site_url('Intro/go_to_P_myProfile');?>"
      }
-     document.getElementById("logOut").onclick=function(){
-        window.location.href="<?php echo site_url('Intro/go_to_p_login');?>"
+      document.getElementById("logOut").onclick=function(){
+        window.location.href="<?php echo site_url('P_Users/p_logout');?>"
      }
      
   </script>
