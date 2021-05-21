@@ -35,13 +35,7 @@ header{
     width: 320px;
     height: 200px;
 }
-.fas.fa-share{
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-size: 35px;
-    cursor: pointer;
-}
+
 .fas.fa-sign-out-alt{
     position: absolute;
     top: 10px;
@@ -54,7 +48,7 @@ header{
     top: 45px;
     margin-left: 5px;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: bold;  
 }
 
 .navbar-nav{

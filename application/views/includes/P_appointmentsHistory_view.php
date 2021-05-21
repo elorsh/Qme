@@ -71,7 +71,7 @@
             echo '<th scope="col">'.$object->a_date.'</th>';
             echo '<th scope="col">'.$object->a_time.'</th>';
             echo '<th scope="col">'.$object->b_full_name.'</th>';
-\\            echo "</tr>";
+           echo "</tr>";
           }
 
           ?>
@@ -98,7 +98,7 @@
          window.location.href="<?php echo site_url('Intro/go_to_P_myProfile');?>"
      }
      document.getElementById("logOut").onclick=function(){
-        window.location.href="<?php echo site_url('Intro/go_to_p_login');?>"
+        window.location.href="<?php echo site_url('P_Users/p_logout');?>"
      }
   
   </script>

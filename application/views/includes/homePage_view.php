@@ -21,10 +21,10 @@
        <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
     </header>
 
-    
-    <i class="fas fa-sign-out-alt" ></i>
-      <p class="log-out" id="logOut">התנתקות</p>
 
+    <i class="fas fa-sign-out-alt" id="logOut"></i>
+      <p class="log-out">התנתקות</p>
+      
     
     <i class="fas fa-user-circle" id="myProfile"></i>
 

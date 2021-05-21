@@ -50,6 +50,7 @@ header{
     font-size: 15px;
     cursor: pointer;
     font-weight: bold;
+    color: brown;
 }
 
 .fas.fa-sign-out-alt{
