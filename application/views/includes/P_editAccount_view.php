@@ -52,19 +52,21 @@
           </div>
 
         <div class="col-12">
-          <button class="btn btn" id="changePass" type="submit" >שינוי סיסמה</button>
+          <button class="btn btn" id="changePass" type="button" >שינוי סיסמה</button>
         </div>
+
+        <button class="btn btn update "  id="submit" type="submit" >  עדכן את הפרטים שלי</button>
+
       </form>
      </div>
 
-     <button class="btn btn update "  id="submit" type="submit" >  עדכן את פרטי העסק</button>
 
 
 
   </body>
   <script>
-         document.getElementById("logOut").onclick=function(){
-        window.location.href="<?php echo site_url('Intro/go_to_p_login');?>"
+        document.getElementById("logOut").onclick=function(){
+        window.location.href="<?php echo site_url('P_Users/p_logout');?>"
      }
        document.getElementById("changePass").onclick=function(){
         window.location.href="<?php echo site_url('Intro/go_to_p_change_password');?>"

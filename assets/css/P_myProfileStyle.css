@@ -49,13 +49,6 @@ header{
     font-size: 35px;
     cursor: pointer;
 }
-.log-out{
-    position: absolute;
-    top: 45px;
-    margin-left: 5px;
-    font-size: 15px;
-    font-weight: bold;
-}
 
 .navbar-nav{
     margin: 0 auto;

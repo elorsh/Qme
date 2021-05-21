@@ -55,11 +55,11 @@
 
 <h3  dir="rtl" >עדיין לא מכירים?</h3>
 
-<button type="submit" id="p_register" class="createBtn" value="run"  onclick="document.location='createPrivateAccount.html'" >צור חשבון</button>
+<button type="button" id="p_register" class="createBtn" value="run"  >צור חשבון</button>
   
 <div id="clear"></div>
 
-<button class="changeBtn"  id="b_login" type="submit" onclick="document.location='businessLogIn.html'" >  מעבר לחשבון עסקי</button>
+<button class="changeBtn"  id="b_login" type="button"  >  מעבר לחשבון עסקי</button>
  
  </body>
 
