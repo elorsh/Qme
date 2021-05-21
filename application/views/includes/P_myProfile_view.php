@@ -60,7 +60,7 @@
     <button class="btn"  id="submit" id="myAccount" type="submit"> <i class="fas fa-cog"></i> הפרטים שלי </button>
 
     <p2> התורים הבאים שלי</p2>
-    <button class="btn appointment"  id="submit"  id="myAppointments" type="submit"> <i class="far fa-calendar-alt"></i> הצג הכל </button>
+    <button class="btn appointment"  id="submit"  id="myAppointments" type="button"> <i class="far fa-calendar-alt"></i> הצג הכל </button>
 
     <!--למחוק-->
     <p3>בתי עסק מועדפים </p3>
@@ -77,9 +77,7 @@
       document.getElementById("homePage").onclick=function(){
          window.location.href="<?php echo site_url('Intro/go_to_home_page');?>"
      }
-     document.getElementById("P_myAppointments").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_P_appointments');?>"
-     }
+
      document.getElementById("P_my_profile").onclick=function(){
          window.location.href="<?php echo site_url('P_users/go_to_P_editMyProfile');?>"
      }
