@@ -28,7 +28,7 @@
     
     <i class="fas fa-user-circle" id="myProfile"></i>
 
-    <p class="profile">
+    <p class="profile" id="myProfile2">
     <?php 
       if (isset($p_user['loggedin']))
       {
@@ -111,6 +111,9 @@
  <script>
    //לבדוק את זה
      document.getElementById("myProfile").onclick=function(){
+         window.location.href="<?php echo site_url('Intro/go_to_P_myProfile');?>"
+     }
+     document.getElementById("myProfile2").onclick=function(){
          window.location.href="<?php echo site_url('Intro/go_to_P_myProfile');?>"
      }
     //  document.getElementById("logOut").onclick=function(){
