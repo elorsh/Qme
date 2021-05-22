@@ -54,9 +54,9 @@
 
      <h4 class="headline">ניהול העסק שלי</h4>
 
-     <!-- <?php
+     <?php
      echo '  <h5 class="headline2">'.$b_business_name.'</h5>';
-    ?> -->
+    ?>
 
     <p1>צפייה ועריכה של פרטי העסק שלי</p1>
     <button class="btn"  id="account" type="submit" > <i class="fas fa-cog"></i> פרטי העסק </button>
