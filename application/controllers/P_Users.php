@@ -235,7 +235,6 @@ public function insert_new_p_user($data){
         return $data;
         }
 
-        $data['u_email']
 
 
 
