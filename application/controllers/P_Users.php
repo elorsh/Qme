@@ -137,7 +137,7 @@ public function insert_new_p_user($data){
         public function b_auth(){
             $data = array(
                 'b_email' => $this->input->post('b_email'),
-                'b_password' => $this->input->post('b_password	')
+                'b_password' => $this->input->post('b_password')
               );
             
              $check=$this->P_Users_model->b_auth($data);
