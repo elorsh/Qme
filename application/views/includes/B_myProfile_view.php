@@ -55,7 +55,7 @@
      <h4 class="headline">ניהול העסק שלי</h4>
 
      <!-- <?php
-     echo '  <h5 class="headline2">'.$object->b_business_name.'</h5>';
+     echo '  <h5 class="headline2">'.$b_business_name.'</h5>';
     ?> -->
 
     <p1>צפייה ועריכה של פרטי העסק שלי</p1>
