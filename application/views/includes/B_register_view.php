@@ -88,7 +88,7 @@
 
           <div class="col-md-3">
             <label for="validationCustom06" class="form-label">טלפון נוסף :</label>
-            <input type="tel" class="form-control" name="b_phone2" id="validationCustom06" placeholder="0000000000" required>
+            <input type="tel" class="form-control" name="b_phone2" id="validationCustom06" placeholder="0000000000" >
             <div class="valid-feedback">
              מספר טלפון תקין 
             </div>
@@ -133,13 +133,13 @@
         </div>-->
 
 <!-- מחקתי את ה required לבנתיים -->
-        <div class="col-md-3">
+        <!-- <div class="col-md-3">
           <label for="validationCustom11" class="form-label"> העלת תמונה:</label>
           <input type="file" class="form-control"  name="b_photo" id="validationCustom11" accept="image/png, image/jpeg" > 
           <div class="invalid-feedback">
            יש לעלות תמונה של בית העסק 
           </div>
-        </div>
+        </div> -->
 
         <div class="col-12">
           <div class="form-check">

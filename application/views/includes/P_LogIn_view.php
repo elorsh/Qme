@@ -11,17 +11,16 @@
 
      <link rel="stylesheet" href="<?php echo base_url('assets/css/P_LogInStyle.css');?>"/>
 
-
      <title>Private Log-in</title>
  </head>
  <body>
     <header> 
         <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
-
      </header>
+
      <?php 
           if (isset($msg)) {
-            echo '<br> <h5 class="message">'.$msg.'</h5><br>';
+            echo '<br> <center><h5 class="message">'.$msg.'</h5></center><br>';
           }
           ?>
      

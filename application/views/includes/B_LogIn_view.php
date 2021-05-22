@@ -14,18 +14,16 @@
      <title>Business Log-In</title>
  </head>
  <body>
-   
     <header> 
         <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>  
      </header>
 
      <?php 
           if (isset($msg)) {
-            echo '<br> <h5 class="message">'.$msg.'</h5><br>';
+            echo '<br> <center><h5 class="message">'.$msg.'</h5></center><br>';
           }
           ?>
-
-
+     
      <h4>,אהלן שותף עסקי שלנו <br>
     בוא נתחבר</h4>
 
@@ -40,17 +38,16 @@
           }
           ?>
           
-            <input type="text" class="form-control" name="b_email" id="email" autocomplete="on" placeholder="example@gmail.com">
+            <input type="text" class="form-control" name="b_email" id="email" autocomplete="on" placeholder="example@gmail.com" >
           </div>
 
           <div class="form-group">
             <label for="password">סיסמה:</label>
-            <input type="password" class="form-control" name="b_password" id="pass"  placeholder="******** ">
+            <input type="password" class="form-control" name="b_password" id="pass" autocomplete="on" placeholder="******** ">
           </div>
 
-          <button type="submit" id="b_login" class="btn btn" value="run">התחבר! </button>
+          <button type="submit" id="submit" class="btn btn" value="run">התחבר! </button>
 </form>
-
 
 
 <div id="clear"></div>
@@ -64,6 +61,7 @@
 <button class="changeBtn"  id="p_login" type="button" >  מעבר לחשבון פרטי</button> 
  
  </body>
+
  <script>
      document.getElementById("createBtn").onclick=function(){
          window.location.href="<?php echo site_url('Intro/go_to_b_register');?>"
