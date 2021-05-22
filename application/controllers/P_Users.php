@@ -11,8 +11,9 @@ class P_Users extends CI_Controller{
         
     }
 
-    // -------P_users---------------------------
-
+// --------------------------------------------------------------------------------------
+//  -------------------------------*** P_users *** --------------------------------------
+// --------------------------------------------------------------------------------------
     public function show(){
 
         $data['result']=$this->P_Users_model->get_users();
@@ -95,6 +96,16 @@ public function insert_new_p_user($data){
     }
     
 
+    public function p_logout(){
+        $data = array(
+            'u_email',
+            'u_password',
+            'loggedin'
+          );
+        $this->session->unset_userdata($data);
+        $this->load->view('includes/P_LogIn_view');
+        }
+//  -----------------P-go_to----------------------
 
     // מציג את כל בתי העסק בצד הלקוח
     public function go_to_home_page(){
@@ -119,20 +130,10 @@ public function insert_new_p_user($data){
             $this->load->view('includes/P_myAppointments_view', $data);
         }
 
+// --------------------------------------------------------------------------------------
+//  -------------------------------*** B_users *** --------------------------------------
+// --------------------------------------------------------------------------------------
 
-
-        public function p_logout(){
-            $data = array(
-                'u_email',
-                'u_password',
-                'loggedin'
-              );
-            $this->session->unset_userdata($data);
-            $this->load->view('includes/P_LogIn_view');
-            }
-
-
-    //  --------------- *** b_users *** -----------------------
 
         public function b_auth(){
             $data = array(
@@ -150,7 +151,6 @@ public function insert_new_p_user($data){
                $data['b_email']=$check[0]->b_email;
                $data['loggedin']='1';
                $this->session->set_userdata($data); 
-            //    $this->load->view('includes/homePage_view');
                $this->go_to_B_myProfile_view(); 
                
                     }
@@ -212,10 +212,7 @@ public function insert_new_p_user($data){
          $this->b_login_new_user($msg);
         }
 
-        
-    public function go_to_B_myProfile_view(){
-        $this->load->view('includes/B_myProfile_view',$data);
-    }
+    
         
     
     
@@ -229,7 +226,7 @@ public function insert_new_p_user($data){
             'loggedin'
           );
         $this->session->unset_userdata($data);
-        $this->load->view('includes/P_LogIn_view');
+        $this->load->view('includes/B_LogIn_view');
         }
 
 
@@ -237,7 +234,13 @@ public function insert_new_p_user($data){
 
 
 
+//  -----------------B-go_to----------------------
 
+public function go_to_B_myProfile_view(){
+    $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+    $data['b_user']=$b_user;// כנל
+    $this->load->view('includes/B_myProfile_view',$data);
+}
 
 
 
