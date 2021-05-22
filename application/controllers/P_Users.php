@@ -244,7 +244,8 @@ public function insert_new_p_user($data){
 public function go_to_B_myProfile_view(){
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
     $data['b_user']=$b_user;// כנל
-    $data['b_business_name']=$this->b_get_user_data($b_user);
+    $user_data=$this->b_get_user_data($b_user);
+    $data['b_business_name']=$user_data['b_business_name'];
     $this->load->view('includes/B_myProfile_view',$data);
 }
 
