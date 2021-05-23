@@ -52,6 +52,10 @@ h4,h5{
     margin-right: 30px !important;
 }
 h5{
+    display: block;
+    margin: auto;
+    margin-top: 15px !important;
+    margin-right: 30px !important;
     font-size: 20px !important;
     color:green !important;
     text-align: right;
