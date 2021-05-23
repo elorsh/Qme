@@ -102,6 +102,8 @@
               <option>לק ג'ל</option>
               <option>קוסמטיקה</option>
               <option>סטודיו </option>
+              <option>אחר </option>
+
             </select>
             <div class="invalid-feedback">
              אנא בחר תחום עיסוק 
