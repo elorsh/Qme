@@ -25,6 +25,29 @@
      <i class="fas fa-sign-out-alt" id="logOut"></i>
       <p class="log-out">התנתקות</p>
 
+    <nav class="navbar navbar-expand-sm">
+
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+         <ul class="navbar-nav">
+
+        <li class="nav-item">
+            <a id="homePage" class="nav-link active">דף הבית <i class="fas fa-home"></i></a>
+        </li>
+      
+        <li class="nav-item">
+            <a id="P_myAppointments" class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
+        </li>
+
+        <li class="nav-item">
+            <a  id="P_my_profile"  class="nav-link">הפרופיל שלי <i class="fas fa-user-circle"></i></a>
+        </li>
+
+     </ul>
+    </div>
+</nav>
 
      <h4>שינוי סיסמה</h4>
      <p  dir="rtl">שמור על הסיסמה שלך בעזרת סיסמה חזקה :)</p>
