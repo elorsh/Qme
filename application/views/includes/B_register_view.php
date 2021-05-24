@@ -80,7 +80,7 @@
 
         <div class="col-md-4">
             <label for="validationCustom05" class="form-label">כתובת :</label>
-            <input type="text" class="form-control"  name="b_address" id="validationCustom05" minlength="10" placeholder="עיר ,רחוב , מספר בית" required>
+            <input type="text" class="form-control"  name="b_address" id="validationCustom05" placeholder="עיר ,רחוב ומספר בית" required>
             <div class="valid-feedback">
               כתובת תקינה
             </div>
