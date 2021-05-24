@@ -33,7 +33,7 @@
 
     <?php 
           if (isset($error)) {
-            echo '<center><br> <p4 class="wrongEmail" >'.$error.'</p4></center>';
+            echo '<center><br> <p4 class="wrongEmail">'.$error.'</p4></center>';
           }
       ?>  
    
