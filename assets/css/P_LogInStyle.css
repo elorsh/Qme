@@ -4,7 +4,6 @@
     margin:0px;
     padding:0px;
     box-sizing:border-box;
-
 }
 
 body{
@@ -43,7 +42,7 @@ header{
     cursor: pointer;
 }
 
-h4,h5{
+h4{
     display: block;
     margin: auto;
     margin-top: 15px !important;
@@ -57,7 +56,7 @@ h5{
     margin-top: 15px !important;
     margin-right: 30px !important;
     font-size: 20px !important;
-    color:green !important;
+    color:green;
     text-align: right;
 }
 h6{
@@ -66,7 +65,7 @@ h6{
     margin-top: 15px !important;
     margin-right: 30px !important;
     font-size: 20px !important;
-    color:red !important;
+    color:red;
     text-align: right;
 }
 
@@ -200,8 +199,8 @@ h3{
     .changeBtn{
         font-size: 12px;
     }
-    h5 .message{
-        font-size: 13px;
+    h5,h6{
+        font-size: 14px;
     }
   
 }

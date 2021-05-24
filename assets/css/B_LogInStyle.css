@@ -204,7 +204,10 @@ h3{
     .changeBtn{
         font-size: 12px;
     }
+    h5,h6{
+        font-size: 14px;
     }
+}
     @media screen and (max-width: 550px){
     .form-group{
         width: 60%;
