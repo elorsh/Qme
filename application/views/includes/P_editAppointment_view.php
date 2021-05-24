@@ -68,16 +68,16 @@
          window.location.href="<?php echo site_url('P_Users/go_to_home_page');?>"
      }
      document.getElementById("P_myAppointments").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_P_appointments');?>"
+         window.location.href="<?php echo site_url('P_Users/go_to_P_appointments');?>"
      }
      document.getElementById("P_my_profile").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_P_myProfile');?>"
+         window.location.href="<?php echo site_url('P_Users/go_to_P_myProfile');?>"
      }
      document.getElementById("P_newAppointment").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_P_create_appointment');?>"
+         window.location.href="<?php echo site_url('P_Users/go_to_P_create_appointment');?>"
      }
      document.getElementById("P_cancelAppointment").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_P_cancel_appointment');?>"
+         window.location.href="<?php echo site_url('P_Users/go_to_P_cancel_appointment');?>"
      }
      document.getElementById("logOut").onclick=function(){
         window.location.href="<?php echo site_url('P_Users/p_logout');?>"

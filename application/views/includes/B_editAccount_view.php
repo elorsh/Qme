@@ -101,10 +101,10 @@
 
   <script>
       document.getElementById("changePass").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/ go_to_b_change_password');?>"
+         window.location.href="<?php echo site_url('P_Users/ go_to_b_change_password');?>"
      }
      document.getElementById("logOut").onclick=function(){
-        window.location.href="<?php echo site_url('Intro/go_to_b_login');?>"
+        window.location.href="<?php echo site_url('P_Users/go_to_b_login');?>"
      }
    
   </script>

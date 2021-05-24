@@ -69,22 +69,22 @@
   
  <script>
      document.getElementById("homePage").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_home_page');?>"
+         window.location.href="<?php echo site_url('P_Users/go_to_home_page');?>"
      }
      document.getElementById("B_myAppointments").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_b_appointments');?>"
+         window.location.href="<?php echo site_url('P_Users/go_to_b_appointments');?>"
      }
      document.getElementById("B_my_profile").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_b_myProfile');?>"
+         window.location.href="<?php echo site_url('P_Users/go_to_b_myProfile');?>"
      }
      document.getElementById("B_newAppointment").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_b_create_appointment');?>"
+         window.location.href="<?php echo site_url('P_Users/go_to_b_create_appointment');?>"
      }
      document.getElementById("B_cancelAppointment").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_b_cancel_appointment');?>"
+         window.location.href="<?php echo site_url('P_Users/go_to_b_cancel_appointment');?>"
      }
      document.getElementById("logOut").onclick=function(){
-        window.location.href="<?php echo site_url('Intro/go_to_b_login');?>"
+        window.location.href="<?php echo site_url('P_Users/go_to_b_login');?>"
      }
      
      

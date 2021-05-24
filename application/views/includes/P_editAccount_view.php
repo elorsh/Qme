@@ -69,7 +69,7 @@
         window.location.href="<?php echo site_url('P_Users/p_logout');?>"
      }
        document.getElementById("changePass").onclick=function(){
-        window.location.href="<?php echo site_url('Intro/go_to_p_change_password');?>"
+        window.location.href="<?php echo site_url('P_Users/go_to_p_change_password');?>"
      }
      
   </script>

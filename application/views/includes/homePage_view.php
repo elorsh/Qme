@@ -114,19 +114,19 @@
  <script>
    //לבדוק את זה
      document.getElementById("myProfile").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_P_myProfile');?>"
+         window.location.href="<?php echo site_url('P_Users/go_to_P_myProfile');?>"
      }
      document.getElementById("myProfile2").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_P_myProfile');?>"
+         window.location.href="<?php echo site_url('P_Users/go_to_P_myProfile');?>"
      }
     //  document.getElementById("logOut").onclick=function(){
-    //     window.location.href="<?php echo site_url('Intro/go_to_p_login');?>"
+    //     window.location.href="<?php echo site_url('P_Users/go_to_p_login');?>"
     //  }
      document.getElementById("logOut").onclick=function(){
         window.location.href="<?php echo site_url('P_Users/p_logout');?>"
      }
      document.getElementById("newAppointment").onclick=function(){
-        window.location.href="<?php echo site_url('Intro/go_to_P_create_appointment');?>"
+        window.location.href="<?php echo site_url('P_Users/go_to_P_create_appointment');?>"
      }
  </script>
 </html>

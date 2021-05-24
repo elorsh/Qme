@@ -64,10 +64,10 @@
 
  <script>
      document.getElementById("createBtn").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_b_register');?>"
+         window.location.href="<?php echo site_url('P_Users/go_to_b_register');?>"
      }
      document.getElementById("p_login").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_p_login');?>"
+         window.location.href="<?php echo site_url('P_Users/go_to_p_login');?>"
      }
  </script>
  </html>
