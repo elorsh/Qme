@@ -37,16 +37,16 @@ header{
 }
 
 .fas.fa-user-circle{
-    position: absolute;
+    position:fixed;
+     top: 5px;
     right: 10px;
-    top: 10px;
     font-size: 35px;
     cursor: pointer;
 }
 .profile{
-    position: absolute;
+    position:fixed;
+    top: 15px;
     right: 57px;
-    top: 20px;
     font-size: 15px;
     cursor: pointer;
     font-weight: bold;

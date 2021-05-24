@@ -17,6 +17,19 @@
     <title>Home page </title>
 </head>
 <body>
+
+    <i class="fas fa-user-circle" id="myProfile"></i>
+
+      <p class="profile" id="myProfile2">
+      הפרופיל שלי <br>
+      <?php 
+     if (isset($p_user['loggedin']))
+     {
+    echo $p_user['u_email'];
+     };
+      ?>
+    </p>
+
    <header> 
        <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
     </header>
@@ -26,17 +39,7 @@
       <p class="log-out">התנתקות</p>
       
     
-    <i class="fas fa-user-circle" id="myProfile"></i>
-
-    <p class="profile" id="myProfile2">
-    הפרופיל שלי <br>
-    <?php 
-      if (isset($p_user['loggedin']))
-      {
-        echo $p_user['u_email'];
-      };
-    ?>
-    </p>
+  
 
 
     <h4  dir="rtl" >מה בא לנו? </h4>
@@ -60,7 +63,7 @@
                <th scope="col">זימון תור</th>
                <th scope="col">הודעה לבית העסק</th>
                <th scope="col">ניווט לבית העסק</th>
-               <th scope="col">התקשר לבית העסק</th>
+               <th scope="col">חייג לבית העסק</th>
 
    
              </tr>
