@@ -72,7 +72,7 @@
             echo
         '<div class="form-group">
             <label for="pass1">סיסמה נוכחית : </label>
-            <input type="text" class="form-control" name="password1" id="pass1" value= "'.$object->u_phone.'" minlength="8" autocomplete="on" placeholder="סיסמא נוכחית">
+            <input type="text" class="form-control" name="password1" id="pass1" value= "'.$object->u_password.'" minlength="8" autocomplete="on" placeholder="סיסמא נוכחית">
           </div>';
         }
         ?>
