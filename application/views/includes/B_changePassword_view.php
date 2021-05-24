@@ -25,6 +25,33 @@
      <i class="fas fa-sign-out-alt" id="logOut"></i>
       <p class="log-out">התנתקות</p>
 
+      
+            <!----- The navigation menu ----->
+
+            <nav class="navbar navbar-expand-sm">
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a id="homePage" class="nav-link">דף הבית <i class="fas fa-home"></i></a>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a id="B_myAppointments"  class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="B_my_profile"  class="nav-link">הפרופיל שלי <i class="fas fa-user-circle"></i></a>
+                        </li>
+                
+                    </ul>
+                </div>
+            </nav>
+
      <h4>שינוי סיסמה</h4>
      <p  dir="rtl">שמור על הסיסמא שלך בעזרת סיסמה חזקה :)</p>
 
@@ -56,6 +83,15 @@
 
  </body>
  <script>
+      document.getElementById("homePage").onclick=function(){
+         window.location.href="<?php echo site_url('P_Users/go_to_home_page');?>"
+     }
+     document.getElementById("B_myAppointments").onclick=function(){
+         window.location.href="<?php echo site_url('P_Users/go_to_b_appointments');?>"
+     }
+     document.getElementById("B_my_profile").onclick=function(){
+         window.location.href="<?php echo site_url('P_Users/go_to_b_myProfile');?>"
+     }
    document.getElementById("logOut").onclick=function(){
       window.location.href="<?php echo site_url('P_Users/go_to_b_login');?>"
      }

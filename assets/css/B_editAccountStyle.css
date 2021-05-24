@@ -56,6 +56,33 @@ header{
     font-size: 15px;
     font-weight: bold;
 }
+
+.navbar-nav{
+    margin: 0 auto;
+}
+
+.navbar {
+    position: relative;
+    margin: auto;
+    margin-bottom: 15px !important;
+}
+
+.nav-link{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding:2px;
+    margin: 2px 5px 2px 5px;
+
+}
+
+a i{
+    margin-left: 8px;
+}
 h4{
     display: block;
     margin: auto;
@@ -132,8 +159,17 @@ h5{
 [class*="col-"] {float:left;}
 
 
+@media screen and (max-width: 850px){
+          
+    .nav-link{
+        font-size: 19px;
+    }
+}
 @media screen and (max-width: 750px){
-        h4{
+        .nav-link{
+        font-size: 17px;
+       }
+       h4{
             font-size: 30px;
         }
         h5{
