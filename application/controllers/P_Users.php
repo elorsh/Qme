@@ -106,8 +106,11 @@ public function insert_new_p_user($data){
           );
         $this->P_Users_model->update_p_user($data);
    
-        $msg = ':) !יצרת משתמש בהצלחה<br>עכשיו רק נשאר להתחבר לצורך השלמת התהליך';
-        $this->p_login_new_user($msg);
+        $msg = ':) עידכנת את הפרטים בהצלחה';
+        $data['msg']=$msg;
+        $this->go_to_P_myProfile();
+        $data['msg']=null;
+
        }
     
 

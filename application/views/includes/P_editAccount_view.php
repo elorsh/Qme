@@ -54,11 +54,11 @@
    את הפרטים שלך בכל עת</h5> 
 
 
-
+   
 
     <div class="createAccount">
    
-      <form  dir="rtl"  class="row g-3 needs-validation"  novalidate>
+      <form  dir="rtl"  class="row g-3 needs-validation"  action="<?php echo site_url('P_Users/P_update_user')?>" novalidate>
     <?php
           foreach($result as $object){
             echo
