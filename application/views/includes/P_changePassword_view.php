@@ -87,7 +87,7 @@
      }
 
      document.getElementById("P_my_profile").onclick=function(){
-         window.location.href="<?php echo site_url('P_users/go_to_P_editMyProfile');?>"
+         window.location.href="<?php echo site_url('P_users/go_to_P_myProfile');?>"
      }
      document.getElementById("myAppointments").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_appointments');?>"
