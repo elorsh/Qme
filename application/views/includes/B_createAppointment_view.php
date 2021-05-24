@@ -14,6 +14,19 @@
      <title>Create Appointment - Business</title>
  </head>
  <body>
+
+  <i class="fas fa-user-circle" id="myProfile"></i>
+
+      <p class="profile" id="myProfile2">
+      הפרופיל העסקי שלי <br>
+      <?php 
+     if (isset($b_user['loggedin']))
+     {
+    echo $b_user['b_email'];
+     };
+      ?>
+    </p>
+    
     <header> 
         <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
      </header>
@@ -84,7 +97,13 @@
          window.location.href="<?php echo site_url('P_Users/go_to_b_myProfile');?>"
      }
     document.getElementById("logOut").onclick=function(){
-        window.location.href="<?php echo site_url('P_Users/go_to_b_login);?>"
+        window.location.href="<?php echo site_url('P_Users/go_to_b_login');?>"
      }
+     document.getElementById("myProfile").onclick=function(){
+        window.location.href="<?php echo site_url('P_Users/go_to_b_myProfile');?>"
+    }
+    document.getElementById("myProfile2").onclick=function(){
+        window.location.href="<?php echo site_url('P_Users/go_to_b_myProfile');?>"
+    }
   </script>
  </html>
