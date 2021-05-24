@@ -245,7 +245,7 @@ public function go_to_B_myProfile_view(){
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
     $data['b_user']=$b_user;// כנל
     $user_data=$this->b_get_user_data($b_user);
-    $data['b_business_name']=$user_data['b_business_name'];
+    $data['b_business_name']=$user_data['b_business_name1']; // לנסות להבין למה הוא לא מצליח למשוך את השם בית עסק
     $this->load->view('includes/B_myProfile_view',$data);
 }
 
