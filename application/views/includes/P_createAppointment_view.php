@@ -15,6 +15,19 @@
      <title>Create Appointment</title>
  </head>
  <body>
+     
+    <i class="fas fa-user-circle" id="myProfile"></i>
+
+      <p class="profile" id="myProfile2">
+      הפרופיל שלי <br>
+      <?php 
+     if (isset($p_user['loggedin']))
+     {
+    echo $p_user['u_email'];
+     };
+      ?>
+    </p>
+    
     <header> 
           <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
      </header>
@@ -127,7 +140,12 @@
      document.getElementById("logOut").onclick=function(){
         window.location.href="<?php echo site_url('P_Users/p_logout');?>"
      }
-  
+     document.getElementById("myProfile").onclick=function(){
+         window.location.href="<?php echo site_url('P_Users/go_to_P_myProfile');?>"
+     }
+     document.getElementById("myProfile2").onclick=function(){
+         window.location.href="<?php echo site_url('P_Users/go_to_P_myProfile');?>"
+     }
      
   </script>
  </html>
