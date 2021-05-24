@@ -67,15 +67,15 @@
 
     <form  dir="rtl"  onsubmit="return validationForm()">
 
-        <div class="form-group">
+    <?php
+          foreach($result as $object){
+            echo
+        '<div class="form-group">
             <label for="pass1">סיסמה נוכחית : </label>
-            <input type="password" class="form-control" name="password1" id="pass1" minlength="8" autocomplete="on" placeholder="סיסמא נוכחית">
-          </div>
-
-          <div class="form-group">
-            <label for="pass2">סיסמה חדשה:</label>
-            <input type="password" class="form-control" name="password2" id="pass2"  minlength="8" autocomplete="on" placeholder="סיסמא חדשה">
-          </div>
+            <input type="text" class="form-control" name="password1" id="pass1" value= "'.$object->u_phone.'" minlength="8" autocomplete="on" placeholder="סיסמא נוכחית">
+          </div>';
+        }
+        ?>
 
           <!--<div class="form-group">
             <label for="pass3">אימות סיסמה :</label>
