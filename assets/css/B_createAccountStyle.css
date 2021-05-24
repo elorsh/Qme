@@ -71,6 +71,15 @@ p{
     text-align: center;
     font-weight: bold;
 }
+.wrongEmail{
+    margin-top: 10px !important;
+    margin-bottom: 17px!important;
+    display: block;
+    margin: auto;
+    color: red;
+    text-align: center;
+    font-size: 20px;
+}
 
 .createAccount{
     position: relative;
