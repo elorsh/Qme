@@ -107,28 +107,71 @@ public function insert_new_p_user($data){
         }
 //  -----------------P-go_to----------------------
 
+public function go_to_p_login(){
+    $this->load->view('includes/P_LogIn_view');
+    }
+public function go_to_p_register(){
+    $this->load->view('includes/P_register_view');
+    }
+
+
     // מציג את כל בתי העסק בצד הלקוח
     public function go_to_home_page(){
         $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
         $data['p_user']=$p_user;// כנל
+
         $data['result']=$this->P_Users_model->get_B_users();
+
         $this->load->view('includes/homePage_view',$data);
         }
 
-        //פונציה שמביאה לי את נתוני המשתמש  - - במידה ואפשר לשמור את הנתונים מהסשן אז מיותר
-        public function go_to_P_editMyProfile(){
-            $data['result']=$this->P_Users_model->get_P_user_data();
-            $this->load->view('includes/P_editAccount_view',$data);
-            }
+        public function go_to_P_myProfile(){
+            $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+            $data['p_user']=$p_user;// כנל
 
+            $this->load->view('includes/P_myProfile_view',$data);
+        }
+        public function go_to_P_create_appointment(){
+            $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+            $data['p_user']=$p_user;// כנל
+
+            $this->load->view('includes/P_createAppointment_view',$data);
+        }
+        public function go_to_P_cancel_appointment(){
+            $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+            $data['p_user']=$p_user;// כנל
+
+            $this->load->view('includes/P_cancelAppointment_view',$data);
+        }
+        public function go_to_p_change_password(){
+            $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+            $data['p_user']=$p_user;// כנל
+
+            $this->load->view('includes/P_changePassword_view',$data);
+        }
+      
         public function go_to_P_appointments(){
             $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
             $data['p_user']=$p_user;// כנל
+
             $p_appointments=$this->P_Users_model->get_P_appointments($p_user);
 
             $data['result']=$p_appointments;
             $this->load->view('includes/P_myAppointments_view', $data);
         }
+
+
+
+        public function go_to_P_editMyProfile(){
+            $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+            $data['p_user']=$p_user;// כנל
+
+            $data['result']=$this->P_Users_model->get_P_user_data();
+            
+            $this->load->view('includes/P_editAccount_view',$data);
+            }
+
+
 
 // --------------------------------------------------------------------------------------
 //  -------------------------------*** B_users *** --------------------------------------
@@ -241,7 +284,12 @@ public function insert_new_p_user($data){
 
 //  -----------------B-go_to----------------------
 
-
+public function go_to_b_login(){
+    $this->load->view('includes/B_LogIn_view');
+    }
+public function go_to_b_register(){
+    $this->load->view('includes/B_register_view');
+    }
 
 public function go_to_B_myProfile_view(){
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
@@ -260,6 +308,49 @@ public function go_to_b_appointments(){
     $this->load->view('includes/B_myAppointments_view',$data);
 }
 
+
+public function go_to_b_myProfile(){
+    $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+    $data['b_user']=$b_user;// כנל
+
+    $this->load->view('includes/B_myProfile_view',$data);
+}
+public function go_to_b_create_appointment(){
+    $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+    $data['b_user']=$b_user;// כנל
+
+    $this->load->view('includes/B_createAppointment_view',$data);
+}
+public function go_to_b_cancel_appointment(){
+    $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+    $data['b_user']=$b_user;// כנל
+
+    $this->load->view('includes/B_cancelAppointment_view',$data);
+}
+public function go_to_b_change_password(){
+    $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+    $data['b_user']=$b_user;// כנל
+
+    $this->load->view('includes/B_changePassword_view',$data);
+}
+public function go_to_b_myDetails(){
+    $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+    $data['b_user']=$b_user;// כנל
+
+    $this->load->view('includes/B_editAccount_view',$data);
+}
+public function go_to_b_myCustomers(){
+    $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+    $data['b_user']=$b_user;// כנל
+
+    $this->load->view('includes/B_myCustomers_view',$data);
+}
+public function go_to_private_account(){
+    $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+    $data['b_user']=$b_user;// כנל
+
+    $this->load->view('includes/P_LogIn_view',$data);
+}
 
 
 
