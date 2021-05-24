@@ -63,7 +63,10 @@
         <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם מלא :</label>
           <?php
-           echo '<input type="text" class="form-control" name="u_full_name" id="validationCustom01" value= "'.$result->u_full_name.'" placeholder="שם פרטי ומשפחה" >'
+          foreach($result as $object){
+
+           echo '<input type="text" class="form-control" name="u_full_name" id="validationCustom01" value= "'.$object->u_full_name.'" placeholder="שם פרטי ומשפחה" >'
+          }
            ?>
           </div>
 
