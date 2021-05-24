@@ -34,7 +34,7 @@
             
             <?php 
           if (isset($error)) {
-            echo '<br> <p class="message" style="color:red">'.$error.'</p>';
+            echo '<br> <h6 class="message">'.$error.'</h6>';
           }
           ?>
           

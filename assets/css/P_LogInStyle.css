@@ -59,8 +59,15 @@ h5{
     font-size: 20px !important;
     color:green !important;
     text-align: right;
-
-
+}
+h6{
+    display: block;
+    margin: auto;
+    margin-top: 15px !important;
+    margin-right: 30px !important;
+    font-size: 20px !important;
+    color:red !important;
+    text-align: right;
 }
 
 .form-group{
