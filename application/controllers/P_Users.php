@@ -96,15 +96,18 @@ public function insert_new_p_user($data){
     }
     
 
-    public function p_logout(){
-        $data = array(
-            'u_email',
-            'u_password',
-            'loggedin'
-          );
-        $this->session->unset_userdata($data);
-        $this->load->view('includes/P_LogIn_view');
-        }
+public function p_logout(){
+    $data = array(
+        'u_email',
+        'u_password',
+        'loggedin'
+        );
+    $this->session->unset_userdata($data);
+    $this->load->view('includes/P_LogIn_view');
+    }
+
+
+        
 //  -----------------P-go_to----------------------
 
 public function go_to_p_login(){
@@ -166,8 +169,9 @@ public function go_to_p_register(){
             $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
             $data['p_user']=$p_user;// כנל
 
-            $data['result']=$this->P_Users_model->get_P_user_data();
+            $p_user_data=$this->P_Users_model->get_P_user_data($p_user);
             
+            $data['result']=$p_user_data;
             $this->load->view('includes/P_editAccount_view',$data);
             }
 

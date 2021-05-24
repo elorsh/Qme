@@ -62,9 +62,9 @@ public function insert_p_user($data){
         return $query->result();
      }
 
-        //פונציה שמביאה לי את נתוני המשתמש  - - במידה ואפשר לשמור את הנתונים מהסשן אז מיותר
+        //פונציה שמביאה לי את נתוני המשתמש הפרטי
      public function get_P_user_data($data){
-        $query = $this->db->get_where('DB_users',$data);
+        $query = $this->db->query('SELECT * FROM `DB_users` WHERE `u_email` = "'.$data['u_email'].'" ');
         return $query->result();
      }
     //פונקציה מקורית שמשתמש בסלקט יחסית פשוט
