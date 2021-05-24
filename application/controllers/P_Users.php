@@ -241,12 +241,23 @@ public function insert_new_p_user($data){
 
 //  -----------------B-go_to----------------------
 
+
+
 public function go_to_B_myProfile_view(){
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
     $data['b_user']=$b_user;// כנל
-    $user_data=$this->b_get_user_data($b_user);
-    $data['b_business_name']=$user_data['b_business_name1']; // לנסות להבין למה הוא לא מצליח למשוך את השם בית עסק
+    // $user_data=$this->b_get_user_data($b_user); // פונקציה שאמורה למשוך את שם המשתמש של הבית עסק מהדב
+   // $data['b_business_name']=$user_data['b_business_name']; // לנסות להבין למה הוא לא מצליח למשוך את השם בית עסק
     $this->load->view('includes/B_myProfile_view',$data);
+}
+
+public function go_to_b_appointments(){
+    $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+    $data['b_user']=$b_user;// כנל
+
+    $b_appointments=$this->P_Users_model->get_B_appointments($b_user);
+    $data['result']=$b_appointments;
+    $this->load->view('includes/B_myAppointments_view',$data);
 }
 
 
@@ -329,111 +340,6 @@ public function go_to_B_myProfile_view(){
 //     }
 // }
 // ----------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-// -------------------------------------------------
-
-    // public function get_users(){
-    //     $data['user']=$this->session->all_userdata();
-    //     $this->load->view('templates/headG');
-    //     $this->load->view('templates/headU');
-    //     $this->load->view('templates/header');
-    //     $data['DB_users']=$this->P_users_model->get_users();
-    //     $this->load->view('users/users',$data);
-    //     $this->load->view('templates/footer');
-    // }
-    
-    // public function add_user($error=null){
-    //     $this->load->view('templates/headG');
-    //     $data['error']=$error;
-    //     $this->load->view('users/register',$data);
-    //     $this->load->view('templates/footer');
-        
-    // }
-    // public function save_user(){
-    //     //validation using code igniter functions
-    //     $this->form_validation->set_rules('fname', 'First Name', 'required');
-    //     if ($this->form_validation->run() == FALSE)
-    //     {
-    //         $error=['message'=>'First Name is required'];
-    //         $this->register($error);
-    //         return;
-    //     }
-
-    //     $this->form_validation->set_rules('username', 'username', 'required|max_length[20]');
-    //     if ($this->form_validation->run() == FALSE)
-    //     {
-    //             $error= ['message'=>'Username can not be more than 15 charachters'];
-    //          $this->register ($error);
-    //          return;
-    //     }
-  
-    //     //validations using code igniter filters
-    //     $data = array(
-    //            'username' => $this->input->post('username'),
-    //            'password' => $this->input->post('password')
-    //      );
-        
-    //     $error=$this->users_model->save($data);
-    //     if ($error)
-    //         $this->register($error);
-    //     else{
-    //         $data['loggedin']='1';
-    //         $this->session->set_userdata($data); 
-    //         $this->get_users();
-    //     }
-    // }
-
-
-
-    //   public function logout()
-    //    {
-    //         $data = array(
-    //         'user',
-    //         'password' ,
-    //         'loggedin'  
-    //         );
-    //         $this->session->unset_userdata($data);
-    //         $this->login();   
-                         
-    //    }
-
-    // public function pref(){
-    //     $this->load->view('templates/HeadL');
-    //     $this->load->view('users/Pref');
-    //     $this->load->view('templates/footer');
-    // }
-
-
-    // public function save_pref(){
-    //     $data = array(
-    //         'p_username'=>$this->input->post('p_username'),
-    //         'pc'=>$this->input->post('pc'),
-    //         'ps'=>$this->input->post('ps'),
-    //         'xbox'=>$this->input->post('xbox'),
-    //         'genre'=>$this->input->post('genre')
-    //     );
-    //     $this->db->insert('pref',$data);
-    //     $this->load->view('templates/headG');
-    //     $this->load->view('HomePage/Homescreen');
-    //     $this->load->view('templates/footer');
-    // }
-
-    // public function get_stats(){
-    //     $data['prefs']=$this->users_model->get_stats();
-    //     $data['consoles']=$this->users_model->get_consoles();
-    //     $this->load->view('templates/headG');
-    //     $this->load->view('users/Stats',$data);
-    //     $this->load->view('templates/footer');
-    // }
 
 
 }

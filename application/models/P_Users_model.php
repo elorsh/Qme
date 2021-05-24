@@ -104,9 +104,20 @@ public function insert_p_user($data){
         return $query->result();
      }
 
-     public function b_get_user_data($data){
-        $query = $this->db->query('SELECT * FROM `DB_businesses` WHERE `b_email` = "'.$data['b_email'].'"');
+
+     public function get_B_appointments($data){
+        $query = $this->db->query('SELECT * FROM `DB_B_Appointments` INNER JOIN DB_users  ON DB_B_Appointments.u_email = DB_users.u_email WHERE `b_email` = "'.$data['b_email'].'" ');
         return $query->result();
      }
+
+     
+
+
+
+// פונקציה שאמורה למשוך את הפרטים של הבית עסק מהדב
+    //  public function b_get_user_data($data){
+    //     $query = $this->db->query('SELECT * FROM `DB_businesses` WHERE `b_email` = "'.$data['b_email'].'"');
+    //     return $query->result();
+    //  }
      
 }

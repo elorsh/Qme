@@ -72,9 +72,9 @@
             echo "<tr>";
             echo '<th scope="col">'.$object->u_full_name.'</th>';
             echo '<th scope="col">'.$object->a_date.'</th>';
-            echo '<th scope="col">'.$object->b_email.'</th>';
-            echo '<th scope="col">'.$object->u_email.'</th>';
-\            echo "</tr>";
+            echo '<th scope="col">'.$object->a_time.'</th>';
+            echo '<td><i class="far fa-calendar-alt" Id="calendar"></i></td>';
+            echo "</tr>";
           }
 
           ?>

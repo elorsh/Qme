@@ -54,10 +54,11 @@
 
      <h4 class="headline">ניהול העסק שלי</h4>
 
-     <?php
+<!-- אמור להציג את שם בית העסק -->
+     <!-- <?php
      echo '<h5 class="headline2">'.$b_business_name.'</h5>';
 
-    ?>
+    ?> -->
 
     <p1>צפייה ועריכה של פרטי העסק שלי</p1>
     <button class="btn"  id="account" type="submit" > <i class="fas fa-cog"></i> פרטי העסק </button>
@@ -89,7 +90,7 @@
          window.location.href="<?php echo site_url('Intro/go_to_b_myDetails');?>"
      }
      document.getElementById("appointments").onclick=function(){
-         window.location.href="<?php echo site_url('Intro/go_to_b_appointments');?>"
+         window.location.href="<?php echo site_url('P_Users/go_to_b_appointments');?>"
      }
      document.getElementById("customers").onclick=function(){
          window.location.href="<?php echo site_url('Intro/go_to_b_myCustomers');?>"
