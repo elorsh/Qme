@@ -63,7 +63,7 @@
                <th scope="col">זימון תור</th>
                <th scope="col">הודעה לבית העסק</th>
                <th scope="col">ניווט לבית העסק</th>
-               <th scope="col">התקשר לבית העסק</th>
+               <th scope="col">חייג לבית העסק</th>
 
    
              </tr>
