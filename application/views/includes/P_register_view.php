@@ -27,7 +27,7 @@
 
           <?php 
           if (isset($error)) {
-            echo '<center><br> <p style="color:red">'.$error.'</p></center>';
+            echo '<center><br> <p4 dir="rtl" class="wrongEmail">'.$error.'</p4></center>';
           }
       ?>  
    
