@@ -261,7 +261,7 @@ public function go_to_b_appointments(){
 }
 
 
-}
+
 
 
 
