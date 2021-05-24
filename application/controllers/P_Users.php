@@ -94,6 +94,21 @@ public function insert_new_p_user($data){
      $msg = ':) !יצרת משתמש בהצלחה<br>עכשיו רק נשאר להתחבר לצורך השלמת התהליך';
      $this->p_login_new_user($msg);
     }
+
+    // עדכון משתמש קיים
+    public function P_update_user($data){
+        $data = array(
+            'u_full_name' => $this->input->post('u_full_name'),
+            'u_phone' => $this->input->post('u_phone'),
+            'u_address' => $this->input->post('u_address')
+
+            // 'u_password' => $this->input->post('u_password')
+          );
+        $this->P_Users_model->update_p_user($data);
+   
+        $msg = ':) !יצרת משתמש בהצלחה<br>עכשיו רק נשאר להתחבר לצורך השלמת התהליך';
+        $this->p_login_new_user($msg);
+       }
     
 
 public function p_logout(){

@@ -46,9 +46,13 @@ class P_Users_model extends CI_Model {
 
 // -------------------------------------------------
 
-public function insert_p_user($data){
-    $this->db->insert('DB_users', $data);
-}
+    public function insert_p_user($data){
+        $this->db->insert('DB_users', $data);
+    }
+
+    public function update_p_user($data){
+        $query = $this->db->query('UPDATE `DB_users` SET `u_full_name`=[$u_full_name],`u_phone`=[$u_phone],`u_address`=[$u_address] WHERE `u_email` = "'.$data['u_email'].'" '); 
+    }
 
      public function p_auth($data){
         $query = $this->db->get_where('DB_users', $data);
@@ -61,6 +65,8 @@ public function insert_p_user($data){
         $query = $this->db->get_where('DB_users',$data);
         return $query->result();
      }
+
+// עריכת משתמש קיים
 
         //פונציה שמביאה לי את נתוני המשתמש הפרטי
      public function get_P_user_data($data){
