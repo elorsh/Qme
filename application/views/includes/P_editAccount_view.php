@@ -62,8 +62,10 @@
 
         <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם מלא :</label>
-          <input type="text" class="form-control" name="u_full_name" id="validationCustom01" value=<?php echo '"'.$result->u_full_name.'"' ?> placeholder="שם פרטי ומשפחה" >
-        </div>
+          <?php
+           echo '<input type="text" class="form-control" name="u_full_name" id="validationCustom01" value= "'.$result->u_full_name.'" placeholder="שם פרטי ומשפחה" >'
+           ?>
+          </div>
 
         <div class="col-md-2">
           <label for="validationCustom02" class="form-label">טלפון  :</label>
