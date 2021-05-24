@@ -149,6 +149,9 @@ public function go_to_p_register(){
         public function go_to_p_change_password(){
             $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
             $data['p_user']=$p_user;// כנל
+            $p_user_data=$this->P_Users_model->get_P_user_data($p_user);
+    
+            $data['result']=$p_user_data;
 
             $this->load->view('includes/P_changePassword_view',$data);
         }
