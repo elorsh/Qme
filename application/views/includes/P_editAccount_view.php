@@ -71,21 +71,25 @@
     <div class="createAccount">
    
       <form  dir="rtl"  class="row g-3 needs-validation"  novalidate>
-
-        <div class="col-md-3" >
+    <?php
+          foreach($result as $object){
+            echo
+        '<div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם מלא :</label>
-          <input type="text" class="form-control" name="u_full_name" id="validationCustom01" value=<?php echo '"'.$result->u_full_name.'"' ?> placeholder="שם פרטי ומשפחה" >
-        </div>
+          <input type="text" class="form-control" name="u_full_name" id="validationCustom01" value= "'.$object->u_full_name.'" placeholder="שם פרטי ומשפחה" >
+          </div>
 
         <div class="col-md-3">
           <label for="validationCustom02" class="form-label">טלפון  :</label>
-          <input type="tel" class="form-control" name="u_phone1" id="validationCustom02" value="#" placeholder="0000000000" >
+          <input type="tel" class="form-control" name="u_phone1" id="validationCustom02" value= "'.$object->u_phone.'" placeholder="0000000000" >
         </div>
 
         <div class="col-md-3">
             <label for="validationCustom02" class="form-label">כתובת :</label>
-            <input type="text" class="form-control" name="u_address" id="validationCustom05" value="#" placeholder="עיר ,רחוב ,מספר בית" >
-          </div>
+            <input type="text" class="form-control" name="u_address" id="validationCustom05" value= "'.$object->u_address.'" placeholder="עיר ,רחוב ,מספר בית" >
+          </div>';
+          }
+      ?>
 
         <div class="col-12">
           <button class="btn btn" id="changePass" type="button" >שינוי סיסמה</button>
