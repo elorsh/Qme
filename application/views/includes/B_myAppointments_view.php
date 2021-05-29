@@ -107,7 +107,7 @@
  
   </body>
   <script>
-      document.getElementById("homePage").onclick=function(){
+          document.getElementById("homePage").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_home_page');?>"
      }
      document.getElementById("B_myAppointments").onclick=function(){

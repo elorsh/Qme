@@ -95,7 +95,7 @@
      document.getElementById("myAccount").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_editMyProfile');?>"
      }
-     document.getElementById("myAppointments").onclick=function(){
+     document.getElementById("P_myAppointments").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_appointments');?>"
      }
     //  document.getElementById("logOut").onclick=function(){
