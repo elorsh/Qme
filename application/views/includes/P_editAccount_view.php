@@ -26,6 +26,8 @@
     echo $p_user['u_email'];
      };
       ?>
+    </p>
+
 
     <header> 
         <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
