@@ -39,30 +39,31 @@
 
        <!----- The navigation menu ----->
 
-      <nav class="navbar navbar-expand-sm">
+    
+       <nav class="navbar navbar-expand-sm">
 
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-              <i class="fa fa-bars" aria-hidden="true"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarMenu">
-               <ul class="navbar-nav">
+<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+</button>
+<div class="collapse navbar-collapse" id="navbarMenu">
+    <ul class="navbar-nav">
 
-               <li class="nav-item">
-                     <a id="homePage" class="nav-link active">דף הבית <i class="fas fa-home"></i></a>
-                </li>
+        <li class="nav-item">
+            <a id="homePage" class="nav-link active">דף הבית <i class="fas fa-home"></i></a>
+        </li>
       
-             <li class="nav-item">
-                <a id="P_myAppointments" class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
-             </li>
+        <li class="nav-item">
+            <a id="P_myAppointments" class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
+        </li>
 
-           <li class="nav-item">
-                <a  id="P_my_profile"  class="nav-link">הפרופיל שלי <i class="fas fa-user-alt"></i></a>
-           </li>
+        <li class="nav-item">
+            <a  id="P_my_profile"  class="nav-link">הפרופיל שלי <i class="fas fa-user-alt"></i></a>
+        </li>
 
-        </ul>
+    </ul>
+</div>
+</nav>
 
-      </div>
-    </nav>
      <h4>הפרטים שלי</h4>
 
      <h5   dir="rtl" >כאן ניתן לעדכן ולערוך
@@ -102,7 +103,9 @@
         </div>
      </div>
 
-
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
 
 
   </body>
@@ -119,7 +122,7 @@
        document.getElementById("changePass").onclick=function(){
         window.location.href="<?php echo site_url('P_Users/go_to_p_change_password');?>"
      }
-     document.getElementById("myAppointments").onclick=function(){
+     document.getElementById("P_myAppointments").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_appointments');?>"
      }
      document.getElementById("myProfile").onclick=function(){
