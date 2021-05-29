@@ -66,6 +66,11 @@
 
      <h5 >הפרופיל שלי</h5>
      <h4> היי, טוב לראות אותך</h4>
+     <?php 
+          if (isset($msg)) {
+            echo '<br> <center><h5 class="message">'.$msg.'</h5></center><br>';
+          }
+          ?>
 
     <p1>צפייה ועריכה של הפרטיים האישיים שלך</p1>
     <button class="btn" id="myAccount" type="button"> <i class="fas fa-cog"></i> הפרטים שלי </button>

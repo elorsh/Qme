@@ -94,6 +94,24 @@ public function insert_new_p_user($data){
      $msg = ':) !יצרת משתמש בהצלחה<br>עכשיו רק נשאר להתחבר לצורך השלמת התהליך';
      $this->p_login_new_user($msg);
     }
+
+    // עדכון משתמש קיים
+    public function P_update_user(){
+        $data = array(
+            'u_full_name' => $this->input->post('u_full_name'),
+            'u_phone' => $this->input->post('u_phone'),
+            'u_address' => $this->input->post('u_address')
+
+            // 'u_password' => $this->input->post('u_password')
+          );
+        $this->P_Users_model->update_p_user($data);
+   
+        $msg = ':) עידכנת את הפרטים בהצלחה';
+        $data['msg']=$msg;
+        $this->go_to_P_myProfile();
+        $data['msg']=null;
+
+       }
     
 
 public function p_logout(){
@@ -149,7 +167,9 @@ public function go_to_p_register(){
         public function go_to_p_change_password(){
             $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
             $data['p_user']=$p_user;// כנל
-
+            $p_user_data=$this->P_Users_model->get_P_user_data($p_user);
+    
+            $data['result']=$p_user_data;
             $this->load->view('includes/P_changePassword_view',$data);
         }
       
@@ -176,12 +196,6 @@ public function go_to_p_register(){
             }
             
 
-            public function go_to_p_change_password(){
-                $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
-                $data['p_user']=$p_user;// כנל
-
-                $this->load->view('includes/P_changePassword_view',$data);
-                }
 
 // --------------------------------------------------------------------------------------
 //  -------------------------------*** B_users *** --------------------------------------

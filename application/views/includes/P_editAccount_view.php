@@ -66,11 +66,11 @@
    את הפרטים שלך בכל עת</h5> 
 
 
-
+   
 
     <div class="createAccount">
    
-      <form  dir="rtl"  class="row g-3 needs-validation"  novalidate>
+      <form  dir="rtl"  class="row g-3 needs-validation"  action="<?php echo site_url('P_Users/P_update_user')?>" novalidate>
     <?php
           foreach($result as $object){
             echo
@@ -91,13 +91,12 @@
           }
       ?>
 
-        <div class="col-12">
-          <button class="btn btn" id="changePass" type="button" >שינוי סיסמה</button>
-        </div>
-
         <button class="btn btn update "  id="submit" type="submit" >  עדכן את הפרטים שלי</button>
 
       </form>
+      <div class="col-12">
+          <button class="btn btn" id="changePass" type="button" >שינוי סיסמה</button>
+        </div>
      </div>
 
 
