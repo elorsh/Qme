@@ -16,17 +16,18 @@
  </head>
  <body>
 
-    <i class="fas fa-user-circle" id="myProfile"></i>
+ <i class="fas fa-user-circle" id="myProfile"></i>
 
       <p class="profile" id="myProfile2">
-      הפרופיל שלי <br>
+      הפרופיל העסקי שלי <br>
       <?php 
-     if (isset($p_user['loggedin']))
+     if (isset($b_user['loggedin']))
      {
-    echo $p_user['u_email'];
+    echo $b_user['b_email'];
      };
       ?>
     </p>
+
 
 
     <header> 
