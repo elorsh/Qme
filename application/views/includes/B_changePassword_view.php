@@ -58,7 +58,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a id="B_my_profile"  class="nav-link">הפרופיל שלי <i class="fas fa-user-circle"></i></a>
+                            <a id="B_my_profile"  class="nav-link">הפרופיל שלי <i class="fas fa-user-alt"></i></a>
                         </li>
                 
                     </ul>
