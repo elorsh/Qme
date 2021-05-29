@@ -78,9 +78,8 @@
     <p2> התורים הבאים שלי</p2>
     <button class="btn appointment" id="myAppointments" type="button"> <i class="far fa-calendar-alt"></i> הצג הכל </button>
 
-    <!--למחוק-->
-    <p3>בתי עסק מועדפים </p3>
-    <button class="btn business" type="button"><i class="fas fa-heart"></i>בתי העסק המועדפים שלי </button>
+    <p3> היסטוריית טיפולים</p3>
+    <button class="btn history" type="button"><i class="fas fa-list-alt"></i>צפייה בהיסטוריה </button>
     
 </div>
 
