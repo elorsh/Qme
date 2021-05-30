@@ -111,8 +111,6 @@
         </select>
         </div> 
 
-
-  
     <button class="btn" type=submit >בחר תאריך  <i class="far fa-calendar-alt"></i></button>
 
   </form>
