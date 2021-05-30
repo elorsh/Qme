@@ -406,6 +406,7 @@ public function go_to_b_cancelAppointment(){
 
     // $data['result']=$b_appointments;
 
+    $data['result_date']= $appointmentData['a_date'];
     $data['result_time']= $this->B_get_appointment_time($appointmentData);      
 
 
