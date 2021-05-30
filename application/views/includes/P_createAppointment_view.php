@@ -100,7 +100,7 @@
             </select>
           </div>
         
-
+        <!--
           <div class="form-group message">
             <div class="sms">
             <input type="checkbox" id="sms" name="sms" value="no">
@@ -114,7 +114,7 @@
             <label class="googleCalendare" for="googleCalendare">יש לי יומן גוגל</label>
           </div>
           </div>
-
+            -->
 
           <button type="submit" id="submit" class="btn btn" value="run">עדכן לי את התור </button>
           <div id="done"></div>
