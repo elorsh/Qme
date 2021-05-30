@@ -134,7 +134,7 @@
   var  btn2 = document.getElementById('calendar');
   
   btn2.addEventListener( 'click', () => {
-    window.confirm("האם אתה בטוח שאתה מעוניין לבטל?");
+    window.confirm("האם ברצונך לבטל את התור ?");
   })
 
 
