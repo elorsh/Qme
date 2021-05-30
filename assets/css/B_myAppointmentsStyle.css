@@ -125,20 +125,14 @@ a i{
     display: block;
     margin: auto;
 }
-td tr{
+td,tr{
     text-align: right;
 }
-td tr i{
-    text-align: center !important;
-}
+
 td i{
     cursor: pointer;
-    font-size: 125%;
-}
-#calendar{
-    cursor: pointer;
-    font-size: 200%; 
-
+    font-size: 200%;
+    text-align: center !important;
 }
 
 .btn{
