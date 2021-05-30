@@ -104,11 +104,9 @@
      <table dir="rtl" class="table table-striped">
         <thead>
           <tr>
-            <th scope="col" > שם המטופל</th>
+            <th scope="col" > סטטוס</th>
             <th scope="col" > תאריך</th>
             <th scope="col">שעה</th>
-            <th scope="col">ביטול תור</th>
-
           </tr>
         </thead>
         <tbody>
