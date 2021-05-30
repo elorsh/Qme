@@ -133,7 +133,7 @@
     <button class="btn"  id="createAppointment" type="button" > <i class="far fa-calendar-alt"></i>הזנה למערכת תור חדש </button>
     <button class="btn"  id="cancelAppointment" type="button" > <i class="far fa-calendar-alt"></i>ביטול תור קיים </button>
 
-    <form class="form1" dir="rtl" onsubmit="return validationForm()" >
+    <form class="form1" dir="rtl" method="post"  action="<?php echo site_url('P_Users/go_to_b_cancelAppointment');?>"  onsubmit="return validationForm()" >
 
     <div class="form-group">
     <label for="date">אנא בחר תאריך : </label>
