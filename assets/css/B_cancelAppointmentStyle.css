@@ -144,7 +144,7 @@ p2{
 .btn{
     display: block;
     margin: auto;
-    text-align: center;
+    text-align: right;
     background-color: rgb(164, 201, 117);
     padding: 2px 20px;
     font-size: 22px;
