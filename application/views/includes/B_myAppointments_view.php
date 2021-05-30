@@ -142,7 +142,7 @@
 
       </select>
     </div>
-    <button dir="rtl" class="btn"  id="cancelAppointment" type=submit > <i class="far fa-calendar-alt"></i> בחר תאריך </button>
+    <button class="btn"  id="cancelAppointment" type=submit >בחר תאריך  <i class="far fa-calendar-alt"></i></button>
 
   </form>
 
