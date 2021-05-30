@@ -76,8 +76,6 @@
             <th scope="col" > שם המטופל</th>
             <th scope="col" > תאריך</th>
             <th scope="col">שעה</th>
-            <th scope="col">ביטול תור</th>
-
           </tr>
         </thead>
         <tbody>
@@ -88,7 +86,6 @@
             echo '<th scope="col">'.$object->u_full_name.'</th>';
             echo '<th scope="col">'.$object->a_date.'</th>';
             echo '<th scope="col">'.$object->a_time.'</th>';
-            echo '<td><i class="far fa-calendar-times" Id="calendar"></i></td>';
             echo "</tr>";
           }
 
@@ -109,8 +106,6 @@
             <th scope="col" > סטטוס</th>
             <th scope="col" > תאריך</th>
             <th scope="col">שעה</th>
-            <th scope="col">ביטול תור</th>
-
           </tr>
         </thead>
         <tbody>
@@ -121,7 +116,6 @@
             echo '<th scope="col">תור פנוי</th>';
             echo '<th scope="col">'.$object->a_date.'</th>';
             echo '<th scope="col">'.$object->a_time.'</th>';
-            echo '<td><i class="far fa-calendar-times" Id="calendar2"></i></td>';
             echo "</tr>";
           }
 
