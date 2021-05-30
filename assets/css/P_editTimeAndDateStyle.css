@@ -146,7 +146,7 @@ h4{
     background-color:  rgb(195, 233, 149);
 }
 
-.sms{
+/* .sms{
     display: inline;
     margin-right: 5px;
 }
@@ -157,7 +157,7 @@ h4{
 .form-group.message{
     width: 65%;
 
-}
+}*/
 
 #done{
     display: block;
