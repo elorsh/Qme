@@ -128,16 +128,11 @@ a i{
 td,tr{
     text-align: right;
 }
-td i{
-    text-align: center !important;
-}
+
 td i{
     cursor: pointer;
     font-size: 125%;
-}
-#calendar{
-    cursor: pointer;
-    font-size: 200%; 
+    text-align: center !important;
 
 }
 
