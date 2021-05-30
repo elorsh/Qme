@@ -227,6 +227,11 @@ td i{
     .btn{
         font-size: 16px;
     }
+    .form1{
+        width: 35%;
+        font-size: 17px;
+
+    }
 
 }
 @media screen and (max-width: 550px){
