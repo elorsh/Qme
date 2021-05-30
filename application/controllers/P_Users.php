@@ -313,14 +313,22 @@ public function go_to_p_register(){
                 'a_date' => $this->input->post('a_date'),
                 'a_time' => $this->input->post('a_time')
                   );
-            $data['appointmentData']=
             $this->P_Users_model->B_create_appointment($appointmentData);
 
             $this->go_to_b_appointments();
            }
 
            public function B_delete_appointment($appointmentData){ 
-
+            $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+            $data['b_user']=$b_user;// כנל
+  
+            $appointmentData = array(
+                'b_email' => $b_user['b_email'],
+                'a_date' => $this->input->post('a_date'),
+                'a_time' => $this->input->post('a_time')
+                  );
+            $this->P_Users_model->B_delete_appointment($appointmentData);
+            $this->go_to_b_appointments();
            }
 
 
@@ -374,6 +382,11 @@ public function go_to_b_create_appointment(){
 public function go_to_b_cancelAppointment(){ 
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
     $data['b_user']=$b_user;// כנל
+
+    $b_appointments=$this->P_Users_model->get_B_appointments($b_user);
+    $b_new_appointments=$this->P_Users_model->get_B_new_appointments($b_user);
+
+    $data['result']=$b_appointments;
 
     $this->load->view('includes/B_cancelAppointment_view',$data);
 }
