@@ -86,16 +86,16 @@
             </select>
     </div>
 
-    <!-- <?php
-          foreach($result_date as $object){
+    // <?php
+        //   foreach($result_date as $object){
             
         
-         <div class="form-group">
-            <label for="date">תאריך:</label>
-            <input type="date" class="form-control" name="a_date" id="date" value="'.$object->a_date.'" disabled >
-          </div>
+        //  <div class="form-group">
+            // <label for="date">תאריך:</label>
+            // <input type="date" class="form-control" name="a_date" id="date" value="'.$object->a_date.'" disabled >
+        //   </div>
         
-    ?> -->
+    // ?>
 
     <div class="form-group ">
         <label for="time">שעה : </label>
