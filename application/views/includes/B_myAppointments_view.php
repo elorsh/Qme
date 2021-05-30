@@ -107,6 +107,8 @@
             <th scope="col" > סטטוס</th>
             <th scope="col" > תאריך</th>
             <th scope="col">שעה</th>
+            <th scope="col">ביטול תור</th>
+
           </tr>
         </thead>
         <tbody>
