@@ -77,7 +77,7 @@
                 echo '<td><i class="far fa-calendar-alt"  id="newAppointment" ></i></td>';
                 echo '<td><a href="https://api.whatsapp.com/send?phone=+972<?php echo $object->b_phone1?>&text=היי, כיצד נוכל לעזור?" target="_blank">
                 <i class="fab fa-whatsapp"></i></a></td>';
-                echo '<td><a href="https://waze.com/ul?q=66%20Acacia%20Avenue"<i class="fab fa-waze"></i></td>';
+                echo '<td><a href="https://waze.com/ul?q=66%20Acacia%20Avenue"><i class="fab fa-waze"></i></a></td>';
                 echo '<td><i class="fas fa-phone"></i></td>';
                 echo "</tr>";
                 }
