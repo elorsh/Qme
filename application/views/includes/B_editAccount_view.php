@@ -16,6 +16,18 @@
  </head>
  <body>
    
+  <i class="fas fa-user-circle" id="myProfile"></i>
+
+      <p class="profile" id="myProfile2">
+      הפרופיל העסקי שלי <br>
+      <?php 
+     if (isset($b_user['loggedin']))
+     {
+    echo $b_user['b_email'];
+     };
+      ?>
+    </p>
+
     <header> 
          <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
      </header>
@@ -42,7 +54,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a id="B_my_profile"  class="nav-link">הפרופיל שלי <i class="fas fa-user-circle"></i></a>
+                            <a id="B_my_profile"  class="nav-link">הפרופיל שלי <i class="fas fa-user-alt"></i></a>
                         </li>
                 
                     </ul>
@@ -121,7 +133,9 @@
 
 
 
-
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
   </body>
 
   <script>
@@ -140,6 +154,11 @@
      document.getElementById("logOut").onclick=function(){
         window.location.href="<?php echo site_url('P_Users/go_to_b_login');?>"
      }
-   
+        document.getElementById("myProfile").onclick=function(){
+         window.location.href="<?php echo site_url('P_Users/go_to_b_myProfile');?>"
+     }
+     document.getElementById("myProfile2").onclick=function(){
+         window.location.href="<?php echo site_url('P_Users/go_to_b_myProfile');?>"
+     }
   </script>
  </html>

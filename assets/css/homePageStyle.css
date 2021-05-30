@@ -134,7 +134,7 @@ h6{
     color: brown;
 }
 
-td i{
+td i, td a i {
     cursor: pointer;
     font-size: 250%; 
 }

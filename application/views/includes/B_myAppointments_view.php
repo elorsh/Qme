@@ -18,6 +18,19 @@
      <title>My Appointments- Business side</title>
  </head>
  <body>
+     
+    <i class="fas fa-user-circle" id="myProfile"></i>
+
+      <p class="profile" id="myProfile2">
+      הפרופיל העסקי שלי <br>
+      <?php 
+     if (isset($b_user['loggedin']))
+     {
+    echo $b_user['b_email'];
+     };
+      ?>
+    </p>
+    
     <header> 
       <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
      </header>
@@ -44,7 +57,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a id="B_my_profile" class="nav-link">הפרופיל שלי <i class="fas fa-user-circle"></i></a>
+                            <a id="B_my_profile" class="nav-link">הפרופיל שלי <i class="fas fa-user-alt"></i></a>
                         </li>
                 
                     </ul>
@@ -94,7 +107,7 @@
  
   </body>
   <script>
-      document.getElementById("homePage").onclick=function(){
+          document.getElementById("homePage").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_home_page');?>"
      }
      document.getElementById("B_myAppointments").onclick=function(){
@@ -108,6 +121,12 @@
      }
      document.getElementById("logOut").onclick=function(){
         window.location.href="<?php echo site_url('P_Users/go_to_b_login');?>"
+     }
+     document.getElementById("myProfile").onclick=function(){
+         window.location.href="<?php echo site_url('P_Users/go_to_b_myProfile');?>"
+     }
+     document.getElementById("myProfile2").onclick=function(){
+         window.location.href="<?php echo site_url('P_Users/go_to_b_myProfile');?>"
      }
   </script>
  </html>

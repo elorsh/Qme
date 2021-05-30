@@ -56,12 +56,13 @@
                         </li>
 
                         <li class="nav-item">
-                            <a  id="P_my_profile"  class="nav-link">הפרופיל שלי <i class="fas fa-user-circle"></i></a>
+                            <a  id="P_my_profile"  class="nav-link">הפרופיל שלי <i class="fas fa-user-alt"></i></a>
                         </li>
                 
                     </ul>
                 </div>
             </nav>
+            
 <div class="container">
 
      <h5 >הפרופיל שלי</h5>
@@ -78,9 +79,8 @@
     <p2> התורים הבאים שלי</p2>
     <button class="btn appointment" id="myAppointments" type="button"> <i class="far fa-calendar-alt"></i> הצג הכל </button>
 
-    <!--למחוק-->
-    <p3>בתי עסק מועדפים </p3>
-    <button class="btn business" type="button"><i class="fas fa-heart"></i>בתי העסק המועדפים שלי </button>
+    <p3> היסטוריית טיפולים</p3>
+    <button class="btn history" type="button"><i class="fas fa-list-alt"></i>צפייה בהיסטוריה </button>
     
 </div>
 
@@ -100,7 +100,7 @@
      document.getElementById("myAccount").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_editMyProfile');?>"
      }
-     document.getElementById("myAppointments").onclick=function(){
+     document.getElementById("P_myAppointments").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_appointments');?>"
      }
     //  document.getElementById("logOut").onclick=function(){
