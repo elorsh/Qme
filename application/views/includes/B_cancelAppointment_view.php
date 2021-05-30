@@ -78,12 +78,22 @@
             echo '<option>'.$object->a_date.'</option>';
           }
 
+         echo' <div class="form-group">
+    <label for="time">שעה :</label>
+    <select type="time" class="form-control" name="a_time" id="time" required>';
+    foreach($result as $object){
+    echo '<option>'.$object->a_time.'</option>';
+    }
+
+    echo '</select>
+     </div>';
+
           ?>
 
         </select>
   </div>
 
-  <div class="form-group">
+  <!-- <div class="form-group">
     <label for="time">שעה :</label>
     <select type="time" class="form-control" name="a_time" id="time" required>
     <option>08:00</option>
@@ -100,7 +110,7 @@
     <option>19:00</option>
     <option>20:00</option>
     </select>
-     </div>
+     </div> -->
 
      <button class="btn"  id="submit" type="button" >בטל לי את התור</button>
      <div id="cancel"></div>
