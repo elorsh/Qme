@@ -64,12 +64,34 @@
             </nav>
 
      <h4>ביטול תור</h4>
+     <!----להחליף לערכים של פרייבט---->
+     <p2 dir="rtl">בחר שעה רצויה</p2>
 
-     <p1   dir="rtl" >האם אתה בטוח כי ברצונך</p1> 
-     <p2 dir="rtl">לבטל את התור?</p2>
+     <form  dir="rtl" onsubmit="return validationForm()" >
 
-     <button class="btn"  id="submit" type="button" >בטל לי את התור</button>
-     <div id="cancel"></div>
+     <div class="form-group">
+            <label for="date">תאריך:</label>
+            <input type="date" class="form-control" name="a_time" id="date" value="#" disabled >
+          </div>
+
+        <div class="form-group ">
+        <label for="time">שעה : </label>
+        <select type="time" class="form-select" name="a_time" id="time" required>
+            <option selected disabled value="">שעה</option>
+            
+            <?php
+            foreach($result_time as $object){
+                echo '<option>'.$object->a_time.'</option>';
+            }
+
+            ?>
+
+            </select>
+    </div>
+
+    <button class="btn"  id="submit" type="button" >בטל לי את התור</button>
+
+    </form>
 
      <p3><i class="far fa-calendar-times"></i></p3>
 
