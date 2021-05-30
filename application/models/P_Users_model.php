@@ -129,7 +129,7 @@ class P_Users_model extends CI_Model {
      }
 
      public function get_B_new_appointments($data){
-        $query = $this->db->query('SELECT * FROM `DB_B_Appointments` WHERE `u_email` = "'.NULL.'" ');
+        $query = $this->db->query('SELECT * FROM `DB_B_Appointments` WHERE `u_email` = NULL ');
         return $query->result();
      }
 
