@@ -93,10 +93,6 @@
        document.getElementById("homePage").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_home_page');?>"
      }
-
-     document.getElementById("P_my_profile").onclick=function(){
-         window.location.href="<?php echo site_url('P_users/go_to_P_myProfile');?>"
-     }
      document.getElementById("myAccount").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_editMyProfile');?>"
      }
@@ -106,9 +102,6 @@
      document.getElementById("myAppointments").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_appointments');?>"
      }
-    //  document.getElementById("logOut").onclick=function(){
-    //     window.location.href="<?php echo site_url('P_Users/go_to_p_login');?>"
-    //  }
      document.getElementById("logOut").onclick=function(){
         window.location.href="<?php echo site_url('P_Users/p_logout');?>"
      }

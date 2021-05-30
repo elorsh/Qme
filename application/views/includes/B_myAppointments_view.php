@@ -110,9 +110,6 @@
           document.getElementById("homePage").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_home_page');?>"
      }
-     document.getElementById("B_myAppointments").onclick=function(){
-         window.location.href="<?php echo site_url('P_Users/go_to_b_appointments');?>"
-     }
      document.getElementById("B_my_profile").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_b_myProfile');?>"
      }
