@@ -119,7 +119,7 @@
             echo '<th scope="col">תור פנוי</th>';
             echo '<th scope="col">'.$object->a_date.'</th>';
             echo '<th scope="col">'.$object->a_time.'</th>';
-            echo '<td><i class="far fa-calendar-times" Id="calendar"></i></td>';
+            echo '<td><i class="far fa-calendar-times" Id="calendar2"></i></td>';
             echo "</tr>";
           }
 
@@ -131,6 +131,7 @@
     </div>
 
     <button class="btn"  id="createAppointment" type="button" > <i class="far fa-calendar-alt"></i>הזנה למערכת תור חדש </button>
+    <button class="btn"  id="cancelAppointment" type="button" > <i class="far fa-calendar-alt"></i>ביטול תור קיים </button>
 
 
 
@@ -158,6 +159,10 @@
      document.getElementById("myProfile2").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_b_myProfile');?>"
      }
+     document.getElementById("cancelAppointment").onclick=function(){
+         window.location.href="<?php echo site_url('P_Users/go_to_b_cancelAppointment');?>"
+     }
+     
      //ליצור פונקציה ב P_USERS
      document.getElementById("calendar").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_b_cancelAppointment');?>"
