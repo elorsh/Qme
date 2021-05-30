@@ -66,7 +66,7 @@
      <h4>ביטול תור</h4>
 
      <p1   dir="rtl" >בחר תור לביטול</p1> 
-     <p2 dir="rtl">בחר שעה רצוייה:</p2>
+     <p2 dir="rtl">בחר שעה רצויה:</p2>
      
      <form  dir="rtl" onsubmit="return validationForm()" >
 
@@ -88,7 +88,7 @@
     <button class="btn"  id="submit" type="button" >בטל לי את התור</button>
 
     </form>
-    
+
     <p3><i class="far fa-calendar-times"></i></p3>
 
 
