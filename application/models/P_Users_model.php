@@ -80,8 +80,8 @@ class P_Users_model extends CI_Model {
 
         //פונציה שמביאה לי את נתוני המשתמש הפרטי
      public function get_P_user_data($data){
-        $query = $this->db->query('SELECT * FROM `DB_users` WHERE `u_email` = "'.$data['u_email'].'" ');
-        return $query->result();
+        // $query = $this->db->query('SELECT * FROM `DB_users` WHERE `u_email` = "'.$data['u_email'].'" ');
+        // return $query->result();
      }
     //פונקציה מקורית שמשתמש בסלקט יחסית פשוט
     //  public function get_P_appointments($data){
