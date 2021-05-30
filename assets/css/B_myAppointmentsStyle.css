@@ -125,10 +125,10 @@ a i{
     display: block;
     margin: auto;
 }
-td tr{
+td,tr{
     text-align: right;
 }
-td tr i{
+td i{
     text-align: center !important;
 }
 td i{
