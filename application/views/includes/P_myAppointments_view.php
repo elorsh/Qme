@@ -97,6 +97,7 @@
     </div>
 
     <button class="btn"  id="newAppointment" type="button" > <i class="far fa-calendar-alt"></i>הזנה למערכת תור חדש </button>
+    <button class="btn"  id="cancelAppointment" type="button" > <i class="far fa-calendar-alt"></i>ביטול תור קיים </button>
 
 
 
@@ -126,6 +127,9 @@
      }
      //ליצור פונקציה ב P_USERS
      document.getElementById("calendar").onclick=function(){
+         window.location.href="<?php echo site_url('P_Users/go_to_P_cancelAppointment');?>"
+     }
+     document.getElementById("cancelAppointment").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_cancelAppointment');?>"
      }
 
