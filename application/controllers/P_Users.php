@@ -371,7 +371,7 @@ public function go_to_b_create_appointment(){
 
     $this->load->view('includes/B_createAppointment_view',$data);
 }
-public function go_to_b_cancel_appointment(){
+public function go_to_b_cancelAppointment(){ 
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
     $data['b_user']=$b_user;// כנל
 
