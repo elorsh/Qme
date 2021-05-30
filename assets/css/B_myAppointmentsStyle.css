@@ -133,6 +133,8 @@ td i{
     cursor: pointer;
     font-size: 200%;
     text-align: center !important;
+    position: relative;
+    right: 10px;
 }
 
 .btn{
