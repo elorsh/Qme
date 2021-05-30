@@ -78,7 +78,7 @@
                 echo '<td><a href="https://api.whatsapp.com/send?phone=+972'.$object->b_phone1.'&text=היי, כיצד נוכל לעזור?" target="_blank">
                 <i class="fab fa-whatsapp"></i></a></td>';
                 echo '<td><a href="https://waze.com/ul?q='.$object->b_address.'"><i class="fab fa-waze"></i></a></td>';
-                echo '<td><i class="fas fa-phone"></i></td>';
+                echo '<td><a href="+972526630939"><i class="fas fa-phone"></i></a></td>';
                 echo "</tr>";
                 }
             ?>
