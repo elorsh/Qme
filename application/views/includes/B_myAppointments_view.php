@@ -134,7 +134,7 @@
     <option selected disabled value="">תאריך</option>
     
     <?php
-    foreach($result as $object){
+    foreach($result_all as $object){
         echo '<option>'.$object->a_date.'</option>';
     }
 

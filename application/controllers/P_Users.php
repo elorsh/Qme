@@ -382,7 +382,7 @@ public function go_to_b_appointments(){
 
     $data['result']=$b_appointments;
     $data['result_new']=$b_new_appointments;
-    $data['result_all']=$$b_all_appointments;
+    $data['result_all']=$b_all_appointments;
 
 
     $this->load->view('includes/B_myAppointments_view',$data);
