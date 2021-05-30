@@ -77,10 +77,10 @@
     <button class="btn" id="myAccount" type="button"> <i class="fas fa-cog"></i> הפרטים שלי </button>
 
     <p2> התורים הבאים שלי</p2>
-    <button class="btn appointment" id="myAppointments" type="button"> <i class="far fa-calendar-alt"></i> הצג הכל </button>
+    <button class="btn appointment" id="P_myAppointments2" type="button"> <i class="far fa-calendar-alt"></i> הצג הכל </button>
 
     <p3> היסטוריית טיפולים</p3>
-    <button class="btn history" type="button"><i class="fas fa-list-alt"></i>צפייה בהיסטוריה </button>
+    <button class="btn history"  id="history"  type="button"><i class="fas fa-list-alt"></i>צפייה בהיסטוריה </button>
     
 </div>
 
@@ -99,7 +99,7 @@
      document.getElementById("P_myAppointments").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_appointments');?>"
      }
-     document.getElementById("myAppointments").onclick=function(){
+     document.getElementById("P_myAppointments2").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_appointments');?>"
      }
      document.getElementById("logOut").onclick=function(){
@@ -110,6 +110,10 @@
      }
      document.getElementById("myProfile2").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_myProfile');?>"
+     }
+     //לכתוב פונקציה ב P_USERS
+     document.getElementById("history").onclick=function(){
+         window.location.href="<?php echo site_url('P_Users/go_to_P_appointmentsHistory');?>"
      }
   </script>
  </html>

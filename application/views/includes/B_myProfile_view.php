@@ -101,6 +101,7 @@
      document.getElementById("appointments").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_b_appointments');?>"
      }
+     //לכתוב פונקציה ב P_USERS
      document.getElementById("customers").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_b_myCustomers');?>"
      }
