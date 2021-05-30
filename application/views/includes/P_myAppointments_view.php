@@ -98,23 +98,21 @@
 
     <button class="btn"  id="newAppointment" type="button" > <i class="far fa-calendar-alt"></i>הזנה למערכת תור חדש </button>
 
-    <!--להחליף לערכים של פרייבט-->
-    <form class="form1" dir="rtl" method="post"  action="<?php echo site_url('P_Users/go_to_b_cancelAppointment');?>"  onsubmit="return validationForm()" >
+    <!--להכניס ערכים של PHP--->
+    <form class="form1" dir="rtl" onsubmit="return validationForm()" >
 
     <div class="form-group">
-    <label for="date">אנא בחר תאריך : </label>
-    <select type="date" class="form-select" name="a_date" id="date" required>
-    <option selected disabled value="">תאריך</option>
-    
-    <?php
-    foreach($result as $object){
-        echo '<option>'.$object->a_date.'</option>';
-    }
+        <label for="date">תאריך :</label>
+        <select type="date" class="form-select" name="a_date" id="date" required>
+        <option>01/06/21</option>
+        <option>02/06/21</option>
+        <option>03/06/21</option>
+        <option>04/06/21</option>
+        </select>
+        </div> 
 
-    ?>
 
-      </select>
-    </div>
+  
     <button class="btn" type=submit >בחר תאריך  <i class="far fa-calendar-alt"></i></button>
 
   </form>
