@@ -125,8 +125,11 @@ a i{
     display: block;
     margin: auto;
 }
-td,tr{
+td tr{
     text-align: right;
+}
+td tr i{
+    text-align: center !important;
 }
 td i{
     cursor: pointer;
@@ -135,7 +138,6 @@ td i{
 #calendar{
     cursor: pointer;
     font-size: 200%; 
-    text-align: center;
 
 }
 
