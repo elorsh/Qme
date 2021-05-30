@@ -100,7 +100,7 @@
             <input type="text" class="form-control" name="b_address" id="validationCustom05" value="#" placeholder="עיר ,רחוב ,מספר בית" >
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-3">
             <label for="validationCustom02" class="form-label">טלפון נוסף :</label>
             <input type="tel" class="form-control" name="b_phone2" id="validationCustom06" value="#" placeholder="000-0000000" >
           </div>
@@ -115,11 +115,11 @@
               <option>סטודיו </option>
             </select>       
           </div>
-
-        <div class="col-md-4">
+        <!------למחוק----->
+        <!--<div class="col-md-4">
           <label for="validationCustom05" class="form-label"> שינוי תמונה:</label>
           <input type="file" class="form-control" name="b_photo" value="#" id="validationCustom11" accept="image/png, image/jpeg" >
-        </div>
+        </div>-->
 
 
         <div class="col-12">
