@@ -398,7 +398,7 @@ public function go_to_b_cancelAppointment(){
 
     $appointmentData = array(
         'b_email' => $b_user['b_email'],
-        'a_date' => $this->input->post('a_date'),
+        'a_date' => $this->input->post('a_date')
           );
 
     // $b_appointments=$this->P_Users_model->get_B_appointments($b_user);
