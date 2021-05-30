@@ -75,16 +75,13 @@
 
 
 
-     <div class="form-group ">
-        <label for="date">תאריך: </label>
-        <input type="date" class="form-control" name="a_date" id="date" value= <?php
-            foreach($result_date as $object){
-                echo '"'.$object->a_date.'"';
-            }
-            ?>
-            disabled > 
-            </select>
-    </div>
+
+
+    <div class="form-group ">
+                   <label for="date">תאריך: </label>
+                <input type="text" class="form-control" name="a_date" id="date" value= "<?php foreach ($result_date as $res){echo $res->a_date;} ?>" disabled >
+          </div>
+          
 
     // <?php
         //   foreach($result_date as $object){
