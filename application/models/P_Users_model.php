@@ -54,6 +54,8 @@ class P_Users_model extends CI_Model {
         $query = $this->db->query('UPDATE `DB_users` SET `u_full_name`="'.$data['u_full_name'].'",`u_phone`="'.$data['u_phone'].'",`u_address`="'.$data['u_address'].'" WHERE `u_email` = "'.$data['user']['u_email'].'" '); 
     }
 
+    //לא מצליח לעדכן את הנתונים, לנסות עם השאילתה השניה
+
     // public function update_profile($pref){
     //     $this->db->db_debug = FALSE;  
     //     $user=$this->session->all_userdata();
