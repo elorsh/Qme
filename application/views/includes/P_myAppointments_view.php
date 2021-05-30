@@ -109,9 +109,6 @@
        document.getElementById("homePage").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_home_page');?>"
      }
-     document.getElementById("P_myAppointments").onclick=function(){
-         window.location.href="<?php echo site_url('P_Users/go_to_P_appointments');?>"
-     }
      document.getElementById("P_my_profile").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_myProfile');?>"
      }
@@ -127,5 +124,11 @@
      document.getElementById("myProfile2").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_myProfile');?>"
      }
+     //ליצור פונקציה ב P_USERS
+     document.getElementById("calendar").onclick=function(){
+         window.location.href="<?php echo site_url('P_Users/go_to_P_cancelAppointment');?>"
+     }
+
+
   </script>
  </html>
