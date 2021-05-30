@@ -128,6 +128,12 @@ class P_Users_model extends CI_Model {
         return $query->result();
      }
 
+     public function B_create_appointment($appointmentData){
+
+        $this->db->insert('DB_B_Appointments', $appointmentData);
+
+     }
+
      
 
 

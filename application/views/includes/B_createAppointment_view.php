@@ -62,16 +62,16 @@
 
      <h4>יצירת תור חדש</h4>
 
-    <form  dir="rtl" onsubmit="return validationForm()" >
+    <form  dir="rtl" onsubmit="return  validationForm()" method="post"  action="<?php echo site_url('P_Users/B_createAppointment');?>" >
 
         <div class="form-group ">
             <label for="date">תאריך : </label>
-            <input type="date" class="form-control" name="date" id="date"  min="2021-05-01"required>
+            <input type="date" class="form-control" name="a_date" id="date"  min="2021-05-01"required>
           </div>
 
           <div class="form-group">
             <label for="time1">שעת התחלה :</label>
-            <input type="time" class="form-control" name="time" id="time" required>
+            <input type="time" class="form-control" name="a_time" id="time" required>
           </div>
     
 
