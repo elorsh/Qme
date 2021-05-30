@@ -85,7 +85,7 @@
 
         <div class="col-md-3">
           <label for="validationCustom02" class="form-label">טלפון  :</label>
-          <input type="tel" class="form-control" name="u_phone1" id="validationCustom02" value= "'.$object->u_phone.'" placeholder="0000000000" >
+          <input type="tel" class="form-control" name="u_phone" id="validationCustom02" value= "'.$object->u_phone.'" placeholder="0000000000" >
         </div>
 
         <div class="col-md-3">
