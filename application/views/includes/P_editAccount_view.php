@@ -23,7 +23,7 @@
       <?php 
      if (isset($b_user['loggedin']))
      {
-    echo $b_user['b_email'];
+    echo $b_user['u_email'];
      };
       ?>
     </p>
