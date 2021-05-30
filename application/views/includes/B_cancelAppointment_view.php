@@ -86,7 +86,7 @@
             </select>
     </div>
 
-    <?php
+    <!-- <?php
           foreach($result_date as $object){
             
         
@@ -95,7 +95,7 @@
             <input type="date" class="form-control" name="a_date" id="date" value="'.$object->a_date.'" disabled >
           </div>
         
-    ?>
+    ?> -->
 
     <div class="form-group ">
         <label for="time">שעה : </label>
