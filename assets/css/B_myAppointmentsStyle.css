@@ -129,6 +129,11 @@ td,tr{
     text-align: right;
 }
 
+#calendar, #calendar2{
+    font-size: 200%;
+
+}
+
 td i{
     cursor: pointer;
     font-size: 200%;
