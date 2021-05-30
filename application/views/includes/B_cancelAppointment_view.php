@@ -65,11 +65,48 @@
 
      <h4>ביטול תור</h4>
 
-     <p1   dir="rtl" >האם אתה בטוח כי ברצונך</p1> 
-     <p2 dir="rtl">לבטל את התור?</p2>
+     <p1   dir="rtl" >בחר תור לביטול</p1> 
+     <form  dir="rtl" onsubmit="return validationForm()" >
+
+<div class="form-group ">
+    <label for="date">תאריך : </label>
+    <select type="date" class="form-select" name="date" id="date" required>
+         <option selected disabled value="">תאריך</option>
+          <option>01/06/21</option>
+          <option>02/06/21</option>
+          <option>03/06/21</option>
+          <option>04/06/21</option>
+          <option>05/06/21</option>
+          <option>06/06/21</option>
+          <option>07/06/21</option>
+
+        </select>
+  </div>
+
+  <div class="form-group">
+    <label for="time">שעה :</label>
+    <select type="time" class="form-control" name="time" id="time" required>
+    <option>08:00</option>
+    <option>09:00</option>
+    <option>10:00</option>
+    <option>11:00</option>
+    <option>12:00</option>
+    <option>13:00</option>
+    <option>14:00</option>
+    <option>15:00</option>
+    <option>16:00</option>
+    <option>17:00</option>
+    <option>18:00</option>
+    <option>19:00</option>
+    <option>20:00</option>
+    </select>
+     </div>
 
      <button class="btn"  id="submit" type="button" >בטל לי את התור</button>
      <div id="cancel"></div>
+
+     </form>
+
 
      <p3><i class="far fa-calendar-times"></i></p3>
 
