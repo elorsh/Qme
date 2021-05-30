@@ -136,7 +136,7 @@
     <form class="form1" dir="rtl" onsubmit="return validationForm()" >
 
     <div class="form-group">
-    <label for="date">תאריך : </label>
+    <label for="date">אנא בחר תאריך : </label>
     <select type="date" class="form-select" name="a_date" id="date" required>
     <option selected disabled value="">תאריך</option>
     
