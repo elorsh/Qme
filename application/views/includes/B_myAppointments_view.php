@@ -115,7 +115,7 @@
           <?php
           foreach($result_new as $object){
            
-            echo "<tr>";
+            echo "<tr >";
             echo '<th scope="col">תור פנוי</th>';
             echo '<th scope="col">'.$object->a_date.'</th>';
             echo '<th scope="col">'.$object->a_time.'</th>';
