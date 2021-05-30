@@ -134,7 +134,7 @@
   var  btn2 = document.getElementById('calendar');
   
   btn2.addEventListener( 'click', () => {
-    alert("האם אתה בטוח שאתה מעוניין לבטל?");
+    window.confirm("האם אתה בטוח שאתה מעוניין לבטל?");
   })
 
 
