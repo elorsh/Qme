@@ -113,10 +113,10 @@
         </thead>
         <tbody>
           <?php
-          foreach($result as $object){
+          foreach($result_new as $object){
            
             echo "<tr>";
-            echo '<th scope="col">'.$object->u_full_name.'</th>';
+            echo '<th scope="col">תור פנוי</th>';
             echo '<th scope="col">'.$object->a_date.'</th>';
             echo '<th scope="col">'.$object->a_time.'</th>';
             echo '<td><i class="far fa-calendar-times" Id="calendar"></i></td>';

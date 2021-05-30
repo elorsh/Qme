@@ -125,8 +125,14 @@ class P_Users_model extends CI_Model {
 
      public function get_B_appointments($data){
         $query = $this->db->query('SELECT * FROM `DB_B_Appointments` INNER JOIN DB_users  ON DB_B_Appointments.u_email = DB_users.u_email WHERE `b_email` = "'.$data['b_email'].'" ');
+         return $query->result();
+     }
+
+     public function get_B_new_appointments($data){
+        $query = $this->db->query('SELECT * FROM `DB_B_Appointments` WHERE `u_email` = "'NULL'" ');
         return $query->result();
      }
+
 
      public function B_create_appointment($appointmentData){
 

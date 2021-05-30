@@ -344,7 +344,11 @@ public function go_to_b_appointments(){
     $data['b_user']=$b_user;// כנל
 
     $b_appointments=$this->P_Users_model->get_B_appointments($b_user);
+    $b_new_appointments=$this->P_Users_model->get_B_new_appointments($b_user);
+
     $data['result']=$b_appointments;
+    $data['result_new']=$b_new_appointments;
+
     $this->load->view('includes/B_myAppointments_view',$data);
 }
 
