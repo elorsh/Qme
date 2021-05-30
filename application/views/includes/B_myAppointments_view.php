@@ -128,5 +128,9 @@
      document.getElementById("myProfile2").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_b_myProfile');?>"
      }
+     //ליצור פונקציה ב P_USERS
+     document.getElementById("calendar").onclick=function(){
+         window.location.href="<?php echo site_url('P_Users/go_to_b_cancelAppointment');?>"
+     }
   </script>
  </html>
