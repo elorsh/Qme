@@ -162,13 +162,8 @@ td i{
 .btn i{
     margin-right: 10px;
 }
-form{
-    display: block;
-    margin: 0 auto; 
-    align-items: center;
-    text-align: center;
-}
-form .form-group{
+
+form .form-select{
     display: block;
     margin: 0 auto; 
     text-align: center;
