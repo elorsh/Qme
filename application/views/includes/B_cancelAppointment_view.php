@@ -70,10 +70,15 @@
      
      <form  dir="rtl" onsubmit="return validationForm()" >
 
+     <div class="form-group">
+            <label for="date">תאריך:</label>
+            <input type="date" class="form-control" name="a_time" id="date" value="#" disabled >
+          </div>
+
         <div class="form-group ">
-        <label for="date">תאריך : </label>
-        <select type="date" class="form-select" name="a_date" id="date" required>
-            <option selected disabled value="">תאריך</option>
+        <label for="time">שעה : </label>
+        <select type="time" class="form-select" name="a_time" id="time" required>
+            <option selected disabled value="">שעה</option>
             
             <?php
             foreach($result_time as $object){
