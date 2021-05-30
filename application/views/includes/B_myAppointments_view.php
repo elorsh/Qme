@@ -126,16 +126,16 @@
           ?>
         </tbody>
       </table>
-
-    
     </div>
 
     <button class="btn"  id="createAppointment" type="button" > <i class="far fa-calendar-alt"></i>הזנה למערכת תור חדש </button>
     <button class="btn"  id="cancelAppointment" type="button" > <i class="far fa-calendar-alt"></i>ביטול תור קיים </button>
 
+     <div class="clear"></div>
+
     <form  dir="rtl" onsubmit="return validationForm()" >
 
-    <div   dir="rtl" class="form-group">
+    <div class="form-group">
     <label for="date">תאריך : </label>
     <select type="date" class="form-select" name="a_date" id="date" required>
     <option selected disabled value="">תאריך</option>
