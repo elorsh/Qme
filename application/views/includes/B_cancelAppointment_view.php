@@ -65,7 +65,6 @@
 
      <h4>ביטול תור</h4>
 
-     <p1   dir="rtl" >בחר תור לביטול</p1> 
      <p2 dir="rtl">בחר שעה רצויה:</p2>
      
      <form  dir="rtl" onsubmit="return validationForm()" >

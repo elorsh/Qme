@@ -106,14 +106,14 @@ h4{
 
 }
 
-p1{
+/*p1{
     display: block;
     margin: auto;
     margin-top: 20px !important;
     margin-bottom: 7px!important;
     font-size: 26px;
     text-align: center;
-}
+}*/
 
 p2{
     display: block;
@@ -122,7 +122,6 @@ p2{
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    font-weight: bold;
 } 
 
 .form-group{
