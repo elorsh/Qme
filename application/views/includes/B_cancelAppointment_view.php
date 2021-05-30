@@ -68,54 +68,69 @@
      <p1   dir="rtl" >בחר תור לביטול</p1> 
      <form  dir="rtl" onsubmit="return validationForm()" >
 
+        <div class="form-group ">
+        <label for="date">תאריך : </label>
+        <select type="date" class="form-select" name="a_date" id="date" required>
+            <option selected disabled value="">תאריך</option>
+            
+            <?php
+            foreach($result as $object){
+                echo '<option>'.$object->a_date.'</option>';
+            }
+
+            ?>
+
+            </select>
+    </div>
+    </form>
+
+
+    <button class="btn"  id="submit" type="button" >בחר תאריך</button>
+
+
+    <form  dir="rtl" onsubmit="return validationForm()" >
+
 <div class="form-group ">
-    <label for="date">תאריך : </label>
-    <select type="date" class="form-select" name="a_date" id="date" required>
-         <option selected disabled value="">תאריך</option>
-         
-          <?php
-          foreach($result as $object){
-            echo '<option>'.$object->a_date.'</option>';
-          }
+<label for="date">תאריך : </label>
+<select type="date" class="form-select" name="a_date" id="date" required>
+    <option selected disabled value="">תאריך</option>
+    
+    <?php
+    foreach($result as $object){
+        echo '<option>'.$object->a_date.'</option>';
+    }
 
-         echo'<div class="form-group">';
-            echo'<label for="time">שעה :</label>';
-            echo '<select type="time" class="form-control" name="a_time" id="time" required>';
-             foreach($result as $object1){
-                echo '<option>'.$object1->a_time.'</option>';
-                }
+    ?>
 
-            echo '</select>';
-            echo '</div>';
-
-          ?>
-
-        </select>
-  </div>
-
-  <!-- <div class="form-group">
-    <label for="time">שעה :</label>
-    <select type="time" class="form-control" name="a_time" id="time" required>
-    <option>08:00</option>
-    <option>09:00</option>
-    <option>10:00</option>
-    <option>11:00</option>
-    <option>12:00</option>
-    <option>13:00</option>
-    <option>14:00</option>
-    <option>15:00</option>
-    <option>16:00</option>
-    <option>17:00</option>
-    <option>18:00</option>
-    <option>19:00</option>
-    <option>20:00</option>
     </select>
-     </div> -->
+</div>
+</form>
 
-     <button class="btn"  id="submit" type="button" >בטל לי את התור</button>
-     <div id="cancel"></div>
 
-     </form>
+
+    <!-- <div class="form-group">
+        <label for="time">שעה :</label>
+        <select type="time" class="form-control" name="a_time" id="time" required>
+        <option>08:00</option>
+        <option>09:00</option>
+        <option>10:00</option>
+        <option>11:00</option>
+        <option>12:00</option>
+        <option>13:00</option>
+        <option>14:00</option>
+        <option>15:00</option>
+        <option>16:00</option>
+        <option>17:00</option>
+        <option>18:00</option>
+        <option>19:00</option>
+        <option>20:00</option>
+        </select>
+        </div> -->
+
+        <button class="btn"  id="submit" type="button" >בטל לי את התור</button>
+        <div id="cancel"></div>
+
+     <!-- </form> -->
 
 
      <p3><i class="far fa-calendar-times"></i></p3>
