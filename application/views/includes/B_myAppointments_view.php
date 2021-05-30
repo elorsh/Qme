@@ -133,7 +133,23 @@
     <button class="btn"  id="createAppointment" type="button" > <i class="far fa-calendar-alt"></i>הזנה למערכת תור חדש </button>
     <button class="btn"  id="cancelAppointment" type="button" > <i class="far fa-calendar-alt"></i>ביטול תור קיים </button>
 
+    <form  dir="rtl" onsubmit="return validationForm()" >
 
+<div class="form-group ">
+<label for="date">תאריך : </label>
+<select type="date" class="form-select" name="a_date" id="date" required>
+    <option selected disabled value="">תאריך</option>
+    
+    <?php
+    foreach($result as $object){
+        echo '<option>'.$object->a_date.'</option>';
+    }
+
+    ?>
+
+    </select>
+</div>
+</form>
 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
