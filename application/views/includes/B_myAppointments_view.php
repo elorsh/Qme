@@ -97,6 +97,39 @@
     
     </div>
 
+    <h4 class="headline">תורים פנויים</h4>
+
+<div class="table-container">
+
+     <table dir="rtl" class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col" > שם המטופל</th>
+            <th scope="col" > תאריך</th>
+            <th scope="col">שעה</th>
+            <th scope="col">ביטול תור</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <?php
+          foreach($result as $object){
+           
+            echo "<tr>";
+            echo '<th scope="col">'.$object->u_full_name.'</th>';
+            echo '<th scope="col">'.$object->a_date.'</th>';
+            echo '<th scope="col">'.$object->a_time.'</th>';
+            echo '<td><i class="far fa-calendar-times" Id="calendar"></i></td>';
+            echo "</tr>";
+          }
+
+          ?>
+        </tbody>
+      </table>
+
+    
+    </div>
+
     <button class="btn"  id="createAppointment" type="button" > <i class="far fa-calendar-alt"></i>הזנה למערכת תור חדש </button>
 
 
