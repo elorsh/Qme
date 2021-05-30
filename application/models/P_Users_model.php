@@ -50,8 +50,8 @@ class P_Users_model extends CI_Model {
         $this->db->insert('DB_users', $data);
     }
 
-    public function update_p_user($data){
-        $query = $this->db->query('UPDATE `DB_users` SET `u_full_name`=[$u_full_name],`u_phone`=[$u_phone],`u_address`=[$u_address] WHERE `u_email` = "'.$data['u_email'].'" '); 
+    public function update_p_user($data){ // השאילתה לא עובדת לי - להבין למה
+        $query = $this->db->query('UPDATE `DB_users` SET `u_full_name`="'.[$u_full_name].'",`u_phone`="'.[$u_phone].'",`u_address`="'.[$u_address].'" WHERE `u_email` = "'.$data"'.['u_email'].'" '); 
     }
 
      public function p_auth($data){
