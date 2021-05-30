@@ -139,6 +139,7 @@ td i{
     display: block;
     margin: auto;
     text-align: center;
+    align-items: center;
     background-color: rgb(164, 201, 117);
     padding: 2px 20px;
     font-size: 24px;
