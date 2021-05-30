@@ -76,7 +76,7 @@
 
 
     <?php
-          foreach($result_date->a_time as $object){
+          foreach($result_date as $object){
             
         
          echo '<div class="form-group">
