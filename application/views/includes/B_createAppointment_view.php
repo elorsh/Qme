@@ -62,7 +62,7 @@
 
      <h4>יצירת תור חדש</h4>
 
-    <form  dir="rtl" onsubmit="return  validationForm()" method="post"  action="<?php echo site_url('P_Users/B_createAppointment');?>" >
+    <form  dir="rtl" onsubmit="return  validationForm()" method="post"  action="<?php echo site_url('P_Users/B_create_appointment');?>" >
 
         <div class="form-group ">
             <label for="date">תאריך : </label>
