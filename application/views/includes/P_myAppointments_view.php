@@ -116,7 +116,7 @@
          window.location.href="<?php echo site_url('P_Users/go_to_P_myProfile');?>"
      }
      document.getElementById("newAppointment").onclick=function(){
-         window.location.href="<?php echo site_url('P_Users/go_to_P_createAppointment');?>"
+        window.location.href="<?php echo site_url('P_Users/go_to_P_create_appointment');?>"
      }
      document.getElementById("logOut").onclick=function(){
         window.location.href="<?php echo site_url('P_Users/p_logout');?>"
