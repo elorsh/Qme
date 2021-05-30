@@ -74,7 +74,7 @@
             <th scope="col" > שם המטופל</th>
             <th scope="col" > תאריך</th>
             <th scope="col">שעה</th>
-            <th scope="col">עדכון תור</th>
+            <th scope="col">ביטול תור</th>
 
           </tr>
         </thead>
@@ -86,7 +86,7 @@
             echo '<th scope="col">'.$object->u_full_name.'</th>';
             echo '<th scope="col">'.$object->a_date.'</th>';
             echo '<th scope="col">'.$object->a_time.'</th>';
-            echo '<td><i class="far fa-calendar-alt" Id="calendar"></i></td>';
+            echo '<td><i class="far fa-calendar-times" Id="calendar"></i></td>';
             echo "</tr>";
           }
 

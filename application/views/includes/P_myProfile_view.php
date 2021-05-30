@@ -62,7 +62,7 @@
                     </ul>
                 </div>
             </nav>
-            
+
 <div class="container">
 
      <h5 >הפרופיל שלי</h5>
@@ -101,6 +101,9 @@
          window.location.href="<?php echo site_url('P_Users/go_to_P_editMyProfile');?>"
      }
      document.getElementById("P_myAppointments").onclick=function(){
+         window.location.href="<?php echo site_url('P_Users/go_to_P_appointments');?>"
+     }
+     document.getElementById("myAppointments").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_appointments');?>"
      }
     //  document.getElementById("logOut").onclick=function(){
