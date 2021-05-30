@@ -74,8 +74,8 @@
             <option selected disabled value="">תאריך</option>
             
             <?php
-            foreach($result as $object){
-                echo '<option>'.$object->a_date.'</option>';
+            foreach($result_time as $object){
+                echo '<option>'.$object->a_time.'</option>';
             }
 
             ?>
@@ -85,10 +85,10 @@
     </form>
 
 
-    <button class="btn"  id="submit" type="button" >בחר תאריך</button>
+    <button class="btn"  id="submit" type="button" >בחר שעה</button>
 
 
-    <form  dir="rtl" onsubmit="return validationForm()" >
+ <!-- <form  dir="rtl" onsubmit="return validationForm()" >
 
 <div class="form-group ">
 <label for="date">תאריך : </label>
@@ -104,7 +104,7 @@
 
     </select>
 </div>
-</form>
+</form> -->
 
 
 
