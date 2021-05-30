@@ -328,7 +328,7 @@ public function go_to_p_register(){
 
 
 
-           public function B_delete_appointment_date(){ 
+           public function B_delete_appointment(){ 
             $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
             $data['b_user']=$b_user;// כנל
   
@@ -395,10 +395,12 @@ public function go_to_b_create_appointment(){
 public function go_to_b_cancelAppointment(){ 
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
     $data['b_user']=$b_user;// כנל
+    $a_date=$this->input->post('a_date');
+
 
     $appointmentData = array(
         'b_email' => $b_user['b_email'],
-        'a_date' => $this->input->post('a_date'),
+        'a_date' => $a_date
           );
 
     // $b_appointments=$this->P_Users_model->get_B_appointments($b_user);
