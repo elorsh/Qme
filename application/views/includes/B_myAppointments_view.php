@@ -135,7 +135,7 @@
 
     <form  dir="rtl" onsubmit="return validationForm()" >
 
-    <div class="form-group col-md-4 ">
+    <div class="form-group">
     <label for="date">תאריך : </label>
     <select type="date" class="form-select" name="a_date" id="date" required>
     <option selected disabled value="">תאריך</option>
