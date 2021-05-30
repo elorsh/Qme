@@ -78,15 +78,15 @@
             echo '<option>'.$object->a_date.'</option>';
           }
 
-         echo' <div class="form-group">
-    <label for="time">שעה :</label>
-    <select type="time" class="form-control" name="a_time" id="time" required>';
-    foreach($result as $object){
-    echo '<option>'.$object->a_time.'</option>';
-    }
+         echo'<div class="form-group">';
+            echo'<label for="time">שעה :</label>';
+            echo '<select type="time" class="form-control" name="a_time" id="time" required>';
+             foreach($result as $object1){
+                echo '<option>'.$object1->a_time.'</option>';
+                }
 
-    echo '</select>
-     </div>';
+            echo '</select>';
+            echo '</div>';
 
           ?>
 
