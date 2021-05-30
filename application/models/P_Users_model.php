@@ -51,8 +51,18 @@ class P_Users_model extends CI_Model {
     }
 
     public function update_p_user($data){ // השאילתה לא עובדת לי - להבין למה
-        $query = $this->db->query('UPDATE `DB_users` SET `u_full_name`="'.$data[$u_full_name].'",`u_phone`="'.$data[$u_phone].'",`u_address`="'.$data[$u_address].'" WHERE `u_email` = "'.$data['u_email'].'" '); 
+        $query = $this->db->query('UPDATE `DB_users` SET `u_full_name`="'.$data['u_full_name'].'",`u_phone`="'.$data['u_phone'].'",`u_address`="'.$data['u_address'].'" WHERE `u_email` = "'.$data['u_email'].'" '); 
     }
+
+    // public function update_profile($pref){
+    //     $this->db->db_debug = FALSE;  
+    //     $user=$this->session->all_userdata();
+    //     $this->db->where('username', $user['username']);
+    //     $this->db->update('users', $pref);
+    //     //$query = $db->query(' UPDATE users SET "location" = "'.$pref['location'].'", "genre1" = "'.$pref['genre1'].'", "genre2" = "'.$pref['genre2'].'", "genre3" = "'.$pref['genre3'].'" WHERE `users`.`username` = "'.$user['username'].'" ');
+    //  }
+
+
 
      public function p_auth($data){
         $query = $this->db->get_where('DB_users', $data);
