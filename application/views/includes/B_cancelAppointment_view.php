@@ -70,22 +70,22 @@
 
 <div class="form-group ">
     <label for="date">תאריך : </label>
-    <select type="date" class="form-select" name="date" id="date" required>
+    <select type="date" class="form-select" name="a_date" id="date" required>
          <option selected disabled value="">תאריך</option>
-          <option>01/06/21</option>
-          <option>02/06/21</option>
-          <option>03/06/21</option>
-          <option>04/06/21</option>
-          <option>05/06/21</option>
-          <option>06/06/21</option>
-          <option>07/06/21</option>
+         
+          <?php
+          foreach($result as $object){
+            echo '<option>'.$object->a_date.'</option>';
+          }
+
+          ?>
 
         </select>
   </div>
 
   <div class="form-group">
     <label for="time">שעה :</label>
-    <select type="time" class="form-control" name="time" id="time" required>
+    <select type="time" class="form-control" name="a_time" id="time" required>
     <option>08:00</option>
     <option>09:00</option>
     <option>10:00</option>
