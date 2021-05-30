@@ -105,7 +105,7 @@
             <input type="tel" class="form-control" name="b_phone2" id="validationCustom06" value="#" placeholder="000-0000000" >
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-3">
             <label for="validationCustom04" class="form-label">תחום עיסוק:</label>
             <select class="form-select"  name="b_profession" value="#" id="validationCustom07" >
               <option selected disabled value="">תחום עיסוק</option>

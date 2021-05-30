@@ -74,7 +74,7 @@
             <th scope="col" > בית עסק</th>
             <th scope="col" > תאריך</th>
             <th scope="col">שעה</th>
-            <th scope="col">עדכון תור</th>
+            <th scope="col">ביטול תור</th>
 
           </tr>
         </thead>
@@ -86,10 +86,9 @@
             echo '<td scope="col">'.$object->b_business_name.'</td>';
             echo '<td scope="col">'.$object->a_date.'</td>';
             echo '<td scope="col">'.$object->a_time.'</td>';
-            echo '<td><i class="far fa-calendar-alt" Id="calendar"></i></td>';
+            echo '<td><i class="far fa-calendar-times" Id="calendar"></i></td>';
             echo "</tr>";
           }
-
           ?>
         </tbody>
       </table>
