@@ -328,7 +328,7 @@ public function go_to_p_register(){
 
 
 
-           public function B_delete_appointment_date(){ 
+           public function B_delete_appointment(){ 
             $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
             $data['b_user']=$b_user;// כנל
   

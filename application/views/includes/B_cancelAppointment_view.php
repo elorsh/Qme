@@ -67,12 +67,21 @@
 
      <p2 dir="rtl">בחר שעה רצויה:</p2>
      
-     <form  dir="rtl" onsubmit="return validationForm()" >
+     <form  dir="rtl" method="post"  action="<?php echo site_url('P_Users/B_delete_appointment');?>" onsubmit="return validationForm()" >
 
-     <div class="form-group">
+
+
+
+    <?php
+          foreach($result_date as $object){
+            
+        
+         echo '<div class="form-group">
             <label for="date">תאריך:</label>
-            <input type="date" class="form-control" name="a_time" id="date" value="#" disabled >
-          </div>
+            <input type="date" class="form-control" name="a_date" id="date" value="'.$object->a_date.'" disabled >
+          </div>';
+        }
+    ?>
 
         <div class="form-group ">
         <label for="time">שעה : </label>
