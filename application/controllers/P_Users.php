@@ -98,7 +98,7 @@ public function insert_new_p_user($data){
     // עדכון משתמש קיים
     public function P_update_user(){
         $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
-        $data = array(
+        $data1 = array(
             'user' => $p_user,
             'u_full_name' => $this->input->post('u_full_name'),
             'u_phone' => $this->input->post('u_phone'),
@@ -106,7 +106,7 @@ public function insert_new_p_user($data){
 
             // 'u_password' => $this->input->post('u_password')
           );
-        $this->P_Users_model->update_p_user($data);
+        $this->P_Users_model->update_p_user($data1);
    
         $msg = ':) עידכנת את הפרטים בהצלחה';
         $data['msg']=$msg;
