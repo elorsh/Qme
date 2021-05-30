@@ -131,14 +131,22 @@ class P_Users_model extends CI_Model {
          return $query->result();
      }
 
-     public function B_get_appointment_time($appointmentData){
-        $query = $this->db->query('SELECT * FROM `DB_B_Appointments` WHERE `DB_B_Appointments`.`b_email` = "'.$appointmentData['b_email'].'" AND `DB_B_Appointments`.`a_date` = "'.$appointmentData['a_date'].'" ');
-         return $query->result();
-     }
 
      public function get_B_new_appointments($data){
         $query = $this->db->query('SELECT * FROM `DB_B_Appointments` WHERE `u_email` is NULL ');
         return $query->result();
+     }
+
+     public function get_B_all_appointments($data){
+        $query = $this->db->query('SELECT * FROM `DB_B_Appointments` INNER JOIN DB_users  ON DB_B_Appointments.u_email = DB_users.u_email WHERE `b_email` = "'.$data['b_email'].'"' OR `u_email` is NULL  ');
+        return $query->result();
+     }
+
+
+
+     public function B_get_appointment_time($appointmentData){
+        $query = $this->db->query('SELECT * FROM `DB_B_Appointments` WHERE `DB_B_Appointments`.`b_email` = "'.$appointmentData['b_email'].'" AND `DB_B_Appointments`.`a_date` = "'.$appointmentData['a_date'].'" ');
+         return $query->result();
      }
 
 
