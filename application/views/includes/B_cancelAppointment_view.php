@@ -76,7 +76,7 @@
 
 
 
-<!-- 
+
     <div class="form-group ">
                    <label for="date">תאריך: </label>
               
@@ -87,7 +87,7 @@
                         echo '" disabled >';
                         ?>
           </div>
-           -->
+          
           <div class="form-group ">
         <label for="time">שעה : </label>
         <select type="time" class="form-select" name="a_time" id="time" required>
