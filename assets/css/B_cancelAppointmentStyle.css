@@ -141,8 +141,8 @@ p2{
 }
 
 .btn{
+    position: relative;
     display: block;
-    margin: auto;
     text-align: right;
     background-color: rgb(164, 201, 117);
     padding: 2px 24px;
