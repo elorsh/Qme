@@ -81,9 +81,9 @@
                    <label for="date">תאריך: </label>
               
                    <?php echo ' <input type="text" class="form-control" name="a_date" id="date" value= "';
-                    // foreach ($result_date as $res){
-                        echo $result_date->a_date;
-                        // } 
+                    foreach ($result_date as $object){
+                        echo $object->a_date;
+                        } 
                         echo '" disabled >';
                         ?>
           </div>
@@ -95,7 +95,7 @@
             
             <?php
             foreach($result_time as $object){
-                echo '<option>'.$object->a_time.'</option>';
+                echo '<option>'.$->a_time.'</option>';
             }
 
             ?>
