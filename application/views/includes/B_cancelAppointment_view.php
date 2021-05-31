@@ -77,7 +77,7 @@
 
 
 
-    <div class="form-group ">
+    <!-- <div class="form-group ">
                    <label for="date">תאריך: </label>
               
                    <?php echo ' <input type="text" class="form-control" name="a_date" id="date" value= "';
@@ -86,7 +86,7 @@
                         } 
                         echo '" disabled >';
                         ?>
-          </div>
+          </div> -->
           
 
     // <?php
