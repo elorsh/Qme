@@ -95,7 +95,7 @@
             
             <?php
             foreach($result_time as $object){
-                echo '<option>'.$->a_time.'</option>';
+                echo '<option>'.$object->a_time.'</option>';
             }
 
             ?>
