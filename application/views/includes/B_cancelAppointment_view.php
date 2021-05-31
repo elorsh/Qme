@@ -76,8 +76,8 @@
 
 
 
-
-    <!-- <div class="form-group ">
+<!-- 
+    <div class="form-group ">
                    <label for="date">תאריך: </label>
               
                    <?php echo ' <input type="text" class="form-control" name="a_date" id="date" value= "';
@@ -86,19 +86,22 @@
                         } 
                         echo '" disabled >';
                         ?>
-          </div> -->
-          
-
-    // <?php
-        //   foreach($result_date as $object){
+          </div>
+           -->
+          <div class="form-group ">
+        <label for="time">שעה : </label>
+        <select type="time" class="form-select" name="a_time" id="time" required>
+            <option selected disabled value="">שעה</option>
             
-        
-        //  <div class="form-group">
-            // <label for="date">תאריך:</label>
-            // <input type="date" class="form-control" name="a_date" id="date" value="'.$object->a_date.'" disabled >
-        //   </div>
-        
-    // ?>
+            <?php
+            foreach($result_time as $object){
+                echo '<option>'.$object->a_time.'</option>';
+            }
+
+            ?>
+
+            </select>
+    </div>
 
     <div class="form-group ">
         <label for="time">שעה : </label>
