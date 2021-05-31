@@ -406,7 +406,7 @@ public function go_to_b_cancelAppointment(){
     $data['b_user']=$b_user;// כנל
     $a_date=$this->input->post('a_date');
     $data['result_date']= array(
-        'a_date' =  $a_date
+        'a_date' =>  $a_date
     );
 
     $appointmentData = array(
