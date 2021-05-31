@@ -81,8 +81,8 @@
                    <label for="date">תאריך: </label>
               
                    <?php echo ' <input type="text" class="form-control" name="a_date" id="date" value= "';
-                    foreach ($result_date as $res){
-                        echo $res->a_date;
+                    // foreach ($result_date as $res){
+                        echo $result_date->a_date;
                         } 
                         echo '" disabled >';
                         ?>
