@@ -146,6 +146,10 @@ td,tr{
 
 }
 
+.btn.date{
+    font-size: 21px !important;
+}
+
 .btn:focus{
     outline: none;
 }
