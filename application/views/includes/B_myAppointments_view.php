@@ -142,6 +142,7 @@
 
       </select>
     </div>
+    
     <button class="btn date"  id="cancelAppointment" type=submit >בחר תאריך  <i class="far fa-calendar-alt"></i></button>
 
   </form>
@@ -174,9 +175,6 @@
     //      window.location.href="<?php echo site_url('P_Users/go_to_b_cancelAppointment');?>"
     //  }
 
-     //ליצור פונקציה ב P_USERS
-     document.getElementById("calendar").onclick=function(){
-         window.location.href="<?php echo site_url('P_Users/go_to_b_cancelAppointment');?>"
-     }
+   
   </script>
  </html>
