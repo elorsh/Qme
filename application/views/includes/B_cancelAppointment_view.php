@@ -79,6 +79,7 @@
 
     <div class="form-group ">
                    <label for="date">תאריך: </label>
+              
                 <input type="text" class="form-control" name="a_date" id="date" value= "<?php foreach ($result_date as $res){echo $res->a_date;} ?>" disabled >
           </div>
           
