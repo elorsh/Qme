@@ -63,7 +63,9 @@
                 </div>
             </nav>
 
-     <h4>ביטול תור</h4>
+        <h4<i class="far fa-calendar-times"></i> >ביטול תור </h4>
+
+
      <!----להכניס ערכים של PHP---->
      <p2 dir="rtl">בחר שעה רצויה</p2>
 
@@ -97,7 +99,6 @@
 
     </form>
 
-     <p3><i class="far fa-calendar-times"></i></p3>
 
    
    

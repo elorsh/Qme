@@ -66,7 +66,7 @@
                 </div>
             </nav>
 
-     <h4>ביטול תור <i class="far fa-calendar-times"></i></h4>
+     <h4<i class="far fa-calendar-times"></i> >ביטול תור </h4>
 
      <p2 dir="rtl">בחר שעה רצויה:</p2>
      

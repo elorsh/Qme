@@ -125,16 +125,17 @@ p2{
     text-align: center;
 }
 .btn{
+    position: relative;
     display: block;
-    margin: auto;
-    text-align: center;
+    text-align: right;
     background-color: rgb(164, 201, 117);
-    padding: 2px 20px;
+    padding: 2px 24px;
     font-size: 22px;
     border: 1px solid white;
     cursor: pointer;
-    margin-top: 8px !important;
-    margin-bottom: 20px !important;
+    margin-right: 5px;
+    margin-top: 12px !important;
+    margin-bottom: 18px !important;
 }
 
 .btn:focus{
