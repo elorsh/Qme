@@ -98,11 +98,11 @@ public function insert_new_p_user($data){
     // עדכון משתמש קיים
     public function P_update_user(){
         $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
-        $data['p_user']=$p_user;// כנל
+        // $data['p_user']=$p_user;// כנל
 
-        $data['u_email'] = $p_user['u_email'];
 
         $data = array(
+            'u_email' => $p_user['u_email'],
             'u_full_name' => $this->input->post('u_full_name'),
             'u_phone' => $this->input->post('u_phone'),
             'u_address' => $this->input->post('u_address')
@@ -377,9 +377,13 @@ public function go_to_b_appointments(){
 
     $b_appointments=$this->P_Users_model->get_B_appointments($b_user);
     $b_new_appointments=$this->P_Users_model->get_B_new_appointments($b_user);
+    $b_all_appointments=$this->P_Users_model->get_B_all_appointments($b_user);
+
 
     $data['result']=$b_appointments;
     $data['result_new']=$b_new_appointments;
+    $data['result_all']=$b_all_appointments;
+
 
     $this->load->view('includes/B_myAppointments_view',$data);
 }
@@ -401,7 +405,9 @@ public function go_to_b_cancelAppointment(){
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
     $data['b_user']=$b_user;// כנל
     $a_date=$this->input->post('a_date');
-
+    $data['result_date']= array(
+        'a_date' =>  $a_date
+    );
 
     $appointmentData = array(
         'b_email' => $b_user['b_email'],
@@ -413,7 +419,7 @@ public function go_to_b_cancelAppointment(){
 
     // $data['result']=$b_appointments;
 
-    $data['result_date']= $appointmentData['a_date'];
+    // $data['result_date']= $appointmentData['a_date'];
     $data['result_time']= $this->B_get_appointment_time($appointmentData);      
 
 
