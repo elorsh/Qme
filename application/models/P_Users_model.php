@@ -167,6 +167,7 @@ class P_Users_model extends CI_Model {
     public function B_get_myCustomers($data){ 
 
         $query = $this->db->query('SELECT * FROM `DB_B_Appointments` INNER JOIN DB_users  ON DB_B_Appointments.u_email = DB_users.u_email WHERE `b_email` = "'.$data['b_email'].'" ');
+        return $query->result();
 
     }
 
