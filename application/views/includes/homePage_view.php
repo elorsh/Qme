@@ -69,6 +69,9 @@
              </tr>
            </thead>
            <tbody>
+
+           <form  dir="rtl" method="post"  action="<?php echo site_url('P_Users/B_delete_appointment');?>">
+
               <?php
               foreach ($result as $object){
                 echo "<tr>";
@@ -82,6 +85,8 @@
                 echo "</tr>";
                 }
             ?>
+            
+            </form>
 
            </tbody>
          </table>

@@ -425,23 +425,18 @@ public function go_to_b_cancelAppointment(){
         'a_date' => $a_date
           );
 
-    // $b_appointments=$this->P_Users_model->get_B_appointments($b_user);
-    // $b_new_appointments=$this->P_Users_model->get_B_new_appointments($b_user);
-
-    // $data['result']=$b_appointments;
-
-    // $data['result_date']= $appointmentData['a_date'];
     $data['result_time']= $this->B_get_appointment_time($appointmentData);      
-
 
     $this->load->view('includes/B_cancelAppointment_view',$data);
 }
+
 public function go_to_b_change_password(){
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
     $data['b_user']=$b_user;// כנל
 
     $this->load->view('includes/B_changePassword_view',$data);
 }
+
 public function go_to_b_myDetails(){
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
     $data['b_user']=$b_user;// כנל
