@@ -81,7 +81,7 @@
                    <label for="date">תאריך: </label>
               
                    <?php echo ' <input type="text" class="form-control" name="a_date" id="date" value= "';
-                         echo $result_date['a_date'];
+                         echo $a_date['a_date'];
                        //     echo $b_user['b_email'];
 
                         
