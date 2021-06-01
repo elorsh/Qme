@@ -72,7 +72,6 @@
           <tr>
             <th scope="col" >שם מלא</th>
             <th scope="col">טלפון</th>
-            <th scope="col">היסטוריית טיפולים</th>
           </tr>
         </thead>
         <tbody>
@@ -82,7 +81,6 @@
             echo "<tr>";
             echo '<th scope="col">'.$object->u_full_name.'</th>';
             echo '<th scope="col">'.$object->u_phone.'</th>';
-            echo '<i class="fas fa-coins"></i>';
 
             echo "</tr>";
             }

@@ -159,12 +159,16 @@ class P_Users_model extends CI_Model {
      public function B_delete_appointment($appointmentData){ 
 
         $this->db->query('DELETE FROM `DB_B_Appointments` WHERE `DB_B_Appointments`.`b_email` = "'.$appointmentData['b_email'].'" AND `DB_B_Appointments`.`a_date` = "'.$appointmentData['a_date'].'" AND `DB_B_Appointments`.`a_time` = "'.$appointmentData['a_time'].'" ');
-        // $this->db->query("DELETE FROM `DB_B_Appointments` WHERE `DB_B_Appointments`.`b_email` = 'yuval@gmail.com' AND `DB_B_Appointments`.`a_date` = '2021-06-01' AND `DB_B_Appointments`.`a_time` = '01:31:00' ");
 
-        // $query = $this->db->query('DELETE FROM `DB_B_Appointments` WHERE `DB_B_Appointments`.`b_email` = "'.$appointmentData['b_email'].'" AND `DB_B_Appointments`.`a_date` = "'.$appointmentData['a_date'].'" AND `DB_B_Appointments`.`a_time` = "'.$appointmentData['a_time'].'"');
     }
 
 
+
+    public function B_get_myCustomers($appointmentData){ 
+
+        $query = $this->db->query('SELECT * FROM `DB_B_Appointments` INNER JOIN DB_users  ON DB_B_Appointments.u_email = DB_users.u_email WHERE `b_email` = "'.$data['b_email'].'" ');
+
+    }
 
 
 // פונקציה שאמורה למשוך את הפרטים של הבית עסק מהדב

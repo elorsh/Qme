@@ -387,6 +387,20 @@ public function go_to_b_appointments(){
 }
 
 
+
+public function go_to_b_myCustomers(){
+    $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+    $data['b_user']=$b_user;// כנל
+
+    $b_appointments=$this->P_Users_model->B_get_myCustomers($b_user);
+
+
+    $data['result']=$b_appointments;
+
+    $this->load->view('includes/B_myCustomers_view',$data);
+}
+
+
 public function go_to_b_myProfile(){
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
     $data['b_user']=$b_user;// כנל
@@ -434,12 +448,7 @@ public function go_to_b_myDetails(){
 
     $this->load->view('includes/B_editAccount_view',$data);
 }
-public function go_to_b_myCustomers(){
-    $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
-    $data['b_user']=$b_user;// כנל
 
-    $this->load->view('includes/B_myCustomers_view',$data);
-}
 public function go_to_private_account(){
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
     $data['b_user']=$b_user;// כנל
