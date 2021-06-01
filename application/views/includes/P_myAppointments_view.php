@@ -96,7 +96,7 @@
     
     </div>
 
-    <button class="btn"  id="newAppointment" type="button" > <i class="far fa-calendar-alt"></i>הזנה למערכת תור חדש </button>
+    <!--<button class="btn"  id="newAppointment" type="button" > <i class="far fa-calendar-alt"></i>הזנה למערכת תור חדש </button>-->
 
     <!--להכניס ערכים של PHP--->
     <form class="form1" dir="rtl" onsubmit="return validationForm()" >
@@ -111,7 +111,7 @@
         </select>
         </div> 
 
-    <button class="btn" type=submit >בחר תאריך  <i class="far fa-calendar-alt"></i></button>
+    <button class="btn date" type=submit >בחר תאריך  <i class="far fa-calendar-alt"></i></button>
 
   </form>
 

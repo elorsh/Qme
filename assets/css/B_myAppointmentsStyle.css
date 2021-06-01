@@ -146,6 +146,10 @@ td,tr{
 
 }
 
+.btn.date{
+    font-size: 21px !important;
+}
+
 .btn:focus{
     outline: none;
 }
@@ -172,6 +176,7 @@ td,tr{
 #date, #time {
     cursor: pointer;
 }
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -206,6 +211,9 @@ td,tr{
         .btn{
             font-size: 18px;
         }
+        .btn.date{
+            font-size: 18px !important;
+        }
         .log-out{
             font-size: 12px;
         }
@@ -221,6 +229,9 @@ td,tr{
     }
     .btn{
         font-size: 16px;
+    }
+    .btn.date{
+        font-size: 16px !important;
     }
     .form1{
         width: 35%;
