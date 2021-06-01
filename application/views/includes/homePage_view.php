@@ -76,7 +76,9 @@
               foreach ($result as $object){
                 echo "<tr>";
                 echo '<td scope="col"><h5>'.$object->b_business_name.'</h5><h6>'.$object->b_profession.'</h6><h7>'.$object->b_description.'</h7><br><h7>כתובת: '.$object->b_address.'</h7></td>';
-                // echo '<td scope="col">'.$object->b_description.'</td>';
+               
+                echo ' <input type="hidden" class="form-control" name="b_email" id="email" value= "'.$object->b_email.'" >';
+
                 echo '<td><i class="far fa-calendar-alt"  id="newAppointment" ></i></td>';
                 echo '<td><a href="https://api.whatsapp.com/send?phone=+972'.$object->b_phone1.'&text=היי, כיצד נוכל לעזור?" target="_blank">
                 <i class="fab fa-whatsapp"></i></a></td>';
