@@ -103,7 +103,7 @@
             </select>
     </div>
 
-    <button class="btn"  id="submit" type="button" >בטל לי את התור</button>
+    <button class="btn"  id="submit" type="submit" >בטל לי את התור</button>
 
     </form>
 
@@ -184,11 +184,11 @@
 
      
 // cancel message
-//   var  btn = document.getElementById('submit');
+  var  btn = document.getElementById('submit');
   
-//   btn.addEventListener( 'click', () => {
-//     window.confirm("האם ברצונך לבטל את התור ?");
-//   })
+  btn.addEventListener( 'click', () => {
+    window.confirm("האם ברצונך לבטל את התור ?");
+  })
 
   </script>
 
