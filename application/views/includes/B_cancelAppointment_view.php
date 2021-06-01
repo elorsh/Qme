@@ -85,7 +85,7 @@
 
 
     <div class="form-group ">
-                   <?php echo '<label for="date">תאריך: '.echo $a_date;.'</label>';?>
+                   <?php echo '<label for="date">תאריך: '.$a_date;.'</label>';?>
 
                    <?php echo ' <input type="hidden" class="form-control" name="a_date" id="date" value= "'.$a_date.'" >';
                         //  echo $a_date;
