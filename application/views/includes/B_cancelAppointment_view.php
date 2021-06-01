@@ -74,7 +74,14 @@
 
 
 
-
+     <div class="form-group ">
+                   <label for="date">משתמש: </label>
+              
+                   <?php echo ' <input type="text" class="form-control" name="b_email" id="date" value= "';
+                         echo $b_user['b_email'];
+                        echo '" disabled >';
+                        ?>
+          </div>
 
 
     <div class="form-group ">

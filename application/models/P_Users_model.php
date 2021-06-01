@@ -158,6 +158,8 @@ class P_Users_model extends CI_Model {
 
      public function B_delete_appointment($appointmentData){ 
         $query = $this->db->query('DELETE FROM `DB_B_Appointments` WHERE `DB_B_Appointments`.`b_email` = "'.$appointmentData['b_email'].'" AND `DB_B_Appointments`.`a_date` = "'.$appointmentData['a_date'].'" AND `DB_B_Appointments`.`a_time` = "'.$appointmentData['a_time'].'"');
+
+        // $query = $this->db->query('DELETE FROM `DB_B_Appointments` WHERE `DB_B_Appointments`.`b_email` = "'.$appointmentData['b_email'].'" AND `DB_B_Appointments`.`a_date` = "'.$appointmentData['a_date'].'" AND `DB_B_Appointments`.`a_time` = "'.$appointmentData['a_time'].'"');
     }
 
 
