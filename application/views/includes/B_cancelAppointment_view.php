@@ -77,20 +77,11 @@
      <div class="form-group ">
                    <label for="date">משתמש: </label>
               
-
-
-                   <!-- <input type="hidden" value="<?php echo $book->UID;?>" name="b_UID" id="<?php echo $book->UID?>">  -->
-
-                   <?php echo ' <input type="hidden" class="form-control" name="b_email" id="email" value= "';
-                         echo $b_user['b_email'];
-                         echo '" >';
+                   <?php echo ' <input type="hidden" class="form-control" name="b_email" id="email" value= "'.$b_user['b_email'].'" >';
+                        //  echo $b_user['b_email'];
+                        //  echo '" >';
                         ?>
 
-
-                   <!-- <?php echo ' <input type="text" class="form-control" name="b_email" id="email" value= "';
-                         echo $b_user['b_email'];
-                        echo '" disabled >';
-                        ?> -->
           </div>
 
 
@@ -98,15 +89,11 @@
                    <label for="date">תאריך: </label>
 
 
-                   <?php echo ' <input type="hidden" class="form-control" name="a_date" id="date" value= "';
-                         echo $a_date;
-                         echo '" >';
+                   <?php echo ' <input type="hidden" class="form-control" name="a_date" id="date" value= "'.$a_date.'" >';
+                        //  echo $a_date;
+                        //  echo '" >';
                         ?>
 
-                   <!-- <?php echo ' <input type="text" class="form-control" name="a_date" id="date" value= "';
-                         echo $a_date;
-                        echo '" disabled >';
-                        ?> -->
           </div>
           
 
