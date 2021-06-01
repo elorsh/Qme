@@ -339,7 +339,7 @@ public function go_to_p_register(){
   
             $appointmentData = array(
                 // 'b_email' => $b_user['b_email'],
-                'a_date' => $this->input->post('b_email'),
+                'b_email' => $this->input->post('b_email'),
                 'a_date' => $this->input->post('a_date'),
                 'a_time' => $this->input->post('a_time')
                   );
