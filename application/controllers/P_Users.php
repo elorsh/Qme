@@ -401,13 +401,11 @@ public function go_to_b_create_appointment(){
 
     $this->load->view('includes/B_createAppointment_view',$data);
 }
-public function go_to_b_cancelAppointment(){ 
+public function go_to_b_cancelAppointment(){                      
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
     $data['b_user']=$b_user;// כנל
     $a_date=$this->input->post('a_date');
-    $data['result_date']= array(
-        'a_date' =>  $a_date
-    );
+    $data['result_date']= $a_date;
 
     $appointmentData = array(
         'b_email' => $b_user['b_email'],
