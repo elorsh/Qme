@@ -89,20 +89,7 @@
                         ?>
           </div>
           
-          <div class="form-group ">
-        <label for="time">שעה : </label>
-        <select type="time" class="form-select" name="a_time" id="time" required>
-            <option selected disabled value="">שעה</option>
-            
-            <?php
-            foreach($result_time as $object){
-                echo '<option>'.$object->a_time.'</option>';
-            }
 
-            ?>
-
-            </select>
-    </div>
 
     <div class="form-group ">
         <label for="time">שעה : </label>
