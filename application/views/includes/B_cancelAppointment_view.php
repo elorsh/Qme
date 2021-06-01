@@ -82,9 +82,6 @@
               
                    <?php echo ' <input type="text" class="form-control" name="a_date" id="date" value= "';
                          echo $a_date;
-                       //     echo $b_user['b_email'];
-
-                        
                         echo '" disabled >';
                         ?>
           </div>
@@ -187,11 +184,11 @@
 
      
 // cancel message
-  var  btn = document.getElementById('submit');
+//   var  btn = document.getElementById('submit');
   
-  btn.addEventListener( 'click', () => {
-    window.confirm("האם ברצונך לבטל את התור ?");
-  })
+//   btn.addEventListener( 'click', () => {
+//     window.confirm("האם ברצונך לבטל את התור ?");
+//   })
 
   </script>
 
