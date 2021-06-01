@@ -62,9 +62,7 @@
                     </ul>
                 </div>
             </nav>
-            <?php
-            echo ' <h4 class="headline">'.$object->b_business_name.'</h4>';
-            ?>
+
     <div class="table-container">
 
      <table dir="rtl" class="table table-striped">
