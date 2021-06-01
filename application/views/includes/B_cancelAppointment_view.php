@@ -184,11 +184,11 @@
 
      
 // cancel message
-  var  btn = document.getElementById('submit');
+//   var  btn = document.getElementById('submit');
   
-  btn.addEventListener( 'click', () => {
-    window.confirm("האם ברצונך לבטל את התור ?");
-  })
+//   btn.addEventListener( 'click', () => {
+//     window.confirm("האם ברצונך לבטל את התור ?");
+//   })
 
   </script>
 
