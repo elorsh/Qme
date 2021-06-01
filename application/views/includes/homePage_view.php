@@ -70,7 +70,7 @@
            </thead>
            <tbody>
 
-           <form  dir="rtl" method="post"  action="<?php echo site_url('P_Users/B_delete_appointment');?>">
+           <form  dir="rtl" method="post"  action="<?php echo site_url('P_Users/go_to_P_create_appointment');?>">
 
               <?php
               foreach ($result as $object){
@@ -135,8 +135,8 @@
      document.getElementById("logOut").onclick=function(){
         window.location.href="<?php echo site_url('P_Users/p_logout');?>"
      }
-     document.getElementById("newAppointment").onclick=function(){
-        window.location.href="<?php echo site_url('P_Users/go_to_P_create_appointment');?>"
-     }
+    //  document.getElementById("newAppointment").onclick=function(){
+    //     window.location.href="<?php echo site_url('P_Users/go_to_P_create_appointment');?>"
+    //  }
  </script>
 </html>
