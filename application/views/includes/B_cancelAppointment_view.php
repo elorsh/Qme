@@ -74,8 +74,7 @@
 
 
 
-     <div class="form-group ">
-                   <label for="date">משתמש: </label>
+     <div class="form-group ">             
               
                    <?php echo ' <input type="hidden" class="form-control" name="b_email" id="email" value= "'.$b_user['b_email'].'" >';
                         //  echo $b_user['b_email'];
@@ -86,8 +85,7 @@
 
 
     <div class="form-group ">
-                   <label for="date">תאריך: </label>
-
+                   <?php echo '<label for="date">תאריך: '.echo $a_date;.'</label>';?>
 
                    <?php echo ' <input type="hidden" class="form-control" name="a_date" id="date" value= "'.$a_date.'" >';
                         //  echo $a_date;
