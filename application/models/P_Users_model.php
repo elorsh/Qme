@@ -157,8 +157,8 @@ class P_Users_model extends CI_Model {
      }
 
      public function B_delete_appointment($appointmentData){ 
-      //  "DELETE FROM `DB_B_Appointments` WHERE `DB_B_Appointments`.`b_email` = \'shai@gmail.com\' AND `DB_B_Appointments`.`a_date` = \'2021-05-19\' AND `DB_B_Appointments`.`a_time` = \'19:27:00\'"
-        $query = $this->db->query("DELETE FROM `DB_B_Appointments` WHERE `DB_B_Appointments`.`b_email` = \'yuval@gmail.com\' AND `DB_B_Appointments`.`a_date` = \'2021-06-01\' AND `DB_B_Appointments`.`a_time` = \'01:31:00\'");
+    //    DELETE FROM `DB_B_Appointments` WHERE `DB_B_Appointments`.`b_email` = 'yuval@gmail.com' AND `DB_B_Appointments`.`a_date` = '2021-06-01' AND `DB_B_Appointments`.`a_time` = '01:31:00';
+        $query = $this->db->query("DELETE FROM `DB_B_Appointments` WHERE `DB_B_Appointments`.`b_email` = 'yuval@gmail.com' AND `DB_B_Appointments`.`a_date` = '2021-06-01' AND `DB_B_Appointments`.`a_time` = '01:31:00' ");
 
         // $query = $this->db->query('DELETE FROM `DB_B_Appointments` WHERE `DB_B_Appointments`.`b_email` = "'.$appointmentData['b_email'].'" AND `DB_B_Appointments`.`a_date` = "'.$appointmentData['a_date'].'" AND `DB_B_Appointments`.`a_time` = "'.$appointmentData['a_time'].'"');
     }
