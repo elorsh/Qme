@@ -184,6 +184,17 @@ td i{
         .log-out{
             font-size: 12px;
         }
+             
+        .btn{
+            font-size: 18px;
+        }
+       .btnSearch{
+            font-size: 18px;
+       }
+       .search-container {
+        width: 50%;
+        margin: 40px auto;
+     }
 }
 
 @media screen and (max-width: 650px){
@@ -194,6 +205,13 @@ td i{
     .headline{
         font-size: 33px;
     }
+    .btn{
+        font-size: 16px;
+    }
+    .btnSearch{
+        font-size: 16px;
+   }
+   
 
 
 }
