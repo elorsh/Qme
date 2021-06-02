@@ -79,8 +79,8 @@
     <p2> התורים הבאים שלי</p2>
     <button class="btn appointment" id="P_myAppointments2" type="button"> <i class="far fa-calendar-alt"></i> הצג הכל </button>
 
-    <p3> היסטוריית טיפולים</p3>
-    <button class="btn history"  id="history"  type="button"><i class="fas fa-list-alt"></i>בתי עסק שביקרתי </button>
+    <p3> בתי העסק בהם ביקרתי בעבר</p3>
+    <button class="btn history"  id="BusHistory"  type="button"><i class="fas fa-list-alt"></i>בתי עסק שביקרתי </button>
     
 </div>
 
@@ -111,8 +111,8 @@
      document.getElementById("myProfile2").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_myProfile');?>"
      }
-     //לכתוב פונקציה ב P_USERS
-     document.getElementById("history").onclick=function(){
+     //להבין לאן זה אמור להגיע
+     document.getElementById("BusHistory").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_appointmentsHistory');?>"
      }
   </script>
