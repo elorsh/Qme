@@ -144,7 +144,7 @@
       </select>
     </div>
     
-    <button class="btn date"  id="cancelAppointment" type=submit >אישור תאריך  <i class="far fa-calendar-alt"></i></button>
+    <button class="btn date"  id="cancelAppointment" type="submit" >אישור תאריך  <i class="far fa-calendar-alt"></i></button>
 
   </form>
 
