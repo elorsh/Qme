@@ -62,7 +62,16 @@
                     </ul>
                 </div>
             </nav>
-
+       <!----Search----->     
+    <div class="search-container">
+       <div class="input-group">
+           <input type="text" class="form-control" id="myInput" placeholder="Search..." onkeyup="myFunction()">
+           <div class="input-group-append">
+             <button class="btn btn" type="button"><i class="fa fa-search"></i></button>
+           </div>
+         </div>
+     </div>
+     
     <div class="table-container">
 
      <table dir="rtl" class="table table-striped">
@@ -110,6 +119,24 @@
      document.getElementById("myProfile2").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_b_myProfile');?>"
      }
-     
+
+    function myFunction() {
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }       
+          }
+        }
   </script>
  </html>
