@@ -62,10 +62,12 @@
                     </ul>
                 </div>
             </nav>
-       <!----Search----->     
+
+       <!------Search------>     
+
     <div class="search-container">
        <div class="input-group">
-           <input type="text" class="form-control" id="myInput" placeholder="Search..." onkeyup="myFunction()">
+           <input type="text" class="form-control" id="myInput" placeholder="Search for customer..." onkeyup="myFunction()">
            <div class="input-group-append">
              <button class="btn btn" type="button"><i class="fa fa-search"></i></button>
            </div>
@@ -101,8 +103,8 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
  
-    <script>
-          function myFunction() {
+     <script>
+        function myFunction() {
           var input, filter, table, tr, td, i, txtValue;
           input = document.getElementById("myInput");
           filter = input.value.toUpperCase();
@@ -120,7 +122,7 @@
             }       
           }
         }
-    </script>
+        </script>
   </body>
   <script>
      document.getElementById("B_myAppointments").onclick=function(){
