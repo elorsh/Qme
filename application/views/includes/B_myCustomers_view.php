@@ -67,7 +67,7 @@
 
     <div class="search-container">
        <div class="input-group">
-           <input type="text" class="form-control" id="myInput" placeholder="Search for customer..." onkeyup="myFunction()">
+           <input type="text" class="form-control" id="myInput" placeholder="Search for customer..." onkeyup="myFunction2()">
            <div class="input-group-append">
              <button class="btn btn" type="button"><i class="fa fa-search"></i></button>
            </div>
@@ -88,8 +88,8 @@
           foreach ($result as $object){
 
             echo "<tr>";
-            echo '<th scope="col">'.$object->u_full_name.'</th>';
-            echo '<th scope="col">'.$object->u_phone.'</th>';
+            echo '<td scope="col">'.$object->u_full_name.'</td>';
+            echo '<td scope="col">'.$object->u_phone.'</td>';
 
             echo "</tr>";
             }
@@ -104,7 +104,7 @@
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
  
      <script>
-        function myFunction() {
+        function myFunction2() {
           var input, filter, table, tr, td, i, txtValue;
           input = document.getElementById("myInput");
           filter = input.value.toUpperCase();

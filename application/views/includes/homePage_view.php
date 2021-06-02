@@ -122,7 +122,6 @@
         </script>
  </body>
  <script>
-   //לבדוק את זה
      document.getElementById("myProfile").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_myProfile');?>"
      }
