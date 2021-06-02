@@ -80,7 +80,7 @@
     <button class="btn appointment" id="P_myAppointments2" type="button"> <i class="far fa-calendar-alt"></i> הצג הכל </button>
 
     <p3> היסטוריית טיפולים</p3>
-    <button class="btn history"  id="history"  type="button"><i class="fas fa-list-alt"></i>צפייה בהיסטוריה </button>
+    <button class="btn history"  id="history"  type="button"><i class="fas fa-list-alt"></i>בתי עסק שביקרתי </button>
     
 </div>
 
