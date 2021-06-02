@@ -35,6 +35,7 @@ header{
     width: 320px;
     height: 200px;
 }
+
 .fas.fa-user-circle{
     position:fixed;
      top: 5px;
@@ -107,6 +108,32 @@ a i{
     color: rgb(28, 90, 28);
 }
 
+.search-container {
+    width: 30%;
+    margin: 50px auto;
+}
+ .form-control {
+    padding-left: 2.375rem;
+}
+
+ .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.btn.btn{
+    background-color: rgb(164, 201, 117);
+}
+.btn.btn:focus{
+    outline: none;
+
+}
 .table{
     margin-top: 50px;
     margin-bottom: 50px;
