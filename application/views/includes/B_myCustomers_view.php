@@ -62,9 +62,7 @@
                     </ul>
                 </div>
             </nav>
-            <?php
-            echo ' <h4 class="headline">'.$object->b_business_name.'</h4>';
-            ?>
+
     <div class="table-container">
 
      <table dir="rtl" class="table table-striped">
@@ -72,7 +70,6 @@
           <tr>
             <th scope="col" >שם מלא</th>
             <th scope="col">טלפון</th>
-            <th scope="col">היסטוריית טיפולים</th>
           </tr>
         </thead>
         <tbody>
@@ -82,7 +79,6 @@
             echo "<tr>";
             echo '<th scope="col">'.$object->u_full_name.'</th>';
             echo '<th scope="col">'.$object->u_phone.'</th>';
-            echo '<i class="fas fa-coins"></i>';
 
             echo "</tr>";
             }

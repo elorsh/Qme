@@ -338,12 +338,10 @@ public function go_to_p_register(){
             $data['b_user']=$b_user;// כנל
   
             $appointmentData = array(
-                'b_email' => $b_user['b_email'],
+                'b_email' => $this->input->post('b_email'),
                 'a_date' => $this->input->post('a_date'),
                 'a_time' => $this->input->post('a_time')
                   );
-
-
             
             $this->P_Users_model->B_delete_appointment($appointmentData);
             $this->go_to_b_appointments();
@@ -389,6 +387,20 @@ public function go_to_b_appointments(){
 }
 
 
+
+public function go_to_b_myCustomers(){
+    $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+    $data['b_user']=$b_user;// כנל
+
+    $b_myCustomers=$this->P_Users_model->B_get_myCustomers($b_user);
+
+
+    $data['result']=$b_myCustomers;
+
+    $this->load->view('includes/B_myCustomers_view',$data);
+}
+
+
 public function go_to_b_myProfile(){
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
     $data['b_user']=$b_user;// כנל
@@ -401,48 +413,37 @@ public function go_to_b_create_appointment(){
 
     $this->load->view('includes/B_createAppointment_view',$data);
 }
-public function go_to_b_cancelAppointment(){ 
+public function go_to_b_cancelAppointment(){                      
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
     $data['b_user']=$b_user;// כנל
+
     $a_date=$this->input->post('a_date');
-    $data['result_date']= array(
-        'a_date' =>  $a_date
-    );
+    $data['a_date']=$a_date;
 
     $appointmentData = array(
         'b_email' => $b_user['b_email'],
         'a_date' => $a_date
           );
 
-    // $b_appointments=$this->P_Users_model->get_B_appointments($b_user);
-    // $b_new_appointments=$this->P_Users_model->get_B_new_appointments($b_user);
-
-    // $data['result']=$b_appointments;
-
-    // $data['result_date']= $appointmentData['a_date'];
     $data['result_time']= $this->B_get_appointment_time($appointmentData);      
-
 
     $this->load->view('includes/B_cancelAppointment_view',$data);
 }
+
 public function go_to_b_change_password(){
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
     $data['b_user']=$b_user;// כנל
 
     $this->load->view('includes/B_changePassword_view',$data);
 }
+
 public function go_to_b_myDetails(){
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
     $data['b_user']=$b_user;// כנל
 
     $this->load->view('includes/B_editAccount_view',$data);
 }
-public function go_to_b_myCustomers(){
-    $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
-    $data['b_user']=$b_user;// כנל
 
-    $this->load->view('includes/B_myCustomers_view',$data);
-}
 public function go_to_private_account(){
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
     $data['b_user']=$b_user;// כנל

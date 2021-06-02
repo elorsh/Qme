@@ -74,34 +74,25 @@
 
 
 
+     <div class="form-group ">             
+              
+                   <?php echo ' <input type="hidden" class="form-control" name="b_email" id="email" value= "'.$b_user['b_email'].'" >';
+                        ?>
 
+          </div>
 
 
     <div class="form-group ">
-                   <label for="date">תאריך: </label>
-              
-                   <?php echo ' <input type="text" class="form-control" name="a_date" id="date" value= "';
-                    foreach ($result_date as $object){
-                        echo $object->a_date;
-                        } 
-                        echo '" disabled >';
+                   <?php echo '<label for="date">תאריך: '.$a_date.'</label>';?>
+
+                   <?php echo ' <input type="hidden" class="form-control" name="a_date" id="date" value= "'.$a_date.'" >';
+                        //  echo $a_date;
+                        //  echo '" >';
                         ?>
+
           </div>
           
-          <div class="form-group ">
-        <label for="time">שעה : </label>
-        <select type="time" class="form-select" name="a_time" id="time" required>
-            <option selected disabled value="">שעה</option>
-            
-            <?php
-            foreach($result_time as $object){
-                echo '<option>'.$object->a_time.'</option>';
-            }
 
-            ?>
-
-            </select>
-    </div>
 
     <div class="form-group ">
         <label for="time">שעה : </label>
@@ -118,7 +109,7 @@
             </select>
     </div>
 
-    <button class="btn"  id="submit" type="button" >בטל לי את התור</button>
+    <button class="btn"  id="submit" type="submit" >בטל לי את התור</button>
 
     </form>
 
@@ -199,11 +190,11 @@
 
      
 // cancel message
-  var  btn = document.getElementById('submit');
+//   var  btn = document.getElementById('submit');
   
-  btn.addEventListener( 'click', () => {
-    window.confirm("האם ברצונך לבטל את התור ?");
-  })
+//   btn.addEventListener( 'click', () => {
+//     window.confirm("האם ברצונך לבטל את התור ?");
+//   })
 
   </script>
 
