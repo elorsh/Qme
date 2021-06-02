@@ -155,7 +155,7 @@
   </body>
   <script>
           document.getElementById("B_myCustomers").onclick=function(){
-         window.location.href="<?php echo site_url('P_Users/go_to_home_page');?>"
+         window.location.href="<?php echo site_url('P_Users/go_to_b_myCustomers');?>"
      }
      document.getElementById("B_my_profile").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_b_myProfile');?>"
