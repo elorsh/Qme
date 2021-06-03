@@ -108,25 +108,7 @@
     
     </div>
 
-    <!--<button class="btn"  id="newAppointment" type="button" > <i class="far fa-calendar-alt"></i>הזנה למערכת תור חדש </button>-->
-
-    <!--להכניס ערכים של PHP--->
-    <form class="form1" dir="rtl" onsubmit="return validationForm()" >
-
-    <div class="form-group">
-        <label for="date">תאריך :</label>
-        <select type="date" class="form-select" name="a_date" id="date" required>
-        <option>01/06/21</option>
-        <option>02/06/21</option>
-        <option>03/06/21</option>
-        <option>04/06/21</option>
-        </select>
-        </div> 
-
-    <button class="btn date" type=submit >בחר תאריך  <i class="far fa-calendar-alt"></i></button>
-
-  </form>
-
+ 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
  
