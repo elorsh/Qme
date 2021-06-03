@@ -139,8 +139,9 @@ public function p_logout(){
             'a_time' => $this->input->post('a_time')
               );
         $this->P_Users_model->P_create_appointment($appointmentData);
+        $msg = 'התור נשמר בהצלחה! :)';
 
-        $this->go_to_P_appointments();
+        $this->go_to_P_appointments($msg);
     }
 
     public function P_cancel_appointment(){
@@ -154,9 +155,10 @@ public function p_logout(){
             'a_time' => $this->input->post('a_time')
               );
         $this->P_Users_model->P_cancel_appointment($appointmentData);
+        $msg = 'התור בוטל בהצלחה!';
 
-        $this->go_to_P_cancel_appointment();
-    }
+        $this->go_to_P_appointments($msg);   
+     }
 
 
         
@@ -202,10 +204,10 @@ public function go_to_p_register(){
             $this->load->view('includes/P_changePassword_view',$data);
         }
       
-        public function go_to_P_appointments(){
+        public function go_to_P_appointments($msg = null){
             $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
             $data['p_user']=$p_user;// כנל
-
+            $data['msg'] = $msg;
             $p_appointments=$this->P_Users_model->get_P_appointments($p_user);
 
             $data['result']=$p_appointments;
