@@ -129,7 +129,7 @@ public function p_logout(){
     $this->load->view('includes/P_LogIn_view');
     }
     public function P_createAppointment(){
-        
+
     }
 
 
@@ -160,12 +160,7 @@ public function go_to_p_register(){
 
             $this->load->view('includes/P_myProfile_view',$data);
         }
-        public function go_to_P_create_appointment(){
-            $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
-            $data['p_user']=$p_user;// כנל
 
-            $this->load->view('includes/P_createAppointment_view',$data);
-        }
         public function go_to_P_cancel_appointment(){
             $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
             $data['p_user']=$p_user;// כנל
@@ -215,7 +210,7 @@ public function go_to_p_register(){
                 $this->load->view('includes/P_businessHistory_view',$data);
             }
 
-            public function go_to_P_createAppointment(){
+            public function go_to_P_create_appointment(){
                 $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
                 $data['p_user']=$p_user;// כנל
                 
@@ -229,8 +224,7 @@ public function go_to_p_register(){
             
             
                 $this->load->view('includes/P_createAppointment_view',$data);
-            }
-            
+            }         
 
 
 
