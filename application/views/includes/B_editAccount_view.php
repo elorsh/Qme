@@ -120,7 +120,7 @@
           <button class="btn btn" id="changePass" type="button" >שינוי סיסמה</button>
         </div>
 
-        <button class="btn btn update "  id="submit" type="submit">  עדכן את פרטי העסק</button>
+        <button class="btn btn "  id="submit" type="submit">  עדכן את פרטי העסק</button>
 
       </form>
      </div>
