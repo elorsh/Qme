@@ -136,10 +136,12 @@ h6{
 
 td i{
     cursor: pointer;
-    font-size: 250%; 
+    font-size: 250%;
+    color: rgb(57, 128, 194);
+
 }
 .newAppointment{
-    color: blue;
+    color: rgb(57, 128, 194);
     border: none;
     padding-top: 5px;
     padding-bottom: 5px;
