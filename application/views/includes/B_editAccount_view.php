@@ -115,12 +115,6 @@
               <option>סטודיו </option>
             </select>       
           </div>
-        <!------למחוק----->
-        <!--<div class="col-md-4">
-          <label for="validationCustom05" class="form-label"> שינוי תמונה:</label>
-          <input type="file" class="form-control" name="b_photo" value="#" id="validationCustom11" accept="image/png, image/jpeg" >
-        </div>-->
-
 
         <div class="col-12">
           <button class="btn btn" id="changePass" type="button" >שינוי סיסמה</button>

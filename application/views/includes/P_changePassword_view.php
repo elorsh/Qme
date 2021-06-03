@@ -77,10 +77,6 @@
         }
         ?>
 
-          <!--<div class="form-group">
-            <label for="pass3">אימות סיסמה :</label>
-            <input type="password" class="form-control" name="password3" id="pass3" minlength="8" autocomplete="on" placeholder="אימות סיסמא חדשה">
-          </div>-->
 
           <button type="submit" class="btn btn" value="run" >שינוי סיסמה </button>
           

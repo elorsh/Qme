@@ -111,7 +111,6 @@
      document.getElementById("myProfile2").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_myProfile');?>"
      }
-     //להבין לאן זה אמור להגיע
      document.getElementById("BusinessHistory").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_businessHistory');?>"
      }
