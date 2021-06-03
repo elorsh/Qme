@@ -66,28 +66,50 @@
      <p  dir="rtl">שמור על החשבון שלך בעזרת סיסמה חזקה :)</p>
 
 
-    <form  dir="rtl" onsubmit="return  validationForm()" method="post"  action="<?php echo site_url('P_Users/P_update_password');?>" >
+    <form  dir="rtl"  class="row g-3 needs-validation"  novalidate  onsubmit="return  validationForm()" method="post"  action="<?php echo site_url('P_Users/P_update_password');?>" >
 
         <div class="form-group" >
-          <label for="pass1" class="form-label" >סיסמה:</label>
-          <input type="text" class="form-control" name="u_password" id="pass1" value= "<?php foreach ($result as $res){if ($res->u_password!=null){echo $res->u_password;}} ?>" placeholder="סיסמה" >
+          <label  for="validationCustom01" class="form-label" >סיסמה:</label>
+          <input type="text" class="form-control" name="u_password" minlength="8" id="validationCustom01" value= "<?php foreach ($result as $res){if ($res->u_password!=null){echo $res->u_password;}} ?>" placeholder=" סיסמה בת 8 ספרות" required>
+          <div class="invalid-feedback">
+              יש להזין סיסמה בת 8 ספרות לפחות
+            </div>
         </div>
 
 
-        <button class="btn btn"  id="submit" type="submit" >עדכן את הסיסמה שלי</button>
-
-          
-          
-          <div id="done"></div>
+        <button class="btn"  id="submit" type="submit" >עדכן את הסיסמה שלי</button>
           
 </form>
 
-<!--<script src="../javascript/changePassword.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
  
  </body>
+
+
  <script>
+           
+  //validation bootstrap function    
+  (function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+  
     document.getElementById("logOut").onclick=function(){
         window.location.href="<?php echo site_url('P_Users/p_logout');?>"
      }

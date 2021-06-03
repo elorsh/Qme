@@ -6,6 +6,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+     
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
@@ -85,9 +86,9 @@
 
         <div class="col-md-3">
           <label for="validationCustom02" class="form-label">טלפון  :</label>
-          <input type="tel" class="form-control" name="u_phone" id="validationCustom02" value= "<?php foreach ($result as $res){if ($res->u_phone!=null){echo $res->u_phone;}} ?>" placeholder="0000000000" required>
+          <input type="tel" class="form-control" name="u_phone" minlength="10" id="validationCustom02" value= "<?php foreach ($result as $res){if ($res->u_phone!=null){echo $res->u_phone;}} ?>" placeholder="0000000000" required>
           <div class="invalid-feedback">
-              יש להזין מספר טלפון תקין
+              יש להזין מספר טלפון בעל 10 ספרות
             </div>
         </div>
 

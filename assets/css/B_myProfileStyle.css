@@ -109,7 +109,8 @@ h5{
     font-size: 30px;
     text-align: center;
 }
-h6{
+
+.message{
     display: block;
     margin: auto;
     margin-top: 15px !important;
