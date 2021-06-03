@@ -72,8 +72,8 @@
      <form  dir="rtl"   class="row g-3 needs-validation"  novalidate  onsubmit="return  validationForm()" method="post"  action="<?php echo site_url('P_Users/B_update_password');?>" >
 
 <div class="form-group" >
-  <label for="pass1" class="form-label" >סיסמה:</label>
-  <input type="text" class="form-control" name="b_password" id="pass1" value= "<?php foreach ($result as $res){if ($res->b_password!=null){echo $res->b_password;}} ?>" placeholder="סיסמה בת 8 ספרות" required>
+  <label or="validationCustom01" class="form-label" >סיסמה:</label>
+  <input type="text" class="form-control" name="b_password" id="validationCustom01" value= "<?php foreach ($result as $res){if ($res->b_password!=null){echo $res->b_password;}} ?>" placeholder="סיסמה בת 8 ספרות" required>
 </div>
 
 
