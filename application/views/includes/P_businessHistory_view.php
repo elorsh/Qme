@@ -37,6 +37,7 @@
      <i class="fas fa-sign-out-alt" id="logOut"></i>
       <p class="log-out">התנתקות</p>
 
+      
             <!----- The navigation menu ----->
 
             <nav class="navbar navbar-expand-sm">
@@ -63,16 +64,16 @@
                 </div>
             </nav>
 
-     <h4 class="headline">היסטוריית בתי עסק</h4>
+     <h4 class="headline"> בתי עסק בהם ביקרתי</h4>
 
 <div class="table-container">
 
      <table dir="rtl" class="table table-striped">
         <thead>
           <tr>
-            <th scope="col" > תאריך</th>
-            <th scope="col">שעת התחלה</th>
-            <th scope="col">בית העסק</th>
+            <th scope="col" > שם בית עסק</th>
+            <th scope="col">כתובת </th>
+            <th scope="col">חיוג לבית העסק</th>
 
           </tr>
         </thead>
@@ -81,9 +82,9 @@
           foreach($result as $object){
            
             echo "<tr>";
-            echo '<th scope="col">'.$object->a_date.'</th>';
-            echo '<th scope="col">'.$object->a_time.'</th>';
-            echo '<th scope="col">'.$object->b_full_name.'</th>';
+            echo '<th scope="col">'.$object->b_business_name.'</th>';
+            echo '<th scope="col">'.$object->b_address.'</th>';
+            echo '<td><a href="tel:'.$object->b_phone1.'"><i class="fas fa-phone"></i></a></td>';
            echo "</tr>";
           }
 
