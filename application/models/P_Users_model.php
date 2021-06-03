@@ -116,6 +116,10 @@ class P_Users_model extends CI_Model {
         $query = $this->db->query('UPDATE `DB_B_Appointments` SET `u_email` = "'.$data['u_email'].'" WHERE `DB_B_Appointments`.`b_email` = "'.$data['b_email'].'" AND `DB_B_Appointments`.`a_date` = "'.$data['a_date'].'" AND `DB_B_Appointments`.`a_time` = "'.$data['a_time'].'" ');
      }
 
+     public function P_cancel_appointment($data){
+        $query = $this->db->query('UPDATE `DB_B_Appointments` SET `u_email` = NULL WHERE `DB_B_Appointments`.`b_email` = "'.$data['b_email'].'" AND `DB_B_Appointments`.`a_date` = "'.$data['a_date'].'" AND `DB_B_Appointments`.`a_time` = "'.$data['a_time'].'" ');
+     }
+
 
      
 
