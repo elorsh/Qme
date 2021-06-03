@@ -204,7 +204,7 @@ public function go_to_p_register(){
             $this->load->view('includes/P_changePassword_view',$data);
         }
       
-        public function go_to_P_appointments($msg){
+        public function go_to_P_appointments($msg = null){
             $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
             $data['p_user']=$p_user;// כנל
             $data['msg'] = $msg;
