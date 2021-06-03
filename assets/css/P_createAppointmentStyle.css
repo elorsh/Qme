@@ -99,12 +99,19 @@ i{
 h4{
     display: block;
     margin: auto;
-    margin-top: 15px !important;
-    margin-right: 30px !important;
+    margin-top: 25px !important;
     font-size: 40px;
-    text-align: right;
+    text-align: center;
     font-weight: bold;
+}
 
+h5{
+    display: block;
+    margin: auto;
+    margin-top: 20px !important;
+    margin-bottom: 15px !important;
+    font-size: 34px;
+    text-align: center;
 }
 
 .form-group{
@@ -124,18 +131,17 @@ h4{
 }
 
 .btn.btn{
+    position: relative;
+    display: block;
+    text-align: center;
     background-color:rgb(164, 201, 117);
-    padding: 3px 40px;
+    padding: 3px 10px;
     cursor: pointer;
     letter-spacing: 1px;
     border-radius: 3px;
     border: 1px solid white;
-    margin-top: 20px !important;
-    margin-bottom: 30px !important;
-    margin-right: 30px !important;
-    position: relative;
-    display: block;
-    text-align: right;
+    font-size: 17px;
+
 }
 
 .btn.btn:focus{
@@ -146,18 +152,25 @@ h4{
     background-color:  rgb(195, 233, 149);
 }
 
-/* .sms{
-    display: inline;
-    margin-right: 5px;
+.table{
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: rgb(252, 227, 195);
 }
-.googleCalendare{
-    display: inline;
-    margin-right: 5px;
+.table-container{
+    width: 60%;
+    display: block;
+    margin: auto;
 }
-.form-group.message{
-    width: 65%;
 
-}*/
+td,tr{
+    text-align: center;
+    align-items: center;
+}
+
+
 
 #done{
     display: block;
@@ -215,8 +228,13 @@ h4{
     }
    
     .btn.btn{
-        font-size: 17px;
+        font-size: 13px;
     }
+    
+    .table-container{
+        width: 90%;
+        }
+    
 }
    
   

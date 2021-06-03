@@ -8,7 +8,7 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-     <link rel="stylesheet" href="<?php echo base_url('assets/css/P_editTimeAndDateStyle.css');?>"/>
+     <link rel="stylesheet" href="<?php echo base_url('assets/css/P_createAppointmentStyle.css');?>"/>
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -45,10 +45,6 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarMenu">
         <ul class="navbar-nav">
-
-            <li class="nav-item">
-                <a id="homePage" class="nav-link active">דף הבית <i class="fas fa-home"></i></a>
-            </li>
         
             <li class="nav-item">
                 <a id="P_myAppointments" class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
@@ -57,14 +53,18 @@
             <li class="nav-item">
                 <a id="P_my_profile" class="nav-link">הפרופיל שלי <i class="fas fa-user-alt"></i></a>
             </li>
+            
+            <li class="nav-item">
+                <a id="homePage" class="nav-link">דף הבית <i class="fas fa-home"></i></a>
+            </li>
     
         </ul>
     </div>
 </nav>
 
-     <h4>בחירת תור חדש</h4>
+     <h4 >בחירת תור חדש</h4>
 
-     <h4 class="headline">תורים פנויים</h4>
+     <h5 >תורים פנויים</h5>
 
 <div class="table-container">
 

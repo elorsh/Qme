@@ -45,10 +45,6 @@
       </button>
     <div class="collapse navbar-collapse" id="navbarMenu">
          <ul class="navbar-nav">
-
-        <li class="nav-item">
-            <a id="homePage" class="nav-link active">דף הבית <i class="fas fa-home"></i></a>
-        </li>
       
         <li class="nav-item">
             <a id="P_myAppointments" class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
@@ -56,6 +52,10 @@
 
         <li class="nav-item">
             <a  id="P_my_profile"  class="nav-link">הפרופיל שלי <i class="fas fa-user-alt"></i></a>
+        </li>
+
+        <li class="nav-item">
+            <a id="homePage" class="nav-link">דף הבית <i class="fas fa-home"></i></a>
         </li>
 
      </ul>

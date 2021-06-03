@@ -50,7 +50,7 @@
                 <div class="collapse navbar-collapse" id="navbarMenu">
                     <ul class="navbar-nav">
                     <li class="nav-item">
-                            <a  id="B_myCustomers" class="nav-link ">הלקוחות שלי <i class="fas fa-users"></i></a>
+                            <a  id="B_myCustomers" class="nav-link">הלקוחות שלי <i class="fas fa-users"></i></a>
                         </li>
                         
                         <li class="nav-item">
