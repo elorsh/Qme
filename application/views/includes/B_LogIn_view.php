@@ -11,7 +11,7 @@
 
      <link rel="stylesheet" href="<?php echo base_url('assets/css/B_LogInStyle.css');?>"/>
 
-     <title>Business Log-In</title>
+     <title>Business LogIn</title>
  </head>
  <body>
     <header> 

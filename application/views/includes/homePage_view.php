@@ -129,9 +129,7 @@
      document.getElementById("myProfile2").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_myProfile');?>"
      }
-    //  document.getElementById("logOut").onclick=function(){
-    //     window.location.href="<?php echo site_url('P_Users/go_to_p_login');?>"
-    //  }
+
      document.getElementById("logOut").onclick=function(){
         window.location.href="<?php echo site_url('P_Users/p_logout');?>"
      }

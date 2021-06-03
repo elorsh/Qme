@@ -7,7 +7,7 @@
      
      <!--JQUERY - used for validation -->
      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-      <!-- CSS & BootStrap Link -->
+
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -79,11 +79,6 @@
             <label for="pass2">סיסמה חדשה:</label>
             <input type="password" class="form-control" name="password2" id="pass2"  minlength="8" autocomplete="on" placeholder="סיסמא חדשה">
           </div>
-
-         <!-- <div class="form-group">
-            <label for="pass3">אימות סיסמה :</label>
-            <input type="password" class="form-control" name="password3" id="pass3" minlength="8" autocomplete="on" placeholder="אימות סיסמא חדשה">
-          </div>-->
 
           <button type="submit" class="btn btn" value="run" >שינוי סיסמה </button>
           

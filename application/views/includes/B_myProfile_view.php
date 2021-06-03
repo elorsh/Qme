@@ -66,7 +66,7 @@
 
      <h4 class="headline">ניהול העסק שלי</h4>
 
-<!-- אמור להציג את שם בית העסק -->
+
      <!-- <?php
      echo '<h5 class="headline2">'.$b_business_name.'</h5>';
 
@@ -101,7 +101,6 @@
      document.getElementById("appointments").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_b_appointments');?>"
      }
-     //לכתוב פונקציה ב P_USERS
      document.getElementById("customers").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_b_myCustomers');?>"
      }
