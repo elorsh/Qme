@@ -102,7 +102,7 @@
             echo ' <input type="hidden" class="form-control" name="b_email" id="b_email" value= "'.$object->b_email.'" >';
             echo ' <input type="hidden" class="form-control" name="a_date" id="date" value= "'.$object->a_date.'" >';
             echo ' <input type="hidden" class="form-control" name="a_time" id="time" value= "'.$object->a_time.'" >';
-            echo '<th scope="col"><button class="btn2"  id="submit" type="submit" >ביטול תור זה</button></th>';
+            echo '<td scope="col"><button class="btn2"  id="submit" type="submit" >ביטול תור זה</button></td>';
             echo '</form>';
 
             echo "</tr>";
