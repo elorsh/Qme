@@ -14,7 +14,7 @@
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-     <title>Private Appointment History</title>
+     <title>Private Business History</title>
  </head>
  <body>
   
@@ -63,7 +63,7 @@
                 </div>
             </nav>
 
-     <h4 class="headline">היסטוריית תורים</h4>
+     <h4 class="headline">היסטוריית בתי עסק</h4>
 
 <div class="table-container">
 
