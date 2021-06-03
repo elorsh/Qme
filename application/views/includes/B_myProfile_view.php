@@ -65,7 +65,11 @@
 <div class="container">
 
      <h4 class="headline">ניהול העסק שלי</h4>
-
+     <?php 
+          if (isset($msg)) {
+            echo '<br> <center><h6 class="message">'.$msg.'</h6></center><br>';
+          }
+          ?>
 
      <!-- <?php
      echo '<h5 class="headline2">'.$b_business_name.'</h5>';
