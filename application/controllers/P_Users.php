@@ -128,8 +128,19 @@ public function p_logout(){
     $this->session->unset_userdata($data);
     $this->load->view('includes/P_LogIn_view');
     }
-    public function P_createAppointment(){
+    public function P_create_appointment(){
+        $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+        $data['p_user']=$p_user;// כנל
 
+        $appointmentData = array(
+            'u_email' => $p_user['u_email'];
+            'b_email' => $this->input->post('b_email'),
+            'a_date' => $this->input->post('a_date'),
+            'a_time' => $this->input->post('a_time')
+              );
+        $this->P_Users_model->P_create_appointment($appointmentData);
+
+        $this->go_to_P_appointments();
     }
 
 
