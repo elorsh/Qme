@@ -50,16 +50,16 @@
                 <div class="collapse navbar-collapse" id="navbarMenu">
                     <ul class="navbar-nav">
 
-                        <li class="nav-item">
-                            <a id="homePage" class="nav-link active">דף הבית <i class="fas fa-home"></i></a>
+                    <li class="nav-item">
+                            <a  id="B_myCustomers" class="nav-link ">הלקוחות שלי <i class="fas fa-users"></i></a>
                         </li>
-                     
+                        
                         <li class="nav-item">
-                            <a  id="B_myAppointments" class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
+                            <a id="B_myAppointments"  class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
                         </li>
 
                         <li class="nav-item">
-                            <a id="B_my_profile" class="nav-link">הפרופיל שלי <i class="fas fa-user-alt"></i></a>
+                            <a id="B_my_profile" class="nav-link">ניהול העסק שלי <i class="fas fa-user-alt"></i></a>
                         </li>
                 
                     </ul>
@@ -144,7 +144,7 @@
       </select>
     </div>
     
-    <button class="btn date"  id="cancelAppointment" type=submit >אישור תאריך  <i class="far fa-calendar-alt"></i></button>
+    <button class="btn date"  id="cancelAppointment" type="submit" >אישור תאריך  <i class="far fa-calendar-alt"></i></button>
 
   </form>
 
@@ -154,8 +154,8 @@
  
   </body>
   <script>
-          document.getElementById("homePage").onclick=function(){
-         window.location.href="<?php echo site_url('P_Users/go_to_home_page');?>"
+          document.getElementById("B_myCustomers").onclick=function(){
+         window.location.href="<?php echo site_url('P_Users/go_to_b_myCustomers');?>"
      }
      document.getElementById("B_my_profile").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_b_myProfile');?>"

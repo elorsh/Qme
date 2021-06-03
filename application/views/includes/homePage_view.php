@@ -72,16 +72,15 @@
 
            <form  dir="rtl" method="post"  action="<?php echo site_url('P_Users/go_to_P_create_appointment');?>">
 
-              <?php
+
+          <?php
               foreach ($result as $object){
                 echo "<tr>";
                 echo '<td scope="col"><h5>'.$object->b_business_name.'</h5><h6>'.$object->b_profession.'</h6><h7>'.$object->b_description.'</h7><br><h7>כתובת: '.$object->b_address.'</h7></td>';
                
                 echo ' <input type="hidden" class="form-control" name="b_email" id="email" value= "'.$object->b_email.'" >';
 
-//  ליאור צריך לעשות כאן שזה יהיה איכשהו כפתור סבמיט
-                echo '<td><i class="far fa-calendar-alt" type="submit" id="newAppointment" ></i></td>';
-
+                echo '<td><button type="submit" class="newAppointment" id="newAppointment"><i class="far fa-calendar-alt"  ></i></button></td>';
                 echo '<td><a href="https://api.whatsapp.com/send?phone=+972'.$object->b_phone1.'&text=היי, כיצד נוכל לעזור?" target="_blank">
                 <i class="fab fa-whatsapp"></i></a></td>';
                 echo '<td><a href="https://waze.com/ul?q='.$object->b_address.'"><i class="fab fa-waze"></i></a></td>';
@@ -124,7 +123,6 @@
         </script>
  </body>
  <script>
-   //לבדוק את זה
      document.getElementById("myProfile").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_myProfile');?>"
      }
@@ -137,8 +135,6 @@
      document.getElementById("logOut").onclick=function(){
         window.location.href="<?php echo site_url('P_Users/p_logout');?>"
      }
-    //  document.getElementById("newAppointment").onclick=function(){
-    //     window.location.href="<?php echo site_url('P_Users/go_to_P_create_appointment');?>"
-    //  }
+   
  </script>
 </html>

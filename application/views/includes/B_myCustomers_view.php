@@ -47,25 +47,36 @@
                 <div class="collapse navbar-collapse" id="navbarMenu">
                     <ul class="navbar-nav">
 
-                        <li class="nav-item">
-                            <a  id="homePage" class="nav-link active">דף הבית <i class="fas fa-home"></i></a>
+                    <li class="nav-item">
+                            <a  id="B_myCustomers" class="nav-link ">הלקוחות שלי <i class="fas fa-users"></i></a>
                         </li>
-                  
+                        
                         <li class="nav-item">
-                            <a id="B_myAppointments" class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
+                            <a id="B_myAppointments"  class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
                         </li>
 
                         <li class="nav-item">
-                            <a  id="B_my_profile" class="nav-link">הפרופיל שלי <i class="fas fa-user-alt"></i></a>
+                            <a id="B_my_profile" class="nav-link">ניהול העסק שלי <i class="fas fa-user-alt"></i></a>
                         </li>
                 
                     </ul>
                 </div>
             </nav>
 
+       <!------Search------>     
+
+    <div class="search-container">
+       <div class="input-group">
+           <input type="text" class="form-control" id="myInput" placeholder="Search for customer..." onkeyup="myFunction2()">
+           <div class="input-group-append">
+             <button class="btn btn" type="button"><i class="fa fa-search"></i></button>
+           </div>
+         </div>
+     </div>
+
     <div class="table-container">
 
-     <table dir="rtl" class="table table-striped">
+     <table dir="rtl" id="myTable" class="table table-striped">
         <thead>
           <tr>
             <th scope="col" >שם מלא</th>
@@ -77,8 +88,8 @@
           foreach ($result as $object){
 
             echo "<tr>";
-            echo '<th scope="col">'.$object->u_full_name.'</th>';
-            echo '<th scope="col">'.$object->u_phone.'</th>';
+            echo '<td scope="col">'.$object->u_full_name.'</td>';
+            echo '<td scope="col">'.$object->u_phone.'</td>';
 
             echo "</tr>";
             }
@@ -92,12 +103,28 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
  
- 
+     <script>
+        function myFunction2() {
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }       
+          }
+        }
+        </script>
   </body>
   <script>
-      document.getElementById("homePage").onclick=function(){
-         window.location.href="<?php echo site_url('P_Users/go_to_home_page');?>"
-     }
      document.getElementById("B_myAppointments").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_b_appointments');?>"
      }
@@ -113,6 +140,7 @@
      document.getElementById("myProfile2").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_b_myProfile');?>"
      }
-     
+
+  
   </script>
  </html>
