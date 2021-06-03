@@ -115,6 +115,22 @@ public function insert_new_p_user($data){
         $this->go_to_P_myProfile($msg);
         // $data['msg']=null;
        }
+
+
+       public function P_update_password(){
+        $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+        $data['p_user']=$p_user;// כנל
+
+
+        $data = array(
+            'u_email' => $p_user['u_email'],
+            'u_password' => $this->input->post('u_password')
+          );
+        $this->P_Users_model->update_p_user_password($data);
+   
+        $msg = ':) הסיסמה הוחלפה בהצלחה';
+        $this->go_to_P_myProfile($msg);
+       }
     
 
 public function p_logout(){

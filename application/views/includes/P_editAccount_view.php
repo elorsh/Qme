@@ -76,11 +76,6 @@
    
       <form  dir="rtl" onsubmit="return  validationForm()" method="post"  action="<?php echo site_url('P_Users/P_update_user');?>" >
 
-<!-- 
-      <input type="text" class="form-control" name="u_full_name" id="validationCustom01" placeholder="שם פרטי ומשפחה" >
-      <input type="text" class="form-control" name="u_phone" id="validationCustom01" placeholder="שם פרטי ומשפחה" >
-      <input type="text" class="form-control" name="u_address" id="validationCustom01" placeholder="שם פרטי ומשפחה" >
-      <button class="btn"  id="submit" type="submit" >בחר תור זה</button> -->
 
         <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם מלא :</label>

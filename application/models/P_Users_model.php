@@ -52,21 +52,12 @@ class P_Users_model extends CI_Model {
 
     public function update_p_user($data){ 
         $query = $this->db->query('UPDATE `DB_users` SET `u_full_name`="'.$data['u_full_name'].'",`u_phone`="'.$data['u_phone'].'",`u_address`="'.$data['u_address'].'" WHERE `DB_users`.`u_email` = "'.$data['u_email'].'" '); 
-         
-        // $this->db->where('u_email', $data['u_email']);
-        // $this->db->update('DB_users', $data);
     }
 
-    //לא מצליח לעדכן את הנתונים, לנסות עם השאילתה השניה
-
-    // public function update_profile($pref){
-    //     $this->db->db_debug = FALSE;  
-    //     $user=$this->session->all_userdata();
-    //     $this->db->where('username', $user['username']);
-    //     $this->db->update('users', $pref);
-    //     //$query = $db->query(' UPDATE users SET "location" = "'.$pref['location'].'", "genre1" = "'.$pref['genre1'].'", "genre2" = "'.$pref['genre2'].'", "genre3" = "'.$pref['genre3'].'" WHERE `users`.`username` = "'.$user['username'].'" ');
-    //  }
     
+    public function update_p_user_password($data){ 
+        $query = $this->db->query('UPDATE `DB_users` SET `u_password`="'.$data['u_password'].'" WHERE `DB_users`.`u_email` = "'.$data['u_email'].'" '); 
+    }
 
 
 
