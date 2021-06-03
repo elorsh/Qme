@@ -19,7 +19,7 @@
  <i class="fas fa-user-circle" id="myProfile"></i>
 
       <p class="profile" id="myProfile2">
-      הפרופיל העסקי שלי <br>
+      הפרופיל שלי <br>
       <?php 
      if (isset($b_user['loggedin']))
      {
