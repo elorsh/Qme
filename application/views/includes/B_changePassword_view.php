@@ -72,12 +72,14 @@
   <form  dir="rtl"   class="row g-3 needs-validation"  novalidate  onsubmit="return  validationForm()" method="post"  action="<?php echo site_url('P_Users/B_update_password');?>" >
 
 <div class="form-group" >
-  <label or="validationCustom01" class="form-label" >סיסמה:</label>
+  <label for="validationCustom01" class="form-label" >סיסמה:</label>
   <input type="text" class="form-control" name="b_password" minlength="8" id="validationCustom01" value= "<?php foreach ($result as $res){if ($res->b_password!=null){echo $res->b_password;}} ?>" placeholder="סיסמה בת 8 ספרות" required>
   <div class="invalid-feedback">
               יש להזין סיסמה בת 8 ספרות לפחות
   </div>
 </div>
+
+<div class="clear"></div>
 
 <button class="btn"  id="submit" type="submit" >עדכן את הסיסמה שלי</button>
   

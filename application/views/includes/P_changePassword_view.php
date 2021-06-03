@@ -76,7 +76,7 @@
             </div>
         </div>
 
-
+      <div class="clear"></div>
         <button class="btn"  id="submit" type="submit" >עדכן את הסיסמה שלי</button>
           
 </form>
