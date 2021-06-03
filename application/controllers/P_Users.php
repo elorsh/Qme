@@ -529,7 +529,7 @@ public function go_to_B_change_password(){
     $b_user_data=$this->P_Users_model->get_b_user_data($b_user);
 
     $data['result']=$b_user_data;
-    $this->load->view('includes/b_changePassword_view',$data);
+    $this->load->view('includes/B_changePassword_view',$data);
 }
 
 
