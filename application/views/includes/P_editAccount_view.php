@@ -102,6 +102,7 @@
         <button class="btn btn update "  id="submit" type="submit" >  עדכן את הפרטים שלי</button>
 
       </form>
+      
       <div class="col-12">
           <button class="btn btn" id="changePass" type="button" >שינוי סיסמה</button>
         </div>
