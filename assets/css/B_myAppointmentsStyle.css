@@ -246,11 +246,5 @@ td,tr{
         width: 90%;
         }
     }
-@media screen and (max-width: 500px){
-        .table-container{
-            width: 100%;
-        }
-        
-    }
 
 
