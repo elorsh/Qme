@@ -88,7 +88,7 @@
           <label for="validationCustom02" class="form-label">טלפון  :</label>
           <input type="tel" class="form-control" name="u_phone" minlength="10" id="validationCustom02" value= "<?php foreach ($result as $res){if ($res->u_phone!=null){echo $res->u_phone;}} ?>" placeholder="0000000000" required>
           <div class="invalid-feedback">
-              יש להזין מספר טלפון תקין
+              יש להזין מספר טלפון בעל 10 ספרות
             </div>
         </div>
 
