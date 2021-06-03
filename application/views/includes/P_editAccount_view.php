@@ -80,7 +80,7 @@
       <input type="text" class="form-control" name="u_full_name" id="validationCustom01" placeholder="שם פרטי ומשפחה" >
       <input type="text" class="form-control" name="u_phone" id="validationCustom01" placeholder="שם פרטי ומשפחה" >
       <input type="text" class="form-control" name="u_address" id="validationCustom01" placeholder="שם פרטי ומשפחה" >
-
+      <button class="btn"  id="submit" type="submit" >בחר תור זה</button>
 
         <!-- <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם מלא :</label>
@@ -99,7 +99,7 @@
           
       
 
-        <button class="btn btn update "  id="submit" type="submit" >  עדכן את הפרטים שלי</button>
+        <!-- <button class="btn btn update "  id="submit" type="submit" >  עדכן את הפרטים שלי</button> -->
 
       </form>
       <div class="col-12">
