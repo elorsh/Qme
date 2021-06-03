@@ -198,10 +198,9 @@ class P_Users_model extends CI_Model {
     }
 
 
-// פונקציה שאמורה למשוך את הפרטים של הבית עסק מהדב
-    //  public function b_get_user_data($data){
-    //     $query = $this->db->query('SELECT * FROM `DB_businesses` WHERE `b_email` = "'.$data['b_email'].'"');
-    //     return $query->result();
-    //  }
+     public function get_b_user_data($data){
+        $query = $this->db->query('SELECT * FROM `DB_businesses` WHERE `b_email` = "'.$data['b_email'].'"');
+        return $query->result();
+     }
      
 }

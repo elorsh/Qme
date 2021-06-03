@@ -366,7 +366,7 @@ public function go_to_p_register(){
 
 
         $data = array(
-            'b_email' => $p_user['b_email'],
+            'b_email' => $b_user['b_email'],
             'b_full_name' => $this->input->post('b_full_name'),
             'b_id' => $this->input->post('b_id'),
             'b_business_name' => $this->input->post('b_business_name'),
@@ -391,7 +391,7 @@ public function go_to_p_register(){
 
 
         $data = array(
-            'b_user' => $p_user['b_user'],
+            'b_user' => $b_user['b_email'],
             'b_password' => $this->input->post('b_password')
           );
         $this->P_Users_model->update_b_user_password($data);
@@ -529,7 +529,7 @@ public function go_to_B_change_password(){
     $b_user_data=$this->P_Users_model->get_b_user_data($b_user);
 
     $data['result']=$b_user_data;
-    $this->load->view('includes/b_changePassword_view',$data);
+    $this->load->view('includes/B_changePassword_view',$data);
 }
 
 
@@ -595,12 +595,6 @@ public function go_to_b_cancelAppointment(){
     $this->load->view('includes/B_cancelAppointment_view',$data);
 }
 
-public function go_to_b_change_password(){
-    $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
-    $data['b_user']=$b_user;// כנל
-
-    $this->load->view('includes/B_changePassword_view',$data);
-}
 
 public function go_to_b_myDetails(){
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן

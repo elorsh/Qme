@@ -67,8 +67,10 @@
 
 
     <div class="createAccount">
+
+    
    
-      <form  dir="rtl"  class="row g-3 needs-validation"  novalidate>
+    <form  dir="rtl" method="post"  class="row g-3 needs-validation"  onsubmit="return  validationForm()"  novalidate action="<?php echo site_url('P_Users/B_update_user');?>" >
 
         <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם בעל העסק:</label>
@@ -107,8 +109,8 @@
 
           <div class="col-md-4">
             <label for="validationCustom04" class="form-label">תחום עיסוק:</label>
-            <select class="form-select"  name="b_profession" value="<?php foreach ($result as $res){if ($res->b_profession!=null){echo $res->b_profession;}} ?>" id="validationCustom07" >
-              <option selected disabled value="">תחום עיסוק</option>
+            <select class="form-select"  name="b_profession"  id="validationCustom07" >
+              <option selected disabled><?php foreach ($result as $res){if ($res->b_profession!=null){echo $res->b_profession;}} ?></option>
               <option>עיצוב שיער</option>
               <option>לק ג'ל</option>
               <option> קוסמטיקה</option>
@@ -145,7 +147,7 @@
          window.location.href="<?php echo site_url('P_Users/go_to_b_myProfile');?>"
      }
       document.getElementById("changePass").onclick=function(){
-         window.location.href="<?php echo site_url('P_Users/ go_to_b_change_password');?>"
+         window.location.href="<?php echo site_url('P_Users/go_to_b_change_password');?>"
      }
      document.getElementById("logOut").onclick=function(){
         window.location.href="<?php echo site_url('P_Users/go_to_b_login');?>"
