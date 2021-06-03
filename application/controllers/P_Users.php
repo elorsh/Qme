@@ -595,12 +595,6 @@ public function go_to_b_cancelAppointment(){
     $this->load->view('includes/B_cancelAppointment_view',$data);
 }
 
-public function go_to_b_change_password(){
-    $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
-    $data['b_user']=$b_user;// כנל
-
-    $this->load->view('includes/B_changePassword_view',$data);
-}
 
 public function go_to_b_myDetails(){
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן

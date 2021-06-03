@@ -100,7 +100,7 @@
          window.location.href="<?php echo site_url('P_Users/go_to_b_appointments');?>"
      }
      document.getElementById("account").onclick=function(){
-         window.location.href="<?php echo site_url('P_Users/go_to_b_myDetails');?>"
+         window.location.href="<?php echo site_url('P_Users/go_to_B_editMyProfile');?>"
      }
      document.getElementById("appointments").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_b_appointments');?>"
