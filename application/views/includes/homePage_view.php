@@ -76,6 +76,10 @@
           <?php
               foreach ($result as $object){
                 echo "<tr>";
+
+                echo '<form  dir="rtl" method="post"  action="'.site_url('P_Users/go_to_P_create_appointment').'">';
+
+
                 echo '<td scope="col"><h5>'.$object->b_business_name.'</h5><h6>'.$object->b_profession.'</h6><h7>'.$object->b_description.'</h7><br><h7>כתובת: '.$object->b_address.'</h7></td>';
                
                 echo ' <input type="hidden" class="form-control" name="b_email" id="email" value= "'.$object->b_email.'" >';
