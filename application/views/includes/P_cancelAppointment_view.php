@@ -64,7 +64,6 @@
             </nav>
 
 
-        <h4><i class="far fa-calendar-times"></i> ביטול תור </h4>
 
         <h5 dir="rtl">התור בוטל בהצלחה!</h5>
         <p1><i class="far fa-window-close"></i></p1>
