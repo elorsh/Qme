@@ -381,7 +381,6 @@ public function go_to_p_register(){
    
         $msg = ':) עידכנת את הפרטים בהצלחה';
         $this->go_to_B_myProfile_view($msg);
-        // $data['msg']=null;
        }
 
 
@@ -505,9 +504,11 @@ public function go_to_b_register(){
     $this->load->view('includes/B_register_view');
     }
 
-public function go_to_B_myProfile_view(){
+public function go_to_B_myProfile_view($msg=null){
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
     $data['b_user']=$b_user;// כנל
+    $data['msg'] = $msg;
+
 
     $this->load->view('includes/B_myProfile_view',$data);
 }
