@@ -67,8 +67,10 @@
 
 
     <div class="createAccount">
+
+    
    
-      <form  dir="rtl"  class="row g-3 needs-validation"  novalidate>
+    <form  dir="rtl" method="post"  class="row g-3 needs-validation"  onsubmit="return  validationForm()"  novalidate action="<?php echo site_url('P_Users/B_update_user');?>" >
 
         <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם בעל העסק:</label>
@@ -108,7 +110,7 @@
           <div class="col-md-4">
             <label for="validationCustom04" class="form-label">תחום עיסוק:</label>
             <select class="form-select"  name="b_profession"  id="validationCustom07" >
-              <option selected disabled value="<?php foreach ($result as $res){if ($res->b_profession!=null){echo $res->b_profession;}} ?>">תחום עיסוק</option>
+              <option selected value="<?php foreach ($result as $res){if ($res->b_profession!=null){echo $res->b_profession;}} ?>"></option>
               <option>עיצוב שיער</option>
               <option>לק ג'ל</option>
               <option> קוסמטיקה</option>
