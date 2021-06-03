@@ -133,7 +133,7 @@ public function p_logout(){
         $data['p_user']=$p_user;// כנל
 
         $appointmentData = array(
-            'u_email' => $p_user['u_email'];
+            'u_email' => $p_user['u_email'],
             'b_email' => $this->input->post('b_email'),
             'a_date' => $this->input->post('a_date'),
             'a_time' => $this->input->post('a_time')
