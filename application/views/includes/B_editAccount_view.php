@@ -82,7 +82,7 @@
 
         <div class="col-md-4">
           <label for="validationCustom02" class="form-label">טלפון בעל העסק:</label>
-          <input type="tel" class="form-control" name="b_phone1" id="validationCustom02" value= "<?php foreach ($result as $res){if ($res->b_phone1!=null){echo $res->b_phone1;}} ?>" placeholder="0000000000" required >
+          <input type="tel" class="form-control" name="b_phone1" minlength="10" id="validationCustom02" value= "<?php foreach ($result as $res){if ($res->b_phone1!=null){echo $res->b_phone1;}} ?>" placeholder="0000000000" required >
           <div class="valid-feedback">
            מספר טלפון תקין 
           </div>
@@ -122,7 +122,7 @@
 
           <div class="col-md-4">
             <label for="validationCustom02" class="form-label">טלפון נוסף :</label>
-            <input type="tel" class="form-control" name="b_phone2" id="validationCustom06" value= "<?php foreach ($result as $res){if ($res->b_phone2!=null){echo $res->b_phone2;}} ?>" placeholder="000-0000000" >
+            <input type="tel" class="form-control" name="b_phone2"  id="validationCustom06" value= "<?php foreach ($result as $res){if ($res->b_phone2!=null){echo $res->b_phone2;}} ?>" placeholder="000-0000000" >
           </div>
 
           <div class="col-md-4">

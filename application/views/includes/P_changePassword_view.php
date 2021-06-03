@@ -70,7 +70,10 @@
 
         <div class="form-group" >
           <label  for="validationCustom01" class="form-label" >סיסמה:</label>
-          <input type="text" class="form-control" name="u_password" id="validationCustom01" value= "<?php foreach ($result as $res){if ($res->u_password!=null){echo $res->u_password;}} ?>" placeholder=" סיסמה בת 8 ספרות" required>
+          <input type="text" class="form-control" name="u_password" minlength="8" id="validationCustom01" value= "<?php foreach ($result as $res){if ($res->u_password!=null){echo $res->u_password;}} ?>" placeholder=" סיסמה בת 8 ספרות" required>
+          <div class="invalid-feedback">
+              יש להזין סיסמה בת 8 ספרות לפחות
+            </div>
         </div>
 
 
@@ -78,7 +81,6 @@
           
 </form>
 
-<!--<script src="../javascript/changePassword.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
  
