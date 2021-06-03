@@ -131,7 +131,7 @@ h5{
 .form-check-label{
     margin-right: 25px;
 }
-.btn.btn{
+.btn{
     float:initial;
     position: relative ;  
     display: block ;
@@ -141,16 +141,14 @@ h5{
     margin-bottom: 15px !important;
     background-color: rgb(164, 201, 117);
     padding: 9px 25px;
+    border: 1px solid white;
+
 }
-.btn.btn:hover{
+.btn:hover{
     color: white;
 }
-.btn.btn:focus{
+.btn:focus{
     outline: none;
-}
-.update{
-    font-weight: bold;
-    margin-bottom: 30px !important;
 }
 
 
