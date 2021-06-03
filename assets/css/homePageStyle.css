@@ -139,7 +139,12 @@ td i{
     font-size: 250%; 
 }
 .newAppointment{
-    color: lightskyblue;
+    color: blue;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 0px;
+    background-color: transparent;
 }
 
 
