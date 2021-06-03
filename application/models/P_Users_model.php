@@ -100,6 +100,13 @@ class P_Users_model extends CI_Model {
 
 
 
+     public function P_get_businessHistory($data){ 
+
+        $query = $this->db->query('SELECT * FROM `DB_B_Appointments` INNER JOIN DB_businesses  ON DB_B_Appointments.b_email = DB_businesses.b_email WHERE `u_email` = "'.$data['u_email'].'" ');
+        return $query->result();
+
+    }
+
 
     //  --------------- *** b_users *** -----------------------
     

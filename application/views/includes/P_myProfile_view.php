@@ -113,7 +113,7 @@
      }
      //להבין לאן זה אמור להגיע
      document.getElementById("BusHistory").onclick=function(){
-         window.location.href="<?php echo site_url('P_Users/go_to_P_appointmentsHistory');?>"
+         window.location.href="<?php echo site_url('P_Users/go_to_P_businessHistory');?>"
      }
   </script>
  </html>
