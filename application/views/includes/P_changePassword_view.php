@@ -65,7 +65,8 @@
      <h4>שינוי סיסמה</h4>
      <p  dir="rtl">שמור על הסיסמה שלך בעזרת סיסמה חזקה :)</p>
 
-    <form  dir="rtl"  onsubmit="return validationForm()">
+
+    <form  dir="rtl" onsubmit="return  validationForm()" method="post"  action="<?php echo site_url('P_Users/P_update_password');?>" >
 
     <?php
           foreach($result as $object){
