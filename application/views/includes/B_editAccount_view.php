@@ -142,7 +142,6 @@
      document.getElementById("B_my_profile").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_b_myProfile');?>"
      }
-     //לכתוב פונקציה ב P_USERS
       document.getElementById("changePass").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/ go_to_b_change_password');?>"
      }
