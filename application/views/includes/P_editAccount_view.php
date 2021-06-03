@@ -78,12 +78,12 @@
    
         <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם מלא :</label>
-          <input type="text" class="form-control" name="u_full_name" id="validationCustom01" value= "" placeholder="שם פרטי ומשפחה" >
+          <input type="text" class="form-control" name="u_full_name" id="validationCustom01" value= "<?php foreach ($result as $res){if ($res->u_full_name!=null){echo $res->u_full_name;}} ?>" placeholder="שם פרטי ומשפחה" >
           </div>
 
         <div class="col-md-3">
           <label for="validationCustom02" class="form-label">טלפון  :</label>
-          <input type="tel" class="form-control" name="u_phone" id="validationCustom02" value= "" placeholder="0000000000" >
+          <input type="tel" class="form-control" name="u_phone" id="validationCustom02" value= "<?php foreach ($result as $res){if ($res->u_phone!=null){echo $res->u_phone;}} ?>" placeholder="0000000000" >
         </div>
 
         <div class="col-md-3">
