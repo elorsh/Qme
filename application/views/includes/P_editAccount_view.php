@@ -78,16 +78,25 @@
         <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם מלא :</label>
           <input type="text" class="form-control" name="u_full_name" id="validationCustom01" value= "<?php foreach ($result as $res){if ($res->u_full_name!=null){echo $res->u_full_name;}} ?>" placeholder="שם פרטי ומשפחה" >
+          <div class="valid-feedback">
+            שם תקין
           </div>
+        </div>
 
         <div class="col-md-3">
           <label for="validationCustom02" class="form-label">טלפון  :</label>
           <input type="tel" class="form-control" name="u_phone" id="validationCustom02" value= "<?php foreach ($result as $res){if ($res->u_phone!=null){echo $res->u_phone;}} ?>" placeholder="0000000000" >
+          <div class="valid-feedback">
+           מספר טלפון תקין 
+          </div>
         </div>
 
         <div class="col-md-3">
             <label for="validationCustom02" class="form-label">כתובת :</label>
-            <input type="text" class="form-control" name="u_address" id="validationCustom05" value= "<?php foreach ($result as $res){if ($res->u_address!=null){echo $res->u_address;}} ?>" placeholder="עיר ,רחוב ,מספר בית" >
+            <input type="text" class="form-control" name="u_address" id="validationCustom03" value= "<?php foreach ($result as $res){if ($res->u_address!=null){echo $res->u_address;}} ?>" placeholder="עיר ,רחוב ,מספר בית" >
+            <div class="valid-feedback">
+              כתובת תקינה
+            </div>
           </div>
           
         <button class="btn"   id="submit" type="submit" >עדכן את הפרטים שלי </button>
@@ -109,6 +118,29 @@
 
 
   <script>
+
+      
+  //validation bootstrap function    
+  (function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+
       document.getElementById("homePage").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_home_page');?>"
        }
