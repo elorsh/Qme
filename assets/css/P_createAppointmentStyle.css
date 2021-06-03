@@ -131,15 +131,17 @@ h5{
 }
 
 .btn.btn{
+    position: relative;
+    right: 10px;
+    display: block;
+    text-align: center;
     background-color:rgb(164, 201, 117);
     padding: 3px 30px;
     cursor: pointer;
     letter-spacing: 1px;
     border-radius: 3px;
     border: 1px solid white;
-    position: relative;
-    display: block;
-    text-align: center;
+
 }
 
 .btn.btn:focus{
