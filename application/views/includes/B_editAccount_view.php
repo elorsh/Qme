@@ -100,12 +100,12 @@
             <input type="text" class="form-control" name="b_address" id="validationCustom05" value="#" placeholder="עיר ,רחוב ,מספר בית" >
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-4">
             <label for="validationCustom02" class="form-label">טלפון נוסף :</label>
             <input type="tel" class="form-control" name="b_phone2" id="validationCustom06" value="#" placeholder="000-0000000" >
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-4">
             <label for="validationCustom04" class="form-label">תחום עיסוק:</label>
             <select class="form-select"  name="b_profession" value="#" id="validationCustom07" >
               <option selected disabled value="">תחום עיסוק</option>
