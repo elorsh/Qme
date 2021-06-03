@@ -92,15 +92,15 @@
             <input type="text" class="form-control" name="u_address" id="validationCustom05" value= "<?php foreach ($result as $res){if ($res->u_address!=null){echo $res->u_address;}} ?>" placeholder="עיר ,רחוב ,מספר בית" >
           </div>
           
-      
 
-        <button class="btn btn update "  id="submit" type="submit" >  עדכן את הפרטים שלי</button>
+        <button class="btn btn"  id="submit" type="submit" >עדכן את הפרטים שלי</button>
 
       </form>
-      <div class="col-12">
+    </div>
+
+      <div class="col-4">
           <button class="btn btn" id="changePass" type="button" >שינוי סיסמה</button>
         </div>
-     </div>
 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -108,6 +108,8 @@
 
 
   </body>
+
+
   <script>
       document.getElementById("homePage").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_home_page');?>"

@@ -120,7 +120,7 @@
           <button class="btn btn" id="changePass" type="button" >שינוי סיסמה</button>
         </div>
 
-        <button class="btn btn update "  id="submit" type="submit">  עדכן את פרטי העסק</button>
+        <button class="btn btn "  id="submit" type="submit">  עדכן את פרטי העסק</button>
 
       </form>
      </div>
@@ -142,7 +142,6 @@
      document.getElementById("B_my_profile").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_b_myProfile');?>"
      }
-     //לכתוב פונקציה ב P_USERS
       document.getElementById("changePass").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/ go_to_b_change_password');?>"
      }
