@@ -68,7 +68,7 @@
 
     <form  dir="rtl" onsubmit="return  validationForm()" method="post"  action="<?php echo site_url('P_Users/P_update_password');?>" >
 
-    <?php
+    <!-- <?php
           foreach($result as $object){
             echo
         '<div class="form-group">
@@ -76,7 +76,12 @@
             <input type="text" class="form-control" name="password1" id="pass1" value= "'.$object->u_password.'" minlength="8" autocomplete="on" placeholder="סיסמא נוכחית">
           </div>';
         }
-        ?>
+        ?> -->
+
+<div class="form-group" >
+          <label for="pass1" class="form-label" >סיסמה:</label>
+          <input type="text" class="form-control" name="u_password" id="pass1" value= "<?php foreach ($result as $res){if ($res->u_password!=null){echo $res->u_password;}} ?>" placeholder="סיסמה" >
+          </div>
 
 
         <button class="btn btn"  id="submit" type="submit" >עדכן את הסיסמה שלי</button>
