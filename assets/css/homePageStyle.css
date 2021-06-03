@@ -105,21 +105,20 @@ h4{
     outline: none;
 
 }
-
 .table{
     margin-top: 50px;
     margin-bottom: 50px;
     background-color: rgb(252, 227, 195);
 }
 .table-container{
-    width: 65%;
+    width: 60%;
     display: block;
     margin: auto;
 }
+
 th{
     font-weight: bold;
     font-size: 18px;
-
 }
 
 td,tr{
@@ -171,14 +170,12 @@ td i{
         h4{
             font-size: 30px;
         }
-       
         .btn{
             font-size: 18px;
         }
        .btnSearch{
             font-size: 18px;
        }
-
        h5{
         font-size: 22px !important;
         font-weight: bold;
@@ -213,10 +210,7 @@ td i{
     .btnSearch{
         font-size: 16px;
    }
-   
-   .table-container{
-    width: 90%;
-    }
+
     h5{
         font-size: 20px !important;
         font-weight: bold;
@@ -227,12 +221,13 @@ td i{
     }
 }
 
-/*@media screen and (max-width: 500px){
-    .table-container{
-        width: 100%;
+@media screen and (max-width: 500px){
+      
+   .table-container{
+    width: 90%;
     }
     
-}*/
+}
 
 
 
