@@ -62,6 +62,12 @@
 
      <h4>יצירת תור חדש</h4>
 
+     <?php 
+          if (isset($error)) {
+            echo '<br> <h6 class="message">'.$error.'</h6>';
+          }
+          ?>
+
     <form  dir="rtl" onsubmit="return  validationForm()" method="post"  action="<?php echo site_url('P_Users/B_create_appointment');?>" >
 
         <div class="form-group ">
