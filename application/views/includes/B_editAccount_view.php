@@ -122,7 +122,7 @@
 
       </form>
      </div>
-
+     <div class="clear"></div>
      <div>
           <button class="btn update" id="changePass" type="button" >שינוי סיסמה</button>
         </div>
