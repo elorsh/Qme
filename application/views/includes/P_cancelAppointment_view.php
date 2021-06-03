@@ -46,7 +46,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarMenu">
                     <ul class="navbar-nav">
-                 
+
                         <li class="nav-item">
                             <a  id="P_myAppointments"  class="nav-link">התורים שלי <i class="fas fa-calendar-alt"></i></a>
                         </li>
@@ -54,66 +54,57 @@
                         <li class="nav-item">
                             <a  id="P_my_profile" class="nav-link">הפרופיל שלי <i class="fas fa-user-alt"></i></a>
                         </li>
-
+                
                         <li class="nav-item">
-                            <a  id="homePage"  class="nav-link">דף הבית <i class="fas fa-home"></i></a>
+                            <a  id="homePage"  class="nav-link active">דף הבית <i class="fas fa-home"></i></a>
                         </li>
-                        
+                 
                     </ul>
                 </div>
             </nav>
 
         <h4<i class="far fa-calendar-times"></i> >ביטול תור </h4>
 
+        <h5 dir="rtl">התור בוטל בהצלחה!</h5>
+        <p3><i class="far fa-window-close"></i></p3>
+
 
      <!----להכניס ערכים של PHP---->
-     <p2 dir="rtl">בחר שעה רצויה</p2>
+     <!--<p2 dir="rtl">בחר שעה רצויה</p2>
 
-     <form  dir="rtl" method="post"  action="<?php echo site_url('P_Users/B_delete_appointment');?>" onsubmit="return validationForm()" >
+     <form  dir="rtl" onsubmit="return validationForm()" >
 
-
-
-     <div class="form-group ">             
-              
-                   <?php echo ' <input type="hidden" class="form-control" name="b_email" id="email" value= "'.$b_user['b_email'].'" >';
-                        ?>
-
+     <div class="form-group">
+            <label for="date">תאריך:</label>
+            <input type="date" class="form-control" name="a_time" id="date" value="#" disabled >
           </div>
 
+          <div class="form-group">
+        <label for="date">שעה :</label>
+        <select type="date" class="form-select" name="a_date" id="date" required>
+        <option>08:00</option>
+        <option>09:00</option>
+        <option>10:00</option>
+        <option>11:00</option>
+        <option>12:00</option>
+        <option>13:00</option>
+        <option>14:00</option>
+        <option>15:00</option>
+        <option>16:00</option>
+        <option>17:00</option>
+        <option>18:00</option>
+        <option>19:00</option>
+        <option>20:00</option>
+        </select>
+        </div> 
 
-    <div class="form-group ">
-                   <?php echo '<label for="date">תאריך: '.$a_date.'</label>';?>
+    <button class="btn"  id="submit" type="button" >בטל לי את התור</button>
 
-                   <?php echo ' <input type="hidden" class="form-control" name="a_date" id="date" value= "'.$a_date.'" >';
-                        //  echo $a_date;
-                        //  echo '" >';
-                        ?>
-
-          </div>
-          
-
-
-    <div class="form-group ">
-        <label for="time">שעה : </label>
-        <select type="time" class="form-select" name="a_time" id="time" required>
-            <option selected disabled value="">שעה</option>
-            
-            <?php
-            foreach($result_time as $object){
-                echo '<option>'.$object->a_time.'</option>';
-            }
-
-            ?>
-
-            </select>
-    </div>
-
-    <button class="btn"  id="submit" type="submit" >בטל לי את התור</button>
-
-    </form>
+    </form>-->
 
 
-
+   
+   
      
      <!--<script src="../javascript/cancelAppointment.js"></script>-->
 
