@@ -76,6 +76,10 @@
           <?php
               foreach ($result as $object){
                 echo "<tr>";
+
+                echo '<form  dir="rtl" method="post"  action="'.site_url('P_Users/go_to_P_create_appointment').'">';
+
+
                 echo '<td scope="col"><h5>'.$object->b_business_name.'</h5><h6>'.$object->b_profession.'</h6><h7>'.$object->b_description.'</h7><br><h7>כתובת: '.$object->b_address.'</h7></td>';
                
                 echo ' <input type="hidden" class="form-control" name="b_email" id="email" value= "'.$object->b_email.'" >';
@@ -85,6 +89,7 @@
                 <i class="fab fa-whatsapp"></i></a></td>';
                 echo '<td><a href="https://waze.com/ul?q='.$object->b_address.'"><i class="fab fa-waze"></i></a></td>';
                 echo '<td><a href="tel:'.$object->b_phone1.'"><i class="fas fa-phone"></i></a></td>';
+                echo '</form>';
                 echo "</tr>";
                 }
             ?>
