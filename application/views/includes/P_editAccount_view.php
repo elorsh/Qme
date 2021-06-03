@@ -19,7 +19,7 @@
  <i class="fas fa-user-circle" id="myProfile"></i>
 
       <p class="profile" id="myProfile2">
-      הפרופיל העסקי שלי <br>
+      הפרופיל שלי <br>
       <?php 
      if (isset($b_user['loggedin']))
      {
@@ -90,14 +90,14 @@
             <input type="text" class="form-control" name="u_address" id="validationCustom05" value= "<?php foreach ($result as $res){if ($res->u_address!=null){echo $res->u_address;}} ?>" placeholder="עיר ,רחוב ,מספר בית" >
           </div>
           
-        <button class="btn col-md-4"   id="submit" type="submit" >עדכן את הפרטים שלי </button>
-        <!--<button class="btn btn"  id="submit" type="submit" >עדכן את הפרטים שלי</button>-->
+        <button class="btn"   id="submit" type="submit" >עדכן את הפרטים שלי </button>
 
       </form>
     </div>
+    <div class="clear"></div>
 
       <div>
-          <button class="btn col-md-3" id="changePass" type="button" >שינוי סיסמה</button>
+          <button class="btn update" id="changePass" type="button" >שינוי סיסמה</button>
         </div>
 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

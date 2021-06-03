@@ -133,12 +133,12 @@ h5{
 }
 .btn{
     position: relative ;  
-    display: block ;
+    display: block;
     margin: auto;
     margin-top: 20px !important;
     margin-bottom: 20px !important;
     background-color: rgb(164, 201, 117);
-    padding: 5px 20px;
+    padding: 5px 15px;
     text-align: center;
     align-items: center;
     border: 1px solid white;
@@ -148,6 +148,15 @@ h5{
 }
 .btn:focus{
     outline: none;
+}
+
+.btn.update{
+    padding: 5px 25px !important;
+    margin-top: 6px !important;
+    background-color: rgb(156, 214, 250) !important;
+}
+.btn.update:hover{
+    background-color: rgb(124, 195, 240) !important;
 }
 
 
