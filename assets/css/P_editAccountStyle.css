@@ -148,6 +148,7 @@ h5{
     outline: none;
 }
 .btn.update{
+    padding: 5px 25px !important;
     margin-top: 6px !important;
     background-color: rgb(156, 214, 250) !important;
 }
