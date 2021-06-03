@@ -127,6 +127,7 @@ a i{
 }
 td,tr{
     text-align: center;
+    align-items: center;
 }
 .form-group{
     display: block;
