@@ -182,16 +182,6 @@ td,tr{
     margin-right: 10px;
 }
 
-.form1{
-    display: block;
-    margin: 0 auto; 
-    text-align: center;
-    align-items: center;
-    width: 30%;
-    font-size: 20px;
-    margin-top: 10px !important;
-    margin-bottom: 15px !important;
-}
 .message{
     display: block;
     margin: auto;
