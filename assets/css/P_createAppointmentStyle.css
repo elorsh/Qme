@@ -132,15 +132,15 @@ h5{
 
 .btn.btn{
     position: relative;
-    right: 30px;
     display: block;
     text-align: center;
     background-color:rgb(164, 201, 117);
-    padding: 3px 30px;
+    padding: 3px 10px;
     cursor: pointer;
     letter-spacing: 1px;
     border-radius: 3px;
     border: 1px solid white;
+    font-size: 17px;
 
 }
 
