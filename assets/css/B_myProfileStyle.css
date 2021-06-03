@@ -110,7 +110,7 @@ h5{
     text-align: center;
 }
 
-h6{
+.message{
     display: block;
     margin: auto;
     margin-top: 15px !important;
