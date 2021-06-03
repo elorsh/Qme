@@ -74,7 +74,7 @@
         </div>
 
 
-        <button class="btn btn"  id="submit" type="submit" >עדכן את הסיסמה שלי</button>
+        <button class="btn"  id="submit" type="submit" >עדכן את הסיסמה שלי</button>
 
           
           

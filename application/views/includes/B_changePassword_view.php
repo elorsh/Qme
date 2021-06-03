@@ -77,7 +77,7 @@
 </div>
 
 
-<button class="btn btn"  id="submit" type="submit" >עדכן את הסיסמה שלי</button>
+<button class="btn"  id="submit" type="submit" >עדכן את הסיסמה שלי</button>
 
   
   
@@ -113,7 +113,7 @@
       }, false)
     })
   })()
-  
+
       document.getElementById("B_myCustomers").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_b_myCustomers');?>"
      }
