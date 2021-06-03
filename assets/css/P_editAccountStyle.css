@@ -143,10 +143,15 @@ h5{
 .btn:hover{
     color: white;
     background-color:  rgb(195, 233, 149);
-
 }
 .btn:focus{
     outline: none;
+}
+.btn.update{
+    background-color: rgb(119, 141, 235) !important;
+}
+.btn.update:hover{
+    background-color: rgb(77, 101, 209) !important;
 }
 
 
