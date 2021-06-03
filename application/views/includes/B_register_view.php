@@ -70,6 +70,7 @@
               שם בית העסק תקין
             </div>
           </div>
+          
           <div class="col-md-4" >
             <label for="validationCustom04" class="form-label" >ח.פ / ת.ז  :</label>
             <input type="text" class="form-control"  name="b_id" id="validationCustom04" placeholder="000000000" required>

@@ -74,32 +74,50 @@
 
         <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם בעל העסק:</label>
-          <input type="text" class="form-control" name="b_full_name" id="validationCustom01" value= "<?php foreach ($result as $res){if ($res->b_full_name!=null){echo $res->b_full_name;}} ?>" placeholder="שם פרטי ומשפחה" >
+          <input type="text" class="form-control" name="b_full_name" id="validationCustom01" value= "<?php foreach ($result as $res){if ($res->b_full_name!=null){echo $res->b_full_name;}} ?>" placeholder="שם פרטי ומשפחה" required >
+          <div class="valid-feedback">
+              שם בית העסק תקין
+            </div>
         </div>
 
         <div class="col-md-4">
           <label for="validationCustom02" class="form-label">טלפון בעל העסק:</label>
-          <input type="tel" class="form-control" name="b_phone1" id="validationCustom02" value= "<?php foreach ($result as $res){if ($res->b_phone1!=null){echo $res->b_phone1;}} ?>" placeholder="0000000000" >
+          <input type="tel" class="form-control" name="b_phone1" id="validationCustom02" value= "<?php foreach ($result as $res){if ($res->b_phone1!=null){echo $res->b_phone1;}} ?>" placeholder="0000000000" required >
+          <div class="valid-feedback">
+           מספר טלפון תקין 
+          </div>
         </div>
 
         <div class="col-md-4" >
             <label for="validationCustom01" class="form-label" >שם בית העסק:</label>
-            <input type="text" class="form-control" name="b_business_name" id="validationCustom03" value= "<?php foreach ($result as $res){if ($res->b_business_name!=null){echo $res->b_business_name;}} ?>" placeholder="שם בית העסק" >
+            <input type="text" class="form-control" name="b_business_name" id="validationCustom03" value= "<?php foreach ($result as $res){if ($res->b_business_name!=null){echo $res->b_business_name;}} ?>" placeholder="שם בית העסק" required>
+            <div class="valid-feedback">
+              שם בית העסק תקין
+            </div>
           </div>
           
         <div class="col-md-4" >
             <label for="validationCustom01" class="form-label" >תיאור בית העסק:</label>
-            <input type="text" class="form-control" name="b_description" id="validationCustom12" value= "<?php foreach ($result as $res){if ($res->b_description!=null){echo $res->b_description;}} ?>" placeholder="תיאור" >
+            <input type="text" class="form-control" name="b_description" id="validationCustom12" value= "<?php foreach ($result as $res){if ($res->b_description!=null){echo $res->b_description;}} ?>" placeholder="תיאור" required>
+            <div class="valid-feedback">
+              תיאור בית העסק תקין
+            </div>
           </div>
 
           <div class="col-md-4" >
             <label for="validationCustom01" class="form-label" >ח.פ / ת.ז  :</label>
-            <input type="text" class="form-control" name="b_id" id="validationCustom04"  value= "<?php foreach ($result as $res){if ($res->b_id!=null){echo $res->b_id;}} ?>" placeholder="ח.פ/ת.ז" >             
+            <input type="text" class="form-control" name="b_id" id="validationCustom04"  value= "<?php foreach ($result as $res){if ($res->b_id!=null){echo $res->b_id;}} ?>" placeholder="ח.פ/ת.ז" required>             
+            <div class="invalid-feedback">
+              יש להזין מספר בעל 9 ספרות
+            </div>
           </div>
 
         <div class="col-md-4">
             <label for="validationCustom02" class="form-label">כתובת :</label>
-            <input type="text" class="form-control" name="b_address" id="validationCustom05" value= "<?php foreach ($result as $res){if ($res->b_address!=null){echo $res->b_address;}} ?>" placeholder="עיר ,רחוב ,מספר בית" >
+            <input type="text" class="form-control" name="b_address" id="validationCustom05" value= "<?php foreach ($result as $res){if ($res->b_address!=null){echo $res->b_address;}} ?>" placeholder="עיר ,רחוב ,מספר בית" required>
+            <div class="valid-feedback">
+              כתובת תקינה
+            </div>
           </div>
 
           <div class="col-md-4">
@@ -109,16 +127,17 @@
 
           <div class="col-md-4">
             <label for="validationCustom04" class="form-label">תחום עיסוק:</label>
-            <select class="form-select"  name="b_profession"  id="validationCustom07" >
+            <select class="form-select"  name="b_profession"  id="validationCustom07" required >
               <option selected disabled><?php foreach ($result as $res){if ($res->b_profession!=null){echo $res->b_profession;}} ?></option>
               <option>עיצוב שיער</option>
               <option>לק ג'ל</option>
               <option> קוסמטיקה</option>
               <option>סטודיו </option>
+              <option>אחר </option>
+
             </select>       
           </div>
 
-   
 
         <button class="btn"  id="submit" type="submit">  עדכן את פרטי העסק</button>
 
@@ -137,6 +156,28 @@
   </body>
 
   <script>
+        
+  //validation bootstrap function    
+  (function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+
          document.getElementById("B_myCustomers").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_b_myCustomers');?>"
      }
