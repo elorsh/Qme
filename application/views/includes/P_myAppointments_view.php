@@ -70,7 +70,7 @@
 
             <?php 
           if (isset($msg)) {
-            echo '<br> <center><h5 class="message">'.$msg.'</h5></center><br>';
+            echo '<br> <center><h5 dir="rtl" class="message">'.$msg.'</h5></center><br>';
           }
           ?>
 

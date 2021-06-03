@@ -185,8 +185,8 @@ td,tr{
 .message{
     display: block;
     margin: auto;
-    margin-top: 5px !important;
-    margin-bottom: 5px !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
     font-size: 40px;
     font-weight: bold;
     color: green;
@@ -223,19 +223,24 @@ td,tr{
         .headline{
             font-size: 38px;
         }
-     
         .nav-link{
             font-size: 17px;
         }
         .btn{
             font-size: 18px;
         }
-        .btn.date{
-            font-size: 18px !important;
+        .btn2{
+            font-size: 18px;
         }
         .log-out{
             font-size: 12px;
         }
+        .message{
+            font-size: 25px;
+        }
+{
+
+}
 }
 
 @media screen and (max-width: 650px){
@@ -249,14 +254,10 @@ td,tr{
     .btn{
         font-size: 16px;
     }
-    .btn.date{
-        font-size: 16px !important;
+    .btn2{
+        font-size: 16px;
     }
-    .form1{
-        width: 35%;
-        font-size: 17px;
 
-    }
 
 }
 @media screen and (max-width: 550px){
