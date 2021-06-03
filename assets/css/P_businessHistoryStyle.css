@@ -129,8 +129,9 @@ td a i {
     display: block;
     margin: auto;
 }
+
 td,tr{
-    text-align: right;
+    text-align: center;
 }
 td i{
     cursor: pointer;
