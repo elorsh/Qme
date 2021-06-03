@@ -199,8 +199,8 @@ td i{
 
 @media screen and (max-width: 650px){
     #logo{
-        width: 260px;
-        height: 170px;
+        width: 280px;
+        height: 180px;
     }
     h4{
         font-size: 27px;
@@ -227,12 +227,12 @@ td i{
     }
 }
 
-@media screen and (max-width: 500px){
+/*@media screen and (max-width: 500px){
     .table-container{
         width: 100%;
     }
     
-}
+}*/
 
 
 
