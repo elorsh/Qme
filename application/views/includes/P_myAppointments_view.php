@@ -78,6 +78,8 @@
             <th scope="col" > בית עסק</th>
             <th scope="col" > תאריך</th>
             <th scope="col">שעה</th>
+            <th scope="col">ביטול תור</th>
+
           </tr>
         </thead>
         <tbody>
@@ -85,9 +87,18 @@
           foreach($result as $object){
            
             echo "<tr>";
+            echo '<form  dir="rtl" method="post"  action="'.site_url('P_Users/P_cancel_appointment').'">';
+
             echo '<td scope="col">'.$object->b_business_name.'</td>';
             echo '<td scope="col">'.$object->a_date.'</td>';
             echo '<td scope="col">'.$object->a_time.'</td>';
+
+            echo ' <input type="hidden" class="form-control" name="b_email" id="b_email" value= "'.$object->b_email.'" >';
+            echo ' <input type="hidden" class="form-control" name="a_date" id="date" value= "'.$object->a_date.'" >';
+            echo ' <input type="hidden" class="form-control" name="a_time" id="time" value= "'.$object->a_time.'" >';
+            echo '<th scope="col"><button class="btn"  id="submit" type="submit" >ביטול תור זה</button></th>';
+            echo '</form>';
+
             echo "</tr>";
           }
           ?>
