@@ -85,7 +85,7 @@
                 echo ' <input type="hidden" class="form-control" name="b_email" id="email" value= "'.$object->b_email.'" >';
 
                 echo '<td><button type="submit" class="newAppointment" id="newAppointment"><i class="far fa-calendar-alt"  ></i></button></td>';
-                echo '<td><a href="https://api.whatsapp.com/send?phone=+972'.$object->b_phone1.'&text=היי, כיצד נוכל לעזור?" target="_blank">
+                echo '<td><a href="https://api.whatsapp.com/send?phone=+972'.$object->b_phone1.'&text=היי, הגעתי דרך אתר Qme (: אשמח לעזרה" target="_blank">
                 <i class="fab fa-whatsapp"></i></a></td>';
                 echo '<td><a href="https://waze.com/ul?q='.$object->b_address.'"><i class="fab fa-waze"></i></a></td>';
                 echo '<td><a href="tel:'.$object->b_phone1.'"><i class="fas fa-phone"></i></a></td>';
