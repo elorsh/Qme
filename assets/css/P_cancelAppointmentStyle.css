@@ -126,7 +126,7 @@ h5{
     text-align: center;
 }*/
 
-p2{
+/*p2{
     display: block;
     margin: auto;
     margin-top: 10px !important;
@@ -134,19 +134,20 @@ p2{
     font-size: 28px;
     font-weight: bold;
     text-align: center;
-}
+}*/
 .btn{
     position: relative;
     display: block;
-    text-align: right;
-    background-color: rgb(164, 201, 117);
+    text-align: center;
+    align-items: center;
     padding: 2px 24px;
     font-size: 22px;
     border: 1px solid white;
     cursor: pointer;
-    margin-right: 20px;
-    margin-top: 12px !important;
-    margin-bottom: 18px !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    background-color: rgb(164, 201, 117);
+
 }
 
 .btn:focus{
@@ -157,14 +158,14 @@ p2{
     background-color: rgb(245, 112, 112);
 
 }
-#cancel{
+/*#cancel{
     display: block;
     margin: auto;
     text-align: center;
     color: red;
     font-size: 20px;
 
-}
+}*/
 p3{
     display: block;
     margin: auto;

@@ -62,11 +62,15 @@
                     </ul>
                 </div>
             </nav>
+            
 
         <h4<i class="far fa-calendar-times"></i> >ביטול תור </h4>
 
         <h5 dir="rtl">התור בוטל בהצלחה!</h5>
         <p3><i class="far fa-window-close"></i></p3>
+
+        <button class="btn"  id="home" type="button" >מעבר לדף הבית</button>
+        <button class="btn"  id="appointments" type="button" >מעבר לתורים שלי</button>
 
 
      <!----להכניס ערכים של PHP---->
@@ -132,13 +136,19 @@
      document.getElementById("myProfile2").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_myProfile');?>"
      }
+     document.getElementById("home").onclick=function(){
+         window.location.href="<?php echo site_url('P_Users/go_to_home_page');?>"
+     }
+     document.getElementById("appointments").onclick=function(){
+         window.location.href="<?php echo site_url('P_Users/go_to_P_appointments');?>"
+     }
 
         
     // cancel message
-  var  btn = document.getElementById('submit');
+/*  var  btn = document.getElementById('submit');
   
   btn.addEventListener( 'click', () => {
     window.confirm("האם ברצונך לבטל את התור ?");
-  })
+  })*/
   </script>
  </html>
