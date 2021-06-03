@@ -68,6 +68,12 @@
                 </div>
             </nav>
 
+            <?php 
+          if (isset($msg)) {
+            echo '<br> <center><h5 class="message">'.$msg.'</h5></center><br>';
+          }
+          ?>
+
      <h4 class="headline">התורים שלי</h4>
 
 <div class="table-container">
