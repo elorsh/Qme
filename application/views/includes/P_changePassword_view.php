@@ -73,7 +73,6 @@
           <input type="text" class="form-control" name="u_password" id="validationCustom01" value= "<?php foreach ($result as $res){if ($res->u_password!=null){echo $res->u_password;}} ?>" placeholder=" סיסמה בת 8 ספרות" required>
         </div>
 
-        <div class="clear"></div>
 
         <button class="btn"  id="submit" type="submit" >עדכן את הסיסמה שלי</button>
           
@@ -85,7 +84,7 @@
  
  </body>
 
- 
+
  <script>
            
   //validation bootstrap function    
