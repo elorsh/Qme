@@ -75,8 +75,14 @@
     <div class="createAccount">
    
       <form  dir="rtl"  class="row g-3 needs-validation"  action="<?php echo site_url('P_Users/P_update_user')?>" novalidate>
-   
-        <div class="col-md-4" >
+
+
+      <input type="text" class="form-control" name="u_full_name" id="validationCustom01" placeholder="שם פרטי ומשפחה" >
+      <input type="text" class="form-control" name="u_phone" id="validationCustom01" placeholder="שם פרטי ומשפחה" >
+      <input type="text" class="form-control" name="u_address" id="validationCustom01" placeholder="שם פרטי ומשפחה" >
+
+
+        <!-- <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם מלא :</label>
           <input type="text" class="form-control" name="u_full_name" id="validationCustom01" value= "<?php foreach ($result as $res){if ($res->u_full_name!=null){echo $res->u_full_name;}} ?>" placeholder="שם פרטי ומשפחה" >
           </div>
@@ -89,7 +95,7 @@
         <div class="col-md-3">
             <label for="validationCustom02" class="form-label">כתובת :</label>
             <input type="text" class="form-control" name="u_address" id="validationCustom05" value= "<?php foreach ($result as $res){if ($res->u_address!=null){echo $res->u_address;}} ?>" placeholder="עיר ,רחוב ,מספר בית" >
-          </div>
+          </div> -->
           
       
 
