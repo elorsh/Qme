@@ -381,7 +381,6 @@ public function go_to_p_register(){
    
         $msg = ':) עידכנת את הפרטים בהצלחה';
         $this->go_to_B_myProfile_view($msg);
-        // $data['msg']=null;
        }
 
 
