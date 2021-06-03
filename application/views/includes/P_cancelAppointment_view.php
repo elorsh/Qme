@@ -48,7 +48,7 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
-                            <a  id="homePage"  class="nav-link active">דף הבית <i class="fas fa-home"></i></a>
+                            <a  id="homePage"  class="nav-link">דף הבית <i class="fas fa-home"></i></a>
                         </li>
                  
                         <li class="nav-item">
