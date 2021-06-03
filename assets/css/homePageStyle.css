@@ -138,7 +138,9 @@ td i{
     cursor: pointer;
     font-size: 250%; 
 }
-
+.newAppointment{
+    color: lightskyblue;
+}
 
 
 
