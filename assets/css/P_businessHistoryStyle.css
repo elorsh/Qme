@@ -95,6 +95,14 @@ a i{
     margin-left: 8px;
 }
 
+td a i {
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    font-size: 220%;
+    color: rgb(57, 128, 194);
+}
+
 .headline{
     display: block;
     margin: auto;
@@ -111,6 +119,8 @@ a i{
 
 .table{
     margin-top: 50px;
+    text-align: center;
+    align-items: center;
     margin-bottom: 50px;
     background-color: rgb(252, 227, 195);
 }
