@@ -204,12 +204,16 @@ public function go_to_p_register(){
             $this->load->view('includes/P_myProfile_view',$data);
         }
 
-        public function go_to_P_cancel_appointment(){
+        public function go_to_P_editMyProfile(){
             $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
             $data['p_user']=$p_user;// כנל
 
-            $this->load->view('includes/P_cancelAppointment_view',$data);
-        }
+            $p_user_data=$this->P_Users_model->get_P_user_data($p_user);
+    
+            $data['result']=$p_user_data;
+            $this->load->view('includes/P_editAccount_view',$data);
+            }
+
         public function go_to_p_change_password(){
             $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
             $data['p_user']=$p_user;// כנל
@@ -218,6 +222,15 @@ public function go_to_p_register(){
             $data['result']=$p_user_data;
             $this->load->view('includes/P_changePassword_view',$data);
         }
+
+
+        public function go_to_P_cancel_appointment(){
+            $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+            $data['p_user']=$p_user;// כנל
+
+            $this->load->view('includes/P_cancelAppointment_view',$data);
+        }
+
       
         public function go_to_P_appointments($msg = null){
             $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
@@ -231,15 +244,7 @@ public function go_to_p_register(){
 
 
 
-        public function go_to_P_editMyProfile(){
-            $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
-            $data['p_user']=$p_user;// כנל
 
-            $p_user_data=$this->P_Users_model->get_P_user_data($p_user);
-    
-            $data['result']=$p_user_data;
-            $this->load->view('includes/P_editAccount_view',$data);
-            }
             
 
             public function go_to_P_businessHistory(){
@@ -354,7 +359,46 @@ public function go_to_p_register(){
         }
 
     
-        
+            // עדכון משתמש קיים
+    public function B_update_user(){
+        $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+        $data['b_user']=$b_user;// כנל
+
+
+        $data = array(
+            'b_email' => $p_user['b_email'],
+            'b_full_name' => $this->input->post('b_full_name'),
+            'b_id' => $this->input->post('b_id'),
+            'b_business_name' => $this->input->post('b_business_name'),
+            'b_profession' => $this->input->post('b_profession'),
+            'b_description' => $this->input->post('b_description'),
+            'b_phone1' => $this->input->post('b_phone1'),
+            'b_phone2' => $this->input->post('b_phone2'),
+            'b_address' => $this->input->post('b_address')
+
+          );
+        $this->P_Users_model->update_b_user($data);
+   
+        $msg = ':) עידכנת את הפרטים בהצלחה';
+        $this->go_to_B_myProfile_view($msg);
+        // $data['msg']=null;
+       }
+
+
+       public function B_update_password(){
+        $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+        $data['b_user']=$b_user;// כנל
+
+
+        $data = array(
+            'b_user' => $p_user['b_user'],
+            'b_password' => $this->input->post('b_password')
+          );
+        $this->P_Users_model->update_b_user_password($data);
+   
+        $msg = ':) הסיסמה הוחלפה בהצלחה';
+        $this->go_to_B_myProfile_view($msg);
+       }
     
     
     
@@ -464,10 +508,30 @@ public function go_to_b_register(){
 public function go_to_B_myProfile_view(){
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
     $data['b_user']=$b_user;// כנל
-    // $user_data=$this->b_get_user_data($b_user); // פונקציה שאמורה למשוך את שם המשתמש של הבית עסק מהדב
-   // $data['b_business_name']=$user_data['b_business_name']; // לנסות להבין למה הוא לא מצליח למשוך את השם בית עסק
+
     $this->load->view('includes/B_myProfile_view',$data);
 }
+
+public function go_to_B_editMyProfile(){
+    $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+    $data['b_user']=$b_user;// כנל
+
+    $b_user_data=$this->P_Users_model->get_b_user_data($b_user);
+
+    $data['result']=$b_user_data;
+    $this->load->view('includes/B_editAccount_view',$data);
+    }
+
+public function go_to_B_change_password(){
+    $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+    $data['b_user']=$b_user;// כנל
+
+    $b_user_data=$this->P_Users_model->get_b_user_data($b_user);
+
+    $data['result']=$b_user_data;
+    $this->load->view('includes/b_changePassword_view',$data);
+}
+
 
 public function go_to_b_appointments(){
     $b_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
