@@ -149,10 +149,10 @@ h5{
 }
 .btn.update{
     margin-top: 6px !important;
-    background-color: lightskyblue !important;
+    background-color: rgb(156, 214, 250) !important;
 }
 .btn.update:hover{
-    background-color: rgb(114, 169, 190) !important;
+    background-color: rgb(124, 195, 240) !important;
 }
 
 
