@@ -143,20 +143,40 @@ td,tr{
     margin-top: 8px !important;
     margin-bottom: 20px !important;
     letter-spacing: 1px;
+}
 
+
+.btn2{
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(164, 201, 117);
+    padding: 2px 20px;
+    font-size: 20px;
+    border: 1px solid white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+    letter-spacing: 1px;
 }
 
 .btn.date{
     font-size: 21px !important;
 }
 
-.btn:focus{
+.btn:focus, .btn2:focus{
     outline: none;
 }
 .btn:hover{
     background-color:  rgb(195, 233, 149);
     color: white;
 }
+.btn2:hover{
+    background-color:  rgb(216, 96, 96);
+    color: white;
+}
+
 
 .btn i{
     margin-right: 10px;

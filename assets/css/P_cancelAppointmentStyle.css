@@ -126,10 +126,9 @@ h5{
 .btn:focus{
     outline: none;
 }
-.btn:hover{
-    color: white;
-    background-color: rgb(245, 112, 112);
-
+.btn.btn:hover{
+    color:white;
+    background-color:  rgb(195, 233, 149);
 }
 /*#cancel{
     display: block;
