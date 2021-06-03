@@ -62,9 +62,9 @@
     </div>
 </nav>
 
-     <h4>בחירת תור חדש</h4>
+     <h4 >בחירת תור חדש</h4>
 
-     <h4 class="headline">תורים פנויים</h4>
+     <h5 >תורים פנויים</h5>
 
 <div class="table-container">
 
