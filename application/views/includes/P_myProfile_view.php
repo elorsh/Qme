@@ -80,7 +80,7 @@
     <button class="btn appointment" id="P_myAppointments2" type="button"> <i class="far fa-calendar-alt"></i> הצג הכל </button>
 
     <p3> בתי העסק בהם ביקרתי בעבר</p3>
-    <button class="btn history"  id="BusHistory"  type="button"><i class="fas fa-list-alt"></i>בתי עסק שביקרתי </button>
+    <button class="btn history"  id="BusinessHistory"  type="button"><i class="fas fa-list-alt"></i>בתי עסק שביקרתי </button>
     
 </div>
 
@@ -112,7 +112,7 @@
          window.location.href="<?php echo site_url('P_Users/go_to_P_myProfile');?>"
      }
      //להבין לאן זה אמור להגיע
-     document.getElementById("BusHistory").onclick=function(){
+     document.getElementById("BusinessHistory").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_businessHistory');?>"
      }
   </script>
