@@ -112,8 +112,6 @@ h5{
     text-align: center;
 }
 
-
-
 .createAccount{
     position: relative;
     margin: 20px;
@@ -130,7 +128,7 @@ h5{
 .form-check-label{
     margin-right: 25px;
 }
-.btn.btn{
+.btn{
     position: relative ;  
     display: block ;
     margin: auto;
@@ -138,13 +136,15 @@ h5{
     margin-bottom: 20px !important;
     background-color: rgb(164, 201, 117);
     padding: 9px 25px;
+    text-align: center;
+    align-items: center;
 }
-.btn.btn:hover{
+.btn:hover{
     color: white;
     background-color:  rgb(195, 233, 149);
 
 }
-.btn.btn:focus{
+.btn:focus{
     outline: none;
 }
 .update{

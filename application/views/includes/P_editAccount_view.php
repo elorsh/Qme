@@ -70,11 +70,9 @@
    את הפרטים שלך בכל עת</h5> 
 
 
-   
-
     <div class="createAccount">
    
-      <form  dir="rtl" onsubmit="return  validationForm()" method="post"  action="<?php echo site_url('P_Users/P_update_user');?>" >
+      <form  dir="rtl" method="post"  class="row g-3 needs-validation"  onsubmit="return  validationForm()"  novalidate action="<?php echo site_url('P_Users/P_update_user');?>" >
 
 
         <div class="col-md-4" >
@@ -92,14 +90,14 @@
             <input type="text" class="form-control" name="u_address" id="validationCustom05" value= "<?php foreach ($result as $res){if ($res->u_address!=null){echo $res->u_address;}} ?>" placeholder="עיר ,רחוב ,מספר בית" >
           </div>
           
-
-        <button class="btn btn"  id="submit" type="submit" >עדכן את הפרטים שלי</button>
+        <button class="btn col-md-4"   id="submit" type="submit" >עדכן את הפרטים שלי </button>
+        <!--<button class="btn btn"  id="submit" type="submit" >עדכן את הפרטים שלי</button>-->
 
       </form>
     </div>
 
       <div class="col-4">
-          <button class="btn btn" id="changePass" type="button" >שינוי סיסמה</button>
+          <button class="btn" id="changePass" type="button" >שינוי סיסמה</button>
         </div>
 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
