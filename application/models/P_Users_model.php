@@ -171,6 +171,10 @@ class P_Users_model extends CI_Model {
          return $query->result();
      }
 
+     public function b_appointment_auth($data){
+        $query = $this->db->get_where('DB_B_Appointments', $data);
+        return $query->result();
+     }
 
      public function B_create_appointment($appointmentData){
 
