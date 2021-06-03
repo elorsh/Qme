@@ -74,7 +74,8 @@
 
     <div class="createAccount">
    
-      <form  dir="rtl"  class="row g-3 needs-validation"  action="<?php echo site_url('P_Users/P_update_user')?>" novalidate>
+      <!-- <form  dir="rtl"  class="row g-3 needs-validation"  action="<?php echo site_url('P_Users/P_update_user')?>" novalidate> -->
+      <form  dir="rtl" onsubmit="return  validationForm()" method="post"  action="<?php echo site_url('P_Users/P_update_user');?>" >
 
 
       <input type="text" class="form-control" name="u_full_name" id="validationCustom01" placeholder="שם פרטי ומשפחה" >
