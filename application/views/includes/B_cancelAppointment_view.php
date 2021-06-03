@@ -114,48 +114,9 @@
     </form>
 
 
- <!-- <form  dir="rtl" onsubmit="return validationForm()" >
-
-<div class="form-group ">
-<label for="date">תאריך : </label>
-<select type="date" class="form-select" name="a_date" id="date" required>
-    <option selected disabled value="">תאריך</option>
-    
-    <?php
-    foreach($result as $object){
-        echo '<option>'.$object->a_date.'</option>';
-    }
-
-    ?>
-
-    </select>
-</div>
-</form> -->
 
 
 
-    <!-- <div class="form-group">
-        <label for="time">שעה :</label>
-        <select type="time" class="form-control" name="a_time" id="time" required>
-        <option>08:00</option>
-        <option>09:00</option>
-        <option>10:00</option>
-        <option>11:00</option>
-        <option>12:00</option>
-        <option>13:00</option>
-        <option>14:00</option>
-        <option>15:00</option>
-        <option>16:00</option>
-        <option>17:00</option>
-        <option>18:00</option>
-        <option>19:00</option>
-        <option>20:00</option>
-        </select>
-        </div> -->
-
-      <!--  <div id="cancel"></div>-->
-
-     <!-- </form> -->
 
 
 

@@ -67,7 +67,7 @@
 
     <div class="search-container">
        <div class="input-group">
-           <input type="text" class="form-control" id="myInput" placeholder="Search for customer..." onkeyup="myFunction2()">
+           <input type="text" dir="rtl"  class="form-control" id="myInput" placeholder="חיפוש לקוח..." onkeyup="myFunction2()">
            <div class="input-group-append">
              <button class="btn btn" type="button"><i class="fa fa-search"></i></button>
            </div>
@@ -80,7 +80,10 @@
         <thead>
           <tr>
             <th scope="col" >שם מלא</th>
+            <th scope="col" >אימייל</th>
             <th scope="col">טלפון</th>
+            <th scope="col">חייג לבית העסק</th>
+
           </tr>
         </thead>
         <tbody>
@@ -89,8 +92,9 @@
 
             echo "<tr>";
             echo '<td scope="col">'.$object->u_full_name.'</td>';
+            echo '<td scope="col">'.$object->u_email.'</td>';
             echo '<td scope="col">'.$object->u_phone.'</td>';
-
+            echo '<td><a href="tel:'.$object->u_phone.'"><i class="fas fa-phone"></i></a></td>';
             echo "</tr>";
             }
         ?>

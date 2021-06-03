@@ -39,6 +39,7 @@
 
      <i class="fas fa-sign-out-alt" id="logOut"></i>
       <p class="log-out">התנתקות</p>
+
       
 
             <!----- The navigation menu ----->
