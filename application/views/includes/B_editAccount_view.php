@@ -124,7 +124,7 @@
      </div>
 
      <div>
-          <button class="btn col-md-3" id="changePass" type="button" >שינוי סיסמה</button>
+          <button class="btn update col-md-3" id="changePass" type="button" >שינוי סיסמה</button>
         </div>
 
 

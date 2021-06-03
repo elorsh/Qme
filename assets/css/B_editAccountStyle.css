@@ -150,6 +150,10 @@ h5{
     outline: none;
 }
 
+.btn.update{
+    background-color: rgb(119, 141, 235) !important;
+}
+
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
