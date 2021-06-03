@@ -108,7 +108,7 @@ class P_Users_model extends CI_Model {
     }
 
     public function P_get_B_info_and_new_appointments($data){
-        $query = $this->db->query('SELECT * FROM `DB_B_Appointments` INNER JOIN DB_businesses  ON DB_B_Appointments.b_email = DB_businesses.b_email WHERE `b_email` = "'.$data['b_email'].'" AND `u_email` is NULL ');
+        $query = $this->db->query('SELECT * FROM `DB_B_Appointments` INNER JOIN DB_businesses  ON DB_B_Appointments.b_email = DB_businesses.b_email WHERE DB_B_Appointments.b_email = "'.$data['b_email'].'" AND `u_email` is NULL ');
         return $query->result();
      }
 
