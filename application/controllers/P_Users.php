@@ -211,6 +211,22 @@ public function go_to_p_register(){
             
                 $this->load->view('includes/P_businessHistory_view',$data);
             }
+
+            public function go_to_P_createAppointment(){
+                $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
+                $data['p_user']=$p_user;// כנל
+                
+                $b_user = array(
+                    'b_email' => $this->input->post('b_email')
+                );
+                $b_new_appointments=$this->P_Users_model->P_get_B_info_and_new_appointments($b_user);
+            
+            
+                $data['result']=$b_new_appointments;
+            
+            
+                $this->load->view('includes/P_createAppointment_view',$data);
+            }
             
 
 
