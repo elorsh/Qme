@@ -69,7 +69,7 @@
      <h4> היי, טוב לראות אותך</h4>
      <?php 
           if (isset($msg)) {
-            echo '<br> <center><h6 class="message">'.$msg.'</h6></center><br>';
+            echo '<br> <center><h6  dir="rtl" class="message">'.$msg.'</h6></center><br>';
           }
           ?>
 
