@@ -131,26 +131,22 @@ h5{
 .form-check-label{
     margin-right: 25px;
 }
-.btn.btn{
-    float:initial;
+.btn{
     position: relative ;  
     display: block ;
-    margin-left: auto ;
-    margin-right: auto ;
+    margin: auto;
     margin-top: 15px !important;
     margin-bottom: 15px !important;
     background-color: rgb(164, 201, 117);
-    padding: 9px 25px;
+    padding: 5px 20px;
+    border: 1px solid white;
+
 }
-.btn.btn:hover{
+.btn:hover{
     color: white;
 }
-.btn.btn:focus{
+.btn:focus{
     outline: none;
-}
-.update{
-    font-weight: bold;
-    margin-bottom: 30px !important;
 }
 
 

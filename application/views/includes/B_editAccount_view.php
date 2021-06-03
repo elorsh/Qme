@@ -116,14 +116,16 @@
             </select>       
           </div>
 
-        <div class="col-12">
-          <button class="btn btn" id="changePass" type="button" >שינוי סיסמה</button>
-        </div>
+   
 
-        <button class="btn btn "  id="submit" type="submit">  עדכן את פרטי העסק</button>
+        <button class="btn col-md-4 "  id="submit" type="submit">  עדכן את פרטי העסק</button>
 
       </form>
      </div>
+
+     <div>
+          <button class="btn col-md-3" id="changePass" type="button" >שינוי סיסמה</button>
+        </div>
 
 
 
