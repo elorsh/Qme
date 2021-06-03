@@ -112,6 +112,13 @@ class P_Users_model extends CI_Model {
         return $query->result();
      }
 
+     public function P_create_appointment($data){
+        $query = $this->db->query('UPDATE `DB_B_Appointments` SET `u_email` = "'.$data['u_email'].'" WHERE `DB_B_Appointments`.`b_email` = "'.$data['b_email'].'" AND `DB_B_Appointments`.`a_date` = "'.$data['a_date'].'" AND `DB_B_Appointments`.`a_time` = "'.$data['a_time'].'" ');
+     }
+
+
+     
+
     //  --------------- *** b_users *** -----------------------
     
     public function insert_b_user($data){
@@ -164,7 +171,6 @@ class P_Users_model extends CI_Model {
      public function B_create_appointment($appointmentData){
 
         $this->db->insert('DB_B_Appointments', $appointmentData);
-
      }
 
      public function B_delete_appointment($appointmentData){ 

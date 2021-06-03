@@ -83,7 +83,7 @@
           foreach($result as $object){
            
             echo '<tr >';
-            echo '<form  dir="rtl" method="post"  action="'.site_url("P_Users/P_createAppointment").'" onsubmit="return validationForm()" >';
+            echo '<form  dir="rtl" method="post"  action="'.site_url("P_Users/P_create_appointment").'" onsubmit="return validationForm()" >';
             echo '<input type="hidden" class="form-control" name="b_email" id="email" value= "'.$object->b_email.'" >';
             echo '<th scope="col">תור פנוי</th>';
             echo '<th scope="col">'.$object->a_date.'<input type="hidden" class="form-control" name="a_date" id="date" value= "'.$object->a_date.'" ></th>';
