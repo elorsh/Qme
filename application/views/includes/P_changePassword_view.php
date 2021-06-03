@@ -79,7 +79,9 @@
         ?>
 
 
-          <button type="submit" class="btn btn" value="run" >שינוי סיסמה </button>
+        <button class="btn btn"  id="submit" type="submit" >עדכן את הסיסמה שלי</button>
+
+          
           
           <div id="done"></div>
           
