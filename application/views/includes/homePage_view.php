@@ -89,6 +89,7 @@
                 <i class="fab fa-whatsapp"></i></a></td>';
                 echo '<td><a href="https://waze.com/ul?q='.$object->b_address.'"><i class="fab fa-waze"></i></a></td>';
                 echo '<td><a href="tel:'.$object->b_phone1.'"><i class="fas fa-phone"></i></a></td>';
+                echo '</form>';
                 echo "</tr>";
                 }
             ?>
