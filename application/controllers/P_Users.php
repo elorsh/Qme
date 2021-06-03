@@ -366,7 +366,7 @@ public function go_to_p_register(){
 
 
         $data = array(
-            'b_email' => $p_user['b_email'],
+            'b_email' => $b_user['b_email'],
             'b_full_name' => $this->input->post('b_full_name'),
             'b_id' => $this->input->post('b_id'),
             'b_business_name' => $this->input->post('b_business_name'),
