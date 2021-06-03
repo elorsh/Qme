@@ -128,7 +128,11 @@ a i{
 td,tr{
     text-align: center;
 }
-
+.form-group{
+    display: block;
+    margin: auto;
+    width: 30%;
+}
 
 .btn{
     display: block;
@@ -231,6 +235,9 @@ td,tr{
         }
         .btn2{
             font-size: 18px;
+        }
+        .form-group{
+            width: 40%;
         }
         .log-out{
             font-size: 12px;
