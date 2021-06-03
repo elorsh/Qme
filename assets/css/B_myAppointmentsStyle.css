@@ -126,7 +126,7 @@ a i{
     margin: auto;
 }
 td,tr{
-    text-align: right;
+    text-align: center;
 }
 
 
@@ -192,7 +192,16 @@ td,tr{
     margin-top: 10px !important;
     margin-bottom: 15px !important;
 }
+.message{
+    display: block;
+    margin: auto;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    font-size: 40px;
+    font-weight: bold;
+    color: green;
 
+}
 #date, #time {
     cursor: pointer;
 }
