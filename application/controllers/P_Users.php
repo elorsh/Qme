@@ -391,7 +391,7 @@ public function go_to_p_register(){
 
 
         $data = array(
-            'b_user' => $b_user['b_user'],
+            'b_user' => $b_user['b_email'],
             'b_password' => $this->input->post('b_password')
           );
         $this->P_Users_model->update_b_user_password($data);
