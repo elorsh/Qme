@@ -98,7 +98,7 @@ public function insert_new_p_user($data){
     // עדכון משתמש קיים
     public function P_update_user(){
         $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
-        // $data['p_user']=$p_user;// כנל
+        $data['p_user']=$p_user;// כנל
 
 
         $data = array(
@@ -112,10 +112,8 @@ public function insert_new_p_user($data){
         $this->P_Users_model->update_p_user($data);
    
         $msg = ':) עידכנת את הפרטים בהצלחה';
-        $data['msg']=$msg;
-        $this->go_to_P_myProfile();
-        $data['msg']=null;
-
+        $this->go_to_P_myProfile($msg);
+        // $data['msg']=null;
        }
     
 
@@ -182,9 +180,10 @@ public function go_to_p_register(){
         $this->load->view('includes/homePage_view',$data);
         }
 
-        public function go_to_P_myProfile(){
+        public function go_to_P_myProfile($msg=null){
             $p_user=$this->session->all_userdata(); // לשים בכל פונקציה בקנטרולר כדי להעביר מידע על הסשן
             $data['p_user']=$p_user;// כנל
+            $data['msg']=$msg;
 
             $this->load->view('includes/P_myProfile_view',$data);
         }
