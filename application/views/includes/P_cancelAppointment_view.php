@@ -62,53 +62,15 @@
                     </ul>
                 </div>
             </nav>
-            
 
-        <h4<i class="far fa-calendar-times"></i> >ביטול תור </h4>
+
 
         <h5 dir="rtl">התור בוטל בהצלחה!</h5>
-        <p3><i class="far fa-window-close"></i></p3>
+        <p1><i class="far fa-window-close"></i></p1>
 
         <button class="btn"  id="home" type="button" >מעבר לדף הבית</button>
         <button class="btn"  id="appointments" type="button" >מעבר לתורים שלי</button>
 
-
-     <!----להכניס ערכים של PHP---->
-     <!--<p2 dir="rtl">בחר שעה רצויה</p2>
-
-     <form  dir="rtl" onsubmit="return validationForm()" >
-
-     <div class="form-group">
-            <label for="date">תאריך:</label>
-            <input type="date" class="form-control" name="a_time" id="date" value="#" disabled >
-          </div>
-
-          <div class="form-group">
-        <label for="date">שעה :</label>
-        <select type="date" class="form-select" name="a_date" id="date" required>
-        <option>08:00</option>
-        <option>09:00</option>
-        <option>10:00</option>
-        <option>11:00</option>
-        <option>12:00</option>
-        <option>13:00</option>
-        <option>14:00</option>
-        <option>15:00</option>
-        <option>16:00</option>
-        <option>17:00</option>
-        <option>18:00</option>
-        <option>19:00</option>
-        <option>20:00</option>
-        </select>
-        </div> 
-
-    <button class="btn"  id="submit" type="button" >בטל לי את התור</button>
-
-    </form>-->
-
-
-   
-   
      
      <!--<script src="../javascript/cancelAppointment.js"></script>-->
 
