@@ -70,7 +70,7 @@
 
             <?php 
           if (isset($msg)) {
-            echo '<br> <center><h5 class="message">'.$msg.'</h5></center><br>';
+            echo '<br> <center><h5 dir="rtl" class="message">'.$msg.'</h5></center><br>';
           }
           ?>
 
@@ -102,7 +102,7 @@
             echo ' <input type="hidden" class="form-control" name="b_email" id="b_email" value= "'.$object->b_email.'" >';
             echo ' <input type="hidden" class="form-control" name="a_date" id="date" value= "'.$object->a_date.'" >';
             echo ' <input type="hidden" class="form-control" name="a_time" id="time" value= "'.$object->a_time.'" >';
-            echo '<th scope="col"><button class="btn"  id="submit" type="submit" >ביטול תור זה</button></th>';
+            echo '<th scope="col"><button class="btn2"  id="submit" type="submit" >ביטול תור זה</button></th>';
             echo '</form>';
 
             echo "</tr>";
@@ -127,17 +127,14 @@
      document.getElementById("P_my_profile").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_myProfile');?>"
      }
-     document.getElementById("newAppointment").onclick=function(){
-        window.location.href="<?php echo site_url('P_Users/go_to_P_create_appointment');?>"
-     }
-     document.getElementById("logOut").onclick=function(){
-        window.location.href="<?php echo site_url('P_Users/p_logout');?>"
-     }
      document.getElementById("myProfile").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_myProfile');?>"
      }
      document.getElementById("myProfile2").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_P_myProfile');?>"
+     }
+     document.getElementById("logOut").onclick=function(){
+        window.location.href="<?php echo site_url('P_Users/p_logout');?>"
      }
   
 
