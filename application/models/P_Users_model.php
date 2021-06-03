@@ -139,6 +139,14 @@ class P_Users_model extends CI_Model {
         return $query->result();
      }
 
+     public function update_b_user($data){ 
+        $query = $this->db->query('UPDATE `DB_businesses` SET `b_full_name`="'.$data['b_full_name'].'",`b_id`="'.$data['b_id'].'",`b_business_name`="'.$data['b_business_name'].'",`b_profession`="'.$data['b_profession'].'",`b_description`="'.$data['b_description'].'",`b_phone1`="'.$data['b_phone1'].'",`b_phone2`="'.$data['b_phone2'].'",`b_address`="'.$data['b_address'].'" WHERE `DB_businesses`.`b_email` = "'.$data['b_email'].'" '); 
+    }
+
+    
+    public function update_b_user_password($data){ 
+        $query = $this->db->query('UPDATE `DB_businesses` SET `b_password`="'.$data['b_password'].'" WHERE `DB_businesses`.`b_email` = "'.$data['b_email'].'" '); 
+    }
      
 
      public function get_B_appointments($data){

@@ -66,25 +66,23 @@
             </nav>
 
      <h4>שינוי סיסמה</h4>
-     <p  dir="rtl">שמור על הסיסמא שלך בעזרת סיסמה חזקה :)</p>
+     <p  dir="rtl">שמור על החשבון שלך בעזרת סיסמה חזקה :)</p>
+     
 
-    <form  dir="rtl"  onsubmit="return validationForm()">
+     <form  dir="rtl" onsubmit="return  validationForm()" method="post"  action="<?php echo site_url('P_Users/B_update_password');?>" >
 
-        <div class="form-group">
-            <label for="pass1">סיסמא נוכחית : </label>
-            <input type="password" class="form-control" name="password1" id="pass1" minlength="8" autocomplete="on" placeholder="סיסמא נוכחית">
-          </div>
+<div class="form-group" >
+  <label for="pass1" class="form-label" >סיסמה:</label>
+  <input type="text" class="form-control" name="b_password" id="pass1" value= "<?php foreach ($result as $res){if ($res->b_password!=null){echo $res->b_password;}} ?>" placeholder="סיסמה" >
+</div>
 
-          <div class="form-group">
-            <label for="pass2">סיסמה חדשה:</label>
-            <input type="password" class="form-control" name="password2" id="pass2"  minlength="8" autocomplete="on" placeholder="סיסמא חדשה">
-          </div>
 
-          <button type="submit" class="btn btn" value="run" >שינוי סיסמה </button>
-          
-          <div id="done"></div>
-          
+<button class="btn btn"  id="submit" type="submit" >עדכן את הסיסמה שלי</button>
 
+  
+  
+  <div id="done"></div>
+  
 </form>
 
 <!--<script src="../javascript/changePassword.js"></script>-->
