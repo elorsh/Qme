@@ -227,8 +227,13 @@ td,tr{
     }
    
     .btn.btn{
-        font-size: 17px;
+        font-size: 13px;
     }
+    
+    .table-container{
+        width: 90%;
+        }
+    
 }
    
   
