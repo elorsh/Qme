@@ -132,6 +132,8 @@ td,tr{
     display: block;
     margin: auto;
     width: 30%;
+    text-align: center;
+    align-items: center;
 }
 
 .btn{
@@ -237,7 +239,7 @@ td,tr{
             font-size: 18px;
         }
         .form-group{
-            width: 40%;
+            width: 60%;
         }
         .log-out{
             font-size: 12px;
