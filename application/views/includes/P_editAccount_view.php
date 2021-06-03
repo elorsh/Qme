@@ -72,7 +72,7 @@
 
     <div class="createAccount">
    
-      <form  dir="rtl" onsubmit="return  validationForm()" method="post"  action="<?php echo site_url('P_Users/P_update_user');?>" >
+      <form  dir="rtl" method="post"  class="row g-3 needs-validation"  onsubmit="return  validationForm()"  novalidate action="<?php echo site_url('P_Users/P_update_user');?>" >
 
 
         <div class="col-md-4" >
