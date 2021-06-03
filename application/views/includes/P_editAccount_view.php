@@ -90,7 +90,7 @@
             <input type="text" class="form-control" name="u_address" id="validationCustom05" value= "<?php foreach ($result as $res){if ($res->u_address!=null){echo $res->u_address;}} ?>" placeholder="עיר ,רחוב ,מספר בית" >
           </div>
           
-        <button class="btn"   id="submit" type="submit" >עדכן את הפרטים שלי </button>
+        <button class="btn col-md-4"   id="submit" type="submit" >עדכן את הפרטים שלי </button>
         <!--<button class="btn btn"  id="submit" type="submit" >עדכן את הפרטים שלי</button>-->
 
       </form>
