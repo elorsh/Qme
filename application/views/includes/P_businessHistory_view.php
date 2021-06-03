@@ -74,6 +74,7 @@
             <th scope="col" > שם בית עסק</th>
             <th scope="col">כתובת </th>
             <th scope="col">חיוג לבית העסק</th>
+            <th scope="col">הודעה לבית העסק</th>
 
           </tr>
         </thead>
