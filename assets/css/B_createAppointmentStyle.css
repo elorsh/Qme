@@ -214,9 +214,11 @@ h4{
     .form-group{
         font-size: 17px;
     }
-   
     .btn.btn{
         font-size: 17px;
+    }
+    .ErrorMessage{
+        font-size: 20px;
     }
    
 } 
