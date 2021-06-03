@@ -64,7 +64,7 @@
 
      <?php 
           if (isset($error)) {
-            echo '<br> <h6 class="message">'.$error.'</h6>';
+            echo '<br> <h6 dir="rtl" class="ErrorMessage">'.$error.'</h6>';
           }
           ?>
 
