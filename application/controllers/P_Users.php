@@ -369,11 +369,11 @@ public function go_to_p_register(){
             'b_email' => $p_user['b_email'],
             'b_full_name' => $this->input->post('b_full_name'),
             'b_id' => $this->input->post('b_id'),
-            'b_business_name' => $this->input->post('b_business_name')
+            'b_business_name' => $this->input->post('b_business_name'),
             'b_profession' => $this->input->post('b_profession'),
             'b_description' => $this->input->post('b_description'),
-            'b_phone1' => $this->input->post('b_phone1')
-            'b_phone2' => $this->input->post('b_phone2')
+            'b_phone1' => $this->input->post('b_phone1'),
+            'b_phone2' => $this->input->post('b_phone2'),
             'b_address' => $this->input->post('b_address')
 
           );
