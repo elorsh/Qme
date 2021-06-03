@@ -128,6 +128,9 @@ public function p_logout(){
     $this->session->unset_userdata($data);
     $this->load->view('includes/P_LogIn_view');
     }
+    public function P_createAppointment(){
+        
+    }
 
 
         

@@ -64,62 +64,39 @@
 
      <h4>בחירת תור חדש</h4>
 
-    <form  dir="rtl" onsubmit="return validationForm()" >
+     <h4 class="headline">תורים פנויים</h4>
 
-        <div class="form-group ">
-            <label for="date">תאריך : </label>
-            <select type="date" class="form-select" name="date" id="date" required>
-                 <option selected disabled value="">תאריך</option>
-                  <option>01/06/21</option>
-                  <option>02/06/21</option>
-                  <option>03/06/21</option>
-                  <option>04/06/21</option>
-                  <option>05/06/21</option>
-                  <option>06/06/21</option>
-                  <option>07/06/21</option>
+<div class="table-container">
 
-                </select>
-          </div>
+     <table dir="rtl" class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col" > סטטוס</th>
+            <th scope="col" > תאריך</th>
+            <th scope="col">שעה</th>
+            <th scope="col">בחר תור</th>
 
-          <div class="form-group">
-            <label for="time">שעה :</label>
-            <select type="time" class="form-control" name="time" id="time" required>
-            <option>08:00</option>
-            <option>09:00</option>
-            <option>10:00</option>
-            <option>11:00</option>
-            <option>12:00</option>
-            <option>13:00</option>
-            <option>14:00</option>
-            <option>15:00</option>
-            <option>16:00</option>
-            <option>17:00</option>
-            <option>18:00</option>
-            <option>19:00</option>
-            <option>20:00</option>
-            </select>
-          </div>
-        
-        <!--
-          <div class="form-group message">
-            <div class="sms">
-            <input type="checkbox" id="sms" name="sms" value="no">
-            <label class="sms" for="sms">אני מעוניין לקבל הודעת תזכורת</label>
-          </div>
-          </div>
+          </tr>
+        </thead>
+        <tbody>
+          <?php
+          foreach($result as $object){
+           
+            echo '<tr >';
+            echo '<form  dir="rtl" method="post"  action="<?php echo site_url("P_Users/P_createAppointment");?>" onsubmit="return validationForm()" >';
+            echo '<input type="hidden" class="form-control" name="b_email" id="email" value= "'.$object->b_email.'" >';
+            echo '<th scope="col">תור פנוי</th>';
+            echo '<th scope="col">'.$object->a_date.'<input type="hidden" class="form-control" name="a_date" id="date" value= "'.$object->a_date.'" ></th>';
+            echo '<th scope="col">'.$object->a_time.'<input type="hidden" class="form-control" name="a_time" id="time" value= "'.$object->a_time.'" ></th>';
+            echo '<th scope="col"><button class="btn"  id="submit" type="submit" >בחר תור זה</button></th>';
+            echo '</form>';
+            echo '</tr>';
+          }
 
-          <div class="form-group">
-            <div class="googleCalendare">
-            <input type="checkbox" id="googleCalendare" name="googleCalendare" value="no">
-            <label class="googleCalendare" for="googleCalendare">יש לי יומן גוגל</label>
-          </div>
-          </div>
-            -->
-
-          <button type="submit" id="submit" class="btn btn" value="run">עדכן לי את התור </button>
-          <div id="done"></div>
-
-</form>
+          ?>
+        </tbody>
+      </table>
+    </div>
 
 <script src="../javascript/editTimeAndDate.js"></script>
 
