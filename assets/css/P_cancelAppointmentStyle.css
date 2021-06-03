@@ -117,24 +117,6 @@ h5{
 
 }
 
-/*p1{
-    display: block;
-    margin: auto;
-    margin-top: 25px !important;
-    margin-bottom: 7px!important;
-    font-size: 26px;
-    text-align: center;
-}*/
-
-/*p2{
-    display: block;
-    margin: auto;
-    margin-top: 10px !important;
-    margin-bottom: 17px!important;
-    font-size: 28px;
-    font-weight: bold;
-    text-align: center;
-}*/
 .btn{
     position: relative;
     display: block;
@@ -166,7 +148,7 @@ h5{
     font-size: 20px;
 
 }*/
-p3{
+p1{
     display: block;
     margin: auto;
     text-align: center;
@@ -204,15 +186,13 @@ p3{
         h4{
             font-size: 30px;
         }
-        p1{
-            font-size: 22px;
-        }
-        p2{
+        h5{
             font-size: 26px;
         }
-        p3{
-            font-size: 80px;
+        p1{
+            font-size: 75px;
         }
+    
         .btn{
             font-size: 18px;
         }
@@ -236,16 +216,13 @@ p3{
     h4{
         font-size: 27px;
         margin-top: 3px !important;
-
+    }
+    h5{
+        font-size: 20px;
+        margin-top: 3px !important;
     }
     p1{
-        font-size: 20px;
-    }
-    p2{
-        font-size: 24px;
-    }
-    p3{
-        font-size: 70px;
+        font-size: 65px;
     }
     .btn{
         font-size: 16px;
