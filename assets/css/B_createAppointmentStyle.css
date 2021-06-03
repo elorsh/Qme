@@ -149,6 +149,16 @@ h4{
 #quantity{
     width: 35%;
 }
+.ErrorMessage{
+    display: block;
+    margin: auto;
+    margin-right: 30px !important;
+    margin-top: 15px !important;
+    font-size: 30px;
+    text-align: right;
+    font-weight: bold;
+    color: red;
+}
 
 #done{
     display: block;
@@ -204,9 +214,11 @@ h4{
     .form-group{
         font-size: 17px;
     }
-   
     .btn.btn{
         font-size: 17px;
+    }
+    .ErrorMessage{
+        font-size: 20px;
     }
    
 } 

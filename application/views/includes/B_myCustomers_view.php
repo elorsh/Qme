@@ -82,7 +82,7 @@
             <th scope="col" >שם מלא</th>
             <th scope="col" >אימייל</th>
             <th scope="col">טלפון</th>
-            <th scope="col">חייג לבית העסק</th>
+            <th scope="col">חייג ללקוח</th>
 
           </tr>
         </thead>

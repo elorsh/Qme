@@ -128,7 +128,13 @@ a i{
 td,tr{
     text-align: center;
 }
-
+.form-group{
+    display: block;
+    margin: auto;
+    width: 30%;
+    text-align: center;
+    align-items: center;
+}
 
 .btn{
     display: block;
@@ -162,6 +168,7 @@ td,tr{
 }
 
 .btn.date{
+    margin-top: 15px !important;
     font-size: 21px !important;
 }
 
@@ -232,6 +239,12 @@ td,tr{
         .btn2{
             font-size: 18px;
         }
+        .btn.date{
+            font-size: 18px !important;
+        }
+        .form-group{
+            width: 60%;
+        }
         .log-out{
             font-size: 12px;
         }
@@ -253,6 +266,9 @@ td,tr{
     }
     .btn2{
         font-size: 13px;
+    }
+    .btn.date{
+        font-size: 16px !important;
     }
 
 
