@@ -80,15 +80,17 @@
         </thead>
         <tbody>
         <?php
+
           foreach($result as $object){
            
             echo "<tr>";
             echo '<td scope="col">'.$object->b_business_name.'</td>';
             echo '<td scope="col">'.$object->b_address.'</td>';
             echo '<td><a href="tel:'.$object->b_phone1.'"><i class="fas fa-phone"></i></a></td>';
-           echo "</tr>";
            echo '<td><a href="https://api.whatsapp.com/send?phone=+972'.$object->b_phone1.'&text=היי, כיצד נוכל לעזור?" target="_blank">
            <i class="fab fa-whatsapp"></i></a></td>';
+           echo "</tr>";
+
           }
 
           ?>
