@@ -148,6 +148,7 @@ h5{
     outline: none;
 }
 .btn.update{
+    margin-top: 5px !important;
     background-color: rgb(119, 141, 235) !important;
 }
 .btn.update:hover{
