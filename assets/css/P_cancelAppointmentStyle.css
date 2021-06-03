@@ -107,6 +107,16 @@ h4{
 
 }
 
+h5{
+    display: block;
+    margin: auto;
+    margin-top: 20px !important;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
 /*p1{
     display: block;
     margin: auto;
@@ -160,6 +170,7 @@ p3{
     margin: auto;
     text-align: center;
     font-size: 95px;
+    margin-top: 15px !important;
     margin-bottom: 50px !important;
 }
 
