@@ -107,8 +107,8 @@
 
           <div class="col-md-4">
             <label for="validationCustom04" class="form-label">תחום עיסוק:</label>
-            <select class="form-select"  name="b_profession" value="<?php foreach ($result as $res){if ($res->b_profession!=null){echo $res->b_profession;}} ?>" id="validationCustom07" >
-              <option selected disabled value="">תחום עיסוק</option>
+            <select class="form-select"  name="b_profession"  id="validationCustom07" >
+              <option selected disabled value="<?php foreach ($result as $res){if ($res->b_profession!=null){echo $res->b_profession;}} ?>">תחום עיסוק</option>
               <option>עיצוב שיער</option>
               <option>לק ג'ל</option>
               <option> קוסמטיקה</option>
