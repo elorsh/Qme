@@ -77,7 +77,7 @@
 
         <div class="col-md-4" >
           <label for="validationCustom01" class="form-label" >שם מלא :</label>
-          <input type="text" class="form-control" name="u_full_name" id="validationCustom01" value= "<?php foreach ($result as $res){if ($res->u_full_name!=null){echo $res->u_full_name;}} ?>" placeholder="שם פרטי ומשפחה" >
+          <input type="text" class="form-control" name="u_full_name" id="validationCustom01" value= "<?php foreach ($result as $res){if ($res->u_full_name!=null){echo $res->u_full_name;}} ?>" placeholder="שם פרטי ומשפחה" required>
           <div class="valid-feedback">
             שם תקין
           </div>
@@ -85,15 +85,15 @@
 
         <div class="col-md-3">
           <label for="validationCustom02" class="form-label">טלפון  :</label>
-          <input type="tel" class="form-control" name="u_phone" id="validationCustom02" value= "<?php foreach ($result as $res){if ($res->u_phone!=null){echo $res->u_phone;}} ?>" placeholder="0000000000" >
-          <div class="valid-feedback">
-           מספר טלפון תקין 
-          </div>
+          <input type="tel" class="form-control" name="u_phone" id="validationCustom02" value= "<?php foreach ($result as $res){if ($res->u_phone!=null){echo $res->u_phone;}} ?>" placeholder="0000000000" required>
+          <div class="invalid-feedback">
+              יש להזין מספר טלפון תקין
+            </div>
         </div>
 
         <div class="col-md-3">
             <label for="validationCustom02" class="form-label">כתובת :</label>
-            <input type="text" class="form-control" name="u_address" id="validationCustom03" value= "<?php foreach ($result as $res){if ($res->u_address!=null){echo $res->u_address;}} ?>" placeholder="עיר ,רחוב ,מספר בית" >
+            <input type="text" class="form-control" name="u_address" id="validationCustom03" value= "<?php foreach ($result as $res){if ($res->u_address!=null){echo $res->u_address;}} ?>" placeholder="עיר ,רחוב ,מספר בית" required>
             <div class="valid-feedback">
               כתובת תקינה
             </div>
