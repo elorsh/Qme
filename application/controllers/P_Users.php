@@ -337,8 +337,7 @@ public function go_to_p_register(){
                 'b_description' => $this->input->post('b_description'),
                 'b_phone1' => $this->input->post('b_phone1'), 
                 'b_phone2' => $this->input->post('b_phone2'),
-                'b_address' => $this->input->post('b_address'),
-                'b_photo' => $this->input->post('b_photo')
+                'b_address' => $this->input->post('b_address')
               );
              $this-> insert_new_B_user($data);
                 }
