@@ -6,7 +6,3 @@ class B_Users_model extends CI_Model {
         parent::__construct();
         $this->load->database();
     }
-    // public function get_B_users(){
-    //     $query = $this->db->query("SELECT * FROM DB_businesses");
-    //     return $query->result();
-    // }
