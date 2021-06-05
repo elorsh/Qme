@@ -173,9 +173,6 @@
      document.getElementById("myProfile2").onclick=function(){
          window.location.href="<?php echo site_url('P_Users/go_to_b_myProfile');?>"
      }
-    //  document.getElementById("cancelAppointment").onclick=function(){
-    //      window.location.href="<?php echo site_url('P_Users/go_to_b_cancelAppointment');?>"
-    //  }
 
    
   </script>
