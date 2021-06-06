@@ -19,17 +19,15 @@
 
  <i class="fas fa-user-circle" id="myProfile"></i>
 
-      <p class="profile" id="myProfile2">
+ <p class="profile" id="myProfile2">
       הפרופיל שלי <br>
       <?php 
-     if (isset($b_user['loggedin']))
+     if (isset($p_user['loggedin']))
      {
-    echo $b_user['u_email'];
+    echo $p_user['u_email'];
      };
       ?>
     </p>
-
-
 
     <header> 
         <img id="logo" src= "<?php echo base_url('assets/css/img/logo.png');?>"/>
