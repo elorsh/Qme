@@ -7,8 +7,7 @@ class P_Users_model extends CI_Model {
         $this->load->database();
     }
     public function get_users(){
-        // $query=$this->db->get('DB_users');
-        $query = $this->db->query("SELECT * FROM DB_users");
+            $query = $this->db->query("SELECT * FROM DB_users");
         return $query->result();
     }
 
@@ -31,16 +30,6 @@ class P_Users_model extends CI_Model {
 
     }
 
-
-    // public function save($data){
-    //     //set flag in order to avoid showing php errors
-    //     $this->db->db_debug = FALSE; 
-    //     $error=null;
-    //     if (!$this->db->insert('DB_users', $data)){
-    //         $error=$this->db->error();
-    //     }
-    //     return $error;
-    //  }
 
 
 
@@ -68,23 +57,17 @@ class P_Users_model extends CI_Model {
 
 
      public function p_auth_new_user($data){
-        // $query = $this->db->get_where('DB_users',array($data));
         $query = $this->db->get_where('DB_users',$data);
         return $query->result();
      }
 
-// עריכת משתמש קיים
 
         //פונציה שמביאה לי את נתוני המשתמש הפרטי
      public function get_P_user_data($data){
         $query = $this->db->query('SELECT * FROM `DB_users` WHERE `u_email` = "'.$data['u_email'].'" ');
         return $query->result();
      }
-    //פונקציה מקורית שמשתמש בסלקט יחסית פשוט
-    //  public function get_P_appointments($data){
-    //     $query = $this->db->query('SELECT * FROM `DB_B_Appointments` WHERE `u_email` = "'.$data['u_email'].'" ');
-    //     return $query->result();
-    //  }
+
 
      public function get_P_appointments($data){
         $query = $this->db->query('SELECT * FROM `DB_B_Appointments` INNER JOIN DB_businesses  ON DB_B_Appointments.b_email = DB_businesses.b_email WHERE `u_email` = "'.$data['u_email'].'" ');
